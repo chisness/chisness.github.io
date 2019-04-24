@@ -5,7 +5,7 @@ author: "Max"
 permalink: /about/
 ---
 
-![test](https://lh3.googleusercontent.com/SqEr92E5Ji7OLVKRbV8Ujx6JJfDrAaRQu9nIK6EKvgZ1CCo2YJF0v4culfsZDGJ12bPpzp3MVxn5KWpaZsccKFOGU2HaVC7mwmVEC55bb3BQqYUwgkZ3kCGVkwKWIXiDeDVGAS4MQ6M=w2400)
+![Me](https://lh3.googleusercontent.com/SqEr92E5Ji7OLVKRbV8Ujx6JJfDrAaRQu9nIK6EKvgZ1CCo2YJF0v4culfsZDGJ12bPpzp3MVxn5KWpaZsccKFOGU2HaVC7mwmVEC55bb3BQqYUwgkZ3kCGVkwKWIXiDeDVGAS4MQ6M=w2400)
 
 I'm generally interested in AI and machine learning and specifically interested in games and reinforcement learning. I wrote my MSc thesis on [Solving Poker Games Using Counterfactual Regret Minimization](https://www.dropbox.com/s/jcgszjng6u5gj0b/MaxChiswickCFRThesis.pdf?dl=0) (finished at the Technion - Israel Institute of Technology in 2017). 
 
