@@ -1,15 +1,16 @@
 ---
 layout: post
 title: "About"
-author: "Chester"
+author: "Max"
 permalink: /about/
 ---
 
-A friend of mine writes short stories. One sunny day, I asked if he wanted a website to showcase his works and he agreed. I decided to use GitHub Pages to host his site. That way he wouldn't have to buy a domain and a server.
+## Recent Background
+-2017 MSc in Electrical Engineering from Technion - Israel Institute of Technology
+-Thesis on solving poker games using counterfactual regret minimization
+-[LinkedIn](https://www.linkedin.com/in/maxchiswick/)
+-General interest in AI and machine learning with specific interest in games and reinforcement learning
 
-While doing some research up on GitHub Pages, I accidentally chanced upon this _simple, blog-aware, static site generator_ called [Jekyll](https://jekyllrb.com/) which works really well with GitHub Pages. I figured it would do just fine for my friend and I set about searching for a pretty theme. I wanted a theme with a _book-ish_ vibe. Unfortunately, most of the themes were too modern. Eventually, I caved and begun working on my own theme. With the help of [Poole](https://github.com/poole/poole), the Jekyll Butler, I was able to build **Tale**.
-
-## Contribute
-Feel free to create an issue or make a pull request on [GitHub](https://github.com/chesterhow/tale).
-
-Thanks for reading!
+## Hobbies
+Hiking/cycling/improving very poor flexibility -- my two biggest adventures were cycling from Cairo to Cape Town (12000km/7500mi) on the Tour d'Afrique for 4 months in 2016 and hiking Israel from North to South (1025km/630mi) for 1.5 months in 2017
+Travel -- I've spent a bit too much time traveling, much of it in not-very-touristy countries in Africa
