@@ -127,12 +127,6 @@ TEST ETST ETESTST
 <br>
 {% endhighlight %}
 
-# Personal test
-{% highlight %}
-> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
-
-{% endhighlight %}
-
 Use `<hr>` for horizontal rules
 
 <hr>
