@@ -14,4 +14,3 @@ Resume: [LinkedIn](https://www.linkedin.com/in/maxchiswick/)
 ## Hobbies
 - Hiking/cycling/improving very poor flexibility 
 - Travel -- My two biggest adventures were cycling from Cairo to Cape Town (12000km/7500mi) on the Tour d'Afrique for 4 months in 2016 and hiking Israel from North to South (1025km/630mi) for 1.5 months in 2017
-<p style="text-align: center"><a href="https://matadornetwork.com/travel-map/89f0e3fc1989e5d14ee82076421024e3-1418071166" title="Max’s Travel Map"><img src="https://d36tnp772eyphs.cloudfront.net/travel-maps/72b9462875f786ff5c9b356e76fece5b-1545268682/my-travel-map.png" style="width: 100%; max-width: 100%" alt="Max’s Travel Map" /></a></p>
