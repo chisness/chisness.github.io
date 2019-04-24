@@ -5,6 +5,8 @@ author: "Max"
 permalink: /photos/
 ---
 
+![Ba'aka from CAR](https://photos.app.goo.gl/EVPApTnd8CuFJCME6)
+
 [Ba'aka (2014, Central African Republic)](https://photos.app.goo.gl/BKAU2rGxGvfHs1s46) I spent 24 hours in the forest with this group and experienced their music and singing, as well as a hunt to catch dinner. Two of my photos are on their Wikipedia page (bottom two). 
 
 [Games (2016-18, Various)](https://photos.app.goo.gl/EqaiygLuEvEPZWM76) A work in progress to capture people all around the world playing all kinds of games
