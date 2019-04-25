@@ -8,4 +8,4 @@ This tutorial is made with two target audiences in mind: (1) Those with an inter
 2. History of Solving Poker
 3. Game Theory -- Equilibrium, Regret, and More
 4. Solving Toy Poker Games from Normal Form to Extensive Form
-5. %\frac{1}{2}%
+5. `$\frac{1}{2}$`
