@@ -8,7 +8,9 @@ This tutorial is made with two target audiences in mind: (1) Those with an inter
 2. History of Solving Poker
 3. Game Theory -- Equilibrium, Regret, and More
 4. Solving Toy Poker Games from Normal Form to Extensive Form
-5. $$
+5. 
+
+$$
 x = {-b \pm \sqrt{b^2-4ac} \over 2a}.
 $$
 
