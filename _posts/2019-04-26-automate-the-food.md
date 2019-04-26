@@ -1,12 +1,13 @@
 ## Eating Habits
-Mark Zuckerberg and Steve Jobs (and apparently also Elizabeth Holmes) are known for minimizing decisions and making things simple by wearing the same thing everyday. I find that this is also a good technique with food [as do some others](https://www.theatlantic.com/family/archive/2019/03/eating-the-same-thing-lunch-meal/584347/). 
+Mark Zuckerberg and Steve Jobs (and apparently also Elizabeth Holmes) are known for minimizing decisions and making things simple by wearing the same thing everyday. I find that this is also a good technique with food, [as do some others](https://www.theatlantic.com/family/archive/2019/03/eating-the-same-thing-lunch-meal/584347/). 
 
 I eat essentially the same breakfast and lunch every day and have a couple of dinner variation options. 
 
 ## Main Techniques
-Here are the main ways that I cook with about as little skill as possible: 
+Here are the main ways that I cook with about as little skill as possible.
 
-Hard boiled egg: 
+Hard boiled eggs: 
+<img src="https://www.amazon.com/DEC012BK-Electric-Scrambled-Vegetables-Dumplings/dp/B00ZGCKLE2" alt="Hard boiled egg cooker" width="200"/>
 
 Steamed vegetables: 
 
