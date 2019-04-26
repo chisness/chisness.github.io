@@ -25,3 +25,6 @@ test
 $$
 \frac{1}{2}
 $$
+
+## 1. Background on Poker Rules and Definitions
+
