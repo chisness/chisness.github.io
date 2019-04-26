@@ -1,5 +1,3 @@
-# AI Poker Tutorial
-
 ## Intro
 This tutorial is made with two target audiences in mind: (1) Those with an interest in poker who want to understand how AI poker agents are made and (2) Those with an interest in coding who want to better understand poker and code poker agents from scratch. 
 
