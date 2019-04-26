@@ -17,7 +17,7 @@ Scrambled eggs:
 One oil: 
 
 Israeli salad: Figure out your tomato/cucumber/pepper ratio and get this [pro vegetable chopper](https://www.amazon.com/Chopper-Vegetable-Mueller-Vegetable-Fruit-Cheese-Onion-Chopper-Dicer-Kitchen/dp/B01HC7BNJA)
-![https://images-na.ssl-images-amazon.com/images/I/71-YsC0P46L._SL1500_.jpg]
+![Vegetable chopper](https://images-na.ssl-images-amazon.com/images/I/71-YsC0P46L._SL1500_.jpg)
 
 whole foods delivery
 
