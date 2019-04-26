@@ -7,7 +7,7 @@ I eat essentially the same breakfast and lunch every day and have a couple of di
 Here are the main ways that I cook with about as little skill as possible.
 
 Hard boiled eggs: 
-<img src="https://images-na.ssl-images-amazon.com/images/I/61037gzXCTL._SL1500_.jpg" alt="Hard boiled egg cooker" width="200"/>
+<img src="https://images-na.ssl-images-amazon.com/images/I/61037gzXCTL._SL1500_.jpg" alt="Hard boiled egg cooker" width="300"/>
 
 Steamed vegetables: 
 
@@ -18,7 +18,7 @@ Scrambled eggs:
 One oil: 
 
 Israeli salad: Figure out your tomato/cucumber/pepper ratio and get this [pro vegetable chopper](https://www.amazon.com/Chopper-Vegetable-Mueller-Vegetable-Fruit-Cheese-Onion-Chopper-Dicer-Kitchen/dp/B01HC7BNJA)
-![Vegetable chopper](https://images-na.ssl-images-amazon.com/images/I/71-YsC0P46L._SL1500_.jpg)
+<img src="https://images-na.ssl-images-amazon.com/images/I/71-YsC0P46L._SL1500_.jpg" alt="Vegetable chopper" width="300"/>
 
 whole foods delivery
 
