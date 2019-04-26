@@ -7,7 +7,7 @@ I eat essentially the same breakfast and lunch every day and have a couple of di
 Here are the main ways that I cook with about as little skill as possible.
 
 Hard boiled eggs: 
-<img src="https://www.amazon.com/DEC012BK-Electric-Scrambled-Vegetables-Dumplings/dp/B00ZGCKLE2" alt="Hard boiled egg cooker" width="200"/>
+<img src="https://images-na.ssl-images-amazon.com/images/I/61037gzXCTL._SL1500_.jpg" alt="Hard boiled egg cooker" width="200"/>
 
 Steamed vegetables: 
 
