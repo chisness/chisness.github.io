@@ -3,6 +3,7 @@ This tutorial is made with two target audiences in mind: (1) Those with an inter
 
 ## Table of Contents
 [1. Background on Poker Rules and Definitions](#1-background-on-poker-rules-and-definitions)
+
 [2. History of Solving Poker](#2-history-of-solving-poker)
 [3. Game Theory -- Equilibrium, Regret, and More](#3-game-theory----equilibrium--regret--and-more)
 [4. Solving Toy Poker Games from Normal Form to Extensive Form](#4-solving-toy-poker-games-from-normal-form-to-extensive-form)
