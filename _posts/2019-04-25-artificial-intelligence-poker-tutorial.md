@@ -8,12 +8,8 @@ This tutorial is made with two target audiences in mind: (1) Those with an inter
 4. Solving Toy Poker Games from Normal Form to Extensive Form
 5. 
 
-$$
-x = {-b \pm \sqrt{b^2-4ac} \over 2a}.
-$$
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
 $$
 \frac{1}{2}
 $$
-
-\(frac{1}{2}\)
