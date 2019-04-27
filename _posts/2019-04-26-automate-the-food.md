@@ -15,7 +15,7 @@ I eat essentially the same breakfast and lunch every day and have a couple of di
 Eating the same thing for the main meals is surprisingly not very boring and is highly recommended. Maybe do some small variations with snacks and certain meal elements, but keep the same structure every day! 
 
 ## 2. Avoid Manual Labor and Guesswork as Much as Possible
-Before I discovered the hard boiled egg machine, I never knew what I was doing. I'd forget about the eggs more often than not and even when I remembered and timed them fairly well, I frequently had peeling issues. Here is a list of my favorite tools: 
+Before I discovered the hard boiled egg machine, I never knew what I was doing. I'd forget about the eggs more often than not and even when I remembered and timed them fairly well, I frequently had peeling issues. Here is a list of my favorite tools and streamlining ideas: 
 
 **Hard boiled eggs:** With a hard boiled egg cooker, you put eggs into little slots, fill up a measuring cup up to the right level, and flip the switch. No waiting for water to boil or forgetting how much time the eggs need to cook for (I used to constantly forget about them) since the machine buzzes very loudly when it's finished. I cook 12 at a time every few days in the mornings. 
 <img src="https://images-na.ssl-images-amazon.com/images/I/61037gzXCTL._SL1500_.jpg" alt="Hard boiled egg cooker" width="300"/>
@@ -26,17 +26,23 @@ Before I discovered the hard boiled egg machine, I never knew what I was doing. 
 
 **Scrambled eggs:**
 
-**One oil:**
+**One oil:** I use one extra virgin olive oil for everything from cooking eggs to salmon to putting on salads. California and image
 
 **Israeli salad:** Figure out your tomato/cucumber/pepper ratio and get this [pro vegetable chopper](https://www.amazon.com/Chopper-Vegetable-Mueller-Vegetable-Fruit-Cheese-Onion-Chopper-Dicer-Kitchen/dp/B01HC7BNJA)
 <img src="https://images-na.ssl-images-amazon.com/images/I/71-YsC0P46L._SL1500_.jpg" alt="Vegetable chopper" width="300"/>
 
-frozen vegetables
+**Kosher:** Meat or dairy, pick one. Literally all of the complication from having a kosher home comes from separating meat and dairy. 
+
+**A good nonstick pan:** brand of mine, dishwashable
+
+**Keep bulk stocks:**
+
+**Use frozen vegetables:** Frozen vegetables are generally cheaper than fresh and never worrying about expiration is amazing. Based on some reading, it seems that they tend to have more nutrients than 
+
+**Strong tupperware:**
+
 Let randomness dictate
-dishwashable
-nonstick and brand
-strong tupperware
-California olive oil
+
 
 ## 3. Cook in Bulk
 I only do this for foods that I don't mind eating cold, which are currently Israeli salad and hard boiled eggs. The time to cook a chicken breast on an indoor grill is so low and the value from eating it hot off the grill is so high, that I don't think it's worth bulk cooking and reheating an item like this. 
