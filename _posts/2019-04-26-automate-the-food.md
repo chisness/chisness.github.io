@@ -35,24 +35,31 @@ Chicken/steak:
 - 3 scrambled eggs: Cooked in olive oil with raw sunflower seeds added after plating. The biggest efficiency improvement I've made here is not pre-stirring the eggs. Just crack them into the pan and stir! 
 - 4 oz chicken breast: Cooked on an indoor grill with nothing added
 - Israeli salad: Chopped up tomatoes/cucumbers/peppers and potentially onions. Important to use yellow or orange peppers so they don't get confused for tomatoes (red) or taste terrible (green). Top with olive oil. 
+- Total cooking/prep time is under 5 minutes
 
 ### Lunch
 - 3 hard boiled eggs: Cooked in bulk and eaten cold. I enjoy pre-eating the whites and sprinkling the yolks into the salad [Salt Bae](https://en.wikipedia.org/wiki/Salt_Bae) style.
 - 4 oz chicken breast: If taking lunch to go, cook this with the morning breast
 - 1/2 salad bag: Ready to eat salad bags, topped with 
 - Vegetables: If at home, I always steam about half a bag of frozen vegetables (usually broccoli, sometimes a mix). This can be done during the breakfast cooking if taking lunch to go, but tends to not taste great cold. Israeli salad is a good alternative. 
+- Total cooking/prep time is about 10 minutes with the vegetables being the limiting factor
 - If eating at the office, keep a bottle of olive oil on site so you don't have to commute with the risk of an olive oil explosion. 
 - I find it very efficient to eat this with hands, but that should definitely not be done in public and probably not even admitted in a public blog. 
 
 
 ### Dinner
-- Protein option: Either 8 oz steak or 8 oz salmon fillet. I have been cooking the steak on the indoor grill, but there would probably be more value from a more complicated/longer cooking method. 
+- Protein option: Either 8 oz steak or 8 oz salmon fillet. I have been cooking the steak on the indoor grill, but there would probably be more value from a more complicated/longer cooking method. Salmon broiled in the oven is a great option, but I've also sometimes been using the grill in cases of laziness. 
 - Vegetables: Steam half a bag of frozen vegetables
 - Rice: On salmon days I sometimes eat rice. I hate the cleanup value of cooking rice in a pot. Alternatives are microwaveable bags, boilable bags, and rice cookers. I think the ease of microwaveable makes that my favorite current option. 
+- Total cooking/prep time is about 10 minutes, potentially a bit longer if waiting for the oven to heat up
 
 ### Snacks
 - Raw almonds: 
-- 
+- Carrots: 
+- 85%+ dark chocolate: 
+- Good fruit (berries): 
+- Less good fruit (apples, bananas, grapes): 
+- Avocado: Great fat source! I can't deal with the erratic quality differences and ripeness issues
 
 **Hard boiled eggs:** With a hard boiled egg cooker, you put eggs into little slots, fill up a measuring cup up to the right level, and flip the switch. No waiting for water to boil or forgetting how much time the eggs need to cook for (I used to constantly forget about them) since the machine buzzes very loudly when it's finished. I cook 12 at a time every few days in the mornings. 
 <img src="https://images-na.ssl-images-amazon.com/images/I/61037gzXCTL._SL1500_.jpg" alt="Hard boiled egg cooker" width="300"/>
