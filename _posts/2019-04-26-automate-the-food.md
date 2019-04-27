@@ -21,10 +21,14 @@ Before I discovered the hard boiled egg machine, I never knew what I was doing. 
 I only do this for foods that I don't mind eating cold, which are currently Israeli salad and hard boiled eggs. The time to cook a chicken breast on an indoor grill is so low and the value from eating it hot off the grill is so high, that I don't think it's worth bulk cooking and reheating an item like this. 
 
 ## 4. Eat Healthy Stuff
-I find it very easy to have willpower in supermarkets and very difficult to have willpower when unhealthy foods are available for eating in my surroundings. I find it nice to keep the base state under control so that when less healthy situations arise (restaurants, parties, random occurrences of low-percentage chocolate in the vicinity), they can be enjoyed without concern. I've also found that I feel better when eating healthier. (I think of healthy as mostly Paleo, i.e. mostly proteins/nuts/seeds/vegetables/olive oil, with some fruit and 85%+ chocolate, and avoiding processed foods. I like this strictish definition because it means there's little guessing about whether an item is in the program or out of the program, but of course all should set their own baseline to their situation.)
+I find it very easy to have willpower in supermarkets and very difficult to have willpower when unhealthy foods are available for eating in my surroundings. I find it nice to keep the base state under control so that when less healthy situations arise (restaurants, parties, random occurrences of low-percentage chocolate nearby), they can be enjoyed without concern. I've also found that I feel better when eating healthier. (I think of healthy as mostly Paleo, i.e. mostly proteins/nuts/seeds/vegetables/olive oil, with some fruit and 85%+ chocolate, and avoiding processed foods. I like this strictish definition because it means there's little guessing about whether an item is in the program or out of the program, but of course all should set their own baseline to their situation.)
 
 ## 5. Get Food Delivered
-I generally have enjoyed going to supermarkets. It's the first thing I like to do when visiting a new place and the feeling of wide aisles and picking your own produce and wandering around finding new things can be fun. If I had easy access to a quality/good value supermarket, I'd probably prefer to go there 1-2 times/week. Recently I've been primarily using Amazon's PrimeNow for Whole Foods deliveries, which has been a pretty mediocre experience overall, but is free for same/next day 2-hour delivery windows and is ridiculously easy and when issues come up, their support has been very quick and generous. 
+I generally have enjoyed going to supermarkets. It's the first thing I like to do when visiting a new place and the feeling of wide aisles and picking your own produce and wandering around finding new things can be fun. If I had easy access to a quality/good value supermarket, I'd probably prefer to go there 1-2 times/week. Recently I've been primarily using Amazon's PrimeNow for Whole Foods deliveries, which has been a pretty mediocre experience overall, but is free for same/next day 2-hour delivery windows and is ridiculously easy and when issues come up, their support has been very quick and generous.
+
+Additionally, I've been getting all meats/fish from online sources. 
+Salmon: 
+Chicken/steak: 
 
 ## 6. A Day in the Life
 ### Breakfast
@@ -36,13 +40,19 @@ I generally have enjoyed going to supermarkets. It's the first thing I like to d
 - 3 hard boiled eggs: Cooked in bulk and eaten cold. I enjoy pre-eating the whites and sprinkling the yolks into the salad [Salt Bae](https://en.wikipedia.org/wiki/Salt_Bae) style.
 - 4 oz chicken breast: If taking lunch to go, cook this with the morning breast
 - 1/2 salad bag: Ready to eat salad bags, topped with 
-- Vegetables: If at home, I always steam frozen vegetables (usually broccoli, sometimes a mix). This can be done during the breakfast cooking if taking lunch to go, but tends to not taste great cold. Israeli salad is a good alternative. 
+- Vegetables: If at home, I always steam about half a bag of frozen vegetables (usually broccoli, sometimes a mix). This can be done during the breakfast cooking if taking lunch to go, but tends to not taste great cold. Israeli salad is a good alternative. 
+- If eating at the office, keep a bottle of olive oil on site so you don't have to commute with the risk of an olive oil explosion. 
 - I find it very efficient to eat this with hands, but that should definitely not be done in public and probably not even admitted in a public blog. 
 
 
 ### Dinner
+- Protein option: Either 8 oz steak or 8 oz salmon fillet. I have been cooking the steak on the indoor grill, but there would probably be more value from a more complicated/longer cooking method. 
+- Vegetables: Steam half a bag of frozen vegetables
+- Rice: On salmon days I sometimes eat rice. I hate the cleanup value of cooking rice in a pot. Alternatives are microwaveable bags, boilable bags, and rice cookers. I think the ease of microwaveable makes that my favorite current option. 
 
 ### Snacks
+- Raw almonds: 
+- 
 
 **Hard boiled eggs:** With a hard boiled egg cooker, you put eggs into little slots, fill up a measuring cup up to the right level, and flip the switch. No waiting for water to boil or forgetting how much time the eggs need to cook for (I used to constantly forget about them) since the machine buzzes very loudly when it's finished. I cook 12 at a time every few days in the mornings. 
 <img src="https://images-na.ssl-images-amazon.com/images/I/61037gzXCTL._SL1500_.jpg" alt="Hard boiled egg cooker" width="300"/>
@@ -58,33 +68,9 @@ I generally have enjoyed going to supermarkets. It's the first thing I like to d
 **Israeli salad:** Figure out your tomato/cucumber/pepper ratio and get this [pro vegetable chopper](https://www.amazon.com/Chopper-Vegetable-Mueller-Vegetable-Fruit-Cheese-Onion-Chopper-Dicer-Kitchen/dp/B01HC7BNJA)
 <img src="https://images-na.ssl-images-amazon.com/images/I/71-YsC0P46L._SL1500_.jpg" alt="Vegetable chopper" width="300"/>
 
-whole foods delivery
 frozen vegetables
-
-
 Let randomness dictate
 dishwashable
 nonstick and brand
-
 strong tupperware
-olive oil at office
-
-## A Day of Cooking
-
-# Hard boiled eggs
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
-
-
-
-# 
-
-## Food Sources
-
-Salmon: 
-Kosher pastured chicken breasts: 
-Kosher grassfed beef: 
-Dark chocolate: 
-
-
-## My Meals
-
+California olive oil
