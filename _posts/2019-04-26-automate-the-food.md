@@ -4,13 +4,21 @@ Mark Zuckerberg and Steve Jobs (and apparently also Elizabeth Holmes) are known 
 I eat essentially the same breakfast and lunch every day and have a couple of dinner variation options. 
 
 ## Main Principles
-1. [Eat nearly the same thing every day](#1-eat-nearly-the-same-thing-every-day)<br>
-2. [Avoid manual labor and guesswork as much as possible](#2-avoid-manual-labor-and-guesswork-as-much-as-possible)<br>
-3. [Cook in bulk](#3-cook-in-bulk)<br>
-4. [Get food delivered](#4-get-food-delivered)<br>
-5. [A day in the life](#5-a-day-in-the-life)<br>
+[1. Eat nearly the same thing every day](#1-eat-nearly-the-same-thing-every-day)<br>
+[2. Avoid manual labor and guesswork as much as possible](#2-avoid-manual-labor-and-guesswork-as-much-as-possible)<br>
+[3. Cook in bulk](#3-cook-in-bulk)<br>
+[4. Get food delivered](#4-get-food-delivered)<br>
+[5. A day in the life](#5-a-day-in-the-life)<br>
 
-I'm going to propose a few instruments that make things very easy. 
+## 1. Eat Nearly the Same Thing Every Day
+
+## 2. Avoid Manual Labor and Guesswork as Much as Possible
+
+## 3. Cook in bulk
+
+## 4. Get Food Delivered
+
+## 5. A Day in the Life
 
 **Hard boiled eggs:** With a hard boiled egg cooker, you put eggs into little slots, fill up a measuring cup up to the right level, and flip the switch. No waiting for water to boil or forgetting how much time the eggs need to cook for (I used to constantly forget about them) since the machine buzzes very loudly when it's finished. I cook 12 at a time every few days in the mornings. 
 <img src="https://images-na.ssl-images-amazon.com/images/I/61037gzXCTL._SL1500_.jpg" alt="Hard boiled egg cooker" width="300"/>
