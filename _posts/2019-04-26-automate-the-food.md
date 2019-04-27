@@ -28,9 +28,17 @@ I generally have enjoyed going to supermarkets. It's the first thing I like to d
 
 ## 6. A Day in the Life
 ### Breakfast
-
+- 3 scrambled eggs: Cooked in olive oil with raw sunflower seeds added after plating. The biggest efficiency improvement I've made here is not pre-stirring the eggs. Just crack them into the pan and stir! 
+- 4 oz chicken breast: Cooked on an indoor grill with nothing added
+- Israeli salad: Chopped up tomatoes/cucumbers/peppers and potentially onions. Important to use yellow or orange peppers so they don't get confused for tomatoes (red) or taste terrible (green). Top with olive oil. 
 
 ### Lunch
+- 3 hard boiled eggs: Cooked in bulk and eaten cold. I enjoy pre-eating the whites and sprinkling the yolks into the salad [Salt Bae](https://en.wikipedia.org/wiki/Salt_Bae) style.
+- 4 oz chicken breast: If taking lunch to go, cook this with the morning breast
+- 1/2 salad bag: Ready to eat salad bags, topped with 
+- Vegetables: If at home, I always steam frozen vegetables (usually broccoli, sometimes a mix). This can be done during the breakfast cooking if taking lunch to go, but tends to not taste great cold. Israeli salad is a good alternative. 
+- I find it very efficient to eat this with hands, but that should definitely not be done in public and probably not even admitted in a public blog. 
+
 
 ### Dinner
 
@@ -51,10 +59,12 @@ I generally have enjoyed going to supermarkets. It's the first thing I like to d
 <img src="https://images-na.ssl-images-amazon.com/images/I/71-YsC0P46L._SL1500_.jpg" alt="Vegetable chopper" width="300"/>
 
 whole foods delivery
+frozen vegetables
 
 
 Let randomness dictate
 dishwashable
+nonstick and brand
 
 strong tupperware
 olive oil at office
