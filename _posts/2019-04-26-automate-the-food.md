@@ -7,18 +7,34 @@ I eat essentially the same breakfast and lunch every day and have a couple of di
 [1. Eat nearly the same thing every day](#1-eat-nearly-the-same-thing-every-day)<br>
 [2. Avoid manual labor and guesswork as much as possible](#2-avoid-manual-labor-and-guesswork-as-much-as-possible)<br>
 [3. Cook in bulk](#3-cook-in-bulk)<br>
-[4. Get food delivered](#4-get-food-delivered)<br>
-[5. A day in the life](#5-a-day-in-the-life)<br>
+[4. Eat healthy stuff](#4-eat-healthy-stuff)<br>
+[5. Get food delivered](#5-get-food-delivered)<br>
+[6. A day in the life](#6-a-day-in-the-life)<br>
 
 ## 1. Eat Nearly the Same Thing Every Day
+Eating the same thing for the main meals is surprisingly not very boring and is highly recommended. Maybe do some small variations with snacks and certain meal elements, but keep the same structure every day! 
 
 ## 2. Avoid Manual Labor and Guesswork as Much as Possible
+Before I discovered the hard boiled egg machine, I never knew what I was doing. I'd forget about the eggs more often than not and even when I remembered and timed them fairly well, I frequently had peeling issues. Here is a list of my favorite tools: 
 
-## 3. Cook in bulk
+## 3. Cook in Bulk
+I only do this for foods that I don't mind eating cold, which are currently Israeli salad and hard boiled eggs. The time to cook a chicken breast on an indoor grill is so low and the value from eating it hot off the grill is so high, that I don't think it's worth bulk cooking and reheating an item like this. 
 
-## 4. Get Food Delivered
+## 4. Eat Healthy Stuff
+I find it very easy to have willpower in supermarkets and very difficult to have willpower when unhealthy foods are available for eating in my surroundings. I find it nice to keep the base state under control so that when less healthy situations arise (restaurants, parties, random occurrences of low-percentage chocolate in the vicinity), they can be enjoyed without concern. I've also found that I feel better when eating healthier. (I think of healthy as mostly Paleo, i.e. mostly proteins/nuts/seeds/vegetables/olive oil, with some fruit and 85%+ chocolate, and avoiding processed foods. Feel free to define as you wish.)
 
-## 5. A Day in the Life
+## 5. Get Food Delivered
+I generally have enjoyed going to supermarkets. It's the first thing I like to do when visiting a new place and the feeling of wide aisles and picking your own produce and wandering around finding new things can be fun. If I had easy access to a quality/good value supermarket, I'd probably prefer to go there 1-2 times/week. Recently I've been primarily using Amazon's PrimeNow for Whole Foods deliveries, which has been a pretty mediocre experience overall, but is ridiculously easy and when issues come up, their support has been very quick and generous. 
+
+## 6. A Day in the Life
+### Breakfast
+
+
+### Lunch
+
+### Dinner
+
+### Snacks
 
 **Hard boiled eggs:** With a hard boiled egg cooker, you put eggs into little slots, fill up a measuring cup up to the right level, and flip the switch. No waiting for water to boil or forgetting how much time the eggs need to cook for (I used to constantly forget about them) since the machine buzzes very loudly when it's finished. I cook 12 at a time every few days in the mornings. 
 <img src="https://images-na.ssl-images-amazon.com/images/I/61037gzXCTL._SL1500_.jpg" alt="Hard boiled egg cooker" width="300"/>
@@ -53,7 +69,6 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 # 
 
 ## Food Sources
-I generally have enjoyed going to supermarkets. It's the first thing I like to do when visiting a new place and the feeling of wide aisles and picking your own produce and wandering around finding new things can be fun. I also find it pretty easy to exhibit willpower of not buying junk food in the supermarket. 
 
 Salmon: 
 Kosher pastured chicken breasts: 
