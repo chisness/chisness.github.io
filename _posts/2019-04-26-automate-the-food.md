@@ -44,7 +44,7 @@ Before I discovered the hard boiled egg machine, I never knew what I was doing. 
 
 **Strong tupperware:**
 
-**Let randomness dictate:** I like automating reminders, but don't have any system for knowing when to get more food
+**What about restaurants?** Let randomness dictate
 
 
 ## 3. Cook in Bulk
