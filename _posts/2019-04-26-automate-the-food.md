@@ -4,10 +4,11 @@ Mark Zuckerberg and Steve Jobs (and apparently also Elizabeth Holmes) are known 
 I eat essentially the same breakfast and lunch every day and have a couple of dinner variation options. 
 
 ## Main Principles
-1. Eat nearly the same thing every day
-2. Avoid manual labor and guesswork as much as possible
-3. Cook in bulk
-4. Get food delivered
+1. [Eat nearly the same thing every day](#1-eat-nearly-the-same-thing-every-day)<br>
+2. [Avoid manual labor and guesswork as much as possible](#2-avoid-manual-labor-and-guesswork-as-much-as-possible)<br>
+3. [Cook in bulk](#3-cook-in-bulk)<br>
+4. [Get food delivered](#4-get-food-delivered)<br>
+5. [A day in the life](#5-a-day-in-the-life)<br>
 
 I'm going to propose a few instruments that make things very easy. 
 
