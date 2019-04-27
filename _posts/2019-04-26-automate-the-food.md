@@ -17,14 +17,17 @@ Eating the same thing for the main meals is surprisingly not very boring and is 
 ## 2. Avoid Manual Labor and Guesswork as Much as Possible
 Before I discovered the hard boiled egg machine, I never knew what I was doing. I'd forget about the eggs more often than not and even when I remembered and timed them fairly well, I frequently had peeling issues. Here is a list of my favorite tools and streamlining ideas: 
 
-**Hard boiled egg cooker:** With a hard boiled egg cooker, you put eggs into little slots, fill up a measuring cup up to the right level, and flip the switch. No waiting for water to boil or forgetting how much time the eggs need to cook for (I used to constantly forget about them) since the machine buzzes very loudly when it's finished. I cook 12 at a time every few days in the mornings. These go in the same hard boiled egg cooker, which doubles as a vegetable steamer. It can fit about 8-12 oz of most types of vegetables and takes 10ish minutes to steam. Again, just adding a bit of water, loading in the vegetables, and turning it on, and 
+**Hard boiled egg cooker:** With a hard boiled egg cooker, you put eggs into little slots, fill up a measuring cup to the right level, and flip the switch. No waiting for water to boil or forgetting how much time the eggs need to cook for since the machine buzzes very loudly when it's finished. I cook 12 at a time every few days in the mornings. Vegetables can be steamed in the same device! It can fit about 8-12 oz of most types of vegetables and takes 10ish minutes to steam. Again, just adding a bit of water, loading in the vegetables, and turning it on.<br>
 <img src="https://images-na.ssl-images-amazon.com/images/I/61037gzXCTL._SL1500_.jpg" alt="Hard boiled egg cooker" width="300"/>
 
 **Indoor grill:** 
 
+**The oven:** 
+
 **Scrambled eggs:**
 
-**One oil:** I use one extra virgin olive oil for everything from cooking eggs to salmon to putting on salads. California and image
+**One oil:** I use one extra virgin olive oil for everything from cooking eggs to salmon to putting on salads. Lately I've been very into ones with olive from California. Trader Joe's and Whole Foods have their own brands with California olives that are both rated very well by Consumer Reports (though the review is from 2012). There's also been a lot of [shadiness with olive oil](https://www.forbes.com/sites/ceciliarodriguez/2016/02/10/the-olive-oil-scam-if-80-is-fake-why-do-you-keep-buying-it/#56896ffe639d) from Europe.
+<img src="https://ucf24843579f0d7e5f981a43ac06.dl.dropboxusercontent.com/cd/0/inline/AfyFYPnR8im0uuupLqXC7hG9KSLzIoLfR5ve8FoSXLkI5ljGBFofGJWE5SfVRPrC2K4x3XfemxrvIGje69c9shkPDVuET0zjHJlBtD4wyTaKbTx56DdRixVqC_SIPsZAgdo/file#" alt="Consumer Reports 2012" width="400"/>
 
 **Israeli salad:** Figure out your tomato/cucumber/pepper ratio and get this [pro vegetable chopper](https://www.amazon.com/Chopper-Vegetable-Mueller-Vegetable-Fruit-Cheese-Onion-Chopper-Dicer-Kitchen/dp/B01HC7BNJA)
 <img src="https://images-na.ssl-images-amazon.com/images/I/71-YsC0P46L._SL1500_.jpg" alt="Vegetable chopper" width="300"/>
