@@ -24,17 +24,17 @@ Before I discovered the hard boiled egg machine, I never knew what I was doing. 
 
 **The oven:** 
 
-**Scrambled eggs:** I used to 
+**Scrambled eggs:** My biggest efficiency improvement here has been not pre-stirring the eggs in a separate glass or container. Just drop them into the oil in the pan and stir with the spatula! Then keep stirring on a low-medium temperature. 
 
 **One oil:** I use one extra virgin olive oil for everything from cooking eggs to salmon to putting on salads. Lately I've been very into ones with olive from California. Trader Joe's and Whole Foods have their own brands with California olives that are both rated very well by Consumer Reports (though the review is from 2012). There's also been a lot of [shadiness with olive oil](https://www.forbes.com/sites/ceciliarodriguez/2016/02/10/the-olive-oil-scam-if-80-is-fake-why-do-you-keep-buying-it/#56896ffe639d) from Europe.<br>
 <img src="https://ucf24843579f0d7e5f981a43ac06.dl.dropboxusercontent.com/cd/0/inline/AfyFYPnR8im0uuupLqXC7hG9KSLzIoLfR5ve8FoSXLkI5ljGBFofGJWE5SfVRPrC2K4x3XfemxrvIGje69c9shkPDVuET0zjHJlBtD4wyTaKbTx56DdRixVqC_SIPsZAgdo/file#" alt="Consumer Reports 2012" width="400"/>
 
-**Vegetable chopper:** Figure out your tomato/cucumber/pepper ratio and get this [pro vegetable chopper](https://www.amazon.com/Chopper-Vegetable-Mueller-Vegetable-Fruit-Cheese-Onion-Chopper-Dicer-Kitchen/dp/B01HC7BNJA)
+**Vegetable chopper:** Figure out your tomato/cucumber/pepper ratio and get this [pro vegetable chopper](https://www.amazon.com/Chopper-Vegetable-Mueller-Vegetable-Fruit-Cheese-Onion-Chopper-Dicer-Kitchen/dp/B01HC7BNJA). Vegetables still have to be cut into smaller slices, but this does the hard work to get them into salad-appropriate sized pieces. <br>
 <img src="https://images-na.ssl-images-amazon.com/images/I/71-YsC0P46L._SL1500_.jpg" alt="Vegetable chopper" width="300"/>
 
 **Kosher:** Meat or dairy, pick one. Literally all of the complication from having a kosher home comes from separating meat and dairy. If you go the meat route and you insist on dairy, uncooked things like candy or chocolate bars are still pretty easy to keep around since they don't use dishes or cooking instruments. 
 
-**A good nonstick pan:** brand of mine, dishwashable
+**A good nonstick pan:** I get sad every time I see a sticky pan. The pain is not worth it! I recently got the [Great Jones Small Fry](https://greatjonesgoods.com/products/small-fry), which has been amazing. It's nonstick, dishwashable (although seems a bit stickier for the first couple uses after dishwashing), has sides that go up higher than normal (reducing the chance of splashing over), and it's rivetless (the interior is completely smooth), which eliminates trying to clean around those spots. Wirecutter has some good value alternatives [here](https://thewirecutter.com/reviews/best-nonstick-pan/) too. 
 
 **Keep bulk stocks:**
 
@@ -62,7 +62,7 @@ Chicken/steak:
 
 ## 6. A Day in the Life
 ### Breakfast
-- 3 scrambled eggs: Cooked in olive oil with raw sunflower seeds added after plating. The biggest efficiency improvement I've made here is not pre-stirring the eggs. Just crack them into the pan and stir! 
+- 3 scrambled eggs: Cooked in olive oil with raw sunflower seeds added after plating. I am strongly against getting brown in the eggs (like every hotel omelette station ever
 - 4 oz chicken breast: Cooked on an indoor grill with nothing added
 - Israeli salad: Chopped up tomatoes/cucumbers/peppers and potentially onions. Important to use yellow or orange peppers so they don't get confused for tomatoes (red) or taste terrible (green). Top with olive oil. 
 - Total cooking/prep time is under 5 minutes
