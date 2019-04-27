@@ -17,6 +17,27 @@ Eating the same thing for the main meals is surprisingly not very boring and is 
 ## 2. Avoid Manual Labor and Guesswork as Much as Possible
 Before I discovered the hard boiled egg machine, I never knew what I was doing. I'd forget about the eggs more often than not and even when I remembered and timed them fairly well, I frequently had peeling issues. Here is a list of my favorite tools: 
 
+**Hard boiled eggs:** With a hard boiled egg cooker, you put eggs into little slots, fill up a measuring cup up to the right level, and flip the switch. No waiting for water to boil or forgetting how much time the eggs need to cook for (I used to constantly forget about them) since the machine buzzes very loudly when it's finished. I cook 12 at a time every few days in the mornings. 
+<img src="https://images-na.ssl-images-amazon.com/images/I/61037gzXCTL._SL1500_.jpg" alt="Hard boiled egg cooker" width="300"/>
+
+**Steamed vegetables:** These go in the same hard boiled egg cooker, which doubles as a vegetable steamer. It can fit about 8-12 oz of most types of vegetables and takes 10ish minutes to steam. Again, just adding a bit of water, loading in the vegetables, and turning it on, and 
+
+**Chicken breasts:** 
+
+**Scrambled eggs:**
+
+**One oil:**
+
+**Israeli salad:** Figure out your tomato/cucumber/pepper ratio and get this [pro vegetable chopper](https://www.amazon.com/Chopper-Vegetable-Mueller-Vegetable-Fruit-Cheese-Onion-Chopper-Dicer-Kitchen/dp/B01HC7BNJA)
+<img src="https://images-na.ssl-images-amazon.com/images/I/71-YsC0P46L._SL1500_.jpg" alt="Vegetable chopper" width="300"/>
+
+frozen vegetables
+Let randomness dictate
+dishwashable
+nonstick and brand
+strong tupperware
+California olive oil
+
 ## 3. Cook in Bulk
 I only do this for foods that I don't mind eating cold, which are currently Israeli salad and hard boiled eggs. The time to cook a chicken breast on an indoor grill is so low and the value from eating it hot off the grill is so high, that I don't think it's worth bulk cooking and reheating an item like this. 
 
@@ -60,24 +81,3 @@ Chicken/steak:
 - Good fruit (berries): 
 - Less good fruit (apples, bananas, grapes): 
 - Avocado: Great fat source! I can't deal with the erratic quality differences and ripeness issues
-
-**Hard boiled eggs:** With a hard boiled egg cooker, you put eggs into little slots, fill up a measuring cup up to the right level, and flip the switch. No waiting for water to boil or forgetting how much time the eggs need to cook for (I used to constantly forget about them) since the machine buzzes very loudly when it's finished. I cook 12 at a time every few days in the mornings. 
-<img src="https://images-na.ssl-images-amazon.com/images/I/61037gzXCTL._SL1500_.jpg" alt="Hard boiled egg cooker" width="300"/>
-
-**Steamed vegetables:** These go in the same hard boiled egg cooker, which doubles as a vegetable steamer. It can fit about 8-12 oz of most types of vegetables and takes 10ish minutes to steam. Again, just adding a bit of water, loading in the vegetables, and turning it on, and 
-
-**Chicken breasts:** 
-
-**Scrambled eggs:**
-
-**One oil:**
-
-**Israeli salad:** Figure out your tomato/cucumber/pepper ratio and get this [pro vegetable chopper](https://www.amazon.com/Chopper-Vegetable-Mueller-Vegetable-Fruit-Cheese-Onion-Chopper-Dicer-Kitchen/dp/B01HC7BNJA)
-<img src="https://images-na.ssl-images-amazon.com/images/I/71-YsC0P46L._SL1500_.jpg" alt="Vegetable chopper" width="300"/>
-
-frozen vegetables
-Let randomness dictate
-dishwashable
-nonstick and brand
-strong tupperware
-California olive oil
