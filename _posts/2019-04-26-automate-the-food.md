@@ -26,7 +26,7 @@ Before I discovered the hard boiled egg machine, I never knew what I was doing. 
 
 **Scrambled eggs:**
 
-**One oil:** I use one extra virgin olive oil for everything from cooking eggs to salmon to putting on salads. Lately I've been very into ones with olive from California. Trader Joe's and Whole Foods have their own brands with California olives that are both rated very well by Consumer Reports (though the review is from 2012). There's also been a lot of [shadiness with olive oil](https://www.forbes.com/sites/ceciliarodriguez/2016/02/10/the-olive-oil-scam-if-80-is-fake-why-do-you-keep-buying-it/#56896ffe639d) from Europe.
+**One oil:** I use one extra virgin olive oil for everything from cooking eggs to salmon to putting on salads. Lately I've been very into ones with olive from California. Trader Joe's and Whole Foods have their own brands with California olives that are both rated very well by Consumer Reports (though the review is from 2012). There's also been a lot of [shadiness with olive oil](https://www.forbes.com/sites/ceciliarodriguez/2016/02/10/the-olive-oil-scam-if-80-is-fake-why-do-you-keep-buying-it/#56896ffe639d) from Europe.<br>
 <img src="https://ucf24843579f0d7e5f981a43ac06.dl.dropboxusercontent.com/cd/0/inline/AfyFYPnR8im0uuupLqXC7hG9KSLzIoLfR5ve8FoSXLkI5ljGBFofGJWE5SfVRPrC2K4x3XfemxrvIGje69c9shkPDVuET0zjHJlBtD4wyTaKbTx56DdRixVqC_SIPsZAgdo/file#" alt="Consumer Reports 2012" width="400"/>
 
 **Israeli salad:** Figure out your tomato/cucumber/pepper ratio and get this [pro vegetable chopper](https://www.amazon.com/Chopper-Vegetable-Mueller-Vegetable-Fruit-Cheese-Onion-Chopper-Dicer-Kitchen/dp/B01HC7BNJA)
