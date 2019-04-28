@@ -15,7 +15,7 @@ This tutorial is made with two target audiences in mind: (1) Those with an inter
 [11. Libratus and DeepStack -- Newest Poker Agents and Research](#11-libratus-and-deepstack----newest-poker-agents-and-research)<br>
 [12. AI vs. Humans](#12-ai-vs-humans)<br>
 [13. Multiplayer Games](#13-multiplayer-games)<br>
-[14. Other Games (Chess, Atari, Go, Starcraft, Hanabi)](#14-other-games--chess--atari--go--starcraft--hanabi-)<br>
+[14. Other Games (Chess, Atari, Go, Starcraft, Dota, Hanabi)](#14-other-games--chess--atari--go--starcraft--hanabi-)<br>
 [15. What Can Humans Learn?](#15-what-can-humans-learn-)
 
 ## 1. Background on Poker Rules and Definitions
