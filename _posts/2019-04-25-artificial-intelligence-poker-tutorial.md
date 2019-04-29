@@ -37,10 +37,10 @@ Each game goes through a series of betting rounds that result in either one play
 
 Betting options available throughout each round are: fold, check, call, bet, and raise. Bets and raises generally represent strong hands. A bluff is a bet or raise with a weak hand and a semi-bluff is a bet or raise made with a currently non-strong hand that has good potential to improve. 
 
-**Fold:** Not putting in any chips and "quitting" the hand by throwing the cards away and declining to match the opponent's bet or raise. Done only after an opponent bet or raise. 
-**Check:** A pass, only possible if acting first or if all previous players have also checked
-**Call:** Matching the exact amount of a previous bet or raise
-**Bet:** Wagering money (putting chips into the pot) when either first to act or the opponent has checked, which the opponent then has to call or raise to stay in the pot
+**Fold:** Not putting in any chips and "quitting" the hand by throwing the cards away and declining to match the opponent's bet or raise. Done only after an opponent bet or raise. <br>
+**Check:** A pass, only possible if acting first or if all previous players have also checked<br>
+**Call:** Matching the exact amount of a previous bet or raise<br>
+**Bet:** Wagering money (putting chips into the pot) when either first to act or the opponent has checked, which the opponent then has to call or raise to stay in the pot<br>
 **Raise:** Only possible after a bet, adding more money to the pot, which must be at least the amount of the previous bet or raise (effectively calling and betting together)
 
 ### Kuhn (1-card) Poker
@@ -56,10 +56,10 @@ If the first to act player checks, then the second player can either check or be
 ### Leduc Poker
 Leduc Poker is a simple toy game that has more in common strategically with regular Texas Hold'em. 
 
-**Deck size:** 6 cards -- 2 Jacks, 2 Queens, 2 Kings
-**Rounds:** 2 rounds -- 1 private card preflop, 1 community flop card
-**Blinds/Antes:** $1 ante
-**Betting structure:** All bets $2 in the first round and $4 in the second round with a limit of one bet and one raise per round
+**Deck size:** 6 cards -- 2 Jacks, 2 Queens, 2 Kings<br>
+**Rounds:** 2 rounds -- 1 private card preflop, 1 community flop card<br>
+**Blinds/Antes:** $1 ante<br>
+**Betting structure:** All bets $2 in the first round and $4 in the second round with a limit of one bet and one raise per round<br>
 **Starting 
 
 Each betting round follows the same format. The first player to act has the option to check or bet. When betting the player adds chips into the pot and action moves to the other player. When a player faces a bet, they have the option to fold, call or raise. When folding, a player forfeits the hand and all the money in the pot is awarded to the opposing player. When calling, a player places enough chips into the pot to match the bet faced and the betting round is concluded. When raising, the player must put more chips into the pot than the current bet faced and action moves to the opposing player. If the first player checks initially, the second player may check to conclude the betting round or bet. In Leduc Hold’em there is a limit of one bet and one raise per round. The bets and raises are of a fixed size. This size is two chips in the first betting round and four chips in the second.
