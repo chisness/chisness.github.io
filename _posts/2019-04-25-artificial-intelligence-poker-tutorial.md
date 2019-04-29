@@ -26,17 +26,22 @@ Poker began at some point in the early 20th century and grew extensively in the 
 ![Chris Moneymaker](https://ucc232ea2ec2f6be5ad4b4d1dbba.dl.dropboxusercontent.com/cd/0/inline/Af-qxPp1gh9fJytr2VJoX0W_fXDx4JQfZAnJ2HqhK8x3F8PBOYcEnSj4-TjDCv6U3U7D6Ihp6juBFWPJcIu-rRWMnu2sT28RyPY4u4EBpnG1RKUtZiWKLz0DVT6TFs7-l9c/file#)
 https://www.pokerstarsschool.com/article/Moneymaker-2003-WSOP-ME-Strategy
 
-After the human poker boom, computers also started getting in on the poker action. Researchers began to study solving Texas Hold’em games since 2003, and since 2006, there has been an Annual Computer Poker Competition (ACPC) at the AAAI Conference on Artificial Intelligence in which poker agents compete against each other in a variety of poker formats. Almost all competitions and research in the realm of poker is done on the most popular game, Texas Hold’em, which can be played with set bet sizing, “limit”, or as a “no limit” game where, as implied, one can bet any amount up to what one has in front of him on the table. In early 2017, for the first time, a NLHE poker agent defeated and is considered superior to top poker players in the world.
+After the human poker boom, computers also started getting in on the poker action. Researchers began to study solving Texas Hold’em games since 2003, and since 2006, there has been an Annual Computer Poker Competition (ACPC) at the AAAI Conference on Artificial Intelligence in which poker agents compete against each other in a variety of poker formats. In early 2017, for the first time, a NLHE poker agent defeated and is considered superior to top poker players in the world in 1v1 games.
 
 ### Basic Rules
 Poker is a card game that, in its standard forms, uses a deck of 52 cards composed of four suits (Clubs :clubs:, Diamonds :diamonds:, Hearts :heart:, and Spades :spades:) and 13 ranks (Two through Ten, Jack, Queen, King, and Ace). A dealer button rotates around the table indicating who is the “dealer”. This is decided at random for the first hand and rotates clockwise after that. All actions begin to the left of the hand’s current dealer player.
 
-We will focus on two player games and ignore any fees (also known as rake) such that the games will be zero-sum. Further, to simplify the games, we will reset each player’s starting chips to the same amount before every hand. The two players play a match of independent games, also called hands, while alternating who is the dealer.
-Each hand starts with the dealer player posting the small blind and the non-dealer player posting the big blind. The blinds define the stakes of the game (for example, a $1-$2 stakes game has blinds of $1 and $2) and the big blind is generally double the small blind. They are called blinds because they are forced bets that must be posted “blindly”. The player to the left of the big blind, in this case the dealer player, begins the first betting round by folding, calling, or raising. (In some games antes are used instead of or in addition to blinds, which involves each player posting the same ante amount in the pot before the hand.)
-Each game goes through a series of betting rounds that result in either one player folding and the other winning the pot by default or both players going to “showdown” after the final round, in which both show their hands and the best hand wins the pot. The pot accumulates all bets throughout the hand. The goal is to win as many chips from the other player as possible.
-Betting options available throughout each round are: fold, check, call, bet, and raise.
-Fold means not putting in any chips and “quitting” the hand by throwing the cards away and declining to match the opponent’s bet. Check or call means that a player contributes the minimum necessary to stay in the hand based on previous action. If no previous bet was made, this is called a check, which means putting in no further chips, but still staying in the hand (this is also referred to as a pass). If previous bets were made, then one puts in the exact amount of the bet, a call.
-Betting or raising is when players put in more chips than needed to stay in the hand and generally represents a strong hand, although the actual hand could be strong or weak, in which case the player would be bluffing. In the case of betting, 0 chips were required to continue, but the player decides to wager chips. Raising is when an opponent player bet and a call was possible, but instead additional chips are added (effectively calling and betting together).
+We will focus on two player games and ignore any fees (also known as rake) such that the games will be zero-sum (all money won by one player is lost by the other). The two players play a match of independent games, also called hands, while alternating who is the dealer.
+
+Each game goes through a series of betting rounds that result in either one player folding and the other winning the pot by default or both players going to “showdown”, in which the best hand wins the pot. The pot accumulates all bets throughout the hand. The goal is to win as many chips from the other player as possible.
+
+Betting options available throughout each round are: fold, check, call, bet, and raise. Bets and raises generally represent strong hands. A bluff is a bet or raise with a weak hand and a semi-bluff is a bet or raise made with a currently non-strong hand that has good potential to improve. 
+
+**Fold:** Not putting in any chips and "quitting" the hand by throwing the cards away and declining to match the opponent's bet or raise. Done only after an opponent bet or raise. 
+**Check:** A pass, only possible if acting first or if all previous players have also checked
+**Call:** Matching the exact amount of a previous bet or raise
+**Bet:** Wagering money (putting chips into the pot) when either first to act or the opponent has checked, which the opponent then has to call or raise to stay in the pot
+**Raise:** Only possible after a bet, adding more money to the pot, which must be at least the amount of the previous bet or raise (effectively calling and betting together)
 
 ### Kuhn (1-card) Poker
 Kuhn Poker is the most basic useful poker game that is used in computer poker research. It was solved analytically by hand by Kuhn in 1950 [6]. Each player is dealt one card privately and begins with two chips. In the standard form, the deck consists of only three cards – an Ace, a King, and a Queen, but can be modified to contain any number such that the cards are simply labeled 1 through n, with a deck of size n. Our first experiment will use a deck size of 100 to compare different CFR algorithm implementations.
@@ -44,6 +49,9 @@ Kuhn Poker is the most basic useful poker game that is used in computer poker re
 Players each ante 1 chip (although most standard poker games use blinds, this basic game does not) and rotate acting first, and the highest card is the best hand. With only 1 chip remaining for each player, the betting is quite simple. The first to act has the option to bet or check. If he bets, the opponent can either call or fold. If the opponent folds, the bettor wins one chip. If the opponent calls, the player with the higher card (best hand) wins two chips.
 
 If the first to act player checks, then the second player can either check or bet. If he checks, the player with the best hand wins one chip. If he bets, then the first player can either fold and player two will win one chip, or he can call, and the player with the best hand will win two chips.
+
+#### All Kuhn Poker Sequences
+
 
 ### Leduc Poker
 Leduc Poker is a simple toy game that has more in common strategically with regular Texas Hold'em. 
@@ -56,12 +64,18 @@ Leduc Poker is a simple toy game that has more in common strategically with regu
 
 Each betting round follows the same format. The first player to act has the option to check or bet. When betting the player adds chips into the pot and action moves to the other player. When a player faces a bet, they have the option to fold, call or raise. When folding, a player forfeits the hand and all the money in the pot is awarded to the opposing player. When calling, a player places enough chips into the pot to match the bet faced and the betting round is concluded. When raising, the player must put more chips into the pot than the current bet faced and action moves to the opposing player. If the first player checks initially, the second player may check to conclude the betting round or bet. In Leduc Hold’em there is a limit of one bet and one raise per round. The bets and raises are of a fixed size. This size is two chips in the first betting round and four chips in the second.
 
+#### Example Leduc Poker Hand
+
 ### Texas Hold'em Poker
+Each hand starts with the dealer player posting the small blind and the non-dealer player posting the big blind. The blinds define the stakes of the game (for example, a $1-$2 stakes game has blinds of $1 and $2) and the big blind is generally double the small blind. They are called blinds because they are forced bets that must be posted “blindly”. The player to the left of the big blind, in this case the dealer player, begins the first betting round by folding, calling, or raising. (In some games antes are used instead of or in addition to blinds, which involves each player posting the same ante amount in the pot before the hand.)
+
 Each hand in Texas Hold’em consists of four betting rounds. Betting rounds start with each player receiving two private cards, called the “preflop” betting round, then can continue with the “flop” of three community cards followed by a betting round, the “turn” of one community card followed by a betting round, and a final betting round after the fifth and final community card, called the “river”. Community cards are shared and are dealt face up.
 
 In no limit betting, the minimum bet size is the smaller of the big blind or a bet faced by the player and the maximum bet size is the amount of chips in front of the player. In the case of a two-player game, the dealer button pays the small blind and acts first preflop and then last postflop.
 In limit betting, bets are fixed in advance based on the stakes of the game and the blinds. For example, with 2-4 blinds, the bets preflop and on the flop are 4 and on the turn and river, they are doubled to 8. In limit betting, there is a maximum of four bets and raises per betting round per player, which, in addition to the limited available set of actions, makes limit-based games significantly smaller than their no-limit counterparts.
 On each round, players combine their private cards with the community cards to form the best possible 5-card poker hand, which could include 0, 1, or 2 private cards.
+
+#### Example Texas Hold'em Poker Hand
 
 
 ### Summary of Games
