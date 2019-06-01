@@ -9,14 +9,14 @@ This tutorial is made with two target audiences in mind: (1) Those with an inter
 [5. Trees in Games](#5-trees-in-games)<br>
 [6. Implementing Leduc Hold'em in Python](#6-implementing-leduc-hold-em-in-python)<br>
 [7. Counterfactual Regret Minimization](#7-counterfactual-regret-minimization)<br>
-[8. Game Abstractions](#8-game-abstractions)<br>
-[9. Agent Evaluation](#9-agent-evaluation)<br>
-[10. CFR Advances](#10-cfr-advances)<br>
-[11. Libratus and DeepStack -- Newest Poker Agents and Research](#11-libratus-and-deepstack----newest-poker-agents-and-research)<br>
-[12. AI vs. Humans](#12-ai-vs-humans)<br>
-[13. Multiplayer Games](#13-multiplayer-games)<br>
-[14. Other Games (Chess, Atari, Go, Starcraft, Dota, Hanabi)](#14-other-games--chess--atari--go--starcraft--hanabi-)<br>
-[15. What Can Humans Learn?](#15-what-can-humans-learn-)
+[8. Implementing CFR in Python](#7-implementing-cfr-in-python)<br>
+[9. Game Abstractions](#8-game-abstractions)<br>
+[10. Agent Evaluation](#9-agent-evaluation)<br>
+[11. CFR Advances](#10-cfr-advances)<br>
+[12. Libratus and DeepStack -- Newest Poker Agents and Research](#11-libratus-and-deepstack----newest-poker-agents-and-research)<br>
+[13. AI vs. Humans -- What Can Humans Learn?](#12-ai-vs-humans----what-can-humans-learn)<br>
+[14. Multiplayer Games](#13-multiplayer-games)<br>
+[15. Other Games (Chess, Atari, Go, Starcraft, Dota, Hanabi)](#14-other-games--chess--atari--go--starcraft--hanabi-)<br>
 
 ## 1. Poker Background
 
@@ -92,22 +92,22 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
 ## 5. Trees in Games
 
-## 6. Implementing Leduc Hold'em in Python
+## 6. Implementing Toy Poker in Python
 
-## 7. Counterfactual Regret Minimization
+## 7. Counterfactual Regret Minimization (CFR)
 
-## 8. Game Abstractions
+## 8. Implementing CFR in Python
 
-## 9. Agent Evaluation
+## 9. Game Abstractions
 
-## 10. CFR Advances
+## 10. Agent Evaluation
 
-## 11. Libratus and DeepStack -- State of the Art Poker Agents and Research
+## 11. CFR Advances
 
-## 12. AI vs. Humans
+## 12. Libratus and DeepStack -- State of the Art Poker Agents and Research
 
-## 13. Multiplayer Games
+## 13. AI vs. Humans -- What Can Humans Learn?
 
-## 14. Other Games (Chess, Atari, Go, Starcraft, Hanabi)
+## 14. Multiplayer Games
 
-## 15. What Can Humans Learn?
+## 15. Other Games (Chess, Atari, Go, Starcraft, Hanabi)
