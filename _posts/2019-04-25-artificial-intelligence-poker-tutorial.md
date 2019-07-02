@@ -2,21 +2,21 @@
 This tutorial is made with two target audiences in mind: (1) Those with an interest in poker who want to understand how AI poker agents are made and (2) Those with an interest in coding who want to better understand poker and code poker agents from scratch. 
 
 ## Table of Contents
-[1. Poker Background](#1-background-on-poker-rules-and-definitions)<br>
-[2. History of Solving Poker](#2-history-of-solving-poker)<br>
-[3. Game Theory -- Equilibrium and Regret](#3-game-theory----equilibrium-and-regret)<br>
-[4. Solving Toy Poker Games from Normal Form to Extensive Form](#4-solving-toy-poker-games-from-normal-form-to-extensive-form)<br>
-[5. Trees in Games](#5-trees-in-games)<br>
-[6. Toy Games and Python Implementation](#6-toy-games-and-python-implementation)<br>
-[7. Counterfactual Regret Minimization (CFR)](#7-counterfactual-regret-minimization)<br>
-[8. Game Abstraction](#8-game-abstraction)<br>
-[9. Agent Evaluation](#9-agent-evaluation)<br>
-[10. CFR Advances](#10-cfr-advances)<br>
-[11. Deep Learning and Poker](#11-deep-learning-and-poker)<br>
-[12. AI vs. Humans -- What Can Humans Learn?](#12-ai-vs-humans----what-can-humans-learn)<br>
-[13. Multiplayer Games](#13-multiplayer-games)<br>
-[14. Opponent Exploitation](#14-opponent-exploitation)<br>
-[15. Other Games (Chess, Atari, Go, Starcraft, Dota, Hanabi)](#15-other-games--chess--atari--go--starcraft--hanabi-)<br>
+[1. Poker Background](1-poker-background)<br>
+[2. History of Solving Poker](2-history-of-solving-poker)<br>
+[3. Game Theory -- Equilibrium and Regret](3-game-theory----equilibrium-and-regret)<br>
+[4. Solving Toy Poker Games from Normal Form to Extensive Form](4-solving-toy-poker-games-from-normal-form-to-extensive-form)<br>
+[5. Trees in Games](5-trees-in-games)<br>
+[6. Toy Games and Python Implementation](6-toy-games-and-python-implementation)<br>
+[7. Counterfactual Regret Minimization (CFR)](7-counterfactual-regret-minimization)<br>
+[8. Game Abstraction](8-game-abstraction)<br>
+[9. Agent Evaluation](9-agent-evaluation)<br>
+[10. CFR Advances](10-cfr-advances)<br>
+[11. Deep Learning and Poker](11-deep-learning-and-poker)<br>
+[12. AI vs. Humans -- What Can Humans Learn?](12-ai-vs-humans----what-can-humans-learn)<br>
+[13. Multiplayer Games](13-multiplayer-games)<br>
+[14. Opponent Exploitation](14-opponent-exploitation)<br>
+[15. Other Games (Chess, Atari, Go, Starcraft, Dota, Hanabi)](15-other-games--chess--atari--go--starcraft--hanabi-)<br>
 
 ## 1. Poker Background
 
