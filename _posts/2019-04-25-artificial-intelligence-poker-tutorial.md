@@ -8,7 +8,7 @@ This tutorial is made with two target audiences in mind: (1) Those with an inter
 [4. Solving Toy Poker Games from Normal Form to Extensive Form](#4-solving-toy-poker-games-from-normal-form-to-extensive-form)<br>
 [5. Trees in Games](#5-trees-in-games)<br>
 [6. Toy Games and Python Implementation](#6-toy-games-and-python-implementation)<br>
-[7. Counterfactual Regret Minimization (CFR)](#7-counterfactual-regret-minimization)<br>
+[7. Counterfactual Regret Minimization (CFR)](#7-counterfactual-regret-minimization--cfr-)<br>
 [8. Game Abstraction](#8-game-abstraction)<br>
 [9. Agent Evaluation](#9-agent-evaluation)<br>
 [10. CFR Advances](#10-cfr-advances)<br>
