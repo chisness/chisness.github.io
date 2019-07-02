@@ -15,7 +15,7 @@ This tutorial is made with two target audiences in mind: (1) Those with an inter
 [11. Deep Learning and Poker](#11-deep-learning-and-poker)<br>
 [12. AI vs. Humans -- What Can Humans Learn?](#12-ai-vs-humans----what-can-humans-learn)<br>
 [13. Multiplayer Games](#13-multiplayer-games)<br>
-[14. Opponeont Exploitation](#14-opponent-exploitation)<br>
+[14. Opponent Exploitation](#14-opponent-exploitation)<br>
 [15. Other Games (Chess, Atari, Go, Starcraft, Dota, Hanabi)](#15-other-games--chess--atari--go--starcraft--hanabi-)<br>
 
 ## 1. Poker Background
@@ -85,29 +85,29 @@ On each round, players combine their private cards with the community cards to f
 A number of games have been used as artificial intelligence research domains including chess, checkers, Go, and poker, but poker is unique amongst these games because of its key element of imperfect information. In poker, this is the inability to see one’s opponent’s hole cards. Additionally, poker is an excellent research bed for game theoretical research because it has chance events, it is logistically simple yet strategically complex, and it is commonly and competitively played around the world by humans of a variety of skill levels [1]. Finally, it is interesting to see that computers automatically find strategies such as bluffing and slow playing.
 
 
-## 3. Game Theory -- Equilibrium, Regret, and More
+## 3. Game Theory -- Equilibrium and Regret
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
 ## 4. Solving Toy Poker Games from Normal Form to Extensive Form
 
 ## 5. Trees in Games
 
-## 6. Implementing Toy Poker in Python
+## 6. Toy Games and Python Implementation
 
 ## 7. Counterfactual Regret Minimization (CFR)
 
-## 8. Implementing CFR in Python
+## 8. Game Abstraction
 
-## 9. Game Abstractions
+## 9. Agent Evaluation
 
-## 10. Agent Evaluation
+## 10. CFR Advances
 
-## 11. CFR Advances
+## 11. Deep Learning and Poker
 
-## 12. Libratus and DeepStack -- State of the Art Poker Agents and Research
+## 12. AI vs. Humans -- What Can Humans Learn?
 
-## 13. AI vs. Humans -- What Can Humans Learn?
+## 13. Multiplayer Games
 
-## 14. Multiplayer Games
+## 14. Opponent Exploitation
 
 ## 15. Other Games (Chess, Atari, Go, Starcraft, Hanabi)
