@@ -13,7 +13,7 @@ This tutorial is made with two target audiences in mind: (1) Those with an inter
 [9. Agent Evaluation](#9-agent-evaluation)<br>
 [10. CFR Advances](#10-cfr-advances)<br>
 [11. Deep Learning and Poker](#11-deep-learning-and-poker)<br>
-[12. AI vs. Humans -- What Can Humans Learn?](#12-ai-vs-humans--what-can-humans-learn)<br>
+[12. AI vs. Humans -- What Can Humans Learn?](#12-ai-vs-humans----what-can-humans-learn)<br>
 [13. Multiplayer Games](#13-multiplayer-games)<br>
 [14. Opponent Exploitation](#14-opponent-exploitation)<br>
 [15. Other Games (Chess, Atari, Go, Starcraft, Dota, Hanabi)](#15-other-games-chess-atari-go-starcraft-hanabi)<br>
