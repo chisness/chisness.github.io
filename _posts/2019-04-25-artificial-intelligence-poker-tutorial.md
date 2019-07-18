@@ -134,7 +134,7 @@ The equilibrium strategy is to play each action with 1/3 probability. If you dev
 If your opponent plays the equilibrium strategy of Rock 1/3, Paper 1/3, Scissors 1/3, then he will have the following EV. EV = 1*(1/3) + 0*(1/3) + (-1)*(1/3) = 0. t
 
 
-| P1/P2  | Rock 50%  | Paper 25% | Scissors 25%
+| P1/P2  | Rock 50%  | Paper 25% | Scissors 25% |
 |---|---|---|---|
 | Rock 0%  | 0  | 0  | 0  | 
 | Paper 100%  | 0.5*1 = 1  | 0.25*0 = 0  | 0.25*(-1) = -0.25  | 
