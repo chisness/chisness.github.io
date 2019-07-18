@@ -141,6 +141,14 @@ If your opponent plays the equilibrium strategy of Rock 1/3, Paper 1/3, Scissors
 | Scissors 0%  | 0  | 0  | 0  |
 
 
+
+| P1/P2  | Rock 50%  | Paper 25%  | Scissors 25%  |
+|---|---|---|---|
+| Rock 1/3  | 0  |   |   |
+| Paper 1/3  |   |   |   |
+| Scissors 1/3  |   |   |   |
+
+
 test
 
 RPS -- Automation with Winston
