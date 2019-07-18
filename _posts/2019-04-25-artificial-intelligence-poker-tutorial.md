@@ -125,17 +125,40 @@ What does it mean to "solve" a poker game? In the 2-player setting, this means t
 
 Intuition for this in poker can be explained using a simple all-in game where one player must either fold or bet all his chips and the second player must either call or fold if the first player bets all the chips. In this scenario, the second player may begin the game with a strategy of calling a low percentage of hands. After seeing the first player go all-in very frequently, he may increase that percentage. This could lead the first player to reduce his all-in percentage. Once the all-in percentage and the call percentage stabilize such that neither player can unilaterally change his strategy to increase his profit, then the equilibrium strategies have been reached.
 
-But what if the opponent, for example, keeps calling this low percentage of hands and seems to be easy to exploit? The game theoretic solution would not fully take advantage of this opportunity. The best response strategy is the one that maximally exploits the opponent by always performing the highest expected value play against their strategy (and an exploitative strategy is one that exploits an opponent's non-equilibrium play). However, this strategy can itself be exploited. In the above example, this could mean raising all hands after seeing the opponent calling with a low percentage of hands.
+But what if the opponent, for example, keeps calling this low percentage of hands and seems to be easy to exploit? The game theoretic solution would not fully take advantage of this opportunity. The best response strategy is the one that maximally exploits the opponent by always performing the highest expected value play against their fixed strategy (and an exploitative strategy is one that exploits an opponent's non-equilibrium play). In the above example, this could mean raising all hands after seeing the opponent calling with a low percentage of hands. However, this strategy can itself be exploited. 
+
+### Normal Form Games
+Normal Form is writing the strategies and game payouts in matrix form. The Player 1 strategies are in the rows and Player 2 strategies are in the columns. The payouts are written in terms of P1, P2. When the sum of the payouts is 0, this is called a zero-sum game. Poker is an example of a zero-sum game since whatever one player wins the other player loses (assuming no rake, i.e, house commission). 
+
+Here's a common example:
+
+| P1/2  | Rock  | Paper  |
+|---|---|---|
+| Rock  | 0, 0  | -1, 1  |
+| Paper  | 1, -1  | 0, 0  |
+| Scissors  | -1, 1  | 1, -1  |
+
+
+A dominated strategy is one that is strictly worse than an alternative strategy. 
+
 
 
 ### Rock Paper Scissors
-We can also think about this concept in Rock-Paper-Scissors. The game matrix for the game is shown below:
+We can also think about this concept in Rock-Paper-Scissors. We define a win as +1, a tie as 0, and a loss as -1. The game matrix for the game is shown below in Normal Form:
 
 | P1/2  | Rock  | Paper  | Scissors  |
 |---|---|---|---|
 | Rock  | 0, 0  | -1, 1  | 1, -1  |
 | Paper  | 1, -1  | 0, 0  | -1, 1  |
 | Scissors  | -1, 1  | 1, -1  | 0, 0  |
+
+Player 1 is the row player and Player 2 is the column player. The payouts are written in terms of P1, P2. So for example P1 Paper and P2 Rock corresponds to a reward of 1 for P1 and -1 for P2 since Paper beats Rock. 
+
+The equilibrium strategy is to play each action with 1/3 probability each. We can see this because 
+
+We can also work it out mathematically. 
+
+Zero-sum, dominated strategy, pure vs. mixed strategy
 
 The equilibrium strategy is to play each action with 1/3 probability. If you deviate from this strategy, you can be exploited by your opponent always playing the action that beats your most favored action. For example, if you play Rock 50%, Paper 25%, and Scissors 25%, your opponent can play Paper 100%. He will win half the time, draw half the time, and lose half the time, resulting in an average profit per game of 1*0.5 + 0*0.25 + (-1)*0.25 = 0.25. 
 
@@ -156,11 +179,8 @@ If your opponent plays the equilibrium strategy of Rock 1/3, Paper 1/3, Scissors
 | Paper 1/3  |   |   |   |
 | Scissors 1/3  |   |   |   |
 
-
-test
-
 ### Regret
-When I think of regret in poker, the first thing that comes to mind is often "Wow you should've played way more hands in 2010 when poker was so easy". Others may regret big folds or bluffs or calls that didn't work out well. 
+When I think of regret related to poker, the first thing that comes to mind is often "Wow you should've played way more hands in 2010 when poker was so easy". Others may regret big folds or bluffs or calls that didn't work out well. 
 
 Here we will look at the mathematical concept of regret. Regret is a measure of how well you could have done compared to some alternative. We can give another example from Rock Paper Scissors: 
 
