@@ -159,9 +159,24 @@ Here's one more example of a game with two people who are going to watch somethi
 | Tennis  | 3, 2  | 0, 0  |
 | Power Rangers  | 0, 0  | 2, 3  |
 
-In this case, neither player can eliminate a strategy. For Player 1, if Player 2 chooses Tennis then he prefers Tennis, but if Player 2 chooses Power Rangers, then he prefers Power Rangers as well. 
+In this case, neither player can eliminate a strategy. For Player 1, if Player 2 chooses Tennis then he also prefers Tennis, but if Player 2 chooses Power Rangers, then he prefers Power Rangers as well. 
 
+Let's call P(P1 Tennis) = p and P(P1 Power Rangers) = 1 - p. 
 
+If Player 2 chooses Tennis, Player 2 earns p*(2) + (1-p)*(0) = 2p
+
+If Player 2 chooses Power Rangers, Player 2 earns p*(0) + (1-p)*(3) = 3 - 3p
+
+We can set these equal so 2p = 3 - 3p ==> 5p = 3 ==> p = 3/5. Therefore 1 - p = 2/5 and Player 1's strategy is to choose Tennis 3/5 and Power Rangers 2/5. This is a mixed strategy equilibrium because there is a probability distribution over which strategy to play. 
+
+By symmetry, P2's strategy is to choose Tennis 2/5 and Power Rangers 3/5. 
+
+So we have Tennis,Tennis 6/25
+Power Rangers, Power Rangers 6/25
+Tennis, Power Rangers 9/25
+Power Rangers, Tennis 4/25
+
+The final payouts to each player are 6/25 * (3) + 6/25 * (2) = 30/25 = 1.2. This would have been higher if they had avoided the 0,0 payouts!
 
 
 ### Rock Paper Scissors
