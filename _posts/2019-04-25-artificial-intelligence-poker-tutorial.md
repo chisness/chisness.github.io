@@ -138,7 +138,10 @@ If your opponent plays the equilibrium strategy of Rock 1/3, Paper 1/3, Scissors
 |---|---|---|---|
 | Rock 0%  | 0  | 0  | 0  | 
 | Paper 100%  | 0.5*1 = 1  | 0.25*0 = 0  | 0.25*(-1) = -0.25  | 
-| Scissors 0%  | 0  | 0  | 0  |  
+| Scissors 0%  | 0  | 0  | 0  |
+
+
+test
 
 RPS -- Automation with Winston
 Exploitation vs. equilibrium (maybe RPS example)
