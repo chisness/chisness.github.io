@@ -21,9 +21,9 @@ This tutorial is made with two target audiences in mind: (1) Those with an inter
 ## 1. Poker Background
 
 ### Brief History
-Poker began at some point in the early 20th century and grew extensively in the early 2000s thanks to the beginnings of online poker, which lead to an accountant and amateur poker player named Chris Moneymaker investing $39 in an online satellite tournament that won him a $10,000 seat at the World Series of Poker Main Event in 2003, alongside 838 other entrants. Moneymaker went on to defeat professional poker player Sam Farha at the final table of the tournament and won $2.5 million. A poker boom was sparked and led to massive player pools on the Internet and in subsequent World Series’ of Poker.
+Poker began at some point in the early 20th century and grew extensively in the early 2000s thanks to the beginnings of online poker (the first hand ever was dealt on January 1, 1998), which lead to an accountant and amateur poker player named Chris Moneymaker investing $39 in an online satellite tournament that won him a $10,000 seat at the World Series of Poker Main Event in 2003, alongside 838 other entrants. Moneymaker went on to defeat professional poker player Sam Farha at the final table of the tournament and won $2.5 million. A poker boom was sparked and led to massive player pools on the Internet and in subsequent World Series’ of Poker.
 
-![Chris Moneymaker](https://ucc232ea2ec2f6be5ad4b4d1dbba.dl.dropboxusercontent.com/cd/0/inline/Af-qxPp1gh9fJytr2VJoX0W_fXDx4JQfZAnJ2HqhK8x3F8PBOYcEnSj4-TjDCv6U3U7D6Ihp6juBFWPJcIu-rRWMnu2sT28RyPY4u4EBpnG1RKUtZiWKLz0DVT6TFs7-l9c/file#)
+![Chris Moneymaker](https://pnimg.net/w/articles/4/5a5/a09111f94a.jpg)
 https://www.pokerstarsschool.com/article/Moneymaker-2003-WSOP-ME-Strategy
 
 After the human poker boom, computers also started getting in on the poker action. Researchers began to study solving Texas Hold’em games since 2003, and since 2006, there has been an Annual Computer Poker Competition (ACPC) at the AAAI Conference on Artificial Intelligence in which poker agents compete against each other in a variety of poker formats. In early 2017, for the first time, a NLHE poker agent defeated and is considered superior to top poker players in the world in 1v1 games.
