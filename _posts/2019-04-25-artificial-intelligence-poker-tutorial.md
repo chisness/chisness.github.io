@@ -130,6 +130,15 @@ But what if the opponent, for example, keeps calling this low percentage of hand
 We can also think about this concept in Rock-Paper-Scissors. The game matrix for the game is shown below:
 
 The equilibrium strategy is to play each action with 1/3 probability. If you deviate from this strategy, you can be exploited by your opponent always playing the action that beats your most favored action. For example, if you play Rock 50%, Paper 25%, and Scissors 25%, your opponent can play Paper 100%. He will win half the time, draw half the time, and lose half the time, resulting in an average profit per game of 1*0.5 + 0*0.25 + (-1)*0.25 = 0.25. 
+
+If your opponent plays the equilibrium strategy of Rock 1/3, Paper 1/3, Scissors 1/3, then he will have the following EV. EV = 1*(1/3) + 0*(1/3) + (-1)*(1/3) = 0. t
+
+
+| P1/P2  | Rock 50%  | Paper 25% | Scissors 25%  |   |
+|---|---|---|---|---|
+| Rock 0%  | 0  | 0  | 0  |   |
+| Paper 100%  | 0.5*1 = 1  | 0.25*0 = 0  | 0.25*(-1) = -0.25  |   |
+| Scissors 0%  | 0  | 0  | 0  |   |
 RPS -- Automation with Winston
 Exploitation vs. equilibrium (maybe RPS example)
 Bandits
