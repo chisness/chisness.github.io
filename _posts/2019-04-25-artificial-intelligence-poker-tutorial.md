@@ -127,7 +127,15 @@ Intuition for this in poker can be explained using a simple all-in game where on
 
 But what if the opponent, for example, keeps calling this low percentage of hands and seems to be easy to exploit? The game theoretic solution would not fully take advantage of this opportunity. The best response strategy is the one that maximally exploits the opponent by always performing the highest expected value play against their strategy (and an exploitative strategy is one that exploits an opponent's non-equilibrium play). However, this strategy can itself be exploited. In the above example, this could mean raising all hands after seeing the opponent calling with a low percentage of hands.
 
+
+### Rock Paper Scissors
 We can also think about this concept in Rock-Paper-Scissors. The game matrix for the game is shown below:
+
+| P1/2  | Rock  | Paper  | Scissors  |
+|---|---|---|---|
+| Rock  | 0, 0  | -1, 1  | 1, -1  |
+| Paper  | 1, -1  | 0, 0  | -1, 1  |
+| Scissors  | -1, 1  | 1, -1  | 0, 0  |
 
 The equilibrium strategy is to play each action with 1/3 probability. If you deviate from this strategy, you can be exploited by your opponent always playing the action that beats your most favored action. For example, if you play Rock 50%, Paper 25%, and Scissors 25%, your opponent can play Paper 100%. He will win half the time, draw half the time, and lose half the time, resulting in an average profit per game of 1*0.5 + 0*0.25 + (-1)*0.25 = 0.25. 
 
@@ -150,6 +158,15 @@ If your opponent plays the equilibrium strategy of Rock 1/3, Paper 1/3, Scissors
 
 
 test
+
+### Regret
+When I think of regret in poker, the first thing that comes to mind is often "Wow you should've played way more hands in 2010 when poker was so easy". Others may regret big folds or bluffs or calls that didn't work out well. 
+
+Here we will look at the mathematical concept of regret. Regret is a measure of how well you could have done compared to some alternative. We can give another example from Rock Paper Scissors: 
+
+If you picked R and your opponent picked 
+
+### Bandits
 
 RPS -- Automation with Winston
 Exploitation vs. equilibrium (maybe RPS example)
