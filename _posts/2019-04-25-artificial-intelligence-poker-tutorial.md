@@ -86,7 +86,7 @@ In 1951, John Nash wrote: "The study of n-person games for which the accepted et
 
 A main interest in games like poker comes from the fact that it is a game of imperfect information. Unlike games of perfect information (e.g. chess) where all information is visible to all players, in poker there is hidden information (opponent player private cards). 
 
-The history of poker solving techniques have gone from rule/formula based to simulation based to, most recently, game theoretical. 
+The history of poker solving techniques have gone from rule/formula based to simulation based to, most recently, game theoretical. Game theoretical techniques have evolved by (a) using Monte Carlo techniques so that we don't need to traverse the entire game tree to update the game information and strategies and (b) abstraction
 
 
 A short timeline of the major milestones in computer poker research is given here:
@@ -101,10 +101,11 @@ A basic rule-based system was developed in 1999 in the University of Alberta Com
 2005: Optimal Rhode Island Poker, Gilpin and Sandholm (CMU)
 
 2007: Regret Minimization in Games with Incomplete Information, Zinkevich et al (Alberta)
+This hugely important paper introduced the Counterfactual Regret Minimization algorithm, which is the main algorithm used today for finding game-theoretic optimal strategies in poker games. 
+
+MCCFR
 
 2008-9: Man vs. Machine Limit Texas Hold'em Competitions
-
-
 
 2015: Heads-up Limit Hold'em Poker is Solved, Bowling et al (Alberta)
 
@@ -116,26 +117,21 @@ A basic rule-based system was developed in 1999 in the University of Alberta Com
 
 2019: Superhuman AI for Multiplayer Poker, Brown and Sandholm (CMU)
 
-Approximating Game-Theoretic Optimal Strategies for Full-scale Poker,
-Billings et.al., ‘03
-• Optimal Rhode Island Poker, Gilpin/Sandholm, ‘05
-• Annual Computer Poker Competition ‘06-Present
-• EGT/automated abstraction algorithms, Gilpin/Sandholm ‘06-‘08
-• Regret Minimization in Games with Incomplete Information, Zinkevich et.al.,
-‘07
-• Man vs. Machine limit Texas hold ‘em competitions ‘08-’09
-• Computer Poker & Imperfect Information Symposium/Workshop ‘12-Present
-• Heads-up Limit Hold'em Poker is Solved, Bowling et.al., ‘15
-• Brains vs. AI no-limit Texas hold ‘em competition ’15
-• First Computer Poker Tutorial ‘16
-• DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker ’17
-• Second Brains vs. AI no-limit Texas hold ‘em competition ‘17
-
-A number of games have been used as artificial intelligence research domains including chess, checkers, Go, and poker, but poker is unique amongst these games because of its key element of imperfect information. In poker, this is the inability to see one’s opponent’s hole cards. Additionally, poker is an excellent research bed for game theoretical research because it has chance events, it is logistically simple yet strategically complex, and it is commonly and competitively played around the world by humans of a variety of skill levels [1]. Finally, it is interesting to see that computers automatically find strategies such as bluffing and slow playing.
-
-
 
 ## 3. Game Theory -- Equilibrium and Regret
+Let's look at some important game theory concepts before we get into actually solving for poker strategies. 
+
+What does it mean to "solve" a poker game? In the 2-player setting, this means to find a Nash Equilibrium strategy for the game. If both players are playing this strategy, neither would want to change to a different strategy, since neither could do better with any other strategy. 
+
+Intuition for this in poker can be explained using a simple all-in game where one player must either fold or bet all his chips and the second player must either call or fold if the first player bets all the chips. In this scenario, the second player may begin the game with a strategy of calling a low percentage of hands. After seeing the first player go all-in very frequently, he may increase that percentage. This could lead the first player to reduce his all-in percentage. Once the all-in percentage and the call percentage stabilize such that neither player can unilaterally change his strategy to increase his profit, then the equilibrium strategies have been reached.
+
+But what if the opponent, for example, keeps calling this low percentage of hands and seems to be easy to exploit? The game theoretic solution would not fully take advantage of this opportunity. The best response strategy is the one that maximally exploits the opponent by always performing the highest expected value play against their strategy (and an exploitative strategy is one that exploits an opponent's non-equilibrium play). However, this strategy can itself be exploited. In the above example, this could mean raising all hands after seeing the opponent calling with a low percentage of hands.
+
+We can also think about this concept in Rock-Paper-Scissors. 
+RPS -- Automation with Winston
+Exploitation vs. equilibrium (maybe RPS example)
+Bandits
+
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
 ## 4. Solving Toy Poker Games from Normal Form to Extensive Form
