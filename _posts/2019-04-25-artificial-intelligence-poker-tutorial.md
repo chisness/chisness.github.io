@@ -190,9 +190,37 @@ We can also think about this concept in Rock-Paper-Scissors. We define a win as 
 
 Player 1 is the row player and Player 2 is the column player. The payouts are written in terms of P1, P2. So for example P1 Paper and P2 Rock corresponds to a reward of 1 for P1 and -1 for P2 since Paper beats Rock. 
 
-The equilibrium strategy is to play each action with 1/3 probability each. We can see this because 
+The equilibrium strategy is to play each action with 1/3 probability each. We can see this because if any player played anything other than this distribution, then you could exploit them by always playing the strategy that beats the strategy that they most favor. 
 
-We can also work it out mathematically. 
+We can also work it out mathematically. Let P1 play Rock r%, Paper p%, and Scissors s%. The utility of P2 playing Rock is 0*(r) + -1 * (p) + 1 * (s). The utility of P2 playing Paper is 1 * (r) + 0 * (p) + -1 * (s). The utility of P2 playing Scissors is -1 * (r) + 1 * (p) + 0 * (s). 
+
+We can figure out the best strategy with this system of equations:
+
+-p + s = r - s = -r + p
+r + p + s = 1 (since the probabilities must add up to 1)
+
+So -p + s = r - s ==> 2s = p + r
+r - s = - r + p ==> 2r = s + p
+
+-p + s = -r + p ==> s + r = 2p
+
+r + s + p = 1
+r + s = 1 - p
+
+1 - p = 2p 
+1 = 3p
+p = 1/3
+
+r + s + p = 1
+s + p = 1 - r
+
+1 - r = 2r 
+1 = 3r
+1/3 = r
+
+1/3 + 1/3 + s = 1
+s = 1/3
+
 
 Zero-sum, dominated strategy, pure vs. mixed strategy
 
