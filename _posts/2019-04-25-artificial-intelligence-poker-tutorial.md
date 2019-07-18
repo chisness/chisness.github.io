@@ -130,16 +130,37 @@ But what if the opponent, for example, keeps calling this low percentage of hand
 ### Normal Form Games
 Normal Form is writing the strategies and game payouts in matrix form. The Player 1 strategies are in the rows and Player 2 strategies are in the columns. The payouts are written in terms of P1, P2. When the sum of the payouts is 0, this is called a zero-sum game. Poker is an example of a zero-sum game since whatever one player wins the other player loses (assuming no rake, i.e, house commission). 
 
-Here's a common example:
+Here is a game example:
 
-| P1/2  | Rock  | Paper  |
+| P1/2  | Action 1  | Action 2  | Action 3  |
+|---|---|---|---|
+| Action 1  | 10, 2  | 8, 1  | 3, -1  |
+| Action 2  | 5, 8  | 4, 0  | -1, 1  |
+| Action 3  | 7, 3  | 5, -1  | 0, 3  |
+
+A dominated strategy is one that is strictly worse than an alternative strategy. We can see that Player 1's strategy of Action 1 dominates Actions 2 and 3 because all of the values are strictly higher. We also see that Action 1 dominates Action 2 for Player 2 and that Action 1 weakly dominates Action 3 for Player 2, since if Player 1 chooses Action 3, Player 2's Action 1 and Action 3 would be equal, rather than Action 1 being strictly greater. 
+
+We can eliminate strictly dominated strategies and then arrive at the reduced Normal Form game: 
+
+| P1/2  | Action 1  | Action 3  |
 |---|---|---|
-| Rock  | 0, 0  | -1, 1  |
-| Paper  | 1, -1  | 0, 0  |
-| Scissors  | -1, 1  | 1, -1  |
+| Action 1  | 10, 2  | 3, -1  |
 
+In this case, Player 2 prefers to play Action 1 since 2 > -1, so we have a Nash Equilibrium with both players playing Action 1 pure strategy and the payouts will be 10 to Player 1 and 2 to Player 2. 
 
-A dominated strategy is one that is strictly worse than an alternative strategy. 
+| P1/2  | Action 1  |
+|---|---|
+| Action 1  | 10, 2  |
+
+Here's one more example of a game with two people who are going to watch something together. P1 has a preference to watch tennis and P2 prefers Power Rangers. If they don't agree, then they won't watch anything and will have payouts of 0. If they do agree, then the person who gets to watch their preferred show has a higher reward than the other, but both are positive. 
+
+| P1/2  | Tennis  | Power Rangers   |
+|---|---|---|
+| Tennis  | 3, 2  | 0, 0  |
+| Power Rangers  | 0, 0  | 2, 3  |
+
+In this case, neither player can eliminate a strategy. For Player 1, if Player 2 chooses Tennis then he prefers Tennis, but if Player 2 chooses Power Rangers, then he prefers Power Rangers as well. 
+
 
 
 
