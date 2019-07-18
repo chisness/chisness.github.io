@@ -82,7 +82,57 @@ On each round, players combine their private cards with the community cards to f
 
 
 ## 2. History of Solving Poker
+In 1951, John Nash wrote: "The study of n-person games for which the accepted ethics of fair play imply non-cooperative playing is, of course, an obvious direction in which to apply this theory. And poker is the most obvious target. The analysis of a more realistic poker game than our very simple model should be an interesting affair."
+
+A main interest in games like poker comes from the fact that it is a game of imperfect information. Unlike games of perfect information (e.g. chess) where all information is visible to all players, in poker there is hidden information (opponent player private cards). 
+
+The history of poker solving techniques have gone from rule/formula based to simulation based to, most recently, game theoretical. 
+
+
+A short timeline of the major milestones in computer poker research is given here:
+
+1998: Opponent Modelling in Poker, Billings et al. (Alberta)
+A basic rule-based system was developed in 1999 in the University of Alberta Computer Poker Research Group (CPRG), which took an effective hand-strength as input and outputted a (fold, call, raise) probability triple, using a form of basic opponent modelling. 
+
+2000: Abstraction Methods for Game-Theoretic Poker, Shi and Littman
+
+2003: Approximating Game-Theoretic Optimal Strategies for Full-scale Poker, Billings et al. (Alberta)
+
+2005: Optimal Rhode Island Poker, Gilpin and Sandholm (CMU)
+
+2007: Regret Minimization in Games with Incomplete Information, Zinkevich et al (Alberta)
+
+2008-9: Man vs. Machine Limit Texas Hold'em Competitions
+
+
+
+2015: Heads-up Limit Hold'em Poker is Solved, Bowling et al (Alberta)
+
+2015: Brains vs. AI No-Limit Texas Hold'em Competition
+
+2017: DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker (DeepMind)
+
+2017: Libratus and Man vs. Machine Competition
+
+2019: Superhuman AI for Multiplayer Poker, Brown and Sandholm (CMU)
+
+Approximating Game-Theoretic Optimal Strategies for Full-scale Poker,
+Billings et.al., ‘03
+• Optimal Rhode Island Poker, Gilpin/Sandholm, ‘05
+• Annual Computer Poker Competition ‘06-Present
+• EGT/automated abstraction algorithms, Gilpin/Sandholm ‘06-‘08
+• Regret Minimization in Games with Incomplete Information, Zinkevich et.al.,
+‘07
+• Man vs. Machine limit Texas hold ‘em competitions ‘08-’09
+• Computer Poker & Imperfect Information Symposium/Workshop ‘12-Present
+• Heads-up Limit Hold'em Poker is Solved, Bowling et.al., ‘15
+• Brains vs. AI no-limit Texas hold ‘em competition ’15
+• First Computer Poker Tutorial ‘16
+• DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker ’17
+• Second Brains vs. AI no-limit Texas hold ‘em competition ‘17
+
 A number of games have been used as artificial intelligence research domains including chess, checkers, Go, and poker, but poker is unique amongst these games because of its key element of imperfect information. In poker, this is the inability to see one’s opponent’s hole cards. Additionally, poker is an excellent research bed for game theoretical research because it has chance events, it is logistically simple yet strategically complex, and it is commonly and competitively played around the world by humans of a variety of skill levels [1]. Finally, it is interesting to see that computers automatically find strategies such as bluffing and slow playing.
+
 
 
 ## 3. Game Theory -- Equilibrium and Regret
