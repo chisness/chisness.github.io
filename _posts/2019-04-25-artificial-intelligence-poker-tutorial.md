@@ -418,19 +418,64 @@ $$
 $$
 
 **Solving for $$b$$**
-Now to solve for $$b$$, how often P2 should bet after P1 checks. The indifference for P1 is only relevant when he has a K, since if he has a Q or A, he will always fold or call, respectively. 
+Now to solve for $$b$$, how often P2 should bet with a Q after P1 checks. The indifference for P1 is only relevant when he has a K, since if he has a Q or A, he will always fold or call, respectively. 
 
-If P1 checks a K and then folds, the 
+If P1 checks a K and then folds, then
 
 $$ \text{P1 check with K and then fold to bet} = 0 $$  
 
-$$ \text{P1 check with K and then call a bet} = \frac{1}{2} * (-1) + \frac{1}{2} * b * (2) $$
+$$ \text{P1 check with K and then call a bet} = \frac{1}{2} * (-1) + \frac{1}{2} * b * (3) $$
 
 Setting these probabilities equal, we have:
-$$ 0 = \frac{1}{2} * (-1) + \frac{1}{2} * b * (2) $$
-$$ \frac{1}{2} = \frac{1}{2} * b * (2) $$
-$$ 2 * b = 1 $$
-$$ b = \frac{1}{2} $$
+$$ 0 = \frac{1}{2} * (-1) + \frac{1}{2} * b * (3) $$
+
+$$ \frac{1}{2} = \frac{1}{2} * b * (3) $$
+
+$$ 3 * b = 1 $$
+
+$$ b = \frac{1}{3} $$
+
+**Solving for $$x$$ and $$y$$**
+Now what about P1? $$x$$ is his probability of betting with Q (bluffing) and $$y$$ is his probability of betting with A (value betting). We want to make P2 indifferent between calling and folding with the K (since again, Q is always a fold and A is always a call). 
+
+When P2 has K, P1 has $$ \frac{1}{2} $$ of having a Q and A each. 
+
+P2's EV of folding with a K to a bet is $$ 0 $$. 
+
+P2's EV of calling with a K to a bet $$ = \frac{1}{2} * x * (2) + \frac{1}{2} * y * (-1) $$
+
+Setting these equal, we have: 
+
+$$ 0 = \frac{1}{2} * x * (3) + \frac{1}{2} * y * (-1) $$
+
+$$ y = 3 * x $$
+
+This says that the value-bet should happen 3 times more often than the bluff. 
+
+**Solving for $$z$$**
+The final case is when P1 checks a K, P2 bets, and P1 must call so that P2 is indifferent to checking vs. betting (bluffing) with a Q. 
+
+$$ \text{P(P1 has A | P1 checks A or K)} = \frac{\text{P(P1 has A and checks)}}{\text{P(P1 checks A or K)}} $$
+
+$$ = \frac{(1-x) * \frac{1}{2}{ {(1-x) * \{\frac{1}{2} + \frac{1}{2}} $$
+
+$$ = \frac{1-x}{2-x} $$
+
+$$ \text{P(P1 has K | P1 checks A or K)} = 1 - \text{P(P1 has A | P1 checks A or K)} $$
+$$ = 1 - \frac{1-x}{2-x} $$
+$$ = \frac{2-x}{2-x} - \frac{1-x}{2-x} $$
+$$ = \frac{1}{2-x} $$
+
+If P2 checks his Q, his EV $$ = 0 $$.
+
+If P2 bets (bluffs) with his Q, his EV is:
+$$ -1 * P(P1 check A then call A), -1 * P(P1 check K then call K), +2 * P(P1 check K then fold K) $$
+$$ = -1 * \frac{1-x}{2-x} + -1 * z * \frac{1}{2-x} + 2 * (1-z) * \frac{1}{2-x} $$
+
+Setting these equal:
+
+$$ 0 = -1 * \frac{1-x}{2-x} + -1 * z * \frac{1}{2-x} + 2 * (1-z) * \frac{1}{2-x} $$
+
 
 Kuhn normal form
 Kuhn extensive form, linear programming
