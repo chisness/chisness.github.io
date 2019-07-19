@@ -246,7 +246,7 @@ If your opponent plays the equilibrium strategy of Rock 1/3, Paper 1/3, Scissors
 ### Regret
 When I think of regret related to poker, the first thing that comes to mind is often "Wow you should've played way more hands in 2010 when poker was so easy". Others may regret big folds or bluffs or calls that didn't work out well. 
 
-Here we will look at the mathematical concept of regret. Regret is a measure of how well you could have done compared to some alternative. 
+Here we will look at the mathematical concept of regret. Regret is a measure of how well you could have done compared to some alternative. Alternatively phrased, what you would have done in some situation instead.  
 
 $$ Regret = u(Alternative Strategy) - u(Current Strategy) $$
 
@@ -269,13 +269,31 @@ Regret(rock) = u(rock,paper) - u(paper,paper) = -1-0 = -1
 
 So we prefer alternative actions with high regret. 
 
-What you would have done in that situation instead
-
 ### Regret Matching
-Regret matching is playing a strategy in proportion to the accumulated regrets. 
+Regret matching is playing a strategy in proportion to the accumulated regrets. So let's consider Player 1 playing a fixed RPS strategy of Rock 40%, Paper 30%, Scissors 30% and Player 2 playing using regret matching. 
 
-Proof
+Let's look at a sequence of plays in this scenario.
 
+| P1  | P2  | New Regrets  | New Total Regrets  | Strategy  | P2 Profits
+|---|---|---|---|---|---|
+| S  | S  | [1,0,-1]   | [1,0,-1]  | [1,0,0]  | 0  | 
+| P  | R  | [0,1,2]  | [1,1,1]  | [1/3, 1/3, 1/3]  | 1  |
+| S  | P  | [2,0,1]  | [3,1,2]  | [1/2, 1/6, 1/3]  | 0  |
+| P  | R  | [0,1,2]  | [3,2,4]  | [3/10, 1/5, 2/5]  | -1  |
+| R  | S  | [1,2,0]  | [4,4,4]  | [1/3,1/3,1/3]  | -2  |
+| R  | R  | [0,1,-1]  | [4,5,3]  | [1/3,5/12,1/4]  | -2  |
+| P  | P  | [-1,0,1]  | [3,5,4]  | [1/4,5/12,1/3]  | -2  |
+| S  | P  | [2,0,1]  | [5,5,5]  | [1/3, 1/3, 1/3]  | -3  |
+| R  | R  | [0,1,-1]  | [5,6,4]  | [1/3, 2/5, 4/15]  | -3  |
+| R  | P  | [-1,0,-2]  | [4,6,2]  | [1/3,1/2,1/6]  | -2  |
+
+Here are 10,000 sample runs of this scenario. We know that the best strategy is to play 100% Paper to exploit the opponent over-playing Rock. Depending on the run and how the regrets accumulate, the regret matching can figure this out immediately or it can take some time. 
+
+
+![Fast convergence](/assets/rps_fast1.png)
+
+
+![Slow convergence](/assets/rps_fast2.png)
 
 ### Bandits
 
