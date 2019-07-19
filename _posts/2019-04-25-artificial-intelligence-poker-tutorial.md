@@ -121,11 +121,11 @@ MCCFR
 ## 3. Game Theory -- Equilibrium and Regret
 Let's look at some important game theory concepts before we get into actually solving for poker strategies. 
 
-What does it mean to "solve" a poker game? In the 2-player setting, this means to find a Nash Equilibrium strategy for the game. If both players are playing this strategy, neither would want to change to a different strategy, since neither could do better with any other strategy. 
+What does it mean to "solve" a poker game? In the 2-player setting, this means to find a Nash Equilibrium strategy for the game. If both players are playing this strategy, neither would want to change to a different strategy, since neither could do better with any other strategy (assuming that the opponent's strategy stays fixed). 
 
 Intuition for this in poker can be explained using a simple all-in game where one player must either fold or bet all his chips and the second player must either call or fold if the first player bets all the chips. In this scenario, the second player may begin the game with a strategy of calling a low percentage of hands. After seeing the first player go all-in very frequently, he may increase that percentage. This could lead the first player to reduce his all-in percentage. Once the all-in percentage and the call percentage stabilize such that neither player can unilaterally change his strategy to increase his profit, then the equilibrium strategies have been reached.
 
-But what if the opponent, for example, keeps calling this low percentage of hands and seems to be easy to exploit? The game theoretic solution would not fully take advantage of this opportunity. The best response strategy is the one that maximally exploits the opponent by always performing the highest expected value play against their fixed strategy (and an exploitative strategy is one that exploits an opponent's non-equilibrium play). In the above example, this could mean raising all hands after seeing the opponent calling with a low percentage of hands. However, this strategy can itself be exploited. 
+But what if the opponent, for example, keeps calling this low percentage of hands and seems to be easy to exploit? The game theoretic solution would not fully take advantage of this opportunity. The **best response strategy** is the one that maximally exploits the opponent by always performing the highest expected value play against their fixed strategy (and an exploitative strategy is one that exploits an opponent's non-equilibrium play). In the above example, this could mean raising all hands after seeing the opponent calling with a low percentage of hands. However, this strategy can itself be exploited. 
 
 ### Normal Form Games
 Normal Form is writing the strategies and game payouts in matrix form. The Player 1 strategies are in the rows and Player 2 strategies are in the columns. The payouts are written in terms of P1, P2. When the sum of the payouts is 0, this is called a zero-sum game. Poker is an example of a zero-sum game since whatever one player wins the other player loses (assuming no rake, i.e, house commission). 
@@ -138,7 +138,13 @@ Here is a game example:
 | Action 2  | 5, 8  | 4, 0  | -1, 1  |
 | Action 3  | 7, 3  | 5, -1  | 0, 3  |
 
-A dominated strategy is one that is strictly worse than an alternative strategy. We can see that Player 1's strategy of Action 1 dominates Actions 2 and 3 because all of the values are strictly higher. We also see that Action 1 dominates Action 2 for Player 2 and that Action 1 weakly dominates Action 3 for Player 2, since if Player 1 chooses Action 3, Player 2's Action 1 and Action 3 would be equal, rather than Action 1 being strictly greater. 
+A dominated strategy is one that is strictly worse than an alternative strategy. We can see that Player 1's strategy of Action 1 dominates Actions 2 and 3 because all of the values are strictly higher. 
+
+When P2 chooses Action 1, P1 earns 10 with Action 1, 5 with Action 2, and 7 with Action 3
+When P2 chooses Action 2, P1 earns 8 with Action 1, 4 with Action 2, and 5 with Action 3
+When P2 chooses Action 3, P1 earns 7 with Action 1, 5 with Action 2, and 0 with Action 3
+
+We also see that Action 1 dominates Action 2 for Player 2 and that Action 1 weakly dominates Action 3 for Player 2, since if Player 1 chooses Action 3, Player 2's Action 1 and Action 3 would be equal, rather than Action 1 being strictly greater. 
 
 We can eliminate strictly dominated strategies and then arrive at the reduced Normal Form game: 
 
@@ -152,32 +158,31 @@ In this case, Player 2 prefers to play Action 1 since 2 > -1, so we have a Nash 
 |---|---|
 | Action 1  | 10, 2  |
 
-Here's one more example of a game with two people who are going to watch something together. P1 has a preference to watch tennis and P2 prefers Power Rangers. If they don't agree, then they won't watch anything and will have payouts of 0. If they do agree, then the person who gets to watch their preferred show has a higher reward than the other, but both are positive. 
+Here's one more example of a game. This time with two people who are going to watch something together. P1 has a preference to watch tennis and P2 prefers Power Rangers. If they don't agree, then they won't watch anything and will have payouts of 0. If they do agree, then the person who gets to watch their preferred show has a higher reward than the other, but both are positive. 
 
 | P1/2  | Tennis  | Power Rangers   |
 |---|---|---|
 | Tennis  | 3, 2  | 0, 0  |
 | Power Rangers  | 0, 0  | 2, 3  |
 
-In this case, neither player can eliminate a strategy. For Player 1, if Player 2 chooses Tennis then he also prefers Tennis, but if Player 2 chooses Power Rangers, then he prefers Power Rangers as well. 
+In this case, neither player can eliminate a strategy. For Player 1, if Player 2 chooses Tennis then he also prefers Tennis, but if Player 2 chooses Power Rangers, then he prefers Power Rangers as well (both of these are Nash Equilbrium). 
 
 Let's call P(P1 Tennis) = p and P(P1 Power Rangers) = 1 - p. 
 
-If Player 2 chooses Tennis, Player 2 earns p*(2) + (1-p)*(0) = 2p
+If Player 2 chooses Tennis, Player 2 earns $$ p*(2) + (1-p)*(0) = 2p $$
 
-If Player 2 chooses Power Rangers, Player 2 earns p*(0) + (1-p)*(3) = 3 - 3p
+If Player 2 chooses Power Rangers, Player 2 earns $$ p*(0) + (1-p)*(3) = 3 - 3p $$
 
-We can set these equal because a player will only play a mixed strategy when both strategies are equal (otherwise they would play a single best strategy), so 2p = 3 - 3p ==> 5p = 3 ==> p = 3/5. Therefore 1 - p = 2/5 and Player 1's strategy is to choose Tennis 3/5 and Power Rangers 2/5. This is a mixed strategy equilibrium because there is a probability distribution over which strategy to play. 
+We can set these equal because a player will only play a mixed strategy when both strategies are equal (otherwise they would play a single best strategy), so $$ 2p = 3 - 3p ==> 5p = 3 ==> p = 3/5$$. Therefore $$1 - p = 2/5$$ and Player 1's strategy is to choose Tennis $$3/5$$ and Power Rangers $$2/5$$. This is a mixed strategy equilibrium because there is a probability distribution over which strategy to play. 
 
 By symmetry, P2's strategy is to choose Tennis 2/5 and Power Rangers 3/5. 
 
-So we have Tennis,Tennis 6/25
-Power Rangers, Power Rangers 6/25
-Tennis, Power Rangers 9/25
-Power Rangers, Tennis 4/25
+So we have Tennis,Tennis occurring $$3/5 * 2/5 = 6/25$$
+Power Rangers, Power Rangers $$2/5 * 3/5 = 6/25$$
+Tennis, Power Rangers $$3/5 * 3/5 = 9/25$$
+Power Rangers, Tennis $$2/5 * 2/5 = 4/25$$
 
-The final payouts to each player are 6/25 * (3) + 6/25 * (2) = 30/25 = 1.2. This would have been higher if they had avoided the 0,0 payouts!
-
+The final payouts to each player are $$6/25 * (3) + 6/25 * (2) = 30/25 = 1.2$$. This would have been higher if they had avoided the 0,0 payouts!
 
 ### Rock Paper Scissors
 We can also think about this concept in Rock-Paper-Scissors. We define a win as +1, a tie as 0, and a loss as -1. The game matrix for the game is shown below in Normal Form:
@@ -192,41 +197,41 @@ Player 1 is the row player and Player 2 is the column player. The payouts are wr
 
 The equilibrium strategy is to play each action with 1/3 probability each. We can see this because if any player played anything other than this distribution, then you could exploit them by always playing the strategy that beats the strategy that they most favor. 
 
-We can also work it out mathematically. Let P1 play Rock r%, Paper p%, and Scissors s%. The utility of P2 playing Rock is 0*(r) + -1 * (p) + 1 * (s). The utility of P2 playing Paper is 1 * (r) + 0 * (p) + -1 * (s). The utility of P2 playing Scissors is -1 * (r) + 1 * (p) + 0 * (s). 
+We can also work it out mathematically. Let P1 play Rock r%, Paper p%, and Scissors s%. The utility of P2 playing Rock is $$0*(r) + -1 * (p) + 1 * (s)$$. The utility of P2 playing Paper is $$1 * (r) + 0 * (p) + -1 * (s)$$. The utility of P2 playing Scissors is $$-1 * (r) + 1 * (p) + 0 * (s)$$. 
 
-We can figure out the best strategy with this system of equations:
+We can figure out the best strategy with this system of equations (the second because all probabilities must add up to 1):
 
--p + s = r - s = -r + p
-r + p + s = 1 (since the probabilities must add up to 1)
+$$
+\begin{cases} -p + s = r - s = -r + p \\ r + p + s = 1  \end{cases}
+$$
 
-So -p + s = r - s ==> 2s = p + r
-r - s = - r + p ==> 2r = s + p
+$$-p + s = r - s ==> 2s = p + r
+r - s = - r + p ==> 2r = s + p$$
 
--p + s = -r + p ==> s + r = 2p
+$$-p + s = -r + p ==> s + r = 2p$$
 
-r + s + p = 1
-r + s = 1 - p
+$$r + s + p = 1
+r + s = 1 - p$$
 
-1 - p = 2p 
+$$1 - p = 2p 
 1 = 3p
-p = 1/3
+p = 1/3$$
 
-r + s + p = 1
-s + p = 1 - r
+$$r + s + p = 1
+s + p = 1 - r$$
 
-1 - r = 2r 
+$$1 - r = 2r 
 1 = 3r
-1/3 = r
+1/3 = r$$
 
-1/3 + 1/3 + s = 1
-s = 1/3
-
+$$1/3 + 1/3 + s = 1
+s = 1/3$$
 
 Zero-sum, dominated strategy, pure vs. mixed strategy
 
-The equilibrium strategy is to play each action with 1/3 probability. If you deviate from this strategy, you can be exploited by your opponent always playing the action that beats your most favored action. For example, if you play Rock 50%, Paper 25%, and Scissors 25%, your opponent can play Paper 100%. He will win half the time, draw half the time, and lose half the time, resulting in an average profit per game of 1*0.5 + 0*0.25 + (-1)*0.25 = 0.25. 
+The equilibrium strategy is to play each action with 1/3 probability. If you deviate from this strategy, you can be exploited by your opponent always playing the action that beats your most favored action. For example, if you play Rock 50%, Paper 25%, and Scissors 25%, your opponent can play Paper 100%. He will win half the time, draw half the time, and lose half the time, resulting in an average profit per game of $$1*0.5 + 0*0.25 + (-1)*0.25 = 0.25$$. 
 
-If your opponent plays the equilibrium strategy of Rock 1/3, Paper 1/3, Scissors 1/3, then he will have the following EV. EV = 1*(1/3) + 0*(1/3) + (-1)*(1/3) = 0. t
+If your opponent plays the equilibrium strategy of Rock 1/3, Paper 1/3, Scissors 1/3, then he will have the following EV. EV = $$1*(1/3) + 0*(1/3) + (-1)*(1/3) = 0 $$. While in RPS, the equilibrium playing player cannot show a profit in expectation, in poker this is not the case.
 
 
 | P1/P2  | Rock 50%  | Paper 25% | Scissors 25% |
@@ -269,8 +274,17 @@ Regret(rock) = u(rock,paper) - u(paper,paper) = -1-0 = -1
 
 So we prefer alternative actions with high regret. 
 
+To generalize, 
+
 ### Regret Matching
-Regret matching is playing a strategy in proportion to the accumulated regrets. So let's consider Player 1 playing a fixed RPS strategy of Rock 40%, Paper 30%, Scissors 30% and Player 2 playing using regret matching. 
+Regret matching is playing a strategy in proportion to the accumulated regrets. The algorithm works like this:
+1. Initialize regret for each action to 0
+2. Set the strategy as: 
+$$
+strategy_action{i} = \begin{cases} {R_{i}^(+) \over \sum{k=1,n}R_{k}^{+}, & \mbox{if } n\mbox{ is even} \\ 3n+1, & \mbox{if } n\mbox{ is odd} \end{cases}
+$$
+
+So let's consider Player 1 playing a fixed RPS strategy of Rock 40%, Paper 30%, Scissors 30% and Player 2 playing using regret matching. 
 
 Let's look at a sequence of plays in this scenario.
 
@@ -307,6 +321,7 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 Kuhn analytical
 Kuhn normal form
 Kuhn extensive form, linear programming
+Resutls with other poker agents playing worse strategies exploitable
 
 ## 5. Trees in Games
 Minimax tictactoe, why this doesn't work for poker
