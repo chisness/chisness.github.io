@@ -167,7 +167,7 @@ If Player 2 chooses Tennis, Player 2 earns p*(2) + (1-p)*(0) = 2p
 
 If Player 2 chooses Power Rangers, Player 2 earns p*(0) + (1-p)*(3) = 3 - 3p
 
-We can set these equal so 2p = 3 - 3p ==> 5p = 3 ==> p = 3/5. Therefore 1 - p = 2/5 and Player 1's strategy is to choose Tennis 3/5 and Power Rangers 2/5. This is a mixed strategy equilibrium because there is a probability distribution over which strategy to play. 
+We can set these equal because a player will only play a mixed strategy when both strategies are equal (otherwise they would play a single best strategy), so 2p = 3 - 3p ==> 5p = 3 ==> p = 3/5. Therefore 1 - p = 2/5 and Player 1's strategy is to choose Tennis 3/5 and Power Rangers 2/5. This is a mixed strategy equilibrium because there is a probability distribution over which strategy to play. 
 
 By symmetry, P2's strategy is to choose Tennis 2/5 and Power Rangers 3/5. 
 
@@ -246,9 +246,36 @@ If your opponent plays the equilibrium strategy of Rock 1/3, Paper 1/3, Scissors
 ### Regret
 When I think of regret related to poker, the first thing that comes to mind is often "Wow you should've played way more hands in 2010 when poker was so easy". Others may regret big folds or bluffs or calls that didn't work out well. 
 
-Here we will look at the mathematical concept of regret. Regret is a measure of how well you could have done compared to some alternative. We can give another example from Rock Paper Scissors: 
+Here we will look at the mathematical concept of regret. Regret is a measure of how well you could have done compared to some alternative. 
 
-If you picked R and your opponent picked 
+$$ Regret = u(Alternative Strategy) - u(Current Strategy) $$
+
+We can give another example from Rock Paper Scissors: 
+
+We play rock and opponent plays paper ⇒ u(rock,paper) = -1
+Regret(scissors) = u(scissors,paper) - u(rock,paper) = 1-(-1) = 2
+Regret(paper) = u(paper,paper) - u(rock,paper) = 0-(-1) = 1
+Regret(rock) = u(rock,paper) - u(rock,paper) = -1-(-1) = 0
+
+We play scissors and opponent plays paper ⇒ u(scissors,paper) = 1
+Regret(scissors) = u(scissors,paper) - u(scissors,paper) = 1-1 = 0
+Regret(paper) = u(paper,paper) - u(scissors,paper) = 0-1 = -1
+Regret(rock) = u(rock,paper) - u(scissors,paper) = -1-1 = -2
+
+We play paper and opponent plays paper ⇒ u(paper,paper) = 0
+Regret(scissors) = u(scissors,paper) - u(paper,paper) = 1-0 = 1
+Regret(paper) = u(paper,paper) - u(paper,paper) = 0-0 = 0
+Regret(rock) = u(rock,paper) - u(paper,paper) = -1-0 = -1
+
+So we prefer alternative actions with high regret. 
+
+What you would have done in that situation instead
+
+### Regret Matching
+Regret matching is playing a strategy in proportion to the accumulated regrets. 
+
+Proof
+
 
 ### Bandits
 
@@ -256,28 +283,70 @@ RPS -- Automation with Winston
 Exploitation vs. equilibrium (maybe RPS example)
 Bandits
 
+Also regret in poker which is actually advantage
+
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
 ## 4. Solving Toy Poker Games from Normal Form to Extensive Form
+Kuhn analytical
+Kuhn normal form
+Kuhn extensive form, linear programming
 
 ## 5. Trees in Games
+Minimax tictactoe, why this doesn't work for poker
+Perfect info game and subgames
+MCTS
+Exploitation vs. exploration
+RL terminology
+In imperfect info we need to know about the overall strategy
+Call with enough hands to make opponent worse off in allin hands
 
 ## 6. Toy Games and Python Implementation
+Kuhn
+Leduc
+Python implementation of the games
+Ideally connected to ACPC server
 
 ## 7. Counterfactual Regret Minimization (CFR)
+External sampling CFR detailed code and walk through (how values change over many iterations)
+How is this related to Q learning?
+Use RPS to show why average strategy
+Proofs of regret minimization 
+Kuhn results with 3 card and 10 card and 100 card
 
 ## 8. Game Abstraction
+Card abstraction, in code also
+Betting abstraction
 
 ## 9. Agent Evaluation
+Best response, code
+vs. human
+Agent vs. agent
 
 ## 10. CFR Advances
+AVIAT variance reduction
+Monte Carlo variations
+New stuff like Linear CFR
+CFR+ (use RPS to show difference)
+Endgame solving (RPS example)
 
 ## 11. Deep Learning and Poker
+Libratus
+DeepStack
+Deep CFR
+Pluribus
 
 ## 12. AI vs. Humans -- What Can Humans Learn?
+Examples from Brokos book
+Paper with Sam
+Theme ideas from toy games that can translate to full games
 
 ## 13. Multiplayer Games
+3 player Kuhn, Leduc
+Pluribus stuff
 
 ## 14. Opponent Exploitation
+Paper with Sam
 
 ## 15. Other Games (Chess, Atari, Go, Starcraft, Hanabi)
+RL stuff
