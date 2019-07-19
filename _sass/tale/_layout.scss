@@ -16,6 +16,7 @@ footer,
 table {
   border-collapse: collapse;
   border: 1px solid #ddd;
+  padding: 1vh;
 }
 
 table, th, td {
@@ -23,8 +24,6 @@ table, th, td {
   text-align: left;
   padding: 8px;
 }
-
-tr:nth-child(even) {background-color: #f2f2f2;}
 
 .nav {
   box-shadow: 0 2px 2px -2px $shadow-color;
