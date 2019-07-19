@@ -274,7 +274,11 @@ Regret(rock) = u(rock,paper) - u(paper,paper) = -1-0 = -1
 
 So we prefer alternative actions with high regret. 
 
-To generalize, 
+To generalize:
+- The action played always gets a regret of 0
+- When we play a tying action, the losing action gets a regret of -1 and winning action regret of +1
+- When we play a winning action, the tying action gets a regret of -1 and the losing action gets a regret of -2
+- When we play a losing action, the winning action gets a regret of +2 and the tying action gets a regret of +1
 
 ### Regret Matching
 Regret matching is playing a strategy in proportion to the accumulated regrets. The algorithm works like this:
@@ -352,34 +356,34 @@ By checking the K always, P1 can try to induce a bluff from P2 when P2 has the Q
 
 **P1 initial action**
 Therefore we assign P1's strategy:
-- Bet Q: $x$
-- Bet K: $0$
-- Bet A: $y$
+- Bet Q: $$x$$
+- Bet K: $$0$$
+- Bet A: $$y$$
 
 **P2 after P1 bet**
 After P1 bets, P2 should always call with the A and always fold the Q as explained above. 
 
 Therefore we assign P2's strategy after P1 bet:
-- Call Q: $0$
-- Call K: $a$
-- Call A: $1$
+- Call Q: $$0$$
+- Call K: $$a$$
+- Call A: $$1$$
 
 **P2 after P1 check**
 After P1 checks, P2 should never bet with the K for the same reason as P1 should never initially bet with the K. 
 P2 should always bet with the A because it is the best hand and there is no bluff to induce by checking. 
 
 Therefore we assign P2's strategy after P1 check:
-- Bet Q: $b$
-- Bet K: $0$
-- Bet A: $1$
+- Bet Q: $$b$$
+- Bet K: $$0$$
+- Bet A: $$1$$
 
 **P1 after P1 check and P2 bet**
 This case is similar to P2's actions after P1's bet. P1 can never call here with the worst hand (Q) and must always call with the best hand (A). 
 
 Therefore we assign P1's strategy after P1 check and P2 bet:
-- Call Q: $0$
-- Call K: $z$
-- Call A: $1$
+- Call Q: $$0$$
+- Call K: $$z$$
+- Call A: $$1$$
 
 So we now have 5 different variables $$x, y, z, a, b$$ to represent the unknown probabilities. 
 
@@ -389,10 +393,9 @@ So we now have 5 different variables $$x, y, z, a, b$$ to represent the unknown 
 We start by solving for $$a$$, how often P2 should call with a K facing a bet from P1. 
 P2 should call $$a$$ to make P1 indifferent to bluffing (i.e., betting or checking) with card Q. 
 
-If P1 checks with card Q, he will always fold afterwards (because it is the worst card and can never win). 
+If P1 checks with card Q, he will always fold afterwards (because it is the worst card and can never win), so his utility is 0. 
 
 $$ \text{P1 check with Q} = 0 $$     
-
 
 If P1 bets with card Q, 
 
@@ -413,6 +416,21 @@ $$
     a &= \frac{1}{3}
 \end{align}
 $$
+
+**Solving for $$b$$**
+Now to solve for $$b$$, how often P2 should bet after P1 checks. The indifference for P1 is only relevant when he has a K, since if he has a Q or A, he will always fold or call, respectively. 
+
+If P1 checks a K and then folds, the 
+
+$$ \text{P1 check with K and then fold to bet} = 0 $$  
+
+$$ \text{P1 check with K and then call a bet} = \frac{1}{2} * (-1) + \frac{1}{2} * b * (2) $$
+
+Setting these probabilities equal, we have:
+$$ 0 = \frac{1}{2} * (-1) + \frac{1}{2} * b * (2) $$
+$$ \frac{1}{2} = \frac{1}{2} * b * (2) $$
+$$ 2 * b = 1 $$
+$$ b = \frac{1}{2} $$
 
 Kuhn normal form
 Kuhn extensive form, linear programming
