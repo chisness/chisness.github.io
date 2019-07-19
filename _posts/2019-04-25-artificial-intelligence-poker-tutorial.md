@@ -290,10 +290,10 @@ Let's look at a sequence of plays in this scenario.
 Here are 10,000 sample runs of this scenario. We know that the best strategy is to play 100% Paper to exploit the opponent over-playing Rock. Depending on the run and how the regrets accumulate, the regret matching can figure this out immediately or it can take some time. 
 
 
-![Fast convergence](/assets/rps_fast1.png)
+![Fast convergence](/assets/rps_fast1.png | width = 500)
 
 
-![Slow convergence](/assets/rps_slow1.png)
+![Slow convergence](/assets/rps_slow1.png | width = 500)
 
 ### Bandits
 
