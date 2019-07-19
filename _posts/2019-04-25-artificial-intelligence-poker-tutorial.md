@@ -293,7 +293,7 @@ Here are 10,000 sample runs of this scenario. We know that the best strategy is 
 ![Fast convergence](/assets/rps_fast1.png)
 
 
-![Slow convergence](/assets/rps_fast2.png)
+![Slow convergence](../assets/rps_fast2.png)
 
 ### Bandits
 
