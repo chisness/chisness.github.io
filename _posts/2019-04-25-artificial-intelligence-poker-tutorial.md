@@ -321,26 +321,20 @@ Also regret in poker which is actually advantage
 
 The game in its standard form is played with 3 cards in {A, K, Q} and 2 players. Each player starts with $2 and places an ante (i.e., forced bet before the hand) of $1. And therefore has $1 left to bet with. Each player is then dealt 1 card and 1 round of betting ensues. 
 
-\begin{itemize}
-\item 2 players, each is dealt a card in {A, K, Q}
-\item Each antes 1 at the start of the hand
-\item Each has 1 remaining for betting
-\item There is one betting round
-\item The highest card is the best (i.e., A $>$ K $>$ Q)
-\end{itemize}
+- 2 players, each is dealt a card in {A, K, Q}
+- Each antes 1 at the start of the hand
+- Each has 1 remaining for betting
+- There is one betting round
+- The highest card is the best (i.e., A $>$ K $>$ Q)
 
-\begin{itemize}
-\item Action starts with P1, who can Bet 1 or Check
-\item If P1 bets, P2 can either Call or Fold
-\item If P1 checks, P2 can either Bet or Check
-\item If P2 bets after P1 checks, P1 can then Call or Fold
-\end{itemize}
+Action starts with P1, who can Bet 1 or Check
+- If P1 bets, P2 can either Call or Fold
+- If P1 checks, P2 can either Bet or Check
+- If P2 bets after P1 checks, P1 can then Call or Fold
 
-\begin{itemize}
-\item If a player folds to a bet, the other player wins the pot of 2 (profit of 1)
-\item If both players check, the highest card player wins the pot of 2 (profit of 1)
-\item If there is a bet and call, the highest card player wins the pot of 4 (profit of 2)
-\end{itemize}
+- If a player folds to a bet, the other player wins the pot of 2 (profit of 1)
+- If both players check, the highest card player wins the pot of 2 (profit of 1)
+- If there is a bet and call, the highest card player wins the pot of 4 (profit of 2)
 
 The following sequences are possible:
 
@@ -358,75 +352,67 @@ By checking the K always, P1 can try to induce a bluff from P2 when P2 has the Q
 
 **P1 initial action**
 Therefore we assign P1's strategy:
-\begin{itemize}
-\item Bet Q: $x$
-\item Bet K: $0$
-\item Bet A: $y$
-\end{itemize}
+- Bet Q: $x$
+- Bet K: $0$
+- Bet A: $y$
 
 **P2 after P1 bet**
 After P1 bets, P2 should always call with the A and always fold the Q as explained above. 
 
 Therefore we assign P2's strategy after P1 bet:
-\begin{itemize}
-\item Call Q: $0$
-\item Call K: $a$
-\item Call A: $1$
-\end{itemize}
+- Call Q: $0$
+- Call K: $a$
+- Call A: $1$
 
 **P2 after P1 check**
 After P1 checks, P2 should never bet with the K for the same reason as P1 should never initially bet with the K. 
 P2 should always bet with the A because it is the best hand and there is no bluff to induce by checking. 
 
 Therefore we assign P2's strategy after P1 check:
-\begin{itemize}
-\item Bet Q: $b$
-\item Bet K: $0$
-\item Bet A: $1$
-\end{itemize}
+- Bet Q: $b$
+- Bet K: $0$
+- Bet A: $1$
 
 **P1 after P1 check and P2 bet**
 This case is similar to P2's actions after P1's bet. P1 can never call here with the worst hand (Q) and must always call with the best hand (A). 
 
 Therefore we assign P1's strategy after P1 check and P2 bet:
-\begin{itemize}
-\item Call Q: $0$
-\item Call K: $z$
-\item Call A: $1$
-\end{itemize}
-
+- Call Q: $0$
+- Call K: $z$
+- Call A: $1$
 
 So we now have 5 different variables $$x, y, z, a, b$$ to represent the unknown probabilities. 
 
-\section{Solving}
+**Solving** 
 
-\subsection{Solving for $a$}
-We start by solving for $a$, how often P2 should call with a K facing a bet from P1. 
-P2 should call $a$ to make P1 indifferent to bluffing (i.e., betting or checking) with card Q. 
+**Solving for $$a$$**
+We start by solving for $$a$$, how often P2 should call with a K facing a bet from P1. 
+P2 should call $$a$$ to make P1 indifferent to bluffing (i.e., betting or checking) with card Q. 
 
-\par If P1 checks with card Q, he will always fold afterwards (because it is the worst card and can never win). 
+If P1 checks with card Q, he will always fold afterwards (because it is the worst card and can never win). 
 
+$$ \text{P1 check with Q} = 0 $$     
+
+
+If P1 bets with card Q, 
+
+$$
 \begin{align}
-   u(\textrm{P1 check with Q}) &= 0      
-\end{align}
-
-
-\par If P1 bets with card Q, 
-
-\begin{align}
-u(\textrm{P1 bet with Q}) &= (\textrm{P2 has A and always calls/wins}) + \\ (\textrm{P2 has K and folds}) + (\textrm{P2 has K and calls/wins}) \\
+u(\text{P1 bet with Q}) = (\text{P2 has A and always calls/wins}) + \\ (\text{P2 has K and folds}) + (\text{P2 has K and calls/wins}) \\
 &= (1/2)(-1) + (1/2)[(a)(-1) + (1-a)(2)] \\
 &= -1/2 - 1/2 * a + (1-a) \\
 &= 1/2 - 3/2 * a
 \end{align}
+$$
 
 Setting the probabilities of betting with Q and checking with Q equal, we have:
+$$
 \begin{align}
    0 &= \frac{1}{2} - \frac{3}{2} * a \\        
    \frac{3}{2} * a  &= \frac{1}{2} \\
     a &= \frac{1}{3}
 \end{align}
-
+$$
 
 Kuhn normal form
 Kuhn extensive form, linear programming
