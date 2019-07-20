@@ -325,13 +325,15 @@ Also regret in poker which is actually advantage
 
 The game in its standard form is played with 3 cards in {A, K, Q} and 2 players. Each player starts with $2 and places an ante (i.e., forced bet before the hand) of $1. And therefore has $1 left to bet with. Each player is then dealt 1 card and 1 round of betting ensues. 
 
-- 2 players, each is dealt a card in {A, K, Q}
-- Each antes 1 at the start of the hand
-- Each has 1 remaining for betting
-- There is one betting round
+- 2 players, 3 card deck {A, K, Q}
+- Each starts the hand with $2
+- Each antes (i.e., makes forced bet of) $1 at the start of the hand
+- Each player is dealt 1 card
+- Each has $1 remaining for betting
+- There is one betting round and one bet size of $1
 - The highest card is the best (i.e., A $>$ K $>$ Q)
 
-Action starts with P1, who can Bet 1 or Check
+Action starts with P1, who can Bet $1 or Check
 - If P1 bets, P2 can either Call or Fold
 - If P1 checks, P2 can either Bet or Check
 - If P2 bets after P1 checks, P1 can then Call or Fold
@@ -370,7 +372,7 @@ Therefore we assign P2's strategy after P1 bet:
 
 **P2 after P1 check**
 After P1 checks, P2 should never bet with the K for the same reason as P1 should never initially bet with the K. 
-P2 should always bet with the A because it is the best hand and there is no bluff to induce by checking. 
+P2 should always bet with the A because it is the best hand and there is no bluff to induce by checking (the hand would simply end and P2 would win, but not have a chance to win more by betting). 
 
 Therefore we assign P2's strategy after P1 check:
 - Bet Q: $$b$$
@@ -389,42 +391,67 @@ So we now have 5 different variables $$x, y, z, a, b$$ to represent the unknown 
 
 **Solving** 
 
+**Solving for $$x$$ and $$y$$**
+
+For P1, $$x$$ is his probability of betting with Q (bluffing) and $$y$$ is his probability of betting with A (value betting). We want to make P2 indifferent between calling and folding with the K (since again, Q is always a fold and A is always a call). 
+
+When P2 has K, P1 has $$ \frac{1}{2} $$ of having a Q and A each. 
+
+P2's EV of folding with a K to a bet is $$ 0 $$. 
+
+P2's EV of calling with a K to a bet $$ = 3 * \text{P(P1 has Q and bets with Q)} + (-1) * \text{P(P1 has A and bets with A)} $$
+
+$$ = (3) * \frac{1}{2} * x + (-1) * \frac{1}{2} * y $$
+
+Setting these equal, we have: 
+
+$$ 0 = (3) * \frac{1}{2} * x + (-1) * \frac{1}{2} * y $$
+
+$$ y = 3 * x $$
+
+This says that the value-bet should happen 3 times more often than the bluff. 
+
 **Solving for $$a$$**
-We start by solving for $$a$$, how often P2 should call with a K facing a bet from P1. 
+
+$$a$$ is how often P2 should call with a K facing a bet from P1. 
 P2 should call $$a$$ to make P1 indifferent to bluffing (i.e., betting or checking) with card Q. 
 
-If P1 checks with card Q, he will always fold afterwards (because it is the worst card and can never win), so his utility is 0. 
+If P1 checks with card Q, P1 will always fold afterwards (because it is the worst card and can never win), so his utility is 0. 
 
-$$ \text{P1 check with Q} = 0 $$     
+$$ \text{EV P1 check with Q} = 0 $$     
 
 If P1 bets with card Q, 
 
 $$
-\begin{align}
-u(\text{P1 bet with Q}) = (\text{P2 has A and always calls/wins}) + \\ (\text{P2 has K and folds}) + (\text{P2 has K and calls/wins}) \\
-&= (1/2)(-1) + (1/2)[(a)(-1) + (1-a)(2)] \\
-&= -1/2 - 1/2 * a + (1-a) \\
-&= 1/2 - 3/2 * a
-\end{align}
+\text{EV P1 bet with Q} = (-1) * \text{P2 has A and always calls/wins} + (-1) * \text{P2 has K and calls/wins} + 2 * \text{P2 has K and folds}
+
+= \frac{1}{2} * (-1) + \frac{1}{2} * (a) * (-1) + \frac{1}{2} * (1 - a) * (2)
+
+= -\frac{1}{2} - \frac{1}{2} * a + (1 - a)
+
+= \frac{1}{2} - \frac{3}{2} * a
 $$
 
 Setting the probabilities of betting with Q and checking with Q equal, we have:
 $$
-\begin{align}
-   0 &= \frac{1}{2} - \frac{3}{2} * a \\        
-   \frac{3}{2} * a  &= \frac{1}{2} \\
-    a &= \frac{1}{3}
-\end{align}
+0 = \frac{1}{2} - \frac{3}{2} * a  
+
+\frac{3}{2} * a   = \frac{1}{2}
+
+a = \frac{1}{3}
 $$
 
 **Solving for $$b$$**
+
 Now to solve for $$b$$, how often P2 should bet with a Q after P1 checks. The indifference for P1 is only relevant when he has a K, since if he has a Q or A, he will always fold or call, respectively. 
 
 If P1 checks a K and then folds, then
 
-$$ \text{P1 check with K and then fold to bet} = 0 $$  
+$$ \text{EV P1 check with K and then fold to bet} = 0 $$  
 
-$$ \text{P1 check with K and then call a bet} = \frac{1}{2} * (-1) + \frac{1}{2} * b * (3) $$
+$$ \text{EV P1 check with K and then call a bet} = (-1) * \text{P(P2 has A and always bets) + (3) * P(P2 has Q and bets)
+
+= \frac{1}{2} * (-1) + \frac{1}{2} * b * (3) $$
 
 Setting these probabilities equal, we have:
 $$ 0 = \frac{1}{2} * (-1) + \frac{1}{2} * b * (3) $$
@@ -435,46 +462,92 @@ $$ 3 * b = 1 $$
 
 $$ b = \frac{1}{3} $$
 
-**Solving for $$x$$ and $$y$$**
-Now what about P1? $$x$$ is his probability of betting with Q (bluffing) and $$y$$ is his probability of betting with A (value betting). We want to make P2 indifferent between calling and folding with the K (since again, Q is always a fold and A is always a call). 
-
-When P2 has K, P1 has $$ \frac{1}{2} $$ of having a Q and A each. 
-
-P2's EV of folding with a K to a bet is $$ 0 $$. 
-
-P2's EV of calling with a K to a bet $$ = \frac{1}{2} * x * (2) + \frac{1}{2} * y * (-1) $$
-
-Setting these equal, we have: 
-
-$$ 0 = \frac{1}{2} * x * (3) + \frac{1}{2} * y * (-1) $$
-
-$$ y = 3 * x $$
-
-This says that the value-bet should happen 3 times more often than the bluff. 
-
 **Solving for $$z$$**
 The final case is when P1 checks a K, P2 bets, and P1 must call so that P2 is indifferent to checking vs. betting (bluffing) with a Q. 
 
 $$ \text{P(P1 has A | P1 checks A or K)} = \frac{\text{P(P1 has A and checks)}}{\text{P(P1 checks A or K)}} $$
 
-$$ = \frac{(1-x) * \frac{1}{2}{ {(1-x) * \{\frac{1}{2} + \frac{1}{2}} $$
+$$ = \frac{(1-y) * \frac{1}{2}{ {(1-y) * \{\frac{1}{2} + \frac{1}{2}} $$
 
-$$ = \frac{1-x}{2-x} $$
+$$ = \frac{1-y}{2-y} $$
 
 $$ \text{P(P1 has K | P1 checks A or K)} = 1 - \text{P(P1 has A | P1 checks A or K)} $$
-$$ = 1 - \frac{1-x}{2-x} $$
-$$ = \frac{2-x}{2-x} - \frac{1-x}{2-x} $$
-$$ = \frac{1}{2-x} $$
+
+$$ = 1 - \frac{1-y}{2-y} $$
+
+$$ = \frac{2-y}{2-y} - \frac{1-y}{2-y} $$
+
+$$ = \frac{1}{2-y} $$
 
 If P2 checks his Q, his EV $$ = 0 $$.
 
 If P2 bets (bluffs) with his Q, his EV is:
-$$ -1 * P(P1 check A then call A), -1 * P(P1 check K then call K), +2 * P(P1 check K then fold K) $$
-$$ = -1 * \frac{1-x}{2-x} + -1 * z * \frac{1}{2-x} + 2 * (1-z) * \frac{1}{2-x} $$
+
+$$ -1 * P(P1 check A then call A) - 1 * P(P1 check K then call K) + 2 * P(P1 check K then fold K) $$
+
+$$ = -1 * \frac{1-y}{2-y} + -1 * z * \frac{1}{2-y} + 2 * (1-z) * \frac{1}{2-ya} $$
 
 Setting these equal:
 
-$$ 0 = -1 * \frac{1-x}{2-x} + -1 * z * \frac{1}{2-x} + 2 * (1-z) * \frac{1}{2-x} $$
+$$ 0 = -1 * \frac{1-y}{2-y} + -1 * z * \frac{1}{2-y} + 2 * (1-z) * \frac{1}{2-y} $$
+
+$$ 0 = -1 * \frac{1-y}{2-y} + -1 * z * \frac{1}{2-y} + 2 * (1-z) * \frac{1}{2-y} $$
+
+$$ 0 = -\frac{1-y}{2-y} - z * \frac{3}{2-y} + \frac{2}{2-y} $$ 
+
+$$ z * \frac{3}{2-y} = \frac{2}{2-y} - \frac{1-y}{2-y} $$
+
+$$ z = \frac{2}{3} - \frac{1-y}{3}
+
+$$ z = \frac{y+1}{3} $$
+
+**Summary**
+
+We now have the following result:
+
+P1 initial actions: 
+
+Bet Q: $$x = \frac{y}{3} $$
+
+Bet A: $$ y = ?? $$
+
+P2 after P1 bet: 
+
+Call K: $$ a = \frac{1}{3} $$
+
+P2 after P1 check: 
+
+Bet Q: $$ b = \frac{1}{3} $$
+
+P1 after P1 check and P2 bet: 
+
+Call K: $$ z = \frac{y+1}{3} $$
+
+P2 has fixed actions, but P1's are dependent on the $$ y $$ parameter. 
+
+We can look at every possible deal-out to evaluate the value for $$ y $$. 
+
+**Case 1: P1 A, P2 K**
+
+P1 bets $$ y $$ and checks $$ 1 - y $$. 
+
+After the bet, P2 calls $$ a = \frac{1}{3} $$. EV = $$ 2 * y * frac{1}{3} = \frac{2 * y}{3} $$
+
+After a check, P2 checks. EV = $$ 1 * (1 - y) $$ = $$ 1 - y $$ 
+
+**Case 2: P1 A, P2 Q**
+
+**Case 3: P1 K, P2 A**
+
+**Case 4: P1 K, P2 Q**
+
+**Case 5: P1 Q, P2 A**
+
+P1 bets $$ x $$ and P2 calls, EV = $$ -2 * x $$
+
+P1 checks $$ 1 - x $$ and P2 bets and P1 folds. EV = $$ -1 * (1-x) = x - 1 
+
+**Case 6: P1 A, P2 K**
 
 
 Kuhn normal form
