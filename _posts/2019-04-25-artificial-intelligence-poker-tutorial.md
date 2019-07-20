@@ -529,17 +529,39 @@ We can look at every possible deal-out to evaluate the value for $$ y $$.
 
 **Case 1: P1 A, P2 K**
 
-P1 bets $$ y $$ and checks $$ 1 - y $$. 
+1. Bet fold
+$$ y * \frac{2}{3} * 1 = \frac{2 * y}{3}
 
-After the bet, P2 calls $$ a = \frac{1}{3} $$. EV = $$ 2 * y * frac{1}{3} = \frac{2 * y}{3} $$
+2. Bet call
+$$ y * \frac{1}{3} * 2 = \frac{2 * y}{3}
 
-After a check, P2 checks. EV = $$ 1 * (1 - y) $$ = $$ 1 - y $$ 
+3. Check check
+$$ (1 - y) * (1) * (1) = 1 - y
+
+Total = $$ \frac{4 * y}{3} + 1 - y = \frac{y}{3} + 1
 
 **Case 2: P1 A, P2 Q**
+1. Bet fold
+$$ y * 1 * 1 = y $$
+
+2. Check bet call
+$$ (1 - y) * \frac{1}{3} * 1 * 2 = \frac{2}{3} * (1 - y)
+
+3. Check check
+$$ (1 - y) * \frac{2}{3} * 1 = \frac{2}{3} * (1 - y)
+
+Total = $$ \frac{4}{3} * (1 - y) + y = \frac{4}{3} - \frac{1}{3} * y
 
 **Case 3: P1 K, P2 A**
+1. Check bet call
+$$ (1) * (1) * \frac{y+1}{3} * (-2) = \frac{-2}{3} * (y + 1)
+
+2. Check bet fold
+$$ (1) * (1) * (1 - \frac{y+1}{3}) * (-1) = 
 
 **Case 4: P1 K, P2 Q**
+1. Check check
+$$ (1) * \frac{2}{
 
 **Case 5: P1 Q, P2 A**
 
