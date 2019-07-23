@@ -50,6 +50,9 @@ Players each ante 1 chip (although most standard poker games use blinds, this ba
 
 If the first to act player checks, then the second player can either check or bet. If he checks, the player with the best hand wins one chip. If he bets, then the first player can either fold and player two will win one chip, or he can call, and the player with the best hand will win two chips.
 
+
+### What happened to online poker?
+
 #### All Kuhn Poker Sequences
 
 
@@ -562,8 +565,13 @@ $$ (1) * (1) * (1 - \frac{y+1}{3}) * (-1) =
 **Case 4: P1 K, P2 Q**
 1. Check check
 $$ (1) * \frac{2}{
+2. Check bet call
+3. Check bet fold
 
 **Case 5: P1 Q, P2 A**
+
+1. Bet call
+2. Check bet fold
 
 P1 bets $$ x $$ and P2 calls, EV = $$ -2 * x $$
 
@@ -571,8 +579,341 @@ P1 checks $$ 1 - x $$ and P2 bets and P1 folds. EV = $$ -1 * (1-x) = x - 1
 
 **Case 6: P1 A, P2 K**
 
+1. Check check
+2. Bet call
+3. Bet fold
 
-Kuhn normal form
+**Summing up the cases**
+
+Since each case is equally likely based on the initial deal, we can multiply each by $$ \frac{1}{6} $$ and then sum them to find the EV of the game. 
+
+### Kuhn Poker in Normal Form
+
+**Information Sets**
+
+Given a deal of cards in Kuhn Poker, each player has 2 fixed decision points. Player 1 acts first and also acts if P1 checks and P2 bets. P2 acts second either facing a bet or facing a check from P1. This amounts to a total of 12 decision points per player. However, each player has 2 decision points that are equivalent in different states of the game. 
+
+For example, if Player 1 is dealt a K and Player 2 dealt a Q or P1 dealt K and P2 dealt A, P1 is facing the decision of having a K and not knowing what his opponent has. 
+
+Likewise if Player 2 is dealt a K and is facing a bet, he must make the same action regardless of what the opponent has because from his perspective he only knows his own card. 
+
+We define an information set as the set of information used to make decisions at a particular point in the game. It is equivalent to the card of the acting player and the history of actions up to that point. 
+
+So for Player 1 acting first with a K, the information set is "K". For Player 2 acting second with a K and facing a bet, the information set is "Kb". For Player 2 acting second with a K and facing a check, the information set is "Kk". For Player 1 with a K checking and facing a bet from Player 2, the information set is "Kkb". We use "k" to define check, "b" for bet", "f" for fold, and "c" for call. 
+
+**Writing Kuhn Poker in Normal Form** 
+
+Now that we have defined information sets, we see that each player in fact has 2 information sets per card that he can be dealt, which is a total of 6 information sets per player since each can be dealt a card in {Q, K, A}. 
+
+Each information set has 2 actions possible, which are essentially "do not put money in the pot" (check when acting first/facing a check or fold when facing a bet) and "put in $1" (bet when acting first or call when facing a bet). 
+
+The result is that each player has $$ 2^6 = 64 $$ total combinations of strategies. That is, there are $$ 2^64 $$ strategy combinations. 
+
+Here are a few examples for Player 1: 
+
+1. A - bet, Apb - bet, K - bet, Kpb - bet, Q - bet, Qpb - bet 
+2. A - bet, Apb - bet, K - bet, Kpb - bet, Q - bet, Qpb - pass 
+3. A - bet, Apb - bet, K - bet, Kpb - bet, Q - bet, Qpb - bet 
+4. A - bet, Apb - bet, K - bet, Kpb - bet, Q - bet, Qpb - bet 
+5. A - bet, Apb - bet, K - bet, Kpb - bet, Q - bet, Qpb - bet 
+6. A - bet, Apb - bet, K - bet, Kpb - bet, Q - bet, Qpb - bet 
+
+Think of this as each player having a switch between pass/bet that can be on or off and showing every possible combination of these switches for each information set. 
+
+We can create a $$ 64 \text{x} 64 $$ payoff matrix with every possible strategy for each player on each axis and the payoffs inside and then 
+
+Put expected values in matrix form according to chance. 
+
+Minimax theorem
+
+| P1/P2  | P2 Strat 1  | P2 Strat 2 | ... | P2 Strat 64 |
+|---|---|---|---|---|
+| P1 Strat 1  | 0  | 0  | ...  |  |
+| P1 Strat 2  |   |  | ...  | |
+| ...  | ...  | ...  | ...  | ... |
+| P1 Strat 64 | 0  | 0  | ...  | 0 |
+
+$$ A = 
+\quad
+\begin{bmatrix} 
+0 & 0 & ... & 0 & \\
+0 & 0 & ... & 0 & \\
+... & ... & ... & ... & \\
+0 & 0 & ... & 0 & \\
+\end{bmatrix}
+$$
+
+**Solving with Linear Programming**
+
+The general way to solve a game matrix of this size is with linear programming. 
+
+Define Player 1's strategy vector as $$ x $$ and Player 2's strategy vector as $$ y $$
+
+Define the payoff matrix as $$ A $$ (payoffs written with respect to Player 1) 
+
+We can also define payoff matrix $$ B $$ for payoffs written with respect to Player 2 
+
+In zero-sum games like poker, $$ A = -B$$
+
+We can also define a constraint matrix for each player
+
+Let P1's constraint matrix = $$ E $$ such that $$ Ex = e $$ 
+
+Let P2's constraint matrix = $$ F $$ such that $$ Fy = f $$ 
+
+The only constraint we have at this time is that the sum of the strategies is 1 since they are a probability distribution, so E and F will just be matrices of 1's and e and f will $$ = 1 $$. 
+
+A basic linear program is set up as follows:
+
+$$ \text{Maximize: } S_1 * x_1 + S_2 * x_2 $$ 
+
+$$ \text{Subject to: } x_1 + x_2 \leq L $$
+
+$$ x_1 \geq 0, x_2 \geq 0 $$
+
+In the case of poker, for **step 1** we look at a best response for player 2 (strategy y) to a fixed Player 1 (strategy x) and have:
+
+$$ \max_{y} (x^TB)y = \max_{y} (x^T(-A))y  = \min_{y} (x^T(A))y $$
+$$ \text{Such that: } Fy = f, y \geq 0 $$ 
+
+In words, this is the expected value of the game from Player 2's perspective because the $$ x $$ and $$ y $$ matrices represent the probability of ending in each state of the payoff matrix and the $$ B == -A $$ value represents the payoff matrix itself. So Player 2 is trying to find a strategy $$ y $$ that maximizes the payoff of the game from his perspective against a fixed $$ x $$ player 1 strategy. 
+
+For **step 2**, we look at a best response for player 1 (strategy x) to a fixed player 2 (strategy y) and have: 
+
+$$ \max_{x} x^T(Ay) $$
+$$ \text{Such that: } x^TE^T = e^T, x \geq 0 $$
+
+For the final step, we can combine the above 2 parts and now allow for $$ x $$ and $$ y $$ to no longer be fixed. 
+
+$$ \min_{y} \max_{x} [x^TAy] $$
+
+$$ \text{Such that: } x^TE^T = e^T, x \geq 0, Fy = f, y \geq 0 $$
+
+We can solve this with linear programming, but there is a much nicer way to do this!
+
+**Simplifying the Matrix** 
+
+Kuhn Poker is the most basic poker game possible and requires solving a $$ 64 \text{x} 64 $$ matrix. While this is feasible, any reasonably sized poker game would blow up the matrix size! 
+
+We can improve on this form by considering the structure of the game tree, also known as writing the game in extensive form. Rather than just saying that the constraints on the $$ x $$ and $$ y $$ matrices are that they must sum to 1, we can redefine these conditions according to the structure of the game tree. 
+
+Previously we defined $$ E = F = \text{Vectors of } 1 $$. However, we know that some strategic decisions can only be made after certain other decisions have already been made. For example, Player 2's actions after a bet can only be made after Player 1 has first bet! 
+
+Now we can redefine $$ E $$ as follows:
+
+| Infoset/Strategies | 0  | A_b | A_p  | A_pb  | A_pp  | K_b  | K_p  | K_pb  | K_pp  | Q_b  | Q_p  | Q_pb  | Q_pp  |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 0  | 1  |   |   |   |   |   |   |   |   |   |   |   |   |
+| A  | -1  | 1  | 1  |   |   |   |   |   |   |   |   |   |   |
+| Apb  |   |   | -1  | 1  | 1  |   |   |   |   |   |   |   |   |
+| K  | -1   |   |   |   |   | 1  | 1  |   |   |   |   |   |   |
+| Kpb  |   |   |   |   |   |   | -1  | 1  | 1  |   |   |   |   |
+| Q  | -1  |   |   |   |   |  |   |   |   | 1  | 1  |   |   |
+| Qpb  |   |   |   |   |   |   |   |   |   |   | -1  | 1  | 1  |
+
+We see that $$ E $$ is a $$ 7 \text{x} 13 $$ matrix. 
+
+$$ E = 
+\quad
+\begin{bmatrix} 
+1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+-1 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & -1 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+-1 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & -1 & 1 & 1 & 0 & 0 & 0 & 0 \\
+-1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & -1 & 1 & 1 \\
+\end{bmatrix}
+$$
+
+$$ x $$ is a $$ 13 \text{x} 1 $$ matrix of probabilities to play each strategy.
+
+$$ x = 
+\quad
+\begin{bmatrix} 
+1 \\
+A_b \\
+A_p \\
+A_{pb} \\
+A_{pp} \\
+K_b \\
+K_p \\
+K_{pb} \\
+K_{pp} \\
+Q_b \\
+Q_p \\
+Q_{pb} \\
+Q_{pp} \\
+\end{bmatrix}
+$$
+
+We have finally that $$ e $$ is a $$ 7 \text{x} 1 $$ fixed matrix. 
+
+$$ e = 
+\quad
+\begin{bmatrix} 
+1 \\
+0 \\
+0 \\
+0 \\
+0 \\
+0 \\
+0 \\
+\end{bmatrix}
+$$
+
+So we have:
+
+$$
+\quad
+\begin{bmatrix} 
+1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+-1 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & -1 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+-1 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & -1 & 1 & 1 & 0 & 0 & 0 & 0 \\
+-1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & -1 & 1 & 1 \\
+\end{bmatrix}
+
+\quad
+\begin{bmatrix} 
+1 \\
+A_b \\
+A_p \\
+A_{pb} \\
+A_{pp} \\
+K_b \\
+K_p \\
+K_{pb} \\
+K_{pp} \\
+Q_b \\
+Q_p \\
+Q_{pb} \\
+Q_{pp} \\
+\end{bmatrix}
+
+= 
+
+\quad
+\begin{bmatrix} 
+1 \\
+0 \\
+0 \\
+0 \\
+0 \\
+0 \\
+0 \\
+\end{bmatrix}
+$$
+
+To understand how the matrix multiplication works and why it makes sense, let's look at each of the 7 multiplications (i.e., each row of $$ E $$ multiplied by the column vector of $$ x $$ $$ = $$ the corresponding row in the $$ e $$ column vector. .
+
+**Row 1**
+
+We have $$ 1 \text{x} 1 $$ = 1. This is a "dummy" 
+
+**Row 2**
+
+$$ -1 + A_b + A_p = 0 $$
+$$ A_b + A_p = 1 $$
+
+This is the simple constraint that the probability between the initial actions in the game must sum to 1. 
+
+**Row 3**
+$$ -A_p + A_{pb} + A_{pp} = 1 $$
+$$ A_{pb} + A_{pp} = A_p $$
+
+The probabilities of Player 1 taking a bet or pass option with an A after initially passing must sum up to the probability of that initial pass $$ A_p$$. 
+
+The following are just repeats of Rows 2 and 3 with the other cards. 
+
+**Row 4**
+ 
+$$ -1 + K_b + K_p = 0 $$
+$$ K_b + K_p = 1 $$
+
+**Row 5**
+ 
+$$ -K_p + K_{pb} + K_{pp} = 1 $$
+$$ K_{pb} + K_{pp} = K_p $$
+
+**Row 6**
+ 
+$$ -1 + Q_b + Q_p = 0 $$
+$$ Q_b + Q_p = 1 $$
+
+**Row 7**
+ 
+$$ -Q_p + Q_{pb} + Q_{pp} = 1 $$
+$$ Q_{pb} + Q_{pp} = Q_p $$
+
+And $$ F $$:
+
+| Infoset/Strategies | 0  | A_b(ab) | A_p(ab)  | A_b(ap)  | A_p(ap)  | K_b(ab)  | K_p(ab)  | K_b(ap)  | K_p(ap)  | Q_b(ab)  | Q_p(ab)  | Q_b(ap)  | Q_p(ap)  |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 0  | 1  |   |   |   |   |   |   |   |   |   |   |   |   |
+| Ab  | -1  | 1  | 1  |   |   |   |   |   |   |   |   |   |   |
+| Ap  | -1   |   |   | 1  | 1  |   |   |   |   |   |   |   |   |
+| Kb  | -1   |   |   |   |   | 1  | 1  |   |   |   |   |   |   |
+| Kp  | -1  |   |   |   |   |   |   | 1  | 1  |   |   |   |   |
+| Qb  | -1  |   |   |   |   |  |   |   |   | 1  | 1  |   |   |
+| Qp  | -1  |   |   |   |   |   |   |   |   |   |   | 1  | 1  |
+
+From the equivalent analysis as we did above with $$ Fx = f$$, we will see that each pair of 1's in the $$ F $$ matrix will sum to $$ 1 $$ since they are the 2 options at the information set node. 
+
+Now instead of the $$ 64 \text{x} 64 $$ matrix we made before, we can represent the payoff matrix as only $$ 6 \text{x} 2 \text{ x } 6\text{x}2 = 12 \text{x} 12 $$.   
+
+| P1/P2 | 0  | A_b(ab) | A_p(ab)  | A_b(ap)  | A_p(ap)  | K_b(ab)  | K_p(ab)  | K_b(ap)  | K_p(ap)  | Q_b(ab)  | Q_p(ab)  | Q_b(ap)  | Q_p(ap)  |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 0  |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| A_b  |   |   |   |   |   | 2  | 1  |   |   | 2  | 1  |   |   |
+| A_p  |    |   |   |   |   |   |   |  | 1  |   |   |   | 1  |
+| A_pb  |    |   |   |   |   | 1  | 1  |   |   |   |   |   |   |
+| A_pp  |   |   |   |   |   |   |   | 1  | 1  |   |   |   |   |
+| K_b  | -2  |   |   |   |   |  |   |   |   | 1  | 1  |   |   |
+| K_p  |   |   |   |   |   |   |   |   |   |   |   | 1  | 1  |
+| K_pb  |   | 1  | 1  |   |   |   |   |   |   |   |   |   |   |
+| K_pp  |    |   |   | 1  | 1  |   |   |   |   |   |   |   |   |
+| Q_b  | -2   |   |   |   |   | 1  | 1  |   |   |   |   |   |   |
+| Q_p  |   |   |   |   |   |   |   | 1  | 1  |   |   |   |   |
+| Q_pb  |   |   |   |   |   |  |   |   |   | 1  | 1  |   |   |
+| Q_pp  |   |   |   |   |   |   |   |   |   |   |   | 1  | 1  |
+
+$$ A = 
+\quad
+\begin{bmatrix} 
+1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+-1 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & -1 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+-1 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & -1 & 1 & 1 & 0 & 0 & 0 & 0 \\
+-1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & -1 & 1 & 1 \\
+-1 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & -1 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+-1 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & -1 & 1 & 1 & 0 & 0 & 0 & 0 \\
+-1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & -1 & 1 & 1 \\
+\end{bmatrix}
+$$
+
+[0,0,0,0,0,0,0,0,0,0,0,0,0;
+    0,0,0,0,0,2,1,0,0,2,1,0,0;
+    0,0,0,0,0,0,0,0,1,0,0,0,1;
+    0,0,0,0,0,0,0,2,0,0,0,2,0;
+    0,0,0,0,0,0,0,-1,0,0,0,-1,0;
+    0,-2,1,0,0,0,0,0,0,2,1,0,0;
+    0,0,0,0,-1,0,0,0,0,0,0,0,1;
+    0,0,0,-2,0,0,0,0,0,0,0,2,0;
+    0,0,0,-1,0,0,0,0,0,0,0,-1,0;
+    0,-2,1,0,0,-2,1,0,0,0,0,0,0;
+    0,0,0,0,-1,0,0,0,-1,0,0,0,0;
+    0,0,0,-2,0,0,0,-2,0,0,0,0,0;
+    0,0,0,-1,0,0,0,-1,0,0,0,0,0]
+
+
 Kuhn extensive form, linear programming
 Resutls with other poker agents playing worse strategies exploitable
 
@@ -624,6 +965,9 @@ Pluribus
 Examples from Brokos book
 Paper with Sam
 Theme ideas from toy games that can translate to full games
+
+Are tells useful?
+Should I get into poker?
 
 ## 13. Multiplayer Games
 3 player Kuhn, Leduc
