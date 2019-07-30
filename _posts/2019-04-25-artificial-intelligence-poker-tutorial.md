@@ -128,6 +128,8 @@ What does it mean to "solve" a poker game? In the 2-player setting, this means t
 
 Intuition for this in poker can be explained using a simple all-in game where one player must either fold or bet all his chips and the second player must either call or fold if the first player bets all the chips. In this scenario, the second player may begin the game with a strategy of calling a low percentage of hands. After seeing the first player go all-in very frequently, he may increase that percentage. This could lead the first player to reduce his all-in percentage. Once the all-in percentage and the call percentage stabilize such that neither player can unilaterally change his strategy to increase his profit, then the equilibrium strategies have been reached.
 
+Call with enough hands to make opponent worse off in allin hands
+
 But what if the opponent, for example, keeps calling this low percentage of hands and seems to be easy to exploit? The game theoretic solution would not fully take advantage of this opportunity. The **best response strategy** is the one that maximally exploits the opponent by always performing the highest expected value play against their fixed strategy (and an exploitative strategy is one that exploits an opponent's non-equilibrium play). In the above example, this could mean raising all hands after seeing the opponent calling with a low percentage of hands. However, this strategy can itself be exploited. 
 
 ### Normal Form Games
@@ -317,11 +319,41 @@ Here are 10,000 sample runs of this scenario. We know that the best strategy is 
 Add automation/make clearer
 
 ### Bandits
+A standard example for analyzing regret is the multi-armed bandit. The setup is a player sitting in front of a multi-armed bandit with some number of arms. (Think of each as a different slot machine arm to pull.) A basic setting initializes each arm with $$ q_*(\text{arm}) = \mathcal{N}(0, 1) $$, so each is initialized with a center point found from the Gaussian distribution. 
 
-Exploitation vs. equilibrium
-Bandits
+Each pull of an arm then gets a reward of $$ R = \mathcal{N}(q_*(\text{arm}), 1) $$. 
 
-Also regret in poker which is actually advantage
+To clarify, this means each arm gets an initial value centered around 0 but with some variance, so each will be a bit different. Then from that point, the actual pull of an arm is centered around that new point as seen in this figure with a 10-armed bandit from Intro to Reinforcement Learning by Sutton and Barto:
+
+![Bandit setup](banditsetup.png)
+
+Imagine that the goal is to play this game 2000 times with the goal to achieve the highest rewards. We can only learn about the rewards by pulling the arms -- we don't have any information about the distribution behind the scenes. We maintain an average reward per pull for each arm as a guide for which arm to pull in the future. 
+
+**Greedy** 
+
+The most basic algorithm to score well is to pull each arm once and then forever pull the arm that performed the best in the sampling stage. 
+
+**Epsilon Greedy**
+
+$$\epsilon$$-Greedy works the same way as Greedy, but instead of **always** picking the best arm, we use an $$\epsilon$$ value that defines how often we should randomly pick a different arm. We must be checking to see which arm is the current best arm before each pull according to the average reward per pull, since the random selections could switch the previous best arm to a new arm. 
+
+The idea of usually picking the best arm and sometimes switching to a random one is the concept of exploration vs. exploitation. Think of this in the context of picking a travel destination or picking a restaurant. You are likely to get a very high "reward" by continuing to go to a favorite vacation spot or restaurant, but it's also important to explore other options. 
+
+**Bandit Regret** 
+The goal of the agent playing this game is to get the best reward. This is done by pulling the best arm. We can define a very sensible definition of average regret as 
+
+$$ \text{Regret}_t = \frac{1}{t} \sum_{\tau=1}^t (V^* - Q(a_\tau)) $$ 
+
+where $$ V^* $$ is the fixed reward from the best action, $$ Q(a_\tau)) $$ is the reward from selecting arm $$ a $$ at timestep $$ \tau $$, and $$ t $$ is the total number of timesteps. 
+
+In words, this is the average of how much worse we have done than the best possible action over the number of timesteps. 
+
+So if the best action would give a value of 5 and our rewards on our first 3 pulls were {3, 5, 1}, our regrets would be {5-3, 5-5, 5-1} = {2, 0, 4}, for an average of 2. So an equivalent to trying to maximize rewards is trying to minimize regret. 
+
+**Upper Confidence Bound (UCB)** 
+
+### Regret in Poker 
+In the counterfactual regret minimization (CFR) algorithm, a slightly different presentation of regret is used. For each node in the poker game tree, 
 
 ## 4. Solving Toy Poker Games from Normal Form to Extensive Form
 **Kuhn Poker** is the most basic poker game with interesting strategic implications. 
@@ -868,113 +900,331 @@ Now instead of the $$ 64 \text{x} 64 $$ matrix we made before, we can represent 
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 0  |   |   |   |   |   |   |   |   |   |   |   |   |   |
 | A_b  |   |   |   |   |   | 2  | 1  |   |   | 2  | 1  |   |   |
-| A_p  |    |   |   |   |   |   |   |  | 1  |   |   |   | 1  |
-| A_pb  |    |   |   |   |   | 1  | 1  |   |   |   |   |   |   |
-| A_pp  |   |   |   |   |   |   |   | 1  | 1  |   |   |   |   |
-| K_b  | -2  |   |   |   |   |  |   |   |   | 1  | 1  |   |   |
-| K_p  |   |   |   |   |   |   |   |   |   |   |   | 1  | 1  |
-| K_pb  |   | 1  | 1  |   |   |   |   |   |   |   |   |   |   |
-| K_pp  |    |   |   | 1  | 1  |   |   |   |   |   |   |   |   |
-| Q_b  | -2   |   |   |   |   | 1  | 1  |   |   |   |   |   |   |
-| Q_p  |   |   |   |   |   |   |   | 1  | 1  |   |   |   |   |
-| Q_pb  |   |   |   |   |   |  |   |   |   | 1  | 1  |   |   |
-| Q_pp  |   |   |   |   |   |   |   |   |   |   |   | 1  | 1  |
+| A_p  |   |   |   |   |   |   |   |   | 1  |   |   |   | 1  |
+| A_pb  |    |   |   |   |   |   |   | 2 |   |   |   | 2  | 0  |
+| A_pp  |    |   |   |   |   |   |   | -1  |   |   |   | -1  |   |
+| K_b  |   | -2  | 1  |   |   |   |   |   |   | 2  | 1  |   |   |
+| K_p  |   |   |   |   | -1  |  |   |   |   |   |   |   | 1  |
+| K_pb  |   |   |   | -2  |   |   |   |   |   |   |   | 2  |   |
+| K_pp  |   |   |   | -1  |   |   |   |   |   |   |   | -1  |   |
+| Q_b  |    | -2  | 1  |  |  | -2  | 1  |   |   |   |   |   |   |
+| Q_p  |   |   |   |   | -1  |   |   |   | -1  |   |   |   |   |
+| Q_pb  |   |   |   | -2  |   |   |   | -2  |   |   |   |   |   |
+| Q_pp  |   |   |   | -1  |   |   |   | -1  |   |   |   |   |   |
 
 $$ A = 
 \quad
 \begin{bmatrix} 
-1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
--1 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
-0 & 0 & -1 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
--1 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
-0 & 0 & 0 & 0 & 0 & 0 & -1 & 1 & 1 & 0 & 0 & 0 & 0 \\
--1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 0 \\
-0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & -1 & 1 & 1 \\
--1 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
-0 & 0 & -1 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
--1 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
-0 & 0 & 0 & 0 & 0 & 0 & -1 & 1 & 1 & 0 & 0 & 0 & 0 \\
--1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 0 \\
-0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & -1 & 1 & 1 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 2 & 1 & 0 & 0 & 2 & 1 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & -1 & 0 & 0 & 0 & -1 & 0 \\
+0 & -2 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 1 & 0 & 0 \\
+0 & 0 & 0 & 0 & -1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+0 & 0 & 0 & -2 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 0 \\
+0 & 0 & 0 & -1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & -1 & 0 \\
+0 & -2 & 1 & 0 & 0 & -2 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & -1 & 0 & 0 & 0 & -1 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & -2 & 0 & 0 & 0 & -2 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & -1 & 0 & 0 & 0 & -1 & 0 & 0 & 0 & 0 & 0 \\
 \end{bmatrix}
 $$
 
-[0,0,0,0,0,0,0,0,0,0,0,0,0;
-    0,0,0,0,0,2,1,0,0,2,1,0,0;
-    0,0,0,0,0,0,0,0,1,0,0,0,1;
-    0,0,0,0,0,0,0,2,0,0,0,2,0;
-    0,0,0,0,0,0,0,-1,0,0,0,-1,0;
-    0,-2,1,0,0,0,0,0,0,2,1,0,0;
-    0,0,0,0,-1,0,0,0,0,0,0,0,1;
-    0,0,0,-2,0,0,0,0,0,0,0,2,0;
-    0,0,0,-1,0,0,0,0,0,0,0,-1,0;
-    0,-2,1,0,0,-2,1,0,0,0,0,0,0;
-    0,0,0,0,-1,0,0,0,-1,0,0,0,0;
-    0,0,0,-2,0,0,0,-2,0,0,0,0,0;
-    0,0,0,-1,0,0,0,-1,0,0,0,0,0]
+We could even further reduce this by eliminating dominated strategies:
 
+| P1/P2 | 0  | A_b(ab) | A_b(ap)  | A_p(ap)  | K_b(ab)  | K_p(ab)  | K_b(ap)  | K_p(ap)  | Q_b(ab)  | Q_p(ab)  | Q_b(ap)  | Q_p(ap)  |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 0  |   |   |   |   |   |   |   |   |   |   |   |   |
+| A_b  |   |   |   |   | 2  | 1  |   |   | 2  | 1  |   |   |
+| A_p  |   |   |   |   |   |   |   | 1  |   |   |   | 1  |
+| A_pb  |    |   |   |   |   |   | 2 |   |   |   | 2  | 0  |
+| K_p  |   |   |   | -1  |  |   |   |   |   |   |   | 1  |
+| K_pb  |   |   | -2  |   |   |   |   |   |   |   | 2  |   |
+| K_pp  |   |   | -1  |   |   |   |   |   |   |   | -1  |   |
+| Q_b  |    | 1  |  |  | -2  | 1  |   |   |   |   |   |   |
+| Q_p  |   |   |   | -1  |   |   |   | -1  |   |   |   |   |
+| Q_pp  |   |   | -1  |   |   |   | -1  |   |   |   |   |   |
 
-Kuhn extensive form, linear programming
+For simplicity, let's stick with the original $$ A $$ payoff matrix and see how we can solve for the strategies and value of the game. 
+
+Our linear program is as follows (the same as before, but now our $$ E $$ and $$ F $$ matrices have constraints based on the game tree and the payoff matrix $$ A $$ is smaller, evaluating when player strategies coincide and result in payoffs, rather than looking at every possible set of strategic options as we did before:
+
+$$ \min_{y} \max_{x} [x^TAy] $$
+
+$$ \text{Such that: } x^TE^T = e^T, x \geq 0, Fy = f, y \geq 0 $$
+
+Rhode Island Hold'em 
 Resutls with other poker agents playing worse strategies exploitable
 
 ## 5. Trees in Games
-Minimax tictactoe, why this doesn't work for poker
+
+Now we have shown a way to solve games more efficiently based on the structure/ordering of the decision nodes (which can be expressed in tree form). Many games can be solved using the minimax algorithm for exploring a tree and determining the best move from each position. 
+
+On the below tree, we have P1 acting first, P2 acting second, and the payoffs at the leaf nodes in the standard P1, P2 format. 
+
+![Minimax tree](minimax.png)
+
+We can see that by using backward induction, we can start at the leaves (i.e., payoff nodes) of the tree and see which decisions Player 2 will make at her decision nodes. Her goal is to minimize Player 1's payoffs (same as maximizing her payoffs in this zero-sum game). She picks the right node on the left side (payoff -1 instead of -5) and the left node on the right side (payoff 3 instead of -6). 
+
+These values are then propagated up the tree so from Player 1's perspective, the value of going left is 1 and of going right is -3. The other leaf nodes are not considered because Player 2 will never choose those. Player 1 then decides to play left to maximize his payoff. 
+
+![Minimax tree solved](minimax2.png)
+
+| P1/P2  | Left/Left | Left/Right | Right/Left | Right/Right |
+|---|---|---|---|---|
+| Left  | 5,-5  | 5,-5  | 1,-1  | 1,-1 |
+| Right  | -3,3  | -3,3 | 6,-6  | 6,-6 |
+
+So why not just use this procedure for poker? Backward induction works well for perfect information games. These are games like tic-tac-toe, checkers, and chess, where all players can see all information in the game (although games like chess are too large to solve just using this procedure). Whereas poker has imperfect information due to the hidden private cards. 
+
+With perfect information, each player knows exactly what node/state he is in in the game tree. In imperfect information games, as we showed earlier, players have information sets that are equivalent states based on information known to that player, but are actually different true states of the game. For example, see the nodes connected by red lines below that represent Player 2 in Kuhn Poker with card Q facing either a bet or pass action from Player 1. 
+
+![Minimax tree solved](infoset.png)
+
+The problem is that Player 2 has a Q in both cases, but in the left case Player 1 has a K and in the right case Player 1 has a J! This means that the payoffs will be completely different (reversed) for games that go to showdown. 
+
+**Perfect Information Subgames**
 Perfect info game and subgames
-MCTS
-Exploitation vs. exploration
-RL terminology
+
 In imperfect info we need to know about the overall strategy
-Call with enough hands to make opponent worse off in allin hands
+
+**The Game is Too Damn Large** 
+
+While we're mainly focused here on imperfect information games, we can take a short detour to look at Monte Carlo Tree Search (MCTS) as a way to deal with otherwise intractably large game trees. 
 
 ## 6. Toy Games and Python Implementation
-Kuhn
-Leduc
-Python implementation of the games
-Ideally connected to ACPC server
+The most exciting way to solve for strategies in imperfect information games is to use the Counterfactual Regret (CFR) algorithm that involves the agent repeatedly playing the game against itself. 
+
+The first step is to create the games to be played. 
+
+We will implement Kuhn Poker and Leduc Poker. 
+
+```python 
+class Kuhn:
+	def __init__(self, players, dealer_player = 0, ante = 1, shuffled_deck = [1,2,3]):
+		self.dealer_player = dealer_player
+		self.num_players = len(players)
+		self.pot = self.num_players * ante
+		self.history = []
+		self.cards = shuffled_deck
+		self.betsize = 1
+		self.buckets = 0
+		if self.num_players == 2:
+			self.player0cards = self.cards[1 - dealer_player]
+			self.player1cards = self.cards[dealer_player]
+		self.players = []
+		for i in range(len(players)):
+			self.players.append(players[i])
+		print('Player 0 card: {}'.format(self.player0cards))
+		print('Player 1 card: {}'.format(self.player1cards))
+
+	def game(self):
+		print('Action history: {}'.format(self.history))
+		plays = len(self.history)
+		acting_player = (plays + self.dealer_player)%2
+		if len(self.history) >= 1:
+			if self.history[-1] == 'f': #folded
+				print('folded)')
+				profit = (self.pot - self.betsize) / 2
+				self.players[acting_player].profit += profit
+				self.players[1-acting_player].profit -= profit
+				print('End of game! Player {} wins pot of {} (profits of {})\n'.format(self.acting_player, self.pot, profit))
+				return profit
+
+		if len(self.history) >= 2:
+			if self.history[-2] == self.history[-1]: #check check or bet call, go to showdown
+				profit = self.pot/2
+				winner = self.evaluate_hands()
+				self.players[winner].profit += profit
+				self.players[1-winner].profit -= profit
+				print('End of game! Player {} wins pot of {} (profits of {})\n'.format(winner, self.pot, profit))
+				if winner == acting_player:
+					return profit
+				else:
+					return -profit
+
+		#still going in round
+		print('\nPot size: {}'.format(self.pot))
+		print('Player {} turn to act'.format(acting_player))
+		bet = self.players[acting_player].select_move(self.valid_bets())
+		if bet != 'f':
+			self.pot += bet
+		self.history.append(bet)
+		print('Action: {}'.format(bet))
+		self.game() #continue
+
+
+	def evaluate_hands(self):
+		if self.player0cards > self.player1cards:
+			return 0
+		else:
+			return 1
+
+	def valid_bets(self):
+		if self.history == []:
+			return [0, self.betsize] #check or bet
+		elif self.history[-1] == self.betsize:
+			return ['f', self.betsize] #fold or call
+		elif self.history[-1] == 0:
+			return [0, self.betsize] #check or bet
+```
+Fix code a bit and explain
 
 ## 7. Counterfactual Regret Minimization (CFR)
+CFR is an iterative algorithm that converges to a Nash equilibrium strategy. It uses self-play to repeatedly play a game against itself, starting with uniform random strategies and each iteration updating the strategy at each information set based on the regret-matching algorithm. 
+
+At each information set, we store values for the sum of the regrets for each action and the sum of the strategies for each action. 
+
+The algorithm uses regret matching to play strategies at each information set in proportion to the regrets from that information set. Using regret matching over all available actions at in information set 
+
+Zinkevich et al (2007) showed that the overall regret of the game is bounded by the sum of the regrets from each information set. 
+
+### The Algorithm 
+
+**Initialize information set tables**
+
+1. The cumulative regrets for each information set and action 
+2. The cumulative strategies for each information set and action 
+
+In practice, we use a Node class that references the current information set and accesses these tables to add the regrets and strategies during each iteration. 
+
+The regrets are used for regret-matching to select the strategy during the next iteration. 
+
+The strategies are averaged at the end of all iterations since that is what converges to the equilibrium strategy. 
+
+**Main CFR Function**
+1. Check if the game is over. If so, return the value at the end from the perspective of the traversing player. 
+2. 
+
+**
+1. Initialize node structure 
+2. Start at the root of the game tree
+3. Pass down probabilities of each 
+
+
+**Relation to Reinforcement Learning**
+
+There are some similarities between the regret matching algorithm and Q-learning. In Q-learning, given a state and action pair, we have $$ Q(s,a) $$, which is the value of playing action $$ a $$ at state $$ s $$. In the case of CFR, we have counterfactual regret values $$ v(I,a) $$ for each state (information set) and action pair. With CFR, we derive the policy (strategy) at each state based on regret-matching using the advantage calculation. In Q-learning, the policy selection is usually based on $$\epsilon-$$Greedy where the action with the highest Q-value is played $$(1-\epsilon)\%$$ and a random action is sampled $$\epsilon\%$$. 
+
+What about advantage and A2C?
+
+### Monte Carlo CFR Variations
+CFR can be improved by sampling paths of the game tree rather than traversing over the entire tree in each iteration. Two common sampling methods are:
+
+1. External Sampling: Sampling all nodes external to the traversing player. Both players swap being the traverser and the sampling is the chance nodes and the non-traversing player nodes, while all actions from the traversing player are traversed. 
+2. Chance Sampling: Sampling the chance node (i.e., the random deal of the cards) and then exploring the entirety of the tree given that deal of cards
+
+**External Sampling** 
+
+**Chance Sampling** 
+
+**Exploitability comparisons** 
+
+### CFR Step by Step
 External sampling CFR detailed code and walk through (how values change over many iterations)
-How is this related to Q learning?
-Use RPS to show why average strategy
-Proofs of regret minimization 
-Kuhn results with 3 card and 10 card and 100 card
+
+### Python External Sampling Kuhn Poker Implementation
+Ideally connect to ACPC server
+
+### Kuhn Poker Results
+3 card
+
+10 card
+
+100 card
+
+Interpretability
+
+"Learning" to bluff
+
+### Python External Sampling Leduc Poker Implementation
+
+### Leduc Poker Results
+
+### Regret Minimization Proofs
+Average strategy, use RPS to show why average strategy
 
 ## 8. Game Abstraction
-Card abstraction, in code also
-Betting abstraction
+Overview, lossy vs. lossless
+
+### Card Abstraction
+
+### Card Abstraction in Kuhn Poker
+Code example
+
+Exploitability comparisons
+
+Results of 1v1
+
+Results of 1 player abstracted and 1 not
+
+### Betting Abstraction
+
+### Action Translation
+
+### Royal Hold'em Betting Abstractions 
 
 ## 9. Agent Evaluation
-Best response, code
-vs. human
-Agent vs. agent
+
+### Best Response 
+
+### Best Response in Kuhn Poker
+
+### Agent vs. Agent
+
+### Agent vs. Human 
 
 ## 10. CFR Advances
-AVIAT variance reduction
-Monte Carlo variations
-New stuff like Linear CFR
-CFR+ (use RPS to show difference)
-Endgame solving (RPS example)
+### Pure CFR 
 
-## 11. Deep Learning and Poker
-Libratus
-DeepStack
-Deep CFR
-Pluribus
+### CFR+
+RPS to show difference
 
-## 12. AI vs. Humans -- What Can Humans Learn?
+Exploitability of CFR vs. CFR+ in Kuhn 
+
+### Endgame Solving
+RPS example
+
+### Subgame Solving
+Safe and unsafe
+
+### AIVAT Variance Reduction
+
+### Depth-Limited Solving
+
+### Linear and Discounted CFR
+
+
+## 12. Major Poker Agents
+### Libratus
+
+### DeepStack
+
+### Pluribus
+
+## 12. Deep Learning and Poker
+### Deep CFR
+
+## 13. AI vs. Humans -- What Can Humans Learn?
 Examples from Brokos book
 Paper with Sam
 Theme ideas from toy games that can translate to full games
 
 Are tells useful?
 Should I get into poker?
+Explain lessons from toy games including multiplayer
+Blocker toy game A, K, K, K, Q, Q, J , J, J
+examples of player deviating and how to exploit, how we do in equilibrium vs. exploiting and how much this opens us up to exploitation
+what about solvers?
 
-## 13. Multiplayer Games
+## 14. Multiplayer Games
 3 player Kuhn, Leduc
+
 Pluribus stuff
 
-## 14. Opponent Exploitation
+## 15. Opponent Exploitation
 Paper with Sam
 
-## 15. Other Games (Chess, Atari, Go, Starcraft, Hanabi)
+## 16. Other Games (Chess, Atari, Go, Starcraft, Hanabi)
 RL stuff
