@@ -14,7 +14,7 @@ permalink: /photos/
 
 [People of Israel (2016-18, Israel)](https://photos.app.goo.gl/hgP75KAT5t6zVRUn8) People in Israel
 
-[Markets (2015-19, Various) Markets of all sorts](https://photos.app.goo.gl/tSnaRcd44ykj3S26A) Markets around the world
+[Markets (2015-19, Various)](https://photos.app.goo.gl/tSnaRcd44ykj3S26A) Markets around the world
 
 [People of Africa (2014-16, Various)](https://photos.app.goo.gl/vCoJw632WH7P7W589) People of Africa
 
