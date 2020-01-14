@@ -1,92 +1,98 @@
 ## Eating Habits
-Mark Zuckerberg and Steve Jobs (and apparently also Elizabeth Holmes) are known for minimizing decisions and making things simple by wearing the same thing everyday. I find that this is also a good technique with food, [as do some others](https://www.theatlantic.com/family/archive/2019/03/eating-the-same-thing-lunch-meal/584347/). 
+Mark Zuckerberg and Steve Jobs (and apparently also Elizabeth Holmes) are/were known for minimizing decisions and making things simple by wearing the same thing everyday. I find that this is also a good technique with food, [as do some others](https://www.theatlantic.com/family/archive/2019/03/eating-the-same-thing-lunch-meal/584347/). 
 
-I eat essentially the same breakfast and lunch every day and have a couple of dinner variation options. 
+I eat essentially the same breakfast and lunch every day and have a couple of dinner variation options. The breakfast part probably doesn't seem that strange. The "it makes sense to eat the same thing every day" agreement metric probably gradually declines as we get to lunch and dinner. 
 
-## Main Principles
+And then you may be thinking well if you're going to eat the same thing every day, you should at least enjoy the cooking aspect and experiment with different sauces and spices and things. I do agree that this is good to think about every once in a while (how else would I have had the brilliant idea to add hard boiled eggs to my salads?!), but I don't want to have to think about it on a day to day basis. 
+
+I've already given the clothes analogy above, which I don't participate in, because I think picking clothes is a very low effort and kind of fun activity, although admit that buying them and thinking about which ones to take with on trips can be time consuming. 
+
+Two more analogies:<br> 
+1. Picking stocks -- Even riskier than picking random new dressings for your salad (I like the index fund approach)<br>
+2. Working out -- It's hard enough to calculate [how many days there are in a week](https://gawker.com/bodybuilders-try-fail-to-calculate-number-of-days-in-1677545788), so I like to just follow pre-made programs or go to classes
+
+## Automate the Food Principles
 [1. Eat nearly the same thing every day](#1-eat-nearly-the-same-thing-every-day)<br>
 [2. Avoid manual labor and guesswork as much as possible](#2-avoid-manual-labor-and-guesswork-as-much-as-possible)<br>
-[3. Cook in bulk](#3-cook-in-bulk)<br>
-[4. Eat healthy stuff](#4-eat-healthy-stuff)<br>
-[5. Get food delivered](#5-get-food-delivered)<br>
-[6. A day in the life](#6-a-day-in-the-life)<br>
+[3. Simplify the supplies](#3-cook-in-bulk)<br>
+[4. Get food delivered](#4-get-food-delivered)<br>
+[5. My daily food](#4-my-daily-food)<br>
+[6. What about the content of the food](#4-what-about-the-content-of-the-food)<br>
 
-## 1. Eat Nearly the Same Thing Every Day
-Eating the same thing for the main meals is surprisingly not very boring and is highly recommended. Maybe do some small variations with snacks and certain meal elements, but keep the same structure every day! 
+### 1. Eat Nearly the Same Thing Every Day
+Eating the same thing for the main meals is surprisingly not very boring and is highly recommended. Maybe do some small variations with snacks and certain meal elements (dinner makes the most sense to make into a fun activity), but keep the same structure every day! 
 
 ## 2. Avoid Manual Labor and Guesswork as Much as Possible
 Before I discovered the hard boiled egg machine, I never knew what I was doing. I'd forget about the eggs more often than not and even when I remembered and timed them fairly well, I frequently had peeling issues. Here is a list of my favorite tools and streamlining ideas: 
 
-**Hard boiled egg cooker:** With a hard boiled egg cooker, you put eggs into little slots, fill up a measuring cup to the right level, and flip the switch. No waiting for water to boil or forgetting how much time the eggs need to cook for since the machine buzzes very loudly when it's finished. I cook 12 at a time every few days in the mornings for use in salads. Vegetables can be steamed in the same device! It can fit about 8-12 oz of most types of vegetables and takes 10ish minutes to steam. Again, just adding a bit of water, loading in the vegetables, and turning it on.<br>
+**[Hard boiled egg cooker and vegetable steamer](https://www.amazon.com/DEC012BK-Electric-Scrambled-Vegetables-Dumplings/dp/B00ZGCKLE2):** With a hard boiled egg cooker, you put eggs into little slots, fill up a measuring cup to the right level, put the water in, and flip the switch. No waiting for water to boil or forgetting how much time the eggs need to cook for since the machine buzzes very loudly when it's finished. I cook 12 at a time every few days in the mornings for use in salads. Vegetables can be steamed in the same device! It can fit about 8-12 oz of most types of vegetables and takes 10ish minutes to steam. Again, just adding a bit of water, loading in the vegetables, and turning it on.<br>
 <img src="https://images-na.ssl-images-amazon.com/images/I/61037gzXCTL._SL1500_.jpg" alt="Hard boiled egg cooker" width="300"/>
 
 **Indoor grill:** Though this is a bit of a compromise at dinner, I am very happy with the chicken breasts produced for breakfast/lunch. I think there's essentially no easier way to cook protein than to plug in a grill, wait a couple minutes, and just drop the item inside and wait a few more minutes. No flipping, no oil splashing all over, and in the case of chicken breasts, no serious timing issues since slightly overcooked isn't a big disaster. 
 
-**The oven:** 
-
 **Scrambled eggs:** My biggest efficiency improvement here has been not pre-stirring the eggs in a separate glass or container. Just drop them into the oil in the pan and stir with the spatula! Then keep stirring on a low-medium temperature. 
-
-**One oil:** I use one extra virgin olive oil for everything from cooking eggs to salmon to putting on salads. Lately I've been very into ones with olive from California. Trader Joe's and Whole Foods have their own brands with California olives that are both rated very well by Consumer Reports (though the review is from 2012). There's also been a lot of [shadiness with olive oil](https://www.forbes.com/sites/ceciliarodriguez/2016/02/10/the-olive-oil-scam-if-80-is-fake-why-do-you-keep-buying-it/#56896ffe639d) from Europe.<br>
-<img src="https://ucf24843579f0d7e5f981a43ac06.dl.dropboxusercontent.com/cd/0/inline/AfyFYPnR8im0uuupLqXC7hG9KSLzIoLfR5ve8FoSXLkI5ljGBFofGJWE5SfVRPrC2K4x3XfemxrvIGje69c9shkPDVuET0zjHJlBtD4wyTaKbTx56DdRixVqC_SIPsZAgdo/file#" alt="Consumer Reports 2012" width="400"/>
 
 **Vegetable chopper:** Figure out your tomato/cucumber/pepper ratio and get this [pro vegetable chopper](https://www.amazon.com/Chopper-Vegetable-Mueller-Vegetable-Fruit-Cheese-Onion-Chopper-Dicer-Kitchen/dp/B01HC7BNJA). Vegetables still have to be cut into smaller slices, but this does the hard work to get them into salad-appropriate sized pieces. <br>
 <img src="https://images-na.ssl-images-amazon.com/images/I/71-YsC0P46L._SL1500_.jpg" alt="Vegetable chopper" width="300"/>
 
-**Kosher:** Meat or dairy, pick one. Literally all of the complication from having a kosher home comes from separating meat and dairy. If you go the meat route and you insist on dairy, uncooked things like candy or chocolate bars are still pretty easy to keep around since they don't use dishes or cooking instruments. 
-
 **A good nonstick pan:** I get sad every time I see a sticky pan. The pain is not worth it! I recently got the [Great Jones Small Fry](https://greatjonesgoods.com/products/small-fry), which has been amazing. It's nonstick, dishwashable (although seems a bit stickier for the first couple uses after dishwashing), has sides that go up higher than normal (reducing the chance of splashing over), and it's rivetless (the interior is completely smooth), which eliminates trying to clean around those spots. Wirecutter has some good value alternatives [here](https://thewirecutter.com/reviews/best-nonstick-pan/) too. 
 
-**Keep bulk stocks:**
+**Cook in bulk:** I only do this for foods that I don't mind eating cold, which are currently Israeli salad and hard boiled eggs. The time to cook a chicken breast on an indoor grill is so low and the value from eating it hot off the grill is so high, that I don't think it's worth bulk cooking and reheating an item like this. 
 
-**Use frozen vegetables:** Frozen vegetables are generally cheaper than fresh and never worrying about expiration is amazing. Based on some reading, it seems that they tend to have more nutrients than 
+**The oven:** I only use this for dinner and don't have any great tips except for lining the pan with foil to make cleanup easier. Also small countertop toaster ovens seem extremely effective for small portions (like a full meal for one or just meat/fish for 2-4). Great Jones also makes a pan called the [Holy Sheet](https://greatjonesgoods.com/products/holy-sheet) that looks pretty nice (no affiliation, just a fan!). 
+
+## 3. What to use 
+**Keep bulk stocks:** 
+
+**One oil:** I use one extra virgin olive oil for everything from cooking eggs to salmon to putting on salads. I try to avoid European ones due to [shadiness](https://www.forbes.com/sites/ceciliarodriguez/2016/02/10/the-olive-oil-scam-if-80-is-fake-why-do-you-keep-buying-it/#56896ffe639d), so stick with either Israeli or Californian oils. Trader Joe's and Whole Foods have their own brands with California olives that are both rated very well by Consumer Reports (though the review is from 2012).<br>
+<img src="https://ucf24843579f0d7e5f981a43ac06.dl.dropboxusercontent.com/cd/0/inline/AfyFYPnR8im0uuupLqXC7hG9KSLzIoLfR5ve8FoSXLkI5ljGBFofGJWE5SfVRPrC2K4x3XfemxrvIGje69c9shkPDVuET0zjHJlBtD4wyTaKbTx56DdRixVqC_SIPsZAgdo/file#" alt="Consumer Reports 2012" width="400"/>
+
+**Use frozen vegetables:** Frozen vegetables are generally cheaper than fresh and never worrying about expiration is amazing. Freeze in those nutrients! 
+
+**Kosher:** Meat or dairy, pick one. Literally all of the complication from having a kosher kitchen comes from separating meat and dairy. If you go the meat route and you insist on dairy, uncooked things like candy or chocolate bars are still pretty easy to keep around since they don't use dishes or cooking instruments. 
 
 **Use frozen meats:** Frozen 
 
 **Strong tupperware:**
 
-**What about restaurants?** Let randomness dictate
+## 4. Get Food Delivered
+I generally have enjoyed going to supermarkets. It's the first thing I like to do when visiting a new place and the feeling of wide aisles and picking your own produce and wandering around finding new things can be fun. If I had easy access to a quality/good value supermarket and/or farmer's market, I'd probably prefer to go there 1-2 times/week. In NYC, I primarily used Amazon's PrimeNow for Whole Foods deliveries, which has been a pretty mediocre experience overall, but is free for same/next day 2-hour delivery windows and is ridiculously easy and when issues come up, their support has been very quick and generous.
 
-
-## 3. Cook in Bulk
-I only do this for foods that I don't mind eating cold, which are currently Israeli salad and hard boiled eggs. The time to cook a chicken breast on an indoor grill is so low and the value from eating it hot off the grill is so high, that I don't think it's worth bulk cooking and reheating an item like this. 
-
-## 4. Eat Healthy Stuff
-I find it very easy to have willpower in supermarkets and very difficult to have willpower when unhealthy foods are available for eating in my surroundings. I find it nice to keep the base state under control so that when less healthy situations arise (restaurants, parties, random occurrences of low-percentage chocolate nearby), they can be enjoyed without concern. I've also found that I feel better when eating healthier. (I think of healthy as mostly Paleo, i.e. mostly proteins/nuts/seeds/vegetables/olive oil, with some fruit and 85%+ chocolate, and avoiding processed foods. I like this strictish definition because it means there's little guessing about whether an item is in the program or out of the program, but of course all should set their own baseline to their situation.)
-
-## 5. Get Food Delivered
-I generally have enjoyed going to supermarkets. It's the first thing I like to do when visiting a new place and the feeling of wide aisles and picking your own produce and wandering around finding new things can be fun. If I had easy access to a quality/good value supermarket, I'd probably prefer to go there 1-2 times/week. Recently I've been primarily using Amazon's PrimeNow for Whole Foods deliveries, which has been a pretty mediocre experience overall, but is free for same/next day 2-hour delivery windows and is ridiculously easy and when issues come up, their support has been very quick and generous.
-
-Additionally, I've been getting all meats/fish from online sources. 
+Additionally, I've been getting all meats/fish from online sources, which gives access to  
 Salmon: 
 Chicken/steak: 
 
-## 6. A Day in the Life
+## 5. My Daily Food
 ### Breakfast
-- 3 scrambled eggs: Cooked in olive oil with raw sunflower seeds added after plating. I am strongly against getting brown in the eggs (like every hotel omelette station ever
+- 3 scrambled eggs: Cooked in olive oil with raw sunflower seeds added after plating. I am strongly against getting brown in the eggs (like every hotel omelette station ever)
 - 4 oz chicken breast: Cooked on an indoor grill with nothing added
 - Israeli salad: Chopped up tomatoes/cucumbers/peppers and potentially onions. Important to use yellow or orange peppers so they don't get confused for tomatoes (red) or taste terrible (green). Top with olive oil. 
-- Total cooking/prep time is under 5 minutes
+- Total cooking/prep time is about 5 minutes (assuming the salad can be taken from a pre-made bulk container)
 
 ### Lunch
 - 3 hard boiled eggs: Cooked in bulk and eaten cold. I enjoy pre-eating the whites and sprinkling the yolks into the salad [Salt Bae](https://en.wikipedia.org/wiki/Salt_Bae) style.
 - 4 oz chicken breast: If taking lunch to go, cook this with the morning breast
-- 1/2 salad bag: Ready to eat salad bags, topped with 
+- 1/2 salad bag: Ready to eat salad bags, usually some kind of Romaine mix
 - Vegetables: If at home, I always steam about half a bag of frozen vegetables (usually broccoli, sometimes a mix). This can be done during the breakfast cooking if taking lunch to go, but tends to not taste great cold. Israeli salad is a good alternative. 
 - Total cooking/prep time is about 10 minutes with the vegetables being the limiting factor
-- If eating at the office, keep a bottle of olive oil on site so you don't have to commute with the risk of an olive oil explosion. 
-- I find it very efficient to eat this with hands, but that should definitely not be done in public and probably not even admitted in a public blog. 
-
+- If eating at the office, keep a bottle of olive oil on site so you don't have to commute with the risk of an olive oil explosion 
+- I find it very efficient to eat this with hands, but that should definitely not be done in public and probably not even admitted in a public blog space
 
 ### Dinner
-- Protein option: Either 8 oz steak or 8 oz salmon fillet. I have been cooking the steak on the indoor grill, but there would probably be more value from a more complicated/longer cooking method. Salmon broiled in the oven is a great option, but I've also sometimes been using the grill in cases of laziness. 
+- Protein option: Either 8 oz steak or 8 oz salmon fillet. I have been cooking the steak on the indoor grill, but there would probably be more value from a more complicated/longer cooking method. Salmon broiled in the oven is a great option, but I've also sometimes been using the grill in cases of laziness. (I would be very open to eliminating steak from my diet for animal suffering reasons, which I should put more thought into.)
 - Vegetables: Steam half a bag of frozen vegetables
-- Rice: On salmon days I sometimes eat rice. I hate the cleanup value of cooking rice in a pot. Alternatives are microwaveable bags, boilable bags, and rice cookers. I think the ease of microwaveable makes that my favorite current option. 
-- Total cooking/prep time is about 10 minutes, potentially a bit longer if waiting for the oven to heat up
+- Rice: On salmon days I sometimes eat rice. I hate the cleanup value of cooking rice in a pot. Alternatives are microwaveable bags, boilable bags, and rice cookers. I think the ease of microwaveable makes that my favorite current option for efficiency, while the rice cooker is probably the best quality. 
+- Total cooking/prep time is about 10 minutes, longer if including oven heat-up time 
 
-### Snacks
-- Raw almonds: 
-- Carrots: 
+### Snacks that I consider
+- Nuts: I like raw almonds and Brazil nuts. I try to avoid the carb-heavy ones like cashews since almonds are better anyway. 
+- Carrots: My addiction. I think these are the perfect snack. Maybe too perfect. I can only stop when I see my face turning orange. 
 - 85%+ dark chocolate: 
-- Good fruit (berries): 
-- Less good fruit (apples, bananas, grapes): 
-- Avocado: Great fat source! I can't deal with the erratic quality differences and ripeness issues
+- Good fruit (berries): Good snack/dessert option. I usually get when on sale. 
+- Less good fruit (apples, bananas, grapes, oranges): 
+- Avocado: Great fat source! I can't deal with the erratic quality differences and ripeness issues so almost never get these. 
+
+### What about restaurants? Let randomness dictate
+
+## 6. What about the content of the food?
+I find it very easy to have willpower in supermarkets (or when ordering from them online) and very difficult to have willpower when unhealthy foods are available for eating in my surroundings. I find it nice to keep the base state under control so that when less healthy situations arise (restaurants, parties, random occurrences of low-percentage chocolate nearby), they can be enjoyed without concern. I've also found that I feel better when eating healthier. (I think of healthy as mostly Paleo, i.e., mostly proteins/nuts/seeds/vegetables/olive oil, with some fruit and 85%+ chocolate, and avoiding processed foods. I like this strictish definition because it means there's little guessing about whether an item is in the program or out of the program, but of course this is just one interpretation and maybe I'm (slightly) suffering for naught.) What about organic? I 
