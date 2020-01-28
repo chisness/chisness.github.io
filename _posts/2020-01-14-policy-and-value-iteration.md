@@ -38,19 +38,19 @@ This is a single for-loop over every state from 1 to 99 in which we calculate th
 
 
 ## Graphical Results
-<br><img src="../assets/gambler04.png" width=500>
+<br><img src="../assets/gambler04.png" width="500">
 <br>p_h = 0.4
 <br>Here we see the final policy (how much to bet) on the y-axis and the current capital state on the x-axis. Above each policy is the value of being in that state (which is a bit hard to see). We see that this has this strange looking format with a few pyramid shapes and larger "all-in" spikes at 25, 50, and 75. Betting large when the odds are against us makes sense in order to play with maximum variance -- if we instead bet small, then we would see much lower variance and therefore a lower chance of reaching 100. (Imagine we are at state 50 -- if we bet all 50, we have a 0.4 chance of winning. If we bet 1, we would need to win 50 times in a row, which is 0.4^50 ~= 0.)
 
-<br><img src="../assets/gambler04capital.png" width=500>
+<br><img src="../assets/gambler04capital.png" width="500">
 <br>p_h = 0.4
 <br>This is a graph of the final value of being in each state
 
-<img src="../assets/gambler025.png" width=500>
+<img src="../assets/gambler025.png" width="500">
 <br>p_h = 0.25
 <br> Here we see the same format as when p_h = 0.4, but the value of being at each state is lower because the probability of winning the bet is lower. 
 
-<br><img src="../assets/gambler055.png" width=500>
+<br><img src="../assets/gambler055.png" width="500">
 <br>p_h = 0.55
 <br>Once p_h goes above 0.5, the final policy turns into simply betting 1 at every state (we do not use discounting). This is because the odds are now actually in our favor, so we prefer to keep variance as low as possible. 
 
