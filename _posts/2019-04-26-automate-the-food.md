@@ -22,7 +22,7 @@ Two more analogies for things where I prefer to take the decision-minimization a
 ### 1. Eat nearly the same thing every day
 Eating the same thing for the main meals is surprisingly not very boring and is highly recommended. Maybe do some small variations with snacks and certain meal elements (dinner makes the most sense to make into a fun activity or an out-of-home event), but keep the same structure every day! Picking/cooking your foods is also the best way to ensure that you get the best quality.
 
-## 2. Avoid manual labor and guesswork as much as possible
+### 2. Avoid manual labor and guesswork as much as possible
 Before I discovered the hard boiled egg machine, I never knew what I was doing. I'd forget about the eggs more often than not and even when I remembered and timed them fairly well, I frequently had peeling issues. Here is a list of my favorite tools and streamlining ideas: 
 
 **[Hard boiled egg cooker and vegetable steamer](https://www.amazon.com/DEC012BK-Electric-Scrambled-Vegetables-Dumplings/dp/B00ZGCKLE2):** With this hard boiled egg cooker, you put eggs into little slots, fill up a measuring cup to the right level, put the water in, and flip the switch. No waiting for water to boil or forgetting how much time the eggs need to cook for since the machine buzzes very loudly when it's finished. I cook 12 at a time every few days in the mornings for use in salads. Vegetables can be steamed in the same device! It can fit about 8 oz of most types of vegetables and takes 10ish minutes to steam. Again, just adding a bit of water, loading in the vegetables, and turning it on.<br>
@@ -59,19 +59,19 @@ Before I discovered the hard boiled egg machine, I never knew what I was doing. 
 
 My rule is to buy organic when possible, especially for eggs/meat/protein. For other things, I usually get organic, but sometimes don't if the price differential is very large (approx. more than 25% of the non-organic). Maybe I should just get everything organic to simplify the decision-effort. 
 
-## 4. Get food delivered or figure out your supermarket routine
+### 4. Get food delivered or figure out your supermarket routine
 I generally have enjoyed going to supermarkets. It's the first thing I like to do when visiting a new place/city and the feeling of wide aisles and picking your own produce and wandering around finding new things can be fun. If I had easy access to a quality/good value supermarket and/or farmer's market, I'd probably prefer to go there 1-2 times/week. In NYC, I primarily used Amazon's PrimeNow for Whole Foods deliveries, which has been a pretty mediocre experience overall, but is free for same/next day 2-hour delivery windows and is ridiculously easy to use and when issues come up, their support has been very quick and generous.
 
-## 5. My Daily Food
+### 5. My Daily Food
 
-### Breakfast
+**Breakfast**
 - 3 scrambled eggs: Cooked in olive oil with raw sunflower seeds added after plating. I am strongly against getting brown in the eggs (like every hotel omelette station ever).
 - 4 oz chicken breast: Cooked on an indoor grill with nothing added
 - Israeli salad: Chopped up tomatoes/cucumbers/peppers and potentially onions. Important to use yellow or orange peppers so they don't get confused for tomatoes (red) or taste terrible (green). Top with olive oil. 
 - 1/2 avocado: Great fat source, but difficult to deal with the erratic quality differences and ripeness issues! 
 - Total cooking/prep time is about 5 minutes (assuming the salad can be taken from a pre-made bulk container)
 
-### Lunch
+**Lunch**
 - 3 hard boiled eggs: Cooked in bulk and eaten cold. I enjoy pre-eating the whites and sprinkling the yolks into the salad [Salt Bae](https://en.wikipedia.org/wiki/Salt_Bae) style.
 - 4 oz chicken breast: If taking lunch to go, cook this with the morning breast
 - 1/2 salad bag: Ready to eat salad bags, usually some kind of Romaine mix
@@ -81,13 +81,13 @@ I generally have enjoyed going to supermarkets. It's the first thing I like to d
 - If eating at the office, keep a bottle of olive oil on site so you don't have to commute with the risk of an olive oil explosion 
 - I find it very efficient to eat this with hands, but that should definitely not be done in public and probably not even admitted in a public blog space
 
-### Dinner
+**Dinner**
 - Protein option: 8 oz salmon fillet (occasionally alternative meat/fish). Salmon broiled in the oven is a great option, but I've also sometimes been using the grill in cases of laziness. 
 - Vegetables: Steam half a bag of frozen vegetables
 - Rice: I eat rice on Friday nights and occasionally on other days. I hate the cleanup value of cooking rice in a pot. Alternatives are microwaveable bags, boilable bags, and rice cookers. I think the ease of microwaveable makes that my favorite current option for efficiency, while the rice cooker is probably the best quality. 
 - Total cooking/prep time is about 10 minutes, longer if including oven heat-up time 
 
-### Snacks that I like
+**Snacks that I like**
 - Nuts: I like raw almonds and Brazil nuts. I try to avoid the carb-heavy ones like cashews since almonds are better anyway. 
 - Carrots: My addiction. I think these are the perfect snack. Maybe too perfect. I can only stop when I see my face turning orange. 
 - 85%+ dark chocolate: Apparently the minimum acceptable level health-wise, which makes sense because it has about the minimum level of taste-acceptability as well. I did an overly complicated computation that concluded that I should eat this only when avocado is not available. 
@@ -96,17 +96,17 @@ I generally have enjoyed going to supermarkets. It's the first thing I like to d
 - Less good fruit (apples, bananas, grapes, oranges): Good for post-workout situations
 - Soup/bone broth: Low experience with this, but supposed to be excellent
 
-### Other stuff
+**Other stuff**
 I've been using za'atar as the only seasoning. I should probably get some salt and pepper. I mostly drink only water, with occasional green tea, and even more occasional alcohol and matcha tea. 
 
 Slightly neurotic list of my food goals: Try to get everything organic, eggs pastured, meat Kosher, fish wild, EVOO only from California or Israel, and prefer local over distant. 
 
 I've considered intermittent fasting and Keto. Keto is definitely intriguing, but I've seen mixed reviews and it is very challenging to stick to, even if I ate only vegetables as my carb source. I like the idea of applying intermittent fasting when it comes up naturally. Like when traveling with little access to reasonable food or when a dinner or breakfast meal is randomly skipped. It seems like a 16-hour fast window and 8-hour eating window is pretty optimal. I also like the idea of fasting on [Jewish fast days](https://www.chabad.org/library/article_cdo/aid/609607/jewish/Jewish-Fast-Days.htm) not really for religious reasons, but just as a way to force occasional fasts (and it can't hurt to think about the religious significance as well). 
 
-### What about restaurants? 
+**What about restaurants?**
 I went through a phase of being into restaurants, but now find that I prefer the norm to be eating a high quality meal at home, and to let randomness dictate when restaurants happen. I think for most people, this will happen plenty (family/friend events, celebration meals, meals when traveling, etc.). 
 
-## 6. What about the content of the food?
+### 6. What about the content of the food?
 I find it very easy to have willpower in situations where food doesn't yet belong to me (in supermarkets or when ordering from them online) and very difficult to have willpower when unhealthy foods are available for immediate eating in my surroundings. I find it nice to keep the base state under control so that when less healthy situations arise (restaurants, parties, random occurrences of low-percentage chocolate nearby), they can be enjoyed without concern. I've also found that I feel better when eating healthier. (I think of healthy as mostly Paleo, i.e., mostly proteins/nuts/seeds/vegetables/olive oil, with some fruit and 85%+ chocolate, and mostly avoiding processed foods. I like this strictish definition because it means there's little guessing about whether an item is in the program or out of the program, but of course this is just one interpretation and maybe I'm (slightly) suffering for naught.) 
 
 Shoutout to Simon of [Minmax Meals](https://www.minmaxmeals.com/) for creating great value bulk-cookable meals on a site with an excellent name. 
