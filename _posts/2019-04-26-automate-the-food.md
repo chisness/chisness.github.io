@@ -82,7 +82,7 @@ I generally have enjoyed going to supermarkets. It's the first thing I like to d
 - I find it very efficient to eat this with hands, but that should definitely not be done in public and probably not even admitted in a public blog space
 
 **Dinner**
-- Protein option: 8 oz salmon fillet (occasionally alternative meat/fish). Salmon broiled in the oven is a great option, but I've also sometimes been using the grill in cases of laziness. 
+- 8 oz salmon fillet (occasionally alternative meat/fish). Salmon broiled in the oven is a great option, but I've also sometimes been using the grill in cases of laziness. 
 - Vegetables: Steam half a bag of frozen vegetables
 - Rice: I eat rice on Friday nights and occasionally on other days. I hate the cleanup value of cooking rice in a pot. Alternatives are microwaveable bags, boilable bags, and rice cookers. I think the ease of microwaveable makes that my favorite current option for efficiency, while the rice cooker is probably the best quality. 
 - Total cooking/prep time is about 10 minutes, longer if including oven heat-up time 
@@ -96,14 +96,14 @@ I generally have enjoyed going to supermarkets. It's the first thing I like to d
 - Less good fruit (apples, bananas, grapes, oranges): Good for post-workout situations
 - Soup/bone broth: Low experience with this, but supposed to be excellent
 
-**Other stuff**
+**Other stuff**<br>
 I've been using za'atar as the only seasoning. I should probably get some salt and pepper. I mostly drink only water, with occasional green tea, and even more occasional alcohol and matcha tea. 
 
 Slightly neurotic list of my food goals: Try to get everything organic, eggs pastured, meat Kosher, fish wild, EVOO only from California or Israel, and prefer local over distant. 
 
 I've considered intermittent fasting and Keto. Keto is definitely intriguing, but I've seen mixed reviews and it is very challenging to stick to, even if I ate only vegetables as my carb source. I like the idea of applying intermittent fasting when it comes up naturally. Like when traveling with little access to reasonable food or when a dinner or breakfast meal is randomly skipped. It seems like a 16-hour fast window and 8-hour eating window is pretty optimal. I also like the idea of fasting on [Jewish fast days](https://www.chabad.org/library/article_cdo/aid/609607/jewish/Jewish-Fast-Days.htm) not really for religious reasons, but just as a way to force occasional fasts (and it can't hurt to think about the religious significance as well). 
 
-**What about restaurants?**
+**What about restaurants?**<br>
 I went through a phase of being into restaurants, but now find that I prefer the norm to be eating a high quality meal at home, and to let randomness dictate when restaurants happen. I think for most people, this will happen plenty (family/friend events, celebration meals, meals when traveling, etc.). 
 
 ### 6. What about the content of the food?
