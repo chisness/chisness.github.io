@@ -41,7 +41,7 @@ Before I discovered the hard boiled egg machine, I never knew what I was doing. 
 
 **The oven:** I only use this for dinner and don't have any great tips except for lining the pan with foil to make cleanup easier. Also small countertop toaster ovens seem extremely effective for small portions (like a full meal for one or just meat/fish for 2-4). Great Jones also makes a pan called the [Holy Sheet](https://greatjonesgoods.com/products/holy-sheet) that looks pretty nice (no affiliation, just a fan!). 
 
-## 3. Simplify the supplies
+### 3. Simplify the supplies
 **Keep bulk stocks:** Minimize supermarket trips and running-out-of-things catastrophes by keeping stocks strong
 
 **One oil:** I use one extra virgin olive oil for everything from cooking eggs to salmon to putting on salads. I try to avoid European ones due to [shadiness](https://www.forbes.com/sites/ceciliarodriguez/2016/02/10/the-olive-oil-scam-if-80-is-fake-why-do-you-keep-buying-it/#56896ffe639d), so stick with either Israeli or Californian oils (because these are most accessible in places I've lived). Trader Joe's and Whole Foods have their own brands with California olives that are both rated very well by Consumer Reports (though the review is from 2012).<br>
