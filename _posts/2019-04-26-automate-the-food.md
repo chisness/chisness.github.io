@@ -3,7 +3,7 @@ Mark Zuckerberg and Steve Jobs (and apparently also Elizabeth Holmes) are/were k
 
 I eat essentially the same breakfast and lunch every day and have a couple of dinner variation options. The breakfast part probably doesn't seem that strange. The "it makes sense to eat the same thing every day" agreement metric probably gradually declines as we get to lunch and dinner. 
 
-And then you may be thinking well if you're going to eat the same thing every day, you should at least enjoy the cooking aspect and experiment with different sauces and spices and things. I do agree that this is good to think about every once in a while (how else would I have had the brilliant idea to add hard boiled eggs to my salads?!), but I don't want to have to think about it on a day to day basis. 
+And then you may be thinking well if you're going to eat the same thing every day, you should at least enjoy the cooking aspect and experiment with different sauces and spices and things. I do agree that this is good to think about every once in a while (how else would I have had the brilliant idea to add hard boiled eggs to my salads many years ago?!), but I don't want to have to think about it on a day to day basis. 
 
 I've already given the clothes analogy above, which I don't participate in, because I think picking clothes is a very low effort and kind of fun activity, although admit that buying them and thinking about which ones to take with on trips can be time consuming. 
 
@@ -15,9 +15,9 @@ Two more analogies:<br>
 [1. Eat nearly the same thing every day](#1-eat-nearly-the-same-thing-every-day)<br>
 [2. Avoid manual labor and guesswork as much as possible](#2-avoid-manual-labor-and-guesswork-as-much-as-possible)<br>
 [3. Simplify the supplies](#3-simplify-the-supplies)<br>
-[4. Get food delivered](#4-get-food-delivered-or-figure-out-your-supermarket-routine)<br>
-[5. My daily food](#4-my-daily-food)<br>
-[6. What about the content of the food](#4-what-about-the-content-of-the-food)<br>
+[4. Get food delivered or figure out your supermarket routine](#4-get-food-delivered-or-figure-out-your-supermarket-routine)<br>
+[5. My daily food](#5-my-daily-food)<br>
+[6. What about the content of the food](#6-what-about-the-content-of-the-food)<br>
 
 ### 1. Eat nearly the same thing every day
 Eating the same thing for the main meals is surprisingly not very boring and is highly recommended. Maybe do some small variations with snacks and certain meal elements (dinner makes the most sense to make into a fun activity or an out-of-home event), but keep the same structure every day! Picking/cooking your foods is also the best way to ensure that you get the best quality.
@@ -45,7 +45,7 @@ Before I discovered the hard boiled egg machine, I never knew what I was doing. 
 **Keep bulk stocks:** 
 
 **One oil:** I use one extra virgin olive oil for everything from cooking eggs to salmon to putting on salads. I try to avoid European ones due to [shadiness](https://www.forbes.com/sites/ceciliarodriguez/2016/02/10/the-olive-oil-scam-if-80-is-fake-why-do-you-keep-buying-it/#56896ffe639d), so stick with either Israeli or Californian oils. Trader Joe's and Whole Foods have their own brands with California olives that are both rated very well by Consumer Reports (though the review is from 2012).<br>
-<img src="https://ucf24843579f0d7e5f981a43ac06.dl.dropboxusercontent.com/cd/0/inline/AfyFYPnR8im0uuupLqXC7hG9KSLzIoLfR5ve8FoSXLkI5ljGBFofGJWE5SfVRPrC2K4x3XfemxrvIGje69c9shkPDVuET0zjHJlBtD4wyTaKbTx56DdRixVqC_SIPsZAgdo/file#" alt="Consumer Reports 2012" width="400"/>
+<img src="../assets/oliveoil.png" alt="Consumer Reports 2012" width="400"/>
 
 **Use frozen vegetables:** Frozen vegetables are generally cheaper than fresh and never worrying about expiration is amazing. Freeze in those nutrients! 
 
@@ -66,16 +66,17 @@ Chicken/steak:
 
 ## 5. My Daily Food
 ### Breakfast
-- 3 scrambled eggs: Cooked in olive oil with raw sunflower seeds added after plating. I am strongly against getting brown in the eggs (like every hotel omelette station ever)
+- 3 scrambled eggs: Cooked in olive oil with raw sunflower seeds added after plating. I am strongly against getting brown in the eggs (like every hotel omelette station ever).
 - 4 oz chicken breast: Cooked on an indoor grill with nothing added
 - Israeli salad: Chopped up tomatoes/cucumbers/peppers and potentially onions. Important to use yellow or orange peppers so they don't get confused for tomatoes (red) or taste terrible (green). Top with olive oil. 
-- Avocado is under consideration
+- 1/2 avocado: Great fat source, but difficult to deal with the erratic quality differences and ripeness issues! 
 - Total cooking/prep time is about 5 minutes (assuming the salad can be taken from a pre-made bulk container)
 
 ### Lunch
 - 3 hard boiled eggs: Cooked in bulk and eaten cold. I enjoy pre-eating the whites and sprinkling the yolks into the salad [Salt Bae](https://en.wikipedia.org/wiki/Salt_Bae) style.
 - 4 oz chicken breast: If taking lunch to go, cook this with the morning breast
 - 1/2 salad bag: Ready to eat salad bags, usually some kind of Romaine mix
+- 1/2 avocado: 2nd half from breakfast
 - Vegetables: If at home, I always steam about half a bag of frozen vegetables (usually broccoli, sometimes a mix). This can be done during the breakfast cooking if taking lunch to go, but tends to not taste great cold. Israeli salad is a good alternative. 
 - Total cooking/prep time is about 10 minutes with the vegetables being the limiting factor
 - If eating at the office, keep a bottle of olive oil on site so you don't have to commute with the risk of an olive oil explosion 
@@ -84,17 +85,16 @@ Chicken/steak:
 ### Dinner
 - Protein option: 8 oz salmon fillet (occasionally alternative meat/fish). Salmon broiled in the oven is a great option, but I've also sometimes been using the grill in cases of laziness. 
 - Vegetables: Steam half a bag of frozen vegetables
-- Rice: On salmon days I sometimes eat rice. I hate the cleanup value of cooking rice in a pot. Alternatives are microwaveable bags, boilable bags, and rice cookers. I think the ease of microwaveable makes that my favorite current option for efficiency, while the rice cooker is probably the best quality. 
+- Rice: I eat rice on Friday nights and occasionally on other days. I hate the cleanup value of cooking rice in a pot. Alternatives are microwaveable bags, boilable bags, and rice cookers. I think the ease of microwaveable makes that my favorite current option for efficiency, while the rice cooker is probably the best quality. 
 - Total cooking/prep time is about 10 minutes, longer if including oven heat-up time 
 
 ### Snacks that I like
 - Nuts: I like raw almonds and Brazil nuts. I try to avoid the carb-heavy ones like cashews since almonds are better anyway. 
 - Carrots: My addiction. I think these are the perfect snack. Maybe too perfect. I can only stop when I see my face turning orange. 
-- 85%+ dark chocolate: Apparently the minimum acceptable level health-wise, which makes sense because it has about the minimum level of taste-goodness as well
-- Good fruit (berries): Good snack/dessert option. I usually get when on sale. 
+- 85%+ dark chocolate: Apparently the minimum acceptable level health-wise, which makes sense because it has about the minimum level of taste-acceptability as well. I did an overly complicated computation that concluded that I should eat this only when avocado is not available. 
+- Good fruit (berries): Good snack/dessert option/carrot alternative. I usually get when on sale. 
 - Less good fruit (apples, bananas, grapes, oranges): Good for post-workout situations
-- Avocado: Great fat source, but difficult to deal with the erratic quality differences and ripeness issues!
-- Soup/bone broth: Low experience with this
+- Soup/bone broth: Low experience with this, but supposed to be excellent
 
 ### What about restaurants? 
 I went through a phase of being into restaurants, but now find that I prefer the norm to be eating a high quality meal at home, and to let randomness dictate when restaurants happen. I think for most people, this will happen plenty (family/friend events, celebration meals, meals when traveling, etc.). 
