@@ -1,3 +1,7 @@
+Bellman expectation + greedy policy improvement policy iteration
+Bellman optimality equation value iteration, synchronous and nonsynchronous, synchronous uses the old version to replace new
+Bellman expectation equation policy evlauation
+
 ## The Gambler Problem
 We are going to illustrate value iteration and policy iteration with the Gambler Problem from the Reinforcement Learning book by Sutton and Barto. These are dynamic programming algorithms, which are algorithms that can be used to compute optimal policies given a perfect model of the environment as a Markov decision process (MDP). 
 
