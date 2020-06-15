@@ -30,32 +30,33 @@ https://www.pokernews.com/strategy/teaching-poker-to-beginners-with-chris-moneym
 
 After the human poker boom, computers also started getting in on the poker action. Researchers began to study solving Texas Hold’em games in 2003, and since 2006, there has been an Annual Computer Poker Competition (ACPC) at the AAAI Conference on Artificial Intelligence in which poker agents compete against each other in a variety of poker formats. In early 2017, for the first time, a NLHE poker agent defeated and is considered superior to top poker players in the world in 1v1 games.
 
+Online poker is legal and regulated in many countries in the world. In 2006, the Unlawful Internet Gambling Enforcement Act (UIGEA) was passed, which was widely interpreted to make operating a poker site in the USA illegal and led to publicly traded sites leaving the US, while a few private operators like PokerStars, Full Tilt Poker, and Ultimate Bet/Absolute Poker remained, although they had a harder time processing payments for US players. On April 15, 2011, aka Black Friday, the FBI shut down the remaining sites, and online poker was effectively over for the US. Some individual states now have regulated online poker and there are some offshore sites that offer unregulated games, but the quantity and quality of games has dropped dramatically since the early days. 
+
 ### Basic Rules
 Poker is a card game that, in its standard forms, uses a deck of 52 cards composed of four suits (Clubs :clubs:, Diamonds :diamonds:, Hearts :heart:, and Spades ::spades::) and 13 ranks (Two through Ten, Jack, Queen, King, and Ace). A dealer button rotates around the table indicating who is the “dealer”. This is decided at random for the first hand and rotates clockwise after that. All actions begin to the left of the hand’s current dealer player.
 
-We will focus on two player games and ignore any fees (also known as rake) such that the games will be zero-sum (all money won by one player is lost by the other). The two players play a match of independent games, also called hands, while alternating who is the dealer.
+We will mainly focus on two player games and ignore any fees (also known as rake) such that the games will be zero-sum (all money won by one player is lost by the other). The two players play a match of independent games, also called hands, while alternating who is the dealer.
 
 Each game goes through a series of betting rounds that result in either one player folding and the other winning the pot by default or both players going to “showdown”, in which the best hand wins the pot. The pot accumulates all bets throughout the hand. The goal is to win as many chips from the other player as possible.
 
 Betting options available throughout each round are: fold, check, call, bet, and raise. Bets and raises generally represent strong hands. A bluff is a bet or raise with a weak hand and a semi-bluff is a bet or raise made with a currently non-strong hand that has good potential to improve. 
 
 **Fold:** Not putting in any chips and "quitting" the hand by throwing the cards away and declining to match the opponent's bet or raise. Done only after an opponent bet or raise. <br>
-**Check:** A pass, only possible if acting first or if all previous players have also checked<br>
+**Check:** A pass, only possible if acting first or if all previous players to act have also checked<br>
 **Call:** Matching the exact amount of a previous bet or raise<br>
 **Bet:** Wagering money (putting chips into the pot) when either first to act or the opponent has checked, which the opponent then has to call or raise to stay in the pot<br>
 **Raise:** Only possible after a bet, adding more money to the pot, which must be at least the amount of the previous bet or raise (effectively calling and betting together)
 
 ### Kuhn (1-card) Poker
-Kuhn Poker is the most basic useful poker game that is used in computer poker research. It was solved analytically by hand by Kuhn in 1950 [6]. Each player is dealt one card privately and begins with two chips. In the standard form, the deck consists of only three cards – an Ace, a King, and a Queen, but can be modified to contain any number such that the cards are simply labeled 1 through n, with a deck of size n. Our first experiment will use a deck size of 100 to compare different CFR algorithm implementations.
+Kuhn Poker is the most basic useful poker game that is used in computer poker research. It was solved analytically by hand by [Kuhn in 1950](https://en.wikipedia.org/wiki/Kuhn_poker). Each player is dealt one card privately and begins with two chips. In the standard form, the deck consists of only three cards – an Ace, a King, and a Queen, but can be modified to contain any number such that the cards are simply labeled 1 through n, with a deck of size n. Our first experiment will use a deck size of 100 to compare different CFR algorithm implementations.
 
 Players each ante 1 chip (although most standard poker games use blinds, this basic game does not) and rotate acting first, and the highest card is the best hand. With only 1 chip remaining for each player, the betting is quite simple. The first to act has the option to bet or check. If he bets, the opponent can either call or fold. If the opponent folds, the bettor wins one chip. If the opponent calls, the player with the higher card (best hand) wins two chips.
 
 If the first to act player checks, then the second player can either check or bet. If he checks, the player with the best hand wins one chip. If he bets, then the first player can either fold and player two will win one chip, or he can call, and the player with the best hand will win two chips.
 
-
-### What happened to online poker?
-
 #### All Kuhn Poker Sequences
+
+
 
 
 ### Leduc Poker
@@ -91,36 +92,39 @@ In 1951, John Nash wrote: "The study of n-person games for which the accepted et
 
 A main interest in games like poker comes from the fact that it is a game of imperfect information. Unlike games of perfect information (e.g. chess) where all information is visible to all players, in poker there is hidden information (opponent player private cards). 
 
-The history of poker solving techniques have gone from rule/formula based to simulation based to, most recently, game theoretical. Game theoretical techniques have evolved by (a) using Monte Carlo techniques so that we don't need to traverse the entire game tree to update the game information and strategies and (b) abstraction
+The history of poker solving techniques have gone from rule/formula based to simulation based to, most recently, game theoretical. Key game theoretical improvements have come from (a) using Monte Carlo techniques so that we don't need to traverse the entire game tree to update the game information and strategies, (b) abstraction such that we can solve approximate game trees by abstracting player cards and/or bet sizes, and (c) deep learning.
 
 
 A short timeline of the major milestones in computer poker research is given here:
 
-1998: Opponent Modelling in Poker, Billings et al. (Alberta)
+1998: [Opponent Modelling in Poker, Billings et al. (Alberta)](https://www.aaai.org/Papers/AAAI/1998/AAAI98-070.pdf)
 A basic rule-based system was developed in 1999 in the University of Alberta Computer Poker Research Group (CPRG), which took an effective hand-strength as input and outputted a (fold, call, raise) probability triple, using a form of basic opponent modelling. 
 
-2000: Abstraction Methods for Game-Theoretic Poker, Shi and Littman
+2000: [Abstraction Methods for Game-Theoretic Poker, Shi and Littman](https://www.cs.rutgers.edu/~mlittman/papers/cg00-poker.pdf)
 
-2003: Approximating Game-Theoretic Optimal Strategies for Full-scale Poker, Billings et al. (Alberta)
+2003: [Approximating Game-Theoretic Optimal Strategies for Full-scale Poker, Billings et al. (Alberta)](https://poker.cs.ualberta.ca/publications/IJCAI03.pdf)
 
-2005: Optimal Rhode Island Poker, Gilpin and Sandholm (CMU)
+2005: [Optimal Rhode Island Poker, Gilpin and Sandholm (CMU)](https://www.cs.cmu.edu/~sandholm/RIHoldEm.ISD.aaai05proceedings.pdf)
 
-2007: Regret Minimization in Games with Incomplete Information, Zinkevich et al (Alberta)
-This hugely important paper introduced the Counterfactual Regret Minimization algorithm, which is the main algorithm used today for finding game-theoretic optimal strategies in poker games. 
+2007: [Regret Minimization in Games with Incomplete Information, Zinkevich et al. (Alberta)](https://poker.cs.ualberta.ca/publications/NIPS07-cfr.pdf)
+This hugely important paper introduced the Counterfactual Regret Minimization (CFR) algorithm, which is the main algorithm used today for finding game-theoretic optimal strategies in poker games. 
 
-MCCFR
+2008-9: [Polaris and Man vs. Machine Limit Texas Hold'em Competitions](https://phys.org/news/2008-07-machine-poker-re-match.html)
 
-2008-9: Man vs. Machine Limit Texas Hold'em Competitions
+2009: [Monte Carlo Counterfactual Regret Minimization, Lanctot et al. (Alberta)](https://papers.nips.cc/paper/3713-monte-carlo-sampling-for-regret-minimization-in-extensive-games.pdf)
+CFR speeds up
 
-2015: Heads-up Limit Hold'em Poker is Solved, Bowling et al (Alberta)
+2009-2015: Various incremental improvements to CFR and abstraction
 
-2015: Brains vs. AI No-Limit Texas Hold'em Competition
+2015: [Heads-up Limit Hold'em Poker is Solved, Bowling et al (Alberta)](https://webdocs.cs.ualberta.ca/~bowling/papers/15science.pdf)
 
-2017: DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker (DeepMind)
+2015: [Brains vs. AI No-Limit Texas Hold'em Competition](https://www.cmu.edu/news/stories/archives/2015/april/computer-faces-poker-pros.html)
 
-2017: Libratus and Man vs. Machine Competition
+2017: [DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker (DeepMind)](https://science.sciencemag.org/content/356/6337/508)
 
-2019: Superhuman AI for Multiplayer Poker, Brown and Sandholm (CMU)
+2017: [Libratus and Man vs. Machine Competition](https://science.sciencemag.org/content/359/6374/418)
+
+2019: [Superhuman AI for Multiplayer Poker, Brown and Sandholm (CMU)](https://science.sciencemag.org/content/365/6456/885#:~:text=Developing%20a%20superhuman%20AI%20for,poker%20format%20in%20the%20world.)
 
 
 ## 3. Game Theory -- Equilibrium and Regret
@@ -129,8 +133,6 @@ Let's look at some important game theory concepts before we get into actually so
 What does it mean to "solve" a poker game? In the 2-player setting, this means to find a Nash Equilibrium strategy for the game. If both players are playing this strategy, neither would want to change to a different strategy, since neither could do better with any other strategy (assuming that the opponent's strategy stays fixed). 
 
 Intuition for this in poker can be explained using a simple all-in game where one player must either fold or bet all his chips and the second player must either call or fold if the first player bets all the chips. In this scenario, the second player may begin the game with a strategy of calling a low percentage of hands. After seeing the first player go all-in very frequently, he may increase that percentage. This could lead the first player to reduce his all-in percentage. Once the all-in percentage and the call percentage stabilize such that neither player can unilaterally change his strategy to increase his profit, then the equilibrium strategies have been reached.
-
-Call with enough hands to make opponent worse off in allin hands
 
 But what if the opponent, for example, keeps calling this low percentage of hands and seems to be easy to exploit? The game theoretic solution would not fully take advantage of this opportunity. The **best response strategy** is the one that maximally exploits the opponent by always performing the highest expected value play against their fixed strategy (and an exploitative strategy is one that exploits an opponent's non-equilibrium play). In the above example, this could mean raising all hands after seeing the opponent calling with a low percentage of hands. However, this strategy can itself be exploited. 
 
@@ -145,7 +147,7 @@ Here is a game example:
 | Action 2  | 5, 8  | 4, 0  | -1, 1  |
 | Action 3  | 7, 3  | 5, -1  | 0, 3  |
 
-A dominated strategy is one that is strictly worse than an alternative strategy. We can see that Player 1's strategy of Action 1 dominates Actions 2 and 3 because all of the values are strictly higher. 
+A dominated strategy is one that is strictly worse than an alternative strategy. We can see that Player 1's strategy of Action 1 dominates Actions 2 and 3 because all of the values are strictly higher.
 
 When P2 chooses Action 1, P1 earns 10 with Action 1, 5 with Action 2, and 7 with Action 3
 When P2 chooses Action 2, P1 earns 8 with Action 1, 4 with Action 2, and 5 with Action 3
@@ -206,7 +208,7 @@ The equilibrium strategy is to play each action with 1/3 probability each. We ca
 
 We can also work it out mathematically. Let P1 play Rock r%, Paper p%, and Scissors s%. The utility of P2 playing Rock is $$0*(r) + -1 * (p) + 1 * (s)$$. The utility of P2 playing Paper is $$1 * (r) + 0 * (p) + -1 * (s)$$. The utility of P2 playing Scissors is $$-1 * (r) + 1 * (p) + 0 * (s)$$. 
 
-We can figure out the best strategy with this system of equations (the second because all probabilities must add up to 1):
+We can figure out the best strategy with this system of equations (the second equation is because all probabilities must add up to 1):
 
 $$
 \begin{cases} -p + s = r - s = -r + p \\ r + p + s = 1  \end{cases}
@@ -295,11 +297,11 @@ $$
 \text{strategy\_action}_{i} = \begin{cases} \frac{R_{i}^{+}}{\sum_{k=1}^nR_{k}^{+}}, & \mbox{if at least 1 positive regret} \\ \frac{1}{n}, & \mbox{if all regrets negative} \end{cases}
 $$
 
-So let's consider Player 1 playing a fixed RPS strategy of Rock 40%, Paper 30%, Scissors 30% and Player 2 playing using regret matching. 
+So let's consider Player 1 playing a fixed RPS strategy of Rock 40%, Paper 30%, Scissors 30% and Player 2 playing using regret matching. So the player is playing almost the equilibrium strategy, but a little bit biased on favor of Rock. 
 
 Let's look at a sequence of plays in this scenario.
 
-| P1  | P2  | New Regrets  | New Total Regrets  | Strategy  | P2 Profits
+| P1  | P2  | New Regrets  | New Total Regrets  | Strategy [R,P,S]  | P2 Profits
 |---|---|---|---|---|---|
 | S  | S  | [1,0,-1]   | [1,0,-1]  | [1,0,0]  | 0  | 
 | P  | R  | [0,1,2]  | [1,1,1]  | [1/3, 1/3, 1/3]  | 1  |
@@ -339,7 +341,7 @@ The most basic algorithm to score well is to pull each arm once and then forever
 
 $$\epsilon$$-Greedy works the same way as Greedy, but instead of **always** picking the best arm, we use an $$\epsilon$$ value that defines how often we should randomly pick a different arm. We must be checking to see which arm is the current best arm before each pull according to the average reward per pull, since the random selections could switch the previous best arm to a new arm. 
 
-The idea of usually picking the best arm and sometimes switching to a random one is the concept of exploration vs. exploitation. Think of this in the context of picking a travel destination or picking a restaurant. You are likely to get a very high "reward" by continuing to go to a favorite vacation spot or restaurant, but it's also important to explore other options. 
+The idea of usually picking the best arm and sometimes switching to a random one is the concept of exploration vs. exploitation. Think of this in the context of picking a travel destination or picking a restaurant. You are likely to get a very high "reward" by continuing to go to a favorite vacation spot or restaurant, but it's also useful to explore other options. 
 
 **Bandit Regret** 
 The goal of the agent playing this game is to get the best reward. This is done by pulling the best arm. We can define a very sensible definition of average regret as 

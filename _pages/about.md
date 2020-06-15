@@ -14,3 +14,4 @@ I'm interested in AI and machine learning, specifically reinforcement learning a
 - I enjoy hiking and cycling, which has recently involved lots of Citibiking and dodging tourists on the Brooklyn Bridge and some hiking in Israel
 - I like studying languages, but am currently only at a strong conversational level in Hebrew. I hope to spend time on French, Spanish, and Arabic in the future. 
 - [LinkedIn](https://www.linkedin.com/in/maxchiswick/)
+- Want to chat? You can set up a 30 minute timeslot here: [Calendly](https://calendly.com/max-chiswick/30min)
