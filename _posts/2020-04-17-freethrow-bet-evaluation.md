@@ -29,7 +29,7 @@ The graph below demonstrates the impact that true shooting percentage has on pro
 
 We can see that a shooter of around 70% or below is quite unlikely to ever hit 90 out of 100. Using $p$ = 70% results in a probability of 1 in 642,853, which clearly is an unrealistic number of attempts in a one year period.
 
-How, then, can we determine a true shooting percentage that is likely to be successful? If $x$ equals the probability of success on one attempt (equal to the equation above), then $(1-x)$ is the probablity of failure on one attempt and $(1-x)^n$ is the probability of failure on all n attempts, then $1-(1-x)^n$ is the probability of at least one success over $n$ attempts. 
+How, then, can we determine a true shooting percentage that is likely to be successful? If $$x$$ equals the probability of success on one attempt (equal to the equation above), then $$(1-x)$$ is the probablity of failure on one attempt and $(1-x)^n$ is the probability of failure on all n attempts, then $$1-(1-x)^n$$ is the probability of at least one success over $n$ attempts. 
 
 For simplicity, let's assume one attempt per day and again examine the probability of success for various true shooting percentages:
 ![365 Attempts](../assets/attempt365.png)
@@ -38,7 +38,7 @@ We can see that somewhere between 78% and 79% has a 50% probability of achieving
 ## When to reset attempts? Method 1: Binomial
 Since anyone outside of high 70's is either almost guaranteed to fail (if below) or succeed (if above) then the question of whether he will be successful really is only interesting if his true shooting percentage falls somewhere in that range. Let's assume a true shooting percentage of 78%, which has a 40% probability of success over 365 attempts. At what point should Mike reset his attempt back to 0 if he has missed a few shots? Obviously if he misses the first shot he should reset, and probably even if he misses the second or third shot, but what about the seventh shot? What if he is 35 of 40? 
 
-One strategy is to compute the probability of success at that point in time, and reset if it is lower than his probability of success at the start of an attempt. A 78% true shooter has a 0.14% (or 1 in 709) chance of making at least 90 out of 100 free throws. If after taking $x$ shots, he has $y$ misses, his probability of success is: $\sum_{i=90-x+y}^{100-x} {100-x \choose i} * 0.78^i*0.22^{100-i-x}$
+One strategy is to compute the probability of success at that point in time, and reset if it is lower than his probability of success at the start of an attempt. A 78% true shooter has a 0.14% (or 1 in 709) chance of making at least 90 out of 100 free throws. If after taking $x$ shots, he has $y$ misses, his probability of success is: $$\sum_{i=90-x+y}^{100-x} {100-x \choose i} * 0.78^i*0.22^{100-i-x}$$
 
 We can find the decision boundary by finding the maximum number of attempts for given number of misses $y$ = 1 through 10 such that the probability of success is lower at that state than the probability of success at the beginning of an attempt:
 ![reset](../assets/reset_graph.png)
