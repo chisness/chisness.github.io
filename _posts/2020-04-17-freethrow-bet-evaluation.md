@@ -8,7 +8,7 @@ Main terms:
 - Bet lasts until end of 2020
 
 Detailed additions: 
-- I must define when an attempt starts. I.e. if I shot 150 and scored 90/100 between #20-119 I'd need to reset counter after 19 for it to count.
+- I must define when an attempt starts. I.e. if I shot 150 times and scored 90/100 between attempts 20-119 I'd need to reset counter after 19 for it to count.
 - If I have no safe access to a regulation hoop I get an extension until I have had 50 hours of safe use of a regulation hoop
 
 The short version is that Mike has to get 90/100 freethrows by the end of 2020 with unlimited attempts and unlimited time per attempt, but each attempt has to be declared. 
@@ -21,7 +21,7 @@ There are two main elements that go into the bet: Skill level and reset strategy
 [NOTE: shouldn't we have some threshold here to account for time, so prob. success if very close to end is better than same prob. success at beginning?]
 
 ## Probability of making 90/100
-If we assume a fixed probability of making each shot equal to $p$, then the probability of making at least 90 out of 100 shots is a binomially distributed random variable, with probability of success equal to: $\sum_{i=90}^{100} {100 \choose i} * p^i*q^{100-i}$; where $q$ is the probability of a miss = $1 - p$.
+If we assume a fixed probability of making each shot equal to $$p$$, then the probability of making at least 90 out of 100 shots is a binomially distributed random variable, with probability of success equal to: $$\sum_{i=90}^{100} {100 \choose i} * p^i*q^{100-i}$$; where $$q$$ is the probability of a miss = $$1 - p$$.
 
 We can evaluate the probability of success by plugging in various values for true shooting percentage ($p$ in the equation above). 
 The graph below demonstrates the impact that true shooting percentage has on probablity of success:
