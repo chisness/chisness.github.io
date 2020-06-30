@@ -1,3 +1,5 @@
+This post was written jointly by Max Chiswick and [Mike Thompson](https://www.linkedin.com/in/mike-thompson-78655b13/)
+
 ## The Bet
 [Mike McDonald](https://twitter.com/MikeMcDonald89) is a successful gambler/poker player who set up a bet with the [following terms](https://twitter.com/MikeMcDonald89/status/1246917870677680129):
 
@@ -13,12 +15,10 @@ Detailed additions:
 
 The short version is that Mike has to get 90/100 freethrows by the end of 2020 with unlimited attempts and unlimited time per attempt, but each attempt has to be declared. 
 
-## Assumptions
+## Assumptions and Simplifications
 It seems that the "hot hand" theory of improving chances of making a basket on a "hot streak" is pretty unclear ([Wikipedia article](https://en.wikipedia.org/wiki/Hot_hand)) and also would make the analysis much more complicated, so we assume a fixed probability of making each shot. 
 
-There are two main elements that go into the bet: Skill level and reset strategy. The skill level is defined as the proability of making each shot. The reset strategy is when to start a fresh 100 shot attempt. We suggest that if the probability of success from any point is worse than the probability of success from the starting point, then it's best to reset. 
-
-[NOTE: shouldn't we have some threshold here to account for time, so prob. success if very close to end is better than same prob. success at beginning?]
+There are two main elements that go into the bet: Skill level and reset strategy. The skill level is defined as the proability of making each shot. The reset strategy is when to start a fresh 100 shot attempt. We suggest that if the probability of success from any point is worse than the probability of success from the starting point, then it's best to reset. (Although in reality, it makes sense to prefer to continue when the probability is the same or slightly worse than the starting probability since it will take more time to start over.)
 
 ## Probability of making 90/100
 If we assume a fixed probability of making each shot equal to $$p$$, then the probability of making at least 90 out of 100 shots is a binomially distributed random variable, with probability of success equal to: $$\sum_{i=90}^{100} {100 \choose i} * p^i*q^{100-i}$$; where $$q$$ is the probability of a miss = $$1 - p$$.
@@ -61,38 +61,55 @@ Initial definitions:
 - We define each pair to have a reward of arriving to that state of 0 except for every combination where shots made = 90, so [90, 3] and [90, 5] and [90, 10], etc. all have a reward value of 100 (chosen arbitrarily to represent winning)
 - We define 2 possible actions at each state: shoot or reset. These represent the actions of the player in the bet. 
 
-We want to use value iteration to find the value of every state [shots made, shots missed]. Note that the immediate reward of 100 is only given for winning the bet, so now we are defining state values that derive from that winning reward.  
+We want to use value iteration to find the value of every state [shots made, shots missed]. Note that the immediate reward of 100 is only given for winning the bet, so now we are defining state values that derive from that winning reward. The state values say what it's worth to be in any given state given that winning has a reward of 100 and given a defined discount rate, $$\gamma$$.
 
-We have defined the reward for winning (i.e. 100 when shots made reaches 90) and can initially set the value of every other state at 0. Then the algorithm will learn the value of those positions. For example, if you are in the state of [89 made, 10 missed], your value is 100 if you make the next shot and you will be back to the beginning if you miss it. So we can say that the value of that state is = $$p_make*100 + (1-p_make)*\text([value of starting state])$$
+We have defined the reward for winning (i.e. 100 when shots made reaches 90) and can initially set the value of every other state at 0. Then the algorithm will learn the value of those positions. For example, if you are in the state of [89 made, 10 missed], your value is 100 if you make the next shot and you will be back to the beginning if you miss it. So we can say that the value of that state is = $$p_make*100 + (1-p_make)*\text{[value of starting state]}$$. 
 
 Here's how value iteration works: 
 <script src="https://gist.github.com/chisness/0a7778093ff0b77f5fd01215b32f26e5.js"></script>
 - We cycle through every combination of [shots made, shots missed] 
-- We set a variable $$v$$ to the value of each state
+- We set a variable $$v$$ to the current value of each state
 - For each state, we evaluate the value of (1) shooting and (2) resetting
-- Reset has a static result and we set the value of a reset to the value of the state [0, 0]
+- Reset is the current value of the state [0, 0]
 - Shooting has a probabilistic result and we use the Bellman equation to evaluate, which is [BELLMAN EQUATION]
 - In the case of making, we have: $$make_val = p_make*$$
 - In the case of missing, we have:  $$miss_val = p_miss*$$
 - After these calculations, we have a result for the reset action and the shoot action
 - We can then set the value of the state as the result for which action gives us the greatest value
-- After each state that we check, we compare the original value of the state that we stored as $$v$$ to the new value. We keep track of the largest difference as we go through each state so that at the end we can see what the largest difference is. Once this difference converges below some $$\epsilon$$ value that we define, then we consider the state values to be stable. 
+- After each state that we check, we compare the original value of the state that we stored as $$v$$ to the new value. We keep track of the largest difference as we go through each state so that at the end of the cycle, we can see what the largest difference is. Once this difference converges below some $$\epsilon$$ value that we define, then we consider the state values to be stable. 
 <script src="https://gist.github.com/chisness/762272f794d0fb8eadd683778c9ed30a.js"></script>
-- Now we have values for each state, but we haven't made a strategy (aka policy) for what to do at each state. We can iterate through every state pair again and check the value of each action at each state and now that these values are fixed, we can set the strategy for the state to be the action that gives the highest value. This is called policy iteration. 
-
+- Now we have values for each state, but we haven't made a strategy (aka policy) for what to do at each state. We can iterate through every state pair one final time and check the value of each action at each state and now that these values are fixed, we can set the strategy for the state to be the action that gives the highest value. This is called policy iteration. 
 
 ## The discount rate
-We use the discount rate $$\gamma$$ in the Bellman equation. This acts as a discount rate, which means that farther away states get discounted more compared to states nearby. We think this makes sense in the context of the freethrow bet because of the time and energy required to complete attempts. For example, if we had a perfect player who could make every shot 100% of the time, if he had 1 shot left, the value of the state would be $$100 * 0.99 = 99$$ and with 5 shots left would be $$100 * 0.99^5 = 95.099 and then at the beginning would be $$100 * 0.99^90 = 40.473$$. 
+We use the parameter $$\gamma$$ in the Bellman equation. This acts as a discount rate, which means that farther away states get discounted more compared to states nearby. We think this makes sense in the context of the freethrow bet because of the time and energy required to complete attempts. For example, if we had a perfect player who could make every shot 100% of the time, if he had 1 shot left, the value of the state would be $$100 * 0.99 = 99$$ and with 5 shots left would be $$100 * 0.99^5 = 95.099 and then at the beginning would be $$100 * 0.99^90 = 40.473$$. 
+
+Lowering threshold for continuing by gamma value 
 
 p_make = 0.78, $$\gamma$$ = 1
 
-p_make = 0.78, $$\gamma$$ = 0.995
+p_make = 0.78, $$\gamma$$ = 0.995 #maybe .999
 
 p_make = 0.78, $$\gamma$$ = 0.99
 
 p_make = 0.78, $$\gamma$$ = 0.9
 
-[NOTE] do we want to do hot hand so if you made previous better chance to make current? by how much? 
+pick 1 gamma
+do p_make = 0.5, 0.7, 0.78, 0.95
 
+show 1 plot with everything and rest 
+
+do sims with naive way no resets, binomial, and a couple of gamma levels 
+
+how to show reset strategy is valuable (avg length of attempt with reset compared to without?)
+
+1st miss 7th shot or later continue
+
+post on 2+2 when done
+
+what about cost per shot 
 
 ## Binomial vs. RL and Conclusions
+Having the discount rate built into the reinforcement learning model is a solution for the issue of considering the value of time. 
+
+## Practical Strategy
+We see that the reset strategies are all fairly similar and all have used the simplifying assumption of a fixed freethrow shooting make percentage. If I were playing (and thank god I'm not with my likely make percentage), I would look at the range of reset numbers and always reset below, never reset above, and then evaluate based on my perceived streakiness if in between
