@@ -94,23 +94,30 @@ For the full code, see: [freethrows.py](https://github.com/chisness/freethrows/b
 Here are various figures for state values for different levels of $$p_{make}$$ and $$\gamma$$. The yellow areas indicate optimally continuing to shoot and the purple areas indicate optimally resetting. We also show the reset values specifically for $$p_{make}$$ = 0.78 and $$\gamma$$ = 0.99. 
 
 ![](../assets/ft7899.png)
+Full size: [link](https://chisness.github.io/assets/ft7899.png)
 
 ![](../assets/ft7899reset.png)
+Full size: [link](https://chisness.github.io/assets/ft7899reset.png)
 
 ![](../assets/ft7499.png)
+Full size: [link](https://chisness.github.io/assets/ft7499.png)
 
 ![](../assets/ft5099.png)
+Full size: [link](https://chisness.github.io/assets/ft5099.png)
 
 ![](../assets/ft9999.png)
+Full size: [link](https://chisness.github.io/assets/ft9999.png)
 
 ## The discount rate
 We use the parameter $$\gamma$$ in the Bellman equation. This acts as a discount rate, which means that farther away states get discounted more compared to states nearby. We think this makes sense in the context of the freethrow bet because of the time and energy required to complete attempts. For example, if we had a perfect player who could make every shot 100% of the time, if he had 1 shot left, the value of the state would be $$100 * 0.99 = 99$$ and with 5 shots left would be $$100 * 0.99^5 = 95.099 and then at the beginning with 90 shots left would be $$100 * 0.99^90 = 40.473$$. So while this player's true value is always 100, the state values include discounting to account for the time. 
 
 Going back to $$p_{make}$$ = 0.78, we will show plots with $$\gamma$$ = 0.999 and $$\gamma$$ = 0.9, small but significant differences from the $$\gamma$$ = 0.99 plot above. The $$\gamma$$ = 0.9 plot "breaks" because $$0.9^90$$ is so small that it is essentially 0 by the time the reward of winning is iterated down to the starting state. 
 
-![](../assets/ft9999.png)
+![](../assets/ft7890.png)
+Full size: [link](https://chisness.github.io/assets/ft7890.png)
 
-![](../assets/ft9999.png)
+![](../assets/ft78999.png)
+Full size: [link](https://chisness.github.io/assets/ft78999.png)
 
 ## Monte Carlo Simulations
 We've now shown a possible reset strategy that used the binomial model and a similar, but slightly different strategy that used reinforcement learning. There is also the naive strategy of just shooting until winning (making 90) or losing (missing 11). We ran Monte Carlo simulations for each of these 3 methods for 100,000 trials (where a trial is run until winning the bet). The most valuable statistic is the average number of shots until winning, which we plotted for each strategy. On top we have the naive strategy that not surprisingly has the most shots until success and in the middle is the binomial model and on the bottom is the RL model. Those are within about 1% of each other, which suggests that using a reasonable reset strategy is most important. 
@@ -169,14 +176,9 @@ We see that the binomial models cuts the expected number of shots down to **13,2
 Since the Markov chain is fast to calculate, we can use inspection to find an even better strategy. We start by only resetting on the 10th miss. We find the value $$n_{10}$$ $$\in$$ (0,100) with the minimum number of expected shots. We continue to use the value found for $$n_{10}$$ as the threshold for resetting on the 10th miss, and search for the threshold for resetting on the 9th miss, $$n_9 \in (0, n_{10})$$ that results in the minimum expected number of shots. We continue in this manner until we have found all values $$n_ {10}, n_9, \dots, n_1$$. The inspection model results in another slight improvement, with expected shots of **13,209**. The thresholds to reset are if misses 1 through 10 occur on or before total number of shots: $$$$\left(\begin{array}{inspection} 5, & 11, & 16, & 22, & 27, & 34, & 40, & 47, & 55, & 64 \end{array}\right)$$$$
 
 ## Practical Strategy and Conclusions
-We see that the reset strategies are all fairly similar and all have used the simplifying assumption of a fixed freethrow shooting make percentage. If I were playing (and thank god I'm not with my likely make percentage), I would look at the range of reset numbers and always reset below, never reset above, and then evaluate based on my perceived streakiness if in between
-
-## Binomial vs. RL and Conclusions
-Having the discount rate built into the reinforcement learning model is a solution for the issue of considering the value of time. 
-
-Could add cost per shot
-The reset strategy is probably much less important than slight improvements in the making percentage, but 
+We see that the reset strategies are all fairly similar and all have used the simplifying assumption of a fixed freethrow shooting make percentage. If I were playing (and thank god I'm not with my likely make percentage), I would look at the range of reset numbers and always reset below, never reset above, and then evaluate based on my perceived streakiness/feel if in between. The precise reset strategy is probably much less important than slight ipmrovements in the make percentage and staying consistent under the pressure of being close to winning or missing a couple in a row. 
 
 ## To add
 1) Show iterations of reinforcement learning procedure
+
 2) See how hot hand affects reset strategy and success
