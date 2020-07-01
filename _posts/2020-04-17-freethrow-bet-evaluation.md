@@ -93,29 +93,29 @@ For the full code, see: [freethrows.py](https://github.com/chisness/freethrows/b
 ## State values
 Here are various figures for state values for different levels of $$p_{make}$$ and $$\gamma$$. The yellow areas indicate optimally continuing to shoot and the purple areas indicate optimally resetting. We also show the reset values specifically for $$p_{make}$$ = 0.78 and $$\gamma$$ = 0.99. 
 
-!(../assets/ft7899.png)
+![](../assets/ft7899.png)
 
-!(../assets/ft7899reset.png)
+![](../assets/ft7899reset.png)
 
-!(../assets/ft7499.png)
+![](../assets/ft7499.png)
 
-!(../assets/ft5099.png)
+![](../assets/ft5099.png)
 
-!(../assets/ft9999.png)
+![](../assets/ft9999.png)
 
 ## The discount rate
 We use the parameter $$\gamma$$ in the Bellman equation. This acts as a discount rate, which means that farther away states get discounted more compared to states nearby. We think this makes sense in the context of the freethrow bet because of the time and energy required to complete attempts. For example, if we had a perfect player who could make every shot 100% of the time, if he had 1 shot left, the value of the state would be $$100 * 0.99 = 99$$ and with 5 shots left would be $$100 * 0.99^5 = 95.099 and then at the beginning with 90 shots left would be $$100 * 0.99^90 = 40.473$$. So while this player's true value is always 100, the state values include discounting to account for the time. 
 
 Going back to $$p_{make}$$ = 0.78, we will show plots with $$\gamma$$ = 0.999 and $$\gamma$$ = 0.9, small but significant differences from the $$\gamma$$ = 0.99 plot above. The $$\gamma$$ = 0.9 plot "breaks" because $$0.9^90$$ is so small that it is essentially 0 by the time the reward of winning is iterated down to the starting state. 
 
-!(../assets/ft9999.png)
+![](../assets/ft9999.png)
 
-!(../assets/ft9999.png)
+![](../assets/ft9999.png)
 
 ## Monte Carlo Simulations
 We've now shown a possible reset strategy that used the binomial model and a similar, but slightly different strategy that used reinforcement learning. There is also the naive strategy of just shooting until winning (making 90) or losing (missing 11). We ran Monte Carlo simulations for each of these 3 methods for 100,000 trials (where a trial is run until winning the bet). The most valuable statistic is the average number of shots until winning, which we plotted for each strategy. On top we have the naive strategy that not surprisingly has the most shots until success and in the middle is the binomial model and on the bottom is the RL model. Those are within about 1% of each other, which suggests that using a reasonable reset strategy is most important. 
 
-!(../assets/ftmc.png)
+![](../assets/ftmc.png)
 
 ## Markov Chain 
 The free throw bet can be modeled as a Markov chain, which per [Wikipedia](https://en.wikipedia.org/wiki/Markov_chain), is: <cite>"a stochastic model describing a sequence of possible events in which the probability of each event depends only on the state attained in the previous event."</cite> 
