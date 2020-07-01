@@ -1,3 +1,9 @@
+---
+layout: post
+title: "test1"
+author: "Max Chiswick and Mike Thompson"
+---
+
 This post was written jointly by Max Chiswick and [Mike Thompson](https://www.linkedin.com/in/mike-thompson-78655b13/)
 
 ## The Bet
