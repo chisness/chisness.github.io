@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "test1"
+title: "Freethrow Bet Analysis"
 author: "Max Chiswick and Mike Thompson"
 ---
 
@@ -68,7 +68,7 @@ Initial definitions:
 
 We want to use value iteration to find the value of every state [shots made, shots missed]. Note that the immediate reward of 100 is only given for winning the bet, so now we are defining state values that derive from that winning reward. The state values say what it's worth to be in any given state given that winning has a reward of 100 and given a discount rate, $$\gamma$$.
 
-Value iteration makes significant use of the [Bellman equation](https://en.wikipedia.org/wiki/Bellman_equation), which is defined as $$V(s) = R(s, a) + \gamma*V(s')$$, where $$V(s)$$ is the value of the current state, $$R(s, a)$$ is the reward of action $$a$$ at state $$s$$, $$\gamma$$ is the discount factor, and $$V(s')$$ is the value of the next state. So each state derives its value from 
+Value iteration makes significant use of the [Bellman equation](https://en.wikipedia.org/wiki/Bellman_equation), which is defined as $$V(s) = R(s, a) + \gamma*V(s')$$, where $$V(s)$$ is the value of the current state, $$R(s, a)$$ is the reward of action $$a$$ at state $$s$$, $$\gamma$$ is the discount factor, and $$V(s')$$ is the value of the next state. So each state derives its value from the immediate reward and the value of the next state. This is simplified in the freethrow setting where there is only an immediate reward upon winning. 
 
 We have defined the reward for winning (i.e. 100 when shots made reaches 90) and can initially set the value of every other state at 0. Then the algorithm will learn the value of those positions. For example, if you are in the state of [89 made, 10 missed], your value is 100 if you make the next shot and you will be back to the beginning if you miss it. So we can say that the value of that state is = $$p_{make}*100 + (1-p_{make})*\text{[value of starting state]}$$. 
 
@@ -88,44 +88,43 @@ Here's how value iteration works:
 <script src="https://gist.github.com/chisness/762272f794d0fb8eadd683778c9ed30a.js"></script>
 - Now we have values for each state, but we haven't made a strategy (aka policy) for what to do at each state. We can iterate through every state pair one final time and check the value of each action at each state and now that these values are fixed, we can set the strategy for the state to be the action that gives the highest value. This is called policy iteration. 
 
+For the full code, see: [freethrows.py](https://github.com/chisness/freethrows/blob/master/freethrows.py)
+
+## State values
+Here are various figures for state values for different levels of $$p_{make}$$ and $$\gamma$$. The yellow areas indicate optimally continuing to shoot and the purple areas indicate optimally resetting. We also show the reset values specifically for $$p_{make}$$ = 0.78 and $$\gamma$$ = 0.99. 
+
+!(../assets/ft7899.png)
+
+!(../assets/ft7899reset.png)
+
+!(../assets/ft7499.png)
+
+!(../assets/ft5099.png)
+
+!(../assets/ft9999.png)
+
 ## The discount rate
 We use the parameter $$\gamma$$ in the Bellman equation. This acts as a discount rate, which means that farther away states get discounted more compared to states nearby. We think this makes sense in the context of the freethrow bet because of the time and energy required to complete attempts. For example, if we had a perfect player who could make every shot 100% of the time, if he had 1 shot left, the value of the state would be $$100 * 0.99 = 99$$ and with 5 shots left would be $$100 * 0.99^5 = 95.099 and then at the beginning with 90 shots left would be $$100 * 0.99^90 = 40.473$$. So while this player's true value is always 100, the state values include discounting to account for the time. 
 
-Lowering threshold for continuing by gamma value 
+Going back to $$p_{make}$$ = 0.78, we will show plots with $$\gamma$$ = 0.999 and $$\gamma$$ = 0.9, small but significant differences from the $$\gamma$$ = 0.99 plot above. The $$\gamma$$ = 0.9 plot "breaks" because $$0.9^90$$ is so small that it is essentially 0 by the time the reward of winning is iterated down to the starting state. 
 
-p_make = 0.78, $$\gamma$$ = 1
+!(../assets/ft9999.png)
 
-p_make = 0.78, $$\gamma$$ = 0.995 #maybe .999
+!(../assets/ft9999.png)
 
-p_make = 0.78, $$\gamma$$ = 0.99
+## Monte Carlo Simulations
+We've now shown a possible reset strategy that used the binomial model and a similar, but slightly different strategy that used reinforcement learning. There is also the naive strategy of just shooting until winning (making 90) or losing (missing 11). We ran Monte Carlo simulations for each of these 3 methods for 100,000 trials (where a trial is run until winning the bet). The most valuable statistic is the average number of shots until winning, which we plotted for each strategy. On top we have the naive strategy that not surprisingly has the most shots until success and in the middle is the binomial model and on the bottom is the RL model. Those are within about 1% of each other, which suggests that using a reasonable reset strategy is most important. 
 
-p_make = 0.78, $$\gamma$$ = 0.9
-
-pick 1 gamma
-do p_make = 0.5, 0.7, 0.78, 0.95
-
-show 1 plot with everything and rest 
-
-do sims with naive way no resets, binomial, and a couple of gamma levels 
-
-how to show reset strategy is valuable (avg length of attempt with reset compared to without?)
-
-1st miss 7th shot or later continue
-
-post on 2+2 when done
-
-what about cost per shot 
-
-## Binomial vs. RL and Conclusions
-Having the discount rate built into the reinforcement learning model is a solution for the issue of considering the value of time. 
-
+!(../assets/ftmc.png)
 
 ## Markov Chain 
 The free throw bet can be modeled as a Markov chain, which per [Wikipedia](https://en.wikipedia.org/wiki/Markov_chain), is: <cite>"a stochastic model describing a sequence of possible events in which the probability of each event depends only on the state attained in the previous event."</cite> 
 
-There are $$1,001$$ different possible states ($$0$$ to $$10$$ misses, $$0$$ to $$90$$ makes) $$\implies$$ $$11$$ * $91$ $$=$$ $$1001$$. Therefore, The bet can be represented by a $$1001$$ x $$1001$$ matrix, where rows represent the current state, columns represent the future state, and elements $$X_{ij}$$ {$$\forall$$ $$_i, _j \in [0, 1000]$$} represent the probability of transitioning from state $i$ to state $$j$$. 
+This provides a quick way to directly calculate the average shots until success rather than doing simulations. 
 
-## Naive Model  
+There are $$1001$$ different possible states ($$0$$ to $$10$$ misses, $$0$$ to $$90$$ makes) $$\implies$$ $$11$$ * $91$ $$=$$ $$1001$$. Therefore, The bet can be represented by a $$1001$$ x $$1001$$ matrix, where rows represent the current state, columns represent the future state, and elements $$X_{ij}$$ {$$\forall$$ $$_i, _j \in [0, 1000]$$} represent the probability of transitioning from state $$i$$ to state $$j$$. 
+
+### Naive Model  
 Let's assume Mike continues an attempt until either 90 makes or 11 misses, and define the states as: \
 $$0$$, $$1$$, $$\dots$$, $$89$$ $$=$$ ($$0$$ misses, $$0$$ makes), ($$0$$ misses, $$1$$ make), $$\dots$$, ($$0$$ misses, $$89$$ makes); \
 $$90$$, $$91$$, $$\dots$$, $$179$$ $$=$$ ($$1$$ miss, $$0$$ makes), ($$1$$ miss, $$1$$ make), $$\dots$$, ($$1$$ miss, $$89$$ makes); \
@@ -159,18 +158,25 @@ $$
 
 Absorbing states are states that cannot be left once entered. Then let matrix $$T$$ be a subset of matrix $$P$$ that only includes transition (non-absorbing) states: $$T$$ = $$P_{[0:990,0:990]}$$, since the final ten states represent success, completing the bet *(this is the reason we set the final ten states as the success states, so they can be removed easily).*
 
-Define matrix $$C$$ such that every element $$X_{ij}$$ is the number of expected transitions from state $$i$$ to state $$j$$ at any point in time (even if other states are entered inbetween) before entering into one of the absorbing states. Matrix $$C$$ is calculated as: <center> $$C$$ = ($$I_{1000}$$ $$-$$ $$T$$)$$^{-1}$$ </center> Then the sum of $$row_0$$ is the expected total number of shots required for success. We calculate that under the naive assumption, where Mike shoots until the earlier of 90 makes or 11 misses, that the expected number of shots is **35,418**.
+Define matrix $$C$$ such that every element $$X_{ij}$$ is the number of expected transitions from state $$i$$ to state $$j$$ at any point in time (even if other states are entered inbetween) before entering into one of the absorbing states. Matrix $$C$$ is calculated as: $$C$$ = ($$I_{1000}$$ $$-$$ $$T$$)$$^{-1}$$.  Then the sum of $$row_0$$ is the expected total number of shots required for success. We calculate that under the naive assumption, where Mike shoots until the earlier of 90 makes or 11 misses, that the expected number of shots is **35,418**.
 
-## Strategies from Binomial and Reinforcement Learning Models
+### Strategies from Binomial and Reinforcement Learning Models
 We can modify the matrix $$P$$ above to calculate the expected number of shots when Mike resets based on strategies from the binomial and reinforcement learning models. To accomplish this, we simply move the 0.22 to column 0 if the miss occurs on or before the threshold (e.g. the binomial model recommends resetting if first miss occurs within the first 6 shots, so states $$0$$ through $$5$$ move the probability of a miss to the first column to indicate restarting the bet).
 
 We see that the binomial models cuts the expected number of shots down to **13,262**, and the reinforcement learning model with gamma of 0.99 is a slight improvement at **13,236**. 
 
-## Strategy from Inspection
+### Strategy from Inspection
 Since the Markov chain is fast to calculate, we can use inspection to find an even better strategy. We start by only resetting on the 10th miss. We find the value $$n_{10}$$ $$\in$$ (0,100) with the minimum number of expected shots. We continue to use the value found for $$n_{10}$$ as the threshold for resetting on the 10th miss, and search for the threshold for resetting on the 9th miss, $$n_9 \in (0, n_{10})$$ that results in the minimum expected number of shots. We continue in this manner until we have found all values $$n_ {10}, n_9, \dots, n_1$$. The inspection model results in another slight improvement, with expected shots of **13,209**. The thresholds to reset are if misses 1 through 10 occur on or before total number of shots: $$$$\left(\begin{array}{inspection} 5, & 11, & 16, & 22, & 27, & 34, & 40, & 47, & 55, & 64 \end{array}\right)$$$$
 
-## Practical Strategy
+## Practical Strategy and Conclusions
 We see that the reset strategies are all fairly similar and all have used the simplifying assumption of a fixed freethrow shooting make percentage. If I were playing (and thank god I'm not with my likely make percentage), I would look at the range of reset numbers and always reset below, never reset above, and then evaluate based on my perceived streakiness if in between
 
+## Binomial vs. RL and Conclusions
+Having the discount rate built into the reinforcement learning model is a solution for the issue of considering the value of time. 
+
+Could add cost per shot
+The reset strategy is probably much less important than slight improvements in the making percentage, but 
+
 ## To add
-1) 
+1) Show iterations of reinforcement learning procedure
+2) See how hot hand affects reset strategy and success
