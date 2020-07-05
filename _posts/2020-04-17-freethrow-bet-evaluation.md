@@ -132,21 +132,21 @@ This provides a quick way to directly calculate the average shots until success 
 There are $$1001$$ different possible states ($$0$$ to $$10$$ misses, $$0$$ to $$90$$ makes) $$\implies$$ $$11$$ * $91$ $$=$$ $$1001$$. Therefore, The bet can be represented by a $$1001$$ x $$1001$$ matrix, where rows represent the current state, columns represent the future state, and elements $$X_{ij}$$ {$$\forall$$ $$_i, _j \in [0, 1000]$$} represent the probability of transitioning from state $$i$$ to state $$j$$. 
 
 ### Naive Model  
-Let's assume Mike continues an attempt until either 90 makes or 11 misses, and define the states as:
-$$0$$, $$1$$, $$\dots$$, $$89$$ $$=$$ ($$0$$ misses, $$0$$ makes), ($$0$$ misses, $$1$$ make), $$\dots$$, ($$0$$ misses, $$89$$ makes); 
-$$90$$, $$91$$, $$\dots$$, $$179$$ $$=$$ ($$1$$ miss, $$0$$ makes), ($$1$$ miss, $$1$$ make), $$\dots$$, ($$1$$ miss, $$89$$ makes);
-$$\vdots$$
-$$900$$, $$901$$, $$\dots$$, $$989$$ $$=$$ ($$10$$ misses, $$0$$ makes), ($$10$$ misses, $$1$$ make), $$\dots$$, ($$10$$ misses, $$89$$ makes). 
-$$990$$, $$991$$, $$\dots$$, $${1,000}$$ $$=$$ ($$0$$ misses, $$90$$ makes), ($$1$$ miss, $$90$$ makes),$$\dots$$, ($$10$$ misses, $$90$$ makes). 
+Let's assume Mike continues an attempt until either 90 makes or 11 misses, and define the states as:  
+$0$, $1$, $\dots$, $89$ $=$ ($0$ misses, $0$ makes), ($0$ misses, $1$ make), $\dots$, ($0$ misses, $89$ makes);  
+$90$, $91$, $\dots$, $179$ $=$ ($1$ miss, $0$ makes), ($1$ miss, $1$ make), $\dots$, ($1$ miss, $89$ makes);  
+$\vdots$  
+$900$, $901$, $\dots$, $989$ $=$ ($10$ misses, $0$ makes), ($10$ misses, $1$ make), $\dots$, ($10$ misses, $89$ makes).  
+$990$, $991$, $\dots$, ${1,000}$ $=$ ($0$ misses, $90$ makes), ($1$ miss, $90$ makes),$\dots$, ($10$ misses, $90$ makes).  
 *Note it will make sense later why the successful scenarios are at that end, rather than in sequential order.*
 
-Then, the probability matrix $$P$$ can be fully described by:  
-$$X_{i,i+1}$$ $$=$$ $$0.78$$ for {$$i$$: $$i$$ $$\in$$ [0, 989] | ($$i$$+1)%90!=0}; *(since 90 made shots are at the end rather than after 89 makes)*  
-$$X_{89+90*i,990+i}$$ $$=$$ $$0.78$$ for $$i$$ $$\in$$ [0, 10];  
-$$X_{i,90+i}$$ $$=$$ $$0.22$$ for $$i$$ $$\in$$ [0, 899];  
-$$X_{900+i,0}$$ $$=$$ $$0.22$$ for $$i$$ $$\in$$ [0, 89]; *(reset to beginning on 11th miss)*  
-$$X_{i,i}$$ $$=$$ $$1$$ for $$i$$ $$\in$$ [990, 1,000];  
-$$X_{i,j}$$ $$=$$ $$0$$ everywhere else.
+Then, the probability matrix $P$ can be fully described by:
+$X_{i,i+1}$ $=$ $0.78$ for {$i$: $i$ $\in$ [0, 989] | ($i$+1)%90!=0}; *(since 90 made shots are at the end rather than after 89 makes)*  
+$X_{89+90*i,990+i}$ $=$ $0.78$ for $i$ $\in$ [0, 10];  
+$X_{i,90+i}$ $=$ $0.22$ for $i$ $\in$ [0, 899];  
+$X_{900+i,0}$ $=$ $0.22$ for $i$ $\in$ [0, 89]; *(reset to beginning on 11th miss)*  
+$X_{i,i}$ $=$ $1$ for $i$ $\in$ [990, 1,000];  
+$X_{i,j}$ $=$ $0$ everywhere else.
 
 $$P$$ =
 $$
@@ -165,7 +165,7 @@ $$
 
 Absorbing states are states that cannot be left once entered. Then let matrix $$T$$ be a subset of matrix $$P$$ that only includes transition (non-absorbing) states: $$T$$ = $$P_{[0:990,0:990]}$$, since the final ten states represent success, completing the bet *(this is the reason we set the final ten states as the success states, so they can be removed easily).*
 
-Define matrix $$C$$ such that every element $$X_{ij}$$ is the number of expected transitions from state $$i$$ to state $$j$$ at any point in time (even if other states are entered inbetween) before entering into one of the absorbing states. Matrix $$C$$ is calculated as: $$C$$ = ($$I_{1000}$$ $$-$$ $$T$$)$$^{-1}$$.  Then the sum of $$row_0$$ is the expected total number of shots required for success. We calculate that under the naive assumption, where Mike shoots until the earlier of 90 makes or 11 misses, that the expected number of shots is **35,418**.
+Define matrix $$C$$ such that every element $$X_{ij}$$ is the number of expected transitions from state $$i$$ to state $$j$$ at any point in time (even if other states are entered inbetween) before entering into one of the absorbing states. Matrix $$C$$ is calculated as: $$C$$ = ($$I_{991}$$ $$-$$ $$T$$)$$^{-1}$$.  Then the sum of $$row_0$$ is the expected total number of shots required for success. We calculate that under the naive assumption, where Mike shoots until the earlier of 90 makes or 11 misses, that the expected number of shots is **35,418**.
 
 ### Strategies from Binomial and Reinforcement Learning Models
 We can modify the matrix $$P$$ above to calculate the expected number of shots when Mike resets based on strategies from the binomial and reinforcement learning models. To accomplish this, we simply move the 0.22 to column 0 if the miss occurs on or before the threshold (e.g. the binomial model recommends resetting if first miss occurs within the first 6 shots, so states $$0$$ through $$5$$ move the probability of a miss to the first column to indicate restarting the bet).
@@ -173,7 +173,7 @@ We can modify the matrix $$P$$ above to calculate the expected number of shots w
 We see that the binomial models cuts the expected number of shots down to **13,262**, and the reinforcement learning model with gamma of 0.99 is a slight improvement at **13,236**. 
 
 ### Strategy from Inspection
-Since the Markov chain is fast to calculate, we can use inspection to find an even better strategy. We start by only resetting on the 10th miss. We find the value $$n_{10}$$ $$\in$$ (0,100) with the minimum number of expected shots. We continue to use the value found for $$n_{10}$$ as the threshold for resetting on the 10th miss, and search for the threshold for resetting on the 9th miss, $$n_9 \in (0, n_{10})$$ that results in the minimum expected number of shots. We continue in this manner until we have found all values $$n_ {10}, n_9, \dots, n_1$$. The inspection model results in another slight improvement, with expected shots of **13,209**. The thresholds to reset are if misses 1 through 10 occur on or before total number of shots: $$$$\left(\begin{array}{inspection} 5, & 11, & 16, & 22, & 27, & 34, & 40, & 47, & 55, & 64 \end{array}\right)$$$$
+Since the Markov chain is fast to calculate, we can use inspection to find an even better strategy. We start by only resetting on the 10th miss. We find the value $$n_{10}$$ $$\in$$ (0,100) with the minimum number of expected shots. We continue to use the value found for $$n_{10}$$ as the threshold for resetting on the 10th miss, and search for the threshold for resetting on the 9th miss, $$n_9 \in (0, n_{10})$$ that results in the minimum expected number of shots. We continue in this manner until we have found all values $$n_ {10}, n_9, \dots, n_1$$. The inspection model results in another slight improvement, with expected shots of **13,209**. The thresholds to reset are if misses 1 through 10 occur on or before total number of shots: $$$$\begin{array}{inspection} 5, & 11, & 16, & 22, & 27, & 34, & 40, & 47, & 55, & 64 \end{array}$$$$
 
 ## Practical Strategy and Conclusions
 We see that the reset strategies are all fairly similar and all have used the simplifying assumption of a fixed freethrow shooting make percentage. If I were playing (and thank god I'm not with my likely make percentage), I would look at the range of reset numbers and always reset below, never reset above, and then evaluate based on my perceived streakiness/feel if in between. The precise reset strategy is probably much less important than slight improvements in the make percentage and staying consistent under the pressure of being close to winning or missing a couple in a row. 
