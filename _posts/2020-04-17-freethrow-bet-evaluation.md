@@ -19,12 +19,12 @@ Detailed additions:
 - I must define when an attempt starts. I.e. if I shot 150 times and scored 90/100 between attempts 20-119 I'd need to reset counter after 19 for it to count.
 - If I have no safe access to a regulation hoop I get an extension until I have had 50 hours of safe use of a regulation hoop
 
-The short version is that Mike has to get 90/100 freethrows by the end of 2020 with unlimited attempts and unlimited time per attempt, but each attempt has to be declared. 
+The short version is that Mike has to make 90/100 freethrows by the end of 2020 with unlimited attempts and unlimited time per attempt, but each attempt has to be declared. 
 
 ## Assumptions and Simplifications
 It seems that the "hot hand" theory of improving chances of making a basket on a "hot streak" is pretty unclear ([Wikipedia article](https://en.wikipedia.org/wiki/Hot_hand)) and also would make the analysis much more complicated, so we assume a fixed probability of making each shot (except for one section where we look specifically at the hot hand idea).
 
-There are two main elements that go into the bet: Skill level and reset strategy. The skill level is defined as the proability of making each shot. The reset strategy is when to start a fresh 100 shot attempt. We suggest that if the probability of success from any point is worse than the probability of success from the starting point, then it's best to reset. (Although in reality, it makes sense to prefer to continue when the probability is the same or slightly worse than the starting probability since it will take more time to start over.)
+There are two main elements that go into the bet: skill level and reset strategy. The skill level is defined as the probability of making each shot. The reset strategy is when to start a fresh 100 shot attempt. We suggest that if the probability of success from any point is worse than the probability of success from the starting point, then it's best to reset. (Although in reality, it makes sense to prefer to continue when the probability is the same or slightly worse than the starting probability since it will take more time to start over.)
 
 ## Probability of making 90/100
 If we assume a fixed probability of making each shot equal to $$p$$, then the probability of making at least 90 out of 100 shots is a binomially distributed random variable, with probability of success equal to: $$\sum_{i=90}^{100} {100 \choose i} * p^i*q^{100-i}$$; where $$q$$ is the probability of a miss = $$1 - p$$.
@@ -39,7 +39,7 @@ How, then, can we determine a true shooting percentage that is likely to be succ
 
 For simplicity, let's assume one attempt per day and again examine the probability of success for various true shooting percentages:
 ![365 Attempts](../assets/attempt365.png)
-We can see that somewhere between 78% and 79% has a 50% probability of achieving success if they make 1 attempt per day. Anyone with a true shooting percentage in the low 70's would have a marginal probability of success, and below 70% it is quite unlikely to ever make 90 out of 100 free throws. Anyone that shoots 80% or above is almost guaranteed to be successful after 365 attempts. 
+We can see that somewhere between 78% and 79% has a 50% probability of achieving success if they try 1 attempt per day. Anyone with a true shooting percentage in the low 70's would have a marginal probability of success, and below 70% it is quite unlikely to ever make 90 out of 100 free throws. Anyone that shoots 80% or above is almost guaranteed to be successful after 365 attempts. 
 
 ## When to reset attempts? Method 1: Binomial
 Since anyone outside of high 70's is either almost guaranteed to fail (if below) or succeed (if above) then the question of whether he will be successful really is only interesting if his true shooting percentage falls somewhere in that range. Let's assume a true shooting percentage of 78%, which has a 40% probability of success over 365 attempts. At what point should Mike reset his attempt back to 0 if he has missed a few shots? Obviously if he misses the first shot he should reset, and probably even if he misses the second or third shot, but what about the seventh shot? What if he is 35 of 40? 
@@ -80,8 +80,8 @@ Here's how value iteration works:
 - Reset is the current value of the state [0, 0]
 - Shooting has a probabilistic result and we use the Bellman equation to evaluate it
 <script src="https://gist.github.com/chisness/11e89b5383ed361fd051e6ec9e143c3b.js"></script>
-- In the case of making, we have: $$make_val = ((p_{make})*\text{rewards[new_state_make]} + \gamma*\text{val_state[new_state_make]})$$
-- In the case of missing, we have:  $$miss_val = ((1 - p_{make})*\text{rewards[new_state_miss]} + \gamma*\text{val_state[new_state_miss]})$$
+- In the case of making, we have: $$make_{val} = ((p_{make})*\text{rewards[new_state_make]} + \gamma*\text{val_state[new_state_make]})$$
+- In the case of missing, we have:  $$miss_{val} = ((1 - p_{make})*\text{rewards[new_state_miss]} + \gamma*\text{val_state[new_state_miss]})$$
 - After these calculations, we have a result for the reset action and the shoot action
 - We can then set the value of the state as the result for which action gives us the greatest value (line 11)
 - After each state that we check, we compare the original value of the state that we stored as $$v$$ to the new value. We keep track of the largest difference as we go through each state so that at the end of the cycle, we can see what the largest difference is over all states (line 12). Once this difference converges below some $$\epsilon$$ value that we define, then we consider the state values to be stable (line 14). 
@@ -111,7 +111,7 @@ Full size: [link](https://chisness.github.io/assets/ft9999.png)
 ## The discount rate
 We use the parameter $$\gamma$$ in the Bellman equation. This acts as a discount rate, which means that farther away states get discounted more compared to states nearby. We think this makes sense in the context of the freethrow bet because of the time and energy required to complete attempts. For example, if we had a perfect player who could make every shot 100% of the time, if he had 1 shot left, the value of the state would be $$100 * 0.99 = 99$$ and with 5 shots left would be $$100 * 0.99^5 = 95.099$$ and then at the beginning with 90 shots left would be $$100 * 0.99^90 = 40.473$$. So while this player's true value is always 100, the state values include discounting to account for the time. 
 
-Going back to $$p_{make}$$ = 0.78, we will show plots with $$\gamma$$ = 0.999 and $$\gamma$$ = 0.9, small but significant differences from the $$\gamma$$ = 0.99 plot above. The $$\gamma$$ = 0.9 plot "breaks" because $$0.9^90$$ is so small that it is essentially 0 by the time the reward of winning is iterated down to the starting state. 
+Going back to $$p_{make}$$ = 0.78, we will show plots with $$\gamma$$ = 0.999 and $$\gamma$$ = 0.9, small but significant differences from the $$\gamma$$ = 0.99 plot above. The $$\gamma$$ = 0.9 plot "breaks" because $$0.9^{90}$$ is so small that it is essentially 0 by the time the reward of winning is iterated down to the starting state. 
 
 ![](../assets/ft7890.png)
 Full size: [link](https://chisness.github.io/assets/ft7890.png)
@@ -132,20 +132,20 @@ This provides a quick way to directly calculate the average shots until success 
 There are $$1001$$ different possible states ($$0$$ to $$10$$ misses, $$0$$ to $$90$$ makes) $$\implies$$ $$11$$ * $91$ $$=$$ $$1001$$. Therefore, The bet can be represented by a $$1001$$ x $$1001$$ matrix, where rows represent the current state, columns represent the future state, and elements $$X_{ij}$$ {$$\forall$$ $$_i, _j \in [0, 1000]$$} represent the probability of transitioning from state $$i$$ to state $$j$$. 
 
 ### Naive Model  
-Let's assume Mike continues an attempt until either 90 makes or 11 misses, and define the states as: \
-$$0$$, $$1$$, $$\dots$$, $$89$$ $$=$$ ($$0$$ misses, $$0$$ makes), ($$0$$ misses, $$1$$ make), $$\dots$$, ($$0$$ misses, $$89$$ makes); \
-$$90$$, $$91$$, $$\dots$$, $$179$$ $$=$$ ($$1$$ miss, $$0$$ makes), ($$1$$ miss, $$1$$ make), $$\dots$$, ($$1$$ miss, $$89$$ makes); \
-$$\vdots$$ \
-$$900$$, $$901$$, $$\dots$$, $$989$$ $$=$$ ($$10$$ misses, $$0$$ makes), ($$10$$ misses, $$1$$ make), $$\dots$$, ($$10$$ misses, $$89$$ makes). \
-$$990$$, $$991$$, $$\dots$$, $${1,000}$$ $$=$$ ($$0$$ misses, $$90$$ makes), ($$1$$ miss, $$90$$ makes),$$\dots$$, ($$10$$ misses, $$90$$ makes). \
+Let's assume Mike continues an attempt until either 90 makes or 11 misses, and define the states as:
+$$0$$, $$1$$, $$\dots$$, $$89$$ $$=$$ ($$0$$ misses, $$0$$ makes), ($$0$$ misses, $$1$$ make), $$\dots$$, ($$0$$ misses, $$89$$ makes); 
+$$90$$, $$91$$, $$\dots$$, $$179$$ $$=$$ ($$1$$ miss, $$0$$ makes), ($$1$$ miss, $$1$$ make), $$\dots$$, ($$1$$ miss, $$89$$ makes);
+$$\vdots$$
+$$900$$, $$901$$, $$\dots$$, $$989$$ $$=$$ ($$10$$ misses, $$0$$ makes), ($$10$$ misses, $$1$$ make), $$\dots$$, ($$10$$ misses, $$89$$ makes). 
+$$990$$, $$991$$, $$\dots$$, $${1,000}$$ $$=$$ ($$0$$ misses, $$90$$ makes), ($$1$$ miss, $$90$$ makes),$$\dots$$, ($$10$$ misses, $$90$$ makes). 
 *Note it will make sense later why the successful scenarios are at that end, rather than in sequential order.*
 
 Then, the probability matrix $$P$$ can be fully described by:  
-$$X_{i,i+1}$$ $$=$$ $$0.78$$ for {$$i$$: $$i$$ $$\in$$ [0, 989] | ($$i$$+1)%90!=0}; *(since 90 made shots are at the end rather than after 89 makes)*\
-$$X_{89+90*i,990+i}$$ $$=$$ $$0.78$$ for $$i$$ $$\in$$ [0, 10]; \
-$$X_{i,90+i}$$ $$=$$ $$0.22$$ for $$i$$ $$\in$$ [0, 899]; \
-$$X_{900+i,0}$$ $$=$$ $$0.22$$ for $$i$$ $$\in$$ [0, 89]; *(reset to beginning on 11th miss)*\
-$$X_{i,i}$$ $$=$$ $$1$$ for $$i$$ $$\in$$ [990, 1,000]; \
+$$X_{i,i+1}$$ $$=$$ $$0.78$$ for {$$i$$: $$i$$ $$\in$$ [0, 989] | ($$i$$+1)%90!=0}; *(since 90 made shots are at the end rather than after 89 makes)*  
+$$X_{89+90*i,990+i}$$ $$=$$ $$0.78$$ for $$i$$ $$\in$$ [0, 10];  
+$$X_{i,90+i}$$ $$=$$ $$0.22$$ for $$i$$ $$\in$$ [0, 899];  
+$$X_{900+i,0}$$ $$=$$ $$0.22$$ for $$i$$ $$\in$$ [0, 89]; *(reset to beginning on 11th miss)*  
+$$X_{i,i}$$ $$=$$ $$1$$ for $$i$$ $$\in$$ [990, 1,000];  
 $$X_{i,j}$$ $$=$$ $$0$$ everywhere else.
 
 $$P$$ =
