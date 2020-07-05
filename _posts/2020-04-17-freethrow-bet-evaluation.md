@@ -4,7 +4,10 @@ title: "Freethrow Bet Analysis"
 author: "Max Chiswick and Mike Thompson"
 ---
 
+**Contents**
+* TOC
 {:toc}
+
 This post was written jointly by Max Chiswick and [Mike Thompson](https://www.linkedin.com/in/mike-thompson-78655b13/)
 
 ## The Bet
