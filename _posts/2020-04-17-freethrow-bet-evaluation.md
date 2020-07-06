@@ -137,20 +137,20 @@ There are $$1001$$ different possible states ($$0$$ to $$10$$ misses, $$0$$ to $
 
 ### Naive Model  
 Let's assume Mike continues an attempt until either 90 makes or 11 misses, and define the states as:  
-$0$, $1$, $\dots$, $89$ $=$ ($0$ misses, $0$ makes), ($0$ misses, $1$ make), $\dots$, ($0$ misses, $89$ makes);  
-$90$, $91$, $\dots$, $179$ $=$ ($1$ miss, $0$ makes), ($1$ miss, $1$ make), $\dots$, ($1$ miss, $89$ makes);  
-$\vdots$  
-$900$, $901$, $\dots$, $989$ $=$ ($10$ misses, $0$ makes), ($10$ misses, $1$ make), $\dots$, ($10$ misses, $89$ makes).  
-$990$, $991$, $\dots$, ${1,000}$ $=$ ($0$ misses, $90$ makes), ($1$ miss, $90$ makes),$\dots$, ($10$ misses, $90$ makes).  
+$$0$$, $$1$$, $$\dots$$, $$89$$ $$=$$ ($$0$$ misses, $$0$$ makes), ($$0$$ misses, $$1$$ make), $$\dots$$, ($$0$$ misses, $$89$$ makes);  
+$$90$$, $$91$$, $$\dots$$, $$179$$ $$=$$ ($$1$$ miss, $$0$$ makes), ($$1$$ miss, $$1$$ make), $$\dots$$, ($$1$$ miss, $$89$$ makes);  
+$$\vdots$$  
+$$900$$, $$901$$, $$\dots$$, $$989$$ $$=$$ ($$10$$ misses, $$0$$ makes), ($$10$$ misses, $$1$$ make), $$\dots$$, ($$10$$ misses, $$89$$ makes).  
+$$990$$, $$991$$, $$\dots$$, $${1,000}$$ $$=$$ ($$0$$ misses, $$90$$ makes), ($$1$$ miss, $$90$$ makes),$$\dots$$, ($$10$$ misses, $$90$$ makes).  
 *Note it will make sense later why the successful scenarios are at that end, rather than in sequential order.*
 
-Then, the probability matrix $P$ can be fully described by:
-$X_{i,i+1}$ $=$ $0.78$ for {$i$: $i$ $\in$ [0, 989] | ($i$+1)%90!=0}; *(since 90 made shots are at the end rather than after 89 makes)*  
-$X_{89+90*i,990+i}$ $=$ $0.78$ for $i$ $\in$ [0, 10];  
-$X_{i,90+i}$ $=$ $0.22$ for $i$ $\in$ [0, 899];  
-$X_{900+i,0}$ $=$ $0.22$ for $i$ $\in$ [0, 89]; *(reset to beginning on 11th miss)*  
-$X_{i,i}$ $=$ $1$ for $i$ $\in$ [990, 1,000];  
-$X_{i,j}$ $=$ $0$ everywhere else.
+Then, the probability matrix $$P$$ can be fully described by:
+$$X_{i,i+1}$$ $$=$$ $$0.78$$ for {$$i$$: $$i$$ $$\in$$ [0, 989] | ($$i$$+1)%90!=0}; *(since 90 made shots are at the end rather than after 89 makes)*  
+$$X_{89+90*i,990+i}$$ $$=$$ $$0.78$$ for $$i$$ $$\in$$ [0, 10];  
+$$X_{i,90+i}$$ $$=$$ $$0.22$$ for $$i$$ $$\in$$ [0, 899];  
+$$X_{900+i,0}$$ $$=$$ $$0.22$$ for $$i$$ $$\in$$ [0, 89]; *(reset to beginning on 11th miss)*  
+$$X_{i,i}$$ $$=$$ $$1$$ for $$i$$ $$\in$$ [990, 1,000];  
+$$X_{i,j}$$ $$=$$ $$0$$ everywhere else.
 
 $$P$$ =
 $$
