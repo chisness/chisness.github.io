@@ -144,7 +144,7 @@ $$900$$, $$901$$, $$\dots$$, $$989$$ $$=$$ ($$10$$ misses, $$0$$ makes), ($$10$$
 $$990$$, $$991$$, $$\dots$$, $${1,000}$$ $$=$$ ($$0$$ misses, $$90$$ makes), ($$1$$ miss, $$90$$ makes),$$\dots$$, ($$10$$ misses, $$90$$ makes).  
 *Note it will make sense later why the successful scenarios are at that end, rather than in sequential order.*
 
-Then, the probability matrix $$P$$ can be fully described by:
+Then, the probability matrix $$P$$ can be fully described by:<br>
 $$X_{i,i+1}$$ $$=$$ $$0.78$$ for {$$i$$: $$i$$ $$\in$$ [0, 989] | ($$i$$+1)%90!=0}; *(since 90 made shots are at the end rather than after 89 makes)*  
 $$X_{89+90*i,990+i}$$ $$=$$ $$0.78$$ for $$i$$ $$\in$$ [0, 10];  
 $$X_{i,90+i}$$ $$=$$ $$0.22$$ for $$i$$ $$\in$$ [0, 899];  
