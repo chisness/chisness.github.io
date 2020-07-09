@@ -19,6 +19,13 @@ layout: default
 
   <h1 class="post-title">{{ page.title }}</h1>
   <div class="post-line"></div>
+  {% if page.toc %}
+    <aside class="sidebar__left">
+      <nav class="toc">
+        {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" %}
+      </nav>
+    </aside>
+  {% endif %}
 
   {{ content }}
 
