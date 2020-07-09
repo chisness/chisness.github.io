@@ -1,5 +1,6 @@
 ---
 layout: post
+toc: true
 title: "Freethrow Bet Analysis"
 author: "Max Chiswick and Mike Thompson"
 ---
