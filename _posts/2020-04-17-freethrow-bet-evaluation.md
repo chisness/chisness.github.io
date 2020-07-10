@@ -110,8 +110,8 @@ Here are various figures for state values for different levels of $$p_{make}$$ a
 [![](../assets/ft5099.png)](https://chisness.github.io/assets/ft5099.png)
 <p style="text-align: center;"><em>State values with 50% make</em></p>
 
-[![](../assets/ft9999.png)](https://chisness.github.io/assets/ft9999.png)
-<p style="text-align: center;"><em>State values with 99% make</em></p>
+[![](../assets/ft9599.png)](https://chisness.github.io/assets/ft9599.png)
+<p style="text-align: center;"><em>State values with 95% make</em></p>
 
 ### The discount rate
 We use the parameter $$\gamma$$ in the Bellman equation. This acts as a discount rate, which means that farther away states get discounted more compared to states nearby. We think this makes sense in the context of the free throw bet because of the time and energy required to complete attempts. For example, if we had a perfect player who could make every shot 100% of the time, if he had 1 shot left, the value of the state would be $$100 * 0.99 = 99$$ and with 5 shots left would be $$100 * 0.99^5 = 95.099$$ and then at the beginning with 90 shots left would be $$100 * 0.99^90 = 40.473$$. So while this player's true value is always 100, the state values include discounting to account for the time. 
