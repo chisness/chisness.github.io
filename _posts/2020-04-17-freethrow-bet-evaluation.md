@@ -1,5 +1,6 @@
 ---
 layout: post
+toc: true
 title: "Freethrow Bet Analysis"
 author: "Max Chiswick and Mike Thompson"
 ---
@@ -69,7 +70,7 @@ Initial definitions:
 - We define each pair to have a reward of arriving to that state of 0 except for every combination where shots made = 90, so [90, 3] and [90, 5] and [90, 10], etc. all have a reward value of 100 (chosen arbitrarily to represent winning)
 - We define 2 possible actions at each state: shoot or reset. These represent the actions of the player in the bet. 
 
-We want to use value iteration to find the value of every state [shots made, shots missed]. Note that the immediate reward of 100 is only given for winning the bet, so now we are defining state values that derive from that winning reward. The state values say what it's worth to be in any given state given that winning has a reward of 100 and given a discount rate, $$\gamma$$.
+We want to use value iteration to find the value of every state [shots made, shots missed]. Note that the immediate reward of 100 is only given for winning the bet, so now we are defining state values that derive from that winning reward. All states prior to winning the bet have a value equal to: 100 * (probability of success from that state) * (discount factor).
 
 Value iteration uses the [Bellman equation](https://en.wikipedia.org/wiki/Bellman_equation), which is defined as $$V(s) = R(s, a) + \gamma*V(s')$$, where $$V(s)$$ is the value of the current state, $$R(s, a)$$ is the reward of action $$a$$ at state $$s$$, $$\gamma$$ is the discount factor, and $$V(s')$$ is the value of the next state. So each state derives its value from the immediate reward and the value of the next state. This is simplified in the freethrow setting where there is only an immediate reward upon winning. 
 
@@ -184,7 +185,10 @@ Since the Markov chain is fast to calculate, we can use inspection to find an ev
 #reset strategies, simulation shots, markov chain shots, mention monte carlo, graph like in blackjack
 
 ## Practical Strategy and Conclusions
-We see that the reset strategies are all fairly similar and all have used the simplifying assumption of a fixed freethrow shooting make percentage. If I were playing (and thank god I'm not with my likely make percentage), I would look at the range of reset numbers and always reset below, never reset above, and then evaluate based on my perceived streakiness/feel if in between. The precise reset strategy is probably much less important than slight improvements in the make percentage and staying consistent under the pressure of being close to winning or missing a couple in a row. 
+Mike's shooting ability is the most import factor in whether he will be successful, with reset strategy only mattering for a rather narrow range of true shooting percentages:
+![reset](reset_strategy.png)
+    
+To have a realistic probability of success, Mike needs to have a shooting percentage in the high 70's or better. We recommend he keeps a trailing average of his last 1,000 free throws as an estimate for his true shooting percentage. If he is making less than 75% of his shots, he is better off focusing on improving his shot than continuing more attempts. While we expect additional attempts should improve his shooting percentage, there are more focused activities he can take that should result in faster improvement. He can work on improving his form, including working with a shooting coach, he can adopt techniques from sports psychology to improve his mental state, and he can work on conditiong if he thinks that is a factor.
 
 ## To add
 1) Show iterations of reinforcement learning procedure
