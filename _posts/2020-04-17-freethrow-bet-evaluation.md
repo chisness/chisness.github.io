@@ -93,7 +93,7 @@ Here's how value iteration works:
 For the full code, see: [freethrows.py](https://github.com/chisness/freethrows/blob/master/freethrows.py)
 
 ### State values
-Here are various figures for state values for different levels of $$p_{make}$$ and $$\gamma$$. The yellow areas indicate optimally continuing to shoot and the purple areas indicate optimally resetting. We also show the reset values specifically for $$p_{make}$$ = 0.78 and $$\gamma$$ = 0.99. 
+Here are various figures for state values for different levels of $$p_{make}$$ and $$\gamma$$. The yellow areas indicate optimally continuing to shoot and the purple areas indicate optimally resetting. We also show the reset values specifically for $$p_{make}$$ = 0.78 and $$\gamma$$ = 0.99. The figures are clickable to see them in larger size. 
 
 [![](../assets/ft7899.png)](https://chisness.github.io/assets/ft7899.png)
 *State values with 78% make*
