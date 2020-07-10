@@ -28,6 +28,10 @@ The short version is that Mike has to make 90/100 freethrows by the end of 2020 
 ## Assumptions and Simplifications
 It seems that the "hot hand" theory of improving chances of making a basket on a "hot streak" is pretty unclear ([Wikipedia article](https://en.wikipedia.org/wiki/Hot_hand)) and also would make the analysis much more complicated, so we assume a fixed probability of making each shot (except for one section where we look specifically at the hot hand idea).
 
+In reality, a person does not have a fixed true shooting percentage. The probability of making a shot will vary day by day and even throughout an attempt. A more accurate model would treat true shooting percentage as a random variable rather than a fixed quantity. Since success is a tail event (in the situation where the true shooting percentage is in the high 70's), added variance around true shooting percentage will make the probability of success more likely. Additionally, there is debate around whether there is autocorrelation between attempts, which would also add variance.
+
+Also, the strategy above does not take into account time. He likely would accept a slightly lower probability of success at states that already have a high number of shots taken. This would increase the total number of shots threshold for a given miss value.
+
 There are two main elements that go into the bet: skill level and reset strategy. The skill level is defined as the probability of making each shot. The reset strategy is when to start a fresh 100 shot attempt. We suggest that if the probability of success from any point is worse than the probability of success from the starting point, then it's best to reset. (Although in reality, it makes sense to prefer to continue when the probability is the same or slightly worse than the starting probability since it will take more time to start over.)
 
 ## Probability of making 90/100
@@ -54,11 +58,6 @@ We can find the decision boundary by finding the maximum number of attempts for 
 
 The datapoint 8 misses, 55 total attempts means that if his 8th miss was after 55 or fewer total shots, he should reset the attempt because his probability of success is lower than at the beginning of an attempt.
 
-### Issues with Binomial Analysis
-In reality, a person does not have a fixed true shooting percentage. The probability of making a shot will vary day by day and even throughout an attempt. A more accurate model would treat true shooting percentage as a random variable rather than a fixed quantity. Since success is a tail event (in the situation where the true shooting percentage is in the high 70's), added variance around true shooting percentage will make the probability of success more likely. Additionally, there is debate around whether there is autocorrelation between attempts, which would also add variance.
-
-Also, the strategy above does not take into account time. He likely would accept a slightly lower probability of success at states that already have a high number of shots taken. This would increase the total number of shots threshold for a given miss value.
-
 ## When to reset attempts? Method 2: Reinforcement Learning
 We can analyze the reset attempt problem using reinforcement learning value iteration. Here's how that works. 
 
@@ -72,7 +71,7 @@ Initial definitions:
 
 We want to use value iteration to find the value of every state [shots made, shots missed]. Note that the immediate reward of 100 is only given for winning the bet, so now we are defining state values that derive from that winning reward. The state values say what it's worth to be in any given state given that winning has a reward of 100 and given a discount rate, $$\gamma$$.
 
-Value iteration makes significant use of the [Bellman equation](https://en.wikipedia.org/wiki/Bellman_equation), which is defined as $$V(s) = R(s, a) + \gamma*V(s')$$, where $$V(s)$$ is the value of the current state, $$R(s, a)$$ is the reward of action $$a$$ at state $$s$$, $$\gamma$$ is the discount factor, and $$V(s')$$ is the value of the next state. So each state derives its value from the immediate reward and the value of the next state. This is simplified in the freethrow setting where there is only an immediate reward upon winning. 
+Value iteration uses the [Bellman equation](https://en.wikipedia.org/wiki/Bellman_equation), which is defined as $$V(s) = R(s, a) + \gamma*V(s')$$, where $$V(s)$$ is the value of the current state, $$R(s, a)$$ is the reward of action $$a$$ at state $$s$$, $$\gamma$$ is the discount factor, and $$V(s')$$ is the value of the next state. So each state derives its value from the immediate reward and the value of the next state. This is simplified in the freethrow setting where there is only an immediate reward upon winning. 
 
 We have defined the reward for winning (i.e. 100 when shots made reaches 90) and can initially set the value of every other state at 0. Then the algorithm will learn the value of those positions. For example, if you are in the state of [89 made, 10 missed], your value is 100 if you make the next shot and you will be back to the beginning if you miss it. So we can say that the value of that state is = $$p_{make}*100 + (1-p_{make})*\text{[value of starting state]}$$. 
 
@@ -89,13 +88,16 @@ Here's how value iteration works:
 - After these calculations, we have a result for the reset action and the shoot action
 - We can then set the value of the state as the result for which action gives us the greatest value (line 11)
 - After each state that we check, we compare the original value of the state that we stored as $$v$$ to the new value. We keep track of the largest difference as we go through each state so that at the end of the cycle, we can see what the largest difference is over all states (line 12). Once this difference converges below some $$\epsilon$$ value that we define, then we consider the state values to be stable (line 14). 
-<script src="https://gist.github.com/chisness/762272f794d0fb8eadd683778c9ed30a.js"></script>
 - Now we have values for each state, but we haven't made a strategy (aka policy) for what to do at each state. We can iterate through every state pair one final time and check the value of each action at each state and now that these values are fixed, we can set the strategy for the state to be the action that gives the highest value. This is called policy iteration. 
+
+<script src="https://gist.github.com/chisness/762272f794d0fb8eadd683778c9ed30a.js"></script>
 
 For the full code, see: [freethrows.py](https://github.com/chisness/freethrows/blob/master/freethrows.py)
 
 ## State values
 Here are various figures for state values for different levels of $$p_{make}$$ and $$\gamma$$. The yellow areas indicate optimally continuing to shoot and the purple areas indicate optimally resetting. We also show the reset values specifically for $$p_{make}$$ = 0.78 and $$\gamma$$ = 0.99. 
+
+#show last column for all larger size
 
 ![](../assets/ft7899.png)
 Full size: [link](https://chisness.github.io/assets/ft7899.png)
@@ -178,6 +180,8 @@ We see that the binomial models cuts the expected number of shots down to **13,2
 
 ### Strategy from Inspection
 Since the Markov chain is fast to calculate, we can use inspection to find an even better strategy. We start by only resetting on the 10th miss. We find the value $$n_{10}$$ $$\in$$ (0,100) with the minimum number of expected shots. We continue to use the value found for $$n_{10}$$ as the threshold for resetting on the 10th miss, and search for the threshold for resetting on the 9th miss, $$n_9 \in (0, n_{10})$$ that results in the minimum expected number of shots. We continue in this manner until we have found all values $$n_ {10}, n_9, \dots, n_1$$. The inspection model results in another slight improvement, with expected shots of **13,209**. The thresholds to reset are if misses 1 through 10 occur on or before total number of shots: $$$$\begin{array}{inspection} 5, & 11, & 16, & 22, & 27, & 34, & 40, & 47, & 55, & 64 \end{array}$$$$
+
+#reset strategies, simulation shots, markov chain shots, mention monte carlo, graph like in blackjack
 
 ## Practical Strategy and Conclusions
 We see that the reset strategies are all fairly similar and all have used the simplifying assumption of a fixed freethrow shooting make percentage. If I were playing (and thank god I'm not with my likely make percentage), I would look at the range of reset numbers and always reset below, never reset above, and then evaluate based on my perceived streakiness/feel if in between. The precise reset strategy is probably much less important than slight improvements in the make percentage and staying consistent under the pressure of being close to winning or missing a couple in a row. 
