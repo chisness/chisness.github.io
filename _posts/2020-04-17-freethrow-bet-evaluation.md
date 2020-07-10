@@ -49,7 +49,7 @@ We can see that somewhere between 78% and 79% has a 50% probability of achieving
 
 ## When to reset attempts? Method 1: Binomial
 Since anyone outside of high 70's is either almost guaranteed to fail (if below) or succeed (if above) then the question of whether he will be successful really is only interesting if his true shooting percentage falls somewhere in that range. Let's assume a true shooting percentage of 78%, which has a 40% probability of success over 365 attempts. At what point should Mike reset his attempt back to 0 if he has missed a few shots? Obviously if he misses the first shot he should reset, and probably even if he misses the second or third shot, but what about the seventh shot? What if he is 35 of 40? 
-One strategy is to compute the probability of success at that point in time, and reset if it is lower than his probability of success at the start of an attempt. A 78% true shooter has a 0.14% (or 1 in 709) chance of making at least 90 out of 100 free throws. If after taking $$x$$ shots, he has $$y$$ misses, his probability of success is: $$\sum_{i=90-x+y}^{100-x} {100-x \choose i} * 0.78^i*0.22^{100-i-x}$$
+One strategy is to compute the probability of success at that point in time, and reset if it is lower than his probability of success at the start of an attempt. A 78% true shooter has a 0.14% (or 1 in 709) chance of making at least 90 out of 100 free throws. If after taking $$x$$ shots, he has $$y$$ misses, his probability of success is: $$\sum_{i=90-x+y}^{100-x} {100-x \choose i} * 0.78^i*0.22^{100-i-x}$$.
 
 We can find the decision boundary by finding the maximum number of attempts for given number of misses $$y$$ = 1 through 10 such that the probability of success is lower at that state than the probability of success at the beginning of an attempt:
 ![reset](../assets/reset_graph.png)
@@ -95,34 +95,34 @@ For the full code, see: [freethrows.py](https://github.com/chisness/freethrows/b
 ### State values
 Here are various figures for state values for different levels of $$p_{make}$$ and $$\gamma$$. The yellow areas indicate optimally continuing to shoot and the purple areas indicate optimally resetting. We also show the reset values specifically for $$p_{make}$$ = 0.78 and $$\gamma$$ = 0.99. 
 
-![](../assets/ft7899.png)
-*State values with 78% make -- Full size: [link](https://chisness.github.io/assets/ft7899.png)*
+[![](../assets/ft7899.png)](https://chisness.github.io/assets/ft7899.png)
+*State values with 78% make*
 
-![](../assets/ft7899reset.png)
-*Reset values with 78% make -- Full size: [link](https://chisness.github.io/assets/ft7899reset.png)*
+[![](../assets/ft7899reset.png)](https://chisness.github.io/assets/ft7899reset.png)
+*Reset values with 78% make*
 
-![](../assets/ft78993d.png)
-*3D state values with 78% make -- Full size: [link](https://chisness.github.io/assets/ft78993d.png)*
+[![](../assets/ft78993d.png)](https://chisness.github.io/assets/ft78993d.png)
+*3D state values with 78% make*
 
-![](../assets/ft7499.png)
-*State values with 74% make -- Full size: [link](https://chisness.github.io/assets/ft7499.png)*
+[![](../assets/ft7499.png)]((https://chisness.github.io/assets/ft7499.png))
+*State values with 74% make*
 
-![](../assets/ft5099.png)
-*State values with 50% make -- Full size: [link](https://chisness.github.io/assets/ft5099.png)*
+[![](../assets/ft5099.png)](https://chisness.github.io/assets/ft5099.png)
+*State values with 50% make*
 
-![](../assets/ft9999.png)
-*State values with 99% make -- Full size: [link](https://chisness.github.io/assets/ft9999.png)*
+[![](../assets/ft9999.png)](https://chisness.github.io/assets/ft9999.png)
+*State values with 99% make*
 
 ### The discount rate
 We use the parameter $$\gamma$$ in the Bellman equation. This acts as a discount rate, which means that farther away states get discounted more compared to states nearby. We think this makes sense in the context of the free throw bet because of the time and energy required to complete attempts. For example, if we had a perfect player who could make every shot 100% of the time, if he had 1 shot left, the value of the state would be $$100 * 0.99 = 99$$ and with 5 shots left would be $$100 * 0.99^5 = 95.099$$ and then at the beginning with 90 shots left would be $$100 * 0.99^90 = 40.473$$. So while this player's true value is always 100, the state values include discounting to account for the time. 
 
 Going back to $$p_{make}$$ = 0.78, we will show plots with $$\gamma$$ = 0.999 and $$\gamma$$ = 0.9, small but significant differences from the $$\gamma$$ = 0.99 plot above. The $$\gamma$$ = 0.9 plot "breaks" because $$0.9^{90}$$ is so small that it is essentially 0 by the time the reward of winning is iterated down to the starting state. 
 
-![](../assets/ft7890.png)
-*State values with 78% make and low $$\gamma$$ -- Full size: [link](https://chisness.github.io/assets/ft7890.png)*
+[![](../assets/ft7890.png)](https://chisness.github.io/assets/ft7890.png)
+*State values with 78% make and low $$\gamma$$*
 
-![](../assets/ft78999.png)
-*State values with 78% make and high $$\gamma$$ -- Full size: [link](https://chisness.github.io/assets/ft78999.png)*
+[![](../assets/ft78999.png)](https://chisness.github.io/assets/ft78999.png)
+*State values with 78% make and high $$\gamma$$*
 
 ## Monte Carlo Simulations
 We've now shown a possible reset strategy that used the binomial model and a similar, but slightly different strategy that used reinforcement learning. There is also the naive strategy of just shooting until winning (making 90) or losing (missing 11). We ran Monte Carlo simulations for each of these 3 methods for 100,000 trials (where a trial is run until winning the bet). The most valuable statistic is the average number of shots until winning, which we plotted for each strategy. On top we have the naive strategy that not surprisingly has the most shots until success and in the middle is the binomial model and on the bottom is the RL model. Those are within about 1% of each other, which suggests that using a reasonable reset strategy is most important. 
