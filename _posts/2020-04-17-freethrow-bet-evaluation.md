@@ -92,7 +92,7 @@ Here's how value iteration works:
 
 For the full code, see: [freethrows.py](https://github.com/chisness/freethrows/blob/master/freethrows.py)
 
-## State values
+### State values
 Here are various figures for state values for different levels of $$p_{make}$$ and $$\gamma$$. The yellow areas indicate optimally continuing to shoot and the purple areas indicate optimally resetting. We also show the reset values specifically for $$p_{make}$$ = 0.78 and $$\gamma$$ = 0.99. 
 
 ![](../assets/ft7899.png)
@@ -113,7 +113,7 @@ Here are various figures for state values for different levels of $$p_{make}$$ a
 ![](../assets/ft9999.png)
 *State values with 99% make -- Full size: [link](https://chisness.github.io/assets/ft9999.png)*
 
-## The discount rate
+### The discount rate
 We use the parameter $$\gamma$$ in the Bellman equation. This acts as a discount rate, which means that farther away states get discounted more compared to states nearby. We think this makes sense in the context of the free throw bet because of the time and energy required to complete attempts. For example, if we had a perfect player who could make every shot 100% of the time, if he had 1 shot left, the value of the state would be $$100 * 0.99 = 99$$ and with 5 shots left would be $$100 * 0.99^5 = 95.099$$ and then at the beginning with 90 shots left would be $$100 * 0.99^90 = 40.473$$. So while this player's true value is always 100, the state values include discounting to account for the time. 
 
 Going back to $$p_{make}$$ = 0.78, we will show plots with $$\gamma$$ = 0.999 and $$\gamma$$ = 0.9, small but significant differences from the $$\gamma$$ = 0.99 plot above. The $$\gamma$$ = 0.9 plot "breaks" because $$0.9^{90}$$ is so small that it is essentially 0 by the time the reward of winning is iterated down to the starting state. 
