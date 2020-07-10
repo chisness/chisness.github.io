@@ -1,15 +1,14 @@
 ---
 layout: post
 toc: true
-title: "Freethrow Bet Analysis"
+title: "Free Throw Bet Analysis"
 author: "Max Chiswick and Mike Thompson"
 ---
+This post was written jointly by Max Chiswick and [Mike Thompson](https://www.linkedin.com/in/mike-thompson-78655b13/)
 
 **Contents**
 * TOC
 {:toc}
-
-This post was written jointly by Max Chiswick and [Mike Thompson](https://www.linkedin.com/in/mike-thompson-78655b13/)
 
 ## The Bet
 [Mike McDonald](https://twitter.com/MikeMcDonald89) is a successful gambler/poker player who set up a bet with the [following terms](https://twitter.com/MikeMcDonald89/status/1246917870677680129):
@@ -24,14 +23,12 @@ Detailed additions:
 - I must define when an attempt starts. I.e. if I shot 150 times and scored 90/100 between attempts 20-119 I'd need to reset counter after 19 for it to count.
 - If I have no safe access to a regulation hoop I get an extension until I have had 50 hours of safe use of a regulation hoop
 
-The short version is that Mike has to make 90/100 freethrows by the end of 2020 with unlimited attempts and unlimited time per attempt, but each attempt has to be declared. 
+The short version is that Mike has to make 90/100 free throws by the end of 2020 with unlimited attempts and unlimited time per attempt, but each attempt has to be declared. 
 
 ## Assumptions and Simplifications
 It seems that the "hot hand" theory of improving chances of making a basket on a "hot streak" is pretty unclear ([Wikipedia article](https://en.wikipedia.org/wiki/Hot_hand)) and also would make the analysis much more complicated, so we assume a fixed probability of making each shot (except for one section where we look specifically at the hot hand idea).
 
-In reality, a person does not have a fixed true shooting percentage. The probability of making a shot will vary day by day and even throughout an attempt. A more accurate model would treat true shooting percentage as a random variable rather than a fixed quantity. Since success is a tail event (in the situation where the true shooting percentage is in the high 70's), added variance around true shooting percentage will make the probability of success more likely. Additionally, there is debate around whether there is autocorrelation between attempts, which would also add variance.
-
-Also, the strategy above does not take into account time. He likely would accept a slightly lower probability of success at states that already have a high number of shots taken. This would increase the total number of shots threshold for a given miss value.
+In reality, a person does not have a fixed true shooting percentage. The probability of making a shot will vary day by day and even throughout an attempt. A more accurate model would treat true shooting percentage as a random variable rather than a fixed quantity. Since success is a tail event (in the situation where the true shooting percentage is in the high 70's), added variance around true shooting percentage will make the probability of success more likely. 
 
 There are two main elements that go into the bet: skill level and reset strategy. The skill level is defined as the probability of making each shot. The reset strategy is when to start a fresh 100 shot attempt. We suggest that if the probability of success from any point is worse than the probability of success from the starting point, then it's best to reset. (Although in reality, it makes sense to prefer to continue when the probability is the same or slightly worse than the starting probability since it will take more time to start over.)
 
@@ -64,15 +61,15 @@ We can analyze the reset attempt problem using reinforcement learning value iter
 
 Initial definitions: 
 - We define a state as a pair [shots made, shots missed]
-- You can think of this as a table with shots missed on the x-axis and shots made on the y-axis
+- You can think of this as a table with shots missed on the x-axis and shots made on the y-axis (see below for examples)
 - Shots missed goes from 0 to 10
 - Shots made goes from 0 to 90
-- We define each pair to have a reward of arriving to that state of 0 except for every combination where shots made = 90, so [90, 3] and [90, 5] and [90, 10], etc. all have a reward value of 100 (chosen arbitrarily to represent winning)
+- We define each pair to have a reward of arriving to that state of 0 except for when the bet is won, i.e. every combination where shots made = 90, so [90, 3] and [90, 5] and [90, 10], etc. all have a reward value of 100 (chosen arbitrarily to represent winning)
 - We define 2 possible actions at each state: shoot or reset. These represent the actions of the player in the bet. 
 
-We want to use value iteration to find the value of every state [shots made, shots missed]. Note that the immediate reward of 100 is only given for winning the bet, so now we are defining state values that derive from that winning reward. All states prior to winning the bet have a value equal to: 100 * (probability of success from that state) * (discount factor).
+We want to use value iteration to find the value of every state [shots made, shots missed]. Note that the immediate reward of 100 is only given for winning the bet, so now we are defining state values that derive from that winning reward. For example, we may want to answer the question: If we are in state [85, 8] (85 shots made, 5 missed), then what is the value of being there? 
 
-Value iteration uses the [Bellman equation](https://en.wikipedia.org/wiki/Bellman_equation), which is defined as $$V(s) = R(s, a) + \gamma*V(s')$$, where $$V(s)$$ is the value of the current state, $$R(s, a)$$ is the reward of action $$a$$ at state $$s$$, $$\gamma$$ is the discount factor, and $$V(s')$$ is the value of the next state. So each state derives its value from the immediate reward and the value of the next state. This is simplified in the freethrow setting where there is only an immediate reward upon winning. 
+Value iteration uses the [Bellman equation](https://en.wikipedia.org/wiki/Bellman_equation), which is defined as $$V(s) = R(s, a) + \gamma*V(s')$$, where $$V(s)$$ is the value of the current state, $$R(s, a)$$ is the reward of action $$a$$ at state $$s$$ (recall that the actions are either shoot or reset), $$\gamma$$ is the discount factor, and $$V(s')$$ is the value of the next state. So each state has a value for taking the "shoot" action, which is the expected value of the reward after shooting and the next state after shooting. Each state also has a value for taking the "reset" action, which is simply the value of the starting state (since there will never be a reward when resetting). The state takes the highest of the values between the two actions. In general, there is only a reward when winning the bet, so most Bellman computations have reward values of 0. 
 
 We have defined the reward for winning (i.e. 100 when shots made reaches 90) and can initially set the value of every other state at 0. Then the algorithm will learn the value of those positions. For example, if you are in the state of [89 made, 10 missed], your value is 100 if you make the next shot and you will be back to the beginning if you miss it. So we can say that the value of that state is = $$p_{make}*100 + (1-p_{make})*\text{[value of starting state]}$$. 
 
@@ -98,38 +95,45 @@ For the full code, see: [freethrows.py](https://github.com/chisness/freethrows/b
 ## State values
 Here are various figures for state values for different levels of $$p_{make}$$ and $$\gamma$$. The yellow areas indicate optimally continuing to shoot and the purple areas indicate optimally resetting. We also show the reset values specifically for $$p_{make}$$ = 0.78 and $$\gamma$$ = 0.99. 
 
-#show last column for all larger size
-
 ![](../assets/ft7899.png)
-Full size: [link](https://chisness.github.io/assets/ft7899.png)
+*State values with 78% make -- Full size: [link](https://chisness.github.io/assets/ft7899.png)*
 
 ![](../assets/ft7899reset.png)
-Full size: [link](https://chisness.github.io/assets/ft7899reset.png)
+*Reset values with 78% make -- Full size: [link](https://chisness.github.io/assets/ft7899reset.png)*
+
+![](../assets/ft78993d.png)
+*3D state values with 78% make -- Full size: [link](https://chisness.github.io/assets/ft78993d.png)*
 
 ![](../assets/ft7499.png)
-Full size: [link](https://chisness.github.io/assets/ft7499.png)
+*State values with 74% make -- Full size: [link](https://chisness.github.io/assets/ft7499.png)*
 
 ![](../assets/ft5099.png)
-Full size: [link](https://chisness.github.io/assets/ft5099.png)
+*State values with 50% make -- Full size: [link](https://chisness.github.io/assets/ft5099.png)*
 
 ![](../assets/ft9999.png)
-Full size: [link](https://chisness.github.io/assets/ft9999.png)
+*State values with 99% make -- Full size: [link](https://chisness.github.io/assets/ft9999.png)*
 
 ## The discount rate
-We use the parameter $$\gamma$$ in the Bellman equation. This acts as a discount rate, which means that farther away states get discounted more compared to states nearby. We think this makes sense in the context of the freethrow bet because of the time and energy required to complete attempts. For example, if we had a perfect player who could make every shot 100% of the time, if he had 1 shot left, the value of the state would be $$100 * 0.99 = 99$$ and with 5 shots left would be $$100 * 0.99^5 = 95.099$$ and then at the beginning with 90 shots left would be $$100 * 0.99^90 = 40.473$$. So while this player's true value is always 100, the state values include discounting to account for the time. 
+We use the parameter $$\gamma$$ in the Bellman equation. This acts as a discount rate, which means that farther away states get discounted more compared to states nearby. We think this makes sense in the context of the free throw bet because of the time and energy required to complete attempts. For example, if we had a perfect player who could make every shot 100% of the time, if he had 1 shot left, the value of the state would be $$100 * 0.99 = 99$$ and with 5 shots left would be $$100 * 0.99^5 = 95.099$$ and then at the beginning with 90 shots left would be $$100 * 0.99^90 = 40.473$$. So while this player's true value is always 100, the state values include discounting to account for the time. 
 
 Going back to $$p_{make}$$ = 0.78, we will show plots with $$\gamma$$ = 0.999 and $$\gamma$$ = 0.9, small but significant differences from the $$\gamma$$ = 0.99 plot above. The $$\gamma$$ = 0.9 plot "breaks" because $$0.9^{90}$$ is so small that it is essentially 0 by the time the reward of winning is iterated down to the starting state. 
 
 ![](../assets/ft7890.png)
-Full size: [link](https://chisness.github.io/assets/ft7890.png)
+*State values with 78% make and low $$\gamma$$ -- Full size: [link](https://chisness.github.io/assets/ft7890.png)*
 
 ![](../assets/ft78999.png)
-Full size: [link](https://chisness.github.io/assets/ft78999.png)
+*State values with 78% make and high $$\gamma$$ -- Full size: [link](https://chisness.github.io/assets/ft78999.png)*
 
 ## Monte Carlo Simulations
 We've now shown a possible reset strategy that used the binomial model and a similar, but slightly different strategy that used reinforcement learning. There is also the naive strategy of just shooting until winning (making 90) or losing (missing 11). We ran Monte Carlo simulations for each of these 3 methods for 100,000 trials (where a trial is run until winning the bet). The most valuable statistic is the average number of shots until winning, which we plotted for each strategy. On top we have the naive strategy that not surprisingly has the most shots until success and in the middle is the binomial model and on the bottom is the RL model. Those are within about 1% of each other, which suggests that using a reasonable reset strategy is most important. 
 
 ![](../assets/ftmc.png)
+
+We did an additional Monte Carlo simulation using the binomial model 78% fixed rate reset strategy. This time we modified the shooting probabilities to a model that Mike [https://mobile.twitter.com/MikeMcDonald89/status/1280250333088772096](suggested). He suggests that we model having a base free throw rate of 75%, with a floor of 65% and a ceiling of 85%. Each make elevates the current $$p_{make}$$ by $$\frac{1}{4}$$ towards the ceiling and each miss decreases the current $$p_{make}$$ by $$\frac{1}{3}$$ towards the floor. 
+
+![](../assets/ftmcpmn.png)
+
+We see that $$p_{make}$$ is about 80.7% on average, substantially higher than the above 78% simulations. We also see that the streakiness potential built into the shooting model allows for some very strong runs, and therefore the average shots until success goes down drastically to only 1302.6, which is about $$\frac{1}{10}$$ the amount of shots under the 78% shooting with reset models and about half of the shots if we had a fixed 80.6% $$p_{make}$$ (plot not shown). 
 
 ## Markov Chain 
 The free throw bet can be modeled as a Markov chain, which per [Wikipedia](https://en.wikipedia.org/wiki/Markov_chain), is: <cite>"a stochastic model describing a sequence of possible events in which the probability of each event depends only on the state attained in the previous event."</cite> 
@@ -180,17 +184,12 @@ We can modify the matrix $$P$$ above to calculate the expected number of shots w
 We see that the binomial models cuts the expected number of shots down to **13,262**, and the reinforcement learning model with gamma of 0.99 is a slight improvement at **13,236**. 
 
 ### Strategy from Inspection
-Since the Markov chain is fast to calculate, we can use inspection to find an even better strategy. We start by only resetting on the 10th miss. We find the value $$n_{10}$$ $$\in$$ (0,100) with the minimum number of expected shots. We continue to use the value found for $$n_{10}$$ as the threshold for resetting on the 10th miss, and search for the threshold for resetting on the 9th miss, $$n_9 \in (0, n_{10})$$ that results in the minimum expected number of shots. We continue in this manner until we have found all values $$n_ {10}, n_9, \dots, n_1$$. The inspection model results in another slight improvement, with expected shots of **13,209**. The thresholds to reset are if misses 1 through 10 occur on or before total number of shots: $$$$\begin{array}{inspection} 5, & 11, & 16, & 22, & 27, & 34, & 40, & 47, & 55, & 64 \end{array}$$$$
-
-#reset strategies, simulation shots, markov chain shots, mention monte carlo, graph like in blackjack
+Since the Markov chain is fast to calculate, we can use inspection to find an even better strategy. We start by only resetting on the 10th miss. We find the value $$n_{10}$$ $$\in$$ (0,100) with the minimum number of expected shots. We continue to use the value found for $$n_{10}$$ as the threshold for resetting on the 10th miss, and search for the threshold for resetting on the 9th miss, $$n_9 \in (0, n_{10})$$ that results in the minimum expected number of shots. We continue in this manner until we have found all values $$n_ {10}, n_9, \dots, n_1$$. The inspection model results in another slight improvement, with expected shots of **13,209**. The thresholds to reset are if misses 1 through 10 occur on or before total number of shots: $$$$\begin{array}{inspection} 5, & 11, & 16, & 22, & 27, & 34, & 40, & 47, & 55, & 64 \end{array}$$$$.
 
 ## Practical Strategy and Conclusions
-Mike's shooting ability is the most import factor in whether he will be successful, with reset strategy only mattering for a rather narrow range of true shooting percentages:
-![reset](reset_strategy.png)
+Mike's shooting ability is the most important factor in whether he will be successful, with reset strategy only mattering for a rather narrow range of true shooting percentages:
+![reset](../assets/reset_strategy.png)
     
 To have a realistic probability of success, Mike needs to have a shooting percentage in the high 70's or better. We recommend he keeps a trailing average of his last 1,000 free throws as an estimate for his true shooting percentage. If he is making less than 75% of his shots, he is better off focusing on improving his shot than continuing more attempts. While we expect additional attempts should improve his shooting percentage, there are more focused activities he can take that should result in faster improvement. He can work on improving his form, including working with a shooting coach, he can adopt techniques from sports psychology to improve his mental state, and he can work on conditiong if he thinks that is a factor.
 
-## To add
-1) Show iterations of reinforcement learning procedure
-
-2) See how hot hand affects reset strategy and success
+#hot hand sim, #iterations of rl procedure, last column all larger size
