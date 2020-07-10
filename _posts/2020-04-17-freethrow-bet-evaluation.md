@@ -96,7 +96,7 @@ For the full code, see: [freethrows.py](https://github.com/chisness/freethrows/b
 Here are various figures for state values for different levels of $$p_{make}$$ and $$\gamma$$. The yellow areas indicate optimally continuing to shoot and the purple areas indicate optimally resetting. We also show the reset values specifically for $$p_{make}$$ = 0.78 and $$\gamma$$ = 0.99. The figures are clickable to see them in larger size. 
 
 [![](../assets/ft7899.png)](https://chisness.github.io/assets/ft7899.png)
-*State values with 78% make*
+*<p style="text-align: center;">State values with 78% make</p>*
 
 [![](../assets/ft7899reset.png)](https://chisness.github.io/assets/ft7899reset.png)
 *Reset values with 78% make*
