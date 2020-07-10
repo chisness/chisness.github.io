@@ -96,22 +96,22 @@ For the full code, see: [freethrows.py](https://github.com/chisness/freethrows/b
 Here are various figures for state values for different levels of $$p_{make}$$ and $$\gamma$$. The yellow areas indicate optimally continuing to shoot and the purple areas indicate optimally resetting. We also show the reset values specifically for $$p_{make}$$ = 0.78 and $$\gamma$$ = 0.99. The figures are clickable to see them in larger size. 
 
 [![](../assets/ft7899.png)](https://chisness.github.io/assets/ft7899.png)
-<p style="text-align: center;">*State values with 78% make*</p>
+<p style="text-align: center;"><em>State values with 78% make</em></p>
 
 [![](../assets/ft7899reset.png)](https://chisness.github.io/assets/ft7899reset.png)
-<p style="text-align: center;">*Reset values with 78% make*</p>
+<p style="text-align: center;"><em>Reset values with 78% make</em></p>
 
 [![](../assets/ft78993d.png)](https://chisness.github.io/assets/ft78993d.png)
-<p style="text-align: center;">*3D state values with 78% make*</p>
+<p style="text-align: center;"><em>3D state values with 78% make</em></p>
 
 [![](../assets/ft7499.png)]((https://chisness.github.io/assets/ft7499.png))
-<p style="text-align: center;">*State values with 74% make*</p>
+<p style="text-align: center;"><em>State values with 74% make</em></p>
 
 [![](../assets/ft5099.png)](https://chisness.github.io/assets/ft5099.png)
-<p style="text-align: center;">*State values with 50% make*</p>
+<p style="text-align: center;"><em>State values with 50% make</em></p>
 
 [![](../assets/ft9999.png)](https://chisness.github.io/assets/ft9999.png)
-<p style="text-align: center;">*State values with 99% make*</p>
+<p style="text-align: center;"><em>State values with 99% make</em></p>
 
 ### The discount rate
 We use the parameter $$\gamma$$ in the Bellman equation. This acts as a discount rate, which means that farther away states get discounted more compared to states nearby. We think this makes sense in the context of the free throw bet because of the time and energy required to complete attempts. For example, if we had a perfect player who could make every shot 100% of the time, if he had 1 shot left, the value of the state would be $$100 * 0.99 = 99$$ and with 5 shots left would be $$100 * 0.99^5 = 95.099$$ and then at the beginning with 90 shots left would be $$100 * 0.99^90 = 40.473$$. So while this player's true value is always 100, the state values include discounting to account for the time. 
@@ -119,10 +119,10 @@ We use the parameter $$\gamma$$ in the Bellman equation. This acts as a discount
 Going back to $$p_{make}$$ = 0.78, we will show plots with $$\gamma$$ = 0.999 and $$\gamma$$ = 0.9, small but significant differences from the $$\gamma$$ = 0.99 plot above. The $$\gamma$$ = 0.9 plot "breaks" because $$0.9^{90}$$ is so small that it is essentially 0 by the time the reward of winning is iterated down to the starting state. 
 
 [![](../assets/ft7890.png)](https://chisness.github.io/assets/ft7890.png)
-<p style="text-align: center;">*State values with 78% make and low $$\gamma$$*</p>
+<p style="text-align: center;"><em>State values with 78% make and low $$\gamma$$</em></p>
 
 [![](../assets/ft78999.png)](https://chisness.github.io/assets/ft78999.png)
-<p style="text-align: center;">*State values with 78% make and high $$\gamma$$*</p>
+<p style="text-align: center;"><em>State values with 78% make and high $$\gamma$$</em></p>
 
 ## Monte Carlo Simulations
 We've now shown a possible reset strategy that used the binomial model and a similar, but slightly different strategy that used reinforcement learning. There is also the naive strategy of just shooting until winning (making 90) or losing (missing 11). We ran Monte Carlo simulations for each of these 3 methods for 100,000 trials (where a trial is run until winning the bet). The most valuable statistic is the average number of shots until winning, which we plotted for each strategy. On top we have the naive strategy that not surprisingly has the most shots until success and in the middle is the binomial model and on the bottom is the RL model. Those are within about 1% of each other, which suggests that using a reasonable reset strategy is most important. 
