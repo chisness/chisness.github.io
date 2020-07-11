@@ -140,7 +140,7 @@ The free throw bet can be modeled as a Markov chain, which per [Wikipedia](https
 
 This provides a quick way to directly calculate the average shots until success rather than doing simulations. 
 
-There are $$1001$$ different possible states ($$0$$ to $$10$$ misses, $$0$$ to $$90$$ makes) $$\implies$$ $$11$$ * $91$ $$=$$ $$1001$$. Therefore, The bet can be represented by a $$1001$$ x $$1001$$ matrix, where rows represent the current state, columns represent the future state, and elements $$X_{ij}$$ {$$\forall$$ $$_i, _j \in [0, 1000]$$} represent the probability of transitioning from state $$i$$ to state $$j$$. 
+There are $$1001$$ different possible states ($$0$$ to $$10$$ misses, $$0$$ to $$90$$ makes) $$\implies$$ $$11$$ * $$91$$ $$=$$ $$1001$$. Therefore, The bet can be represented by a $$1001$$ x $$1001$$ matrix, where rows represent the current state, columns represent the future state, and elements $$X_{ij}$$ {$$\forall$$ $$_i, _j \in [0, 1000]$$} represent the probability of transitioning from state $$i$$ to state $$j$$. 
 
 ### Naive Model  
 Let's assume Mike continues an attempt until either 90 makes or 11 misses, and define the states as:  
