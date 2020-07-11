@@ -119,10 +119,10 @@ We use the parameter $$\gamma$$ in the Bellman equation. This acts as a discount
 Going back to $$p_{make}$$ = 0.78, we will show plots with $$\gamma$$ = 0.999 and $$\gamma$$ = 0.9, small but significant differences from the $$\gamma$$ = 0.99 plot above. The $$\gamma$$ = 0.9 plot "breaks" because $$0.9^{90}$$ is so small that it is essentially 0 by the time the reward of winning is iterated down to the starting state. 
 
 [![](../assets/ft7890.png)](https://chisness.github.io/assets/ft7890.png)
-<p style="text-align: center;"><em>State values with 78% make and low $$\gamma$$</em></p>
+<p style="text-align: center;"><em>State values with 78% make and low discount factor</em></p>
 
 [![](../assets/ft78999.png)](https://chisness.github.io/assets/ft78999.png)
-<p style="text-align: center;"><em>State values with 78% make and high $$\gamma$$</em></p>
+<p style="text-align: center;"><em>State values with 78% make and high discount factor</em></p>
 
 ## Monte Carlo Simulations
 We've now shown a possible reset strategy that used the binomial model and a similar, but slightly different strategy that used reinforcement learning. There is also the naive strategy of just shooting until winning (making 90) or losing (missing 11). We ran Monte Carlo simulations for each of these 3 methods for 100,000 trials (where a trial is run until winning the bet). The most valuable statistic is the average number of shots until winning, which we plotted for each strategy. On top we have the naive strategy that not surprisingly has the most shots until success and in the middle is the binomial model and on the bottom is the RL model. Those are within about 1% of each other, which suggests that using a reasonable reset strategy is most important. 
