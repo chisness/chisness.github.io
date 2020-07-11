@@ -129,7 +129,7 @@ We've now shown a possible reset strategy that used the binomial model and a sim
 
 ![](../assets/ftmc.png)
 
-We did an additional Monte Carlo simulation using the binomial model 78% fixed rate reset strategy. This time we modified the shooting probabilities to a model that Mike [https://mobile.twitter.com/MikeMcDonald89/status/1280250333088772096](suggested). He suggests that we model having a base free throw rate of 75%, with a floor of 65% and a ceiling of 85%. Each make elevates the current $$p_{make}$$ by $$\frac{1}{4}$$ towards the ceiling and each miss decreases the current $$p_{make}$$ by $$\frac{1}{3}$$ towards the floor. 
+We did an additional Monte Carlo simulation using the binomial model 78% fixed rate reset strategy. This time we modified the shooting probabilities to a model that Mike [suggested](https://mobile.twitter.com/MikeMcDonald89/status/1280250333088772096). He suggests that we model having a base free throw rate of 75%, with a floor of 65% and a ceiling of 85%. Each make elevates the current $$p_{make}$$ by $$\frac{1}{4}$$ towards the ceiling and each miss decreases the current $$p_{make}$$ by $$\frac{1}{3}$$ towards the floor. 
 
 ![](../assets/ftmcpmn.png)
 
