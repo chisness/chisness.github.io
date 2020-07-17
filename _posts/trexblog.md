@@ -32,19 +32,19 @@ The Procgen environments include 16 different games, but we looked primarily at 
 
 Coinrun agent view             |  Coinrun human view
 :-------------------------:|:-------------------------:
-![](figures/coinrun_low.png)  |  ![](figures/coinrun_high.png)
+![](../figures/coinrun_low.png)  |  ![](../figures/coinrun_high.png)
 
 Fruitbot agent view             |  Fruitbot human view
 :-------------------------:|:-------------------------:
-![](figures/fruitbot_low.png)  |  ![](figures/fruitbot_high.png)
+![](../figures/fruitbot_low.png)  |  ![](../figures/fruitbot_high.png)
 
 Starpilot agent view             |  Starpilot human view
 :-------------------------:|:-------------------------:
-![](figures/starpilot_low.png)  |  ![](figures/starpilot_high.png)
+![](../figures/starpilot_low.png)  |  ![](../figures/starpilot_high.png)
 
 Bigfish agent view             |  Bigfish human view
 :-------------------------:|:-------------------------:
-![](figures/bigfish_low.png)  |  ![](figures/bigfish_high.png)
+![](../figures/bigfish_low.png)  |  ![](../figures/bigfish_high.png)
 
 
 ### What is reward learning? 
@@ -164,7 +164,7 @@ One possible reason for the performance we saw is that the reward model simply i
 
 Additionally, we noticed a potentially large and glaring issue upon visualizing how the learned reward models assigned reward across a collection of sample demonstrations. Our reward models would show a signature “U” shape, indicating that it would assign negative reward to the beginning timesteps, and then gradually increase the predicted reward for later timesteps. This indicated that our reward model was barely learning anything about the environment, if at all - instead, the performance could be explained by a heuristic that simply assigned greater reward to later timesteps. However, we’re not completely sure how the model is able to tell whether it’s looking at earlier or later timesteps when it sees test levels; one strong hypothesis is that it makes use of the background, because there are a fixed number of possible backgrounds that are used in Procgen. --TODO: find a way to remove backgrounds altogether?--
 
-![](figures/cmreward.png)
+![](../figures/cmreward.png)
 
 One step we tried was to replace the trajectory rewards in T-REX training with the true snippet rewards - this would give the reward learning procedure significantly more accurate inputs to train on, but it would also break the assumption of the only training data being the preferences between demonstrations; in effect, we’re giving the procedure much more complete knowledge that would be inaccessible otherwise. This change enabled us to obtain much better performance on various environments. --TODO: create some plots showing this--
 
