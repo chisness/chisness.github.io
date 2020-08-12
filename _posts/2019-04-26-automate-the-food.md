@@ -8,7 +8,7 @@ And then you may be thinking well if you're going to eat the same thing every da
 I've already given the clothes analogy above, which I don't participate in, because I think picking clothes is a very low effort and kind of fun activity, although admit that buying them and thinking about which ones to take with on trips can be time consuming. 
 
 Two more analogies for things where I prefer to take the decision-minimization approach:<br> 
-1. Picking stocks -- Even riskier than picking random new dressings for your salad (I like the index fund approach)<br>
+1. Picking stocks<br>
 2. Working out -- It's hard enough to calculate [how many days there are in a week](https://gawker.com/bodybuilders-try-fail-to-calculate-number-of-days-in-1677545788), so I like to just follow pre-made programs or go to classes
 
 ## Automate the Food Principles
@@ -16,8 +16,9 @@ Two more analogies for things where I prefer to take the decision-minimization a
 [2. Avoid manual labor and guesswork as much as possible](#2-avoid-manual-labor-and-guesswork-as-much-as-possible)<br>
 [3. Simplify the supplies](#3-simplify-the-supplies)<br>
 [4. Get food delivered or figure out your supermarket routine](#4-get-food-delivered-or-figure-out-your-supermarket-routine)<br>
-[5. My daily food](#5-my-daily-food)<br>
-[6. What about the content of the food](#6-what-about-the-content-of-the-food)<br>
+[5. What about the content of the food](#5-what-about-the-content-of-the-food)<br>
+[6. My daily food](#6-my-daily-food)<br>
+
 
 ### 1. Eat nearly the same thing every day
 Eating the same thing for the main meals is surprisingly not very boring and is highly recommended. Maybe do some small variations with snacks and certain meal elements (dinner makes the most sense to make into a fun activity or an out-of-home event), but keep the same structure every day! Picking/cooking your foods is also the best way to ensure that you get the best quality.
@@ -35,11 +36,11 @@ Before I discovered the hard boiled egg machine, I never knew what I was doing. 
 **Vegetable chopper:** Figure out your tomato/cucumber/pepper/onion ratio and get this [pro vegetable chopper](https://www.amazon.com/Chopper-Vegetable-Mueller-Vegetable-Fruit-Cheese-Onion-Chopper-Dicer-Kitchen/dp/B01HC7BNJA). Vegetables still have to be cut into smaller slices, but this does the hard work to get them into salad-appropriate sized pieces. <br>
 <img src="https://images-na.ssl-images-amazon.com/images/I/71-YsC0P46L._SL1500_.jpg" alt="Vegetable chopper" width="300"/>
 
-**A good nonstick pan:** I get sad every time I see a sticky pan. The pain is not worth it! I recently got the [Great Jones Small Fry](https://greatjonesgoods.com/products/small-fry), which has been amazing. It's nonstick, dishwashable (although seems a bit stickier for the first couple uses after dishwashing), has sides that go up higher than normal (reducing the chance of splashing over), and it's rivetless (the interior is completely smooth), which eliminates trying to clean around those spots. Wirecutter has some good value alternatives [here](https://thewirecutter.com/reviews/best-nonstick-pan/) too. 
+**A good nonstick pan:** I get sad every time I see a sticky pan. The pain is not worth it! I recently got the [Made-In Non Stick Frying Pan](https://madeincookware.com/products/non-stick-frying-pan), which has been great. Wirecutter has some good value alternatives [here](https://thewirecutter.com/reviews/best-nonstick-pan/) too. 
 
 **Cook in bulk:** I only do this for foods that I don't mind eating cold, which are currently Israeli salad and hard boiled eggs. The time to cook a chicken breast on an indoor grill is so low and the value from eating it hot off the grill is so high, that I don't think it's worth bulk cooking and reheating an item like this. 
 
-**The oven:** I only use this for dinner and don't have any great tips except for lining the pan with foil to make cleanup easier. Also small countertop toaster ovens seem extremely effective for small portions (like a full meal for one or just meat/fish for 2-4). Great Jones also makes a pan called the [Holy Sheet](https://greatjonesgoods.com/products/holy-sheet) that looks pretty nice (no affiliation, just a fan!). 
+**The oven:** I only use this for dinner and don't have any great tips except for lining the pan with foil to make cleanup easier. Also small countertop toaster ovens seem extremely effective for small portions (like a full meal for one or just meat/fish for 2-4). 
 
 ### 3. Simplify the supplies
 **Keep bulk stocks:** Minimize supermarket trips and running-out-of-things catastrophes by keeping stocks strong
@@ -62,7 +63,12 @@ My rule is to buy organic when possible, especially for eggs/meat/protein. For o
 ### 4. Get food delivered or figure out your supermarket routine
 I generally have enjoyed going to supermarkets. It's the first thing I like to do when visiting a new place/city and the feeling of wide aisles and picking your own produce and wandering around finding new things can be fun. If I had easy access to a quality/good value supermarket and/or farmer's market, I'd probably prefer to go there 1-2 times/week. In NYC, I primarily used Amazon's PrimeNow for Whole Foods deliveries, which has been a pretty mediocre experience overall, but is free for same/next day 2-hour delivery windows and is ridiculously easy to use and when issues come up, their support has been very quick and generous.
 
-### 5. My Daily Food
+### 5. What about the content of the food?
+I find it very easy to have willpower in situations where food doesn't yet belong to me (in supermarkets or when ordering from them online) and very difficult to have willpower when unhealthy foods are available for immediate eating in my surroundings. I find it nice to keep the base state under control so that when less healthy situations arise (restaurants, parties, random occurrences of low-percentage chocolate nearby), they can be enjoyed without concern. I've also found that I feel better when eating healthier. (I think of healthy as mostly Paleo, i.e., mostly proteins/nuts/seeds/vegetables/olive oil, with some fruit and 85%+ chocolate, and mostly avoiding processed foods. I like this strictish definition because it means there's little guessing about whether an item is in the program or out of the program, but of course this is just one interpretation and maybe I'm (slightly) suffering for naught.) 
+
+Shoutout to Simon of [Minmax Meals](https://www.minmaxmeals.com/) for creating great value bulk-cookable meals on a site with an excellent name. 
+
+### 6. My Daily Food
 
 **Breakfast**
 - 3 scrambled eggs: Cooked in olive oil with raw sunflower seeds added after plating. I am strongly against getting brown in the eggs (like every hotel omelette station ever).
@@ -106,7 +112,3 @@ I've considered intermittent fasting and Keto. Keto is definitely intriguing, bu
 **What about restaurants?**<br>
 I went through a phase of being into restaurants, but now find that I prefer the norm to be eating a high quality meal at home, and to let randomness dictate when restaurants happen. I think for most people, this will happen plenty (family/friend events, celebration meals, meals when traveling, etc.). 
 
-### 6. What about the content of the food?
-I find it very easy to have willpower in situations where food doesn't yet belong to me (in supermarkets or when ordering from them online) and very difficult to have willpower when unhealthy foods are available for immediate eating in my surroundings. I find it nice to keep the base state under control so that when less healthy situations arise (restaurants, parties, random occurrences of low-percentage chocolate nearby), they can be enjoyed without concern. I've also found that I feel better when eating healthier. (I think of healthy as mostly Paleo, i.e., mostly proteins/nuts/seeds/vegetables/olive oil, with some fruit and 85%+ chocolate, and mostly avoiding processed foods. I like this strictish definition because it means there's little guessing about whether an item is in the program or out of the program, but of course this is just one interpretation and maybe I'm (slightly) suffering for naught.) 
-
-Shoutout to Simon of [Minmax Meals](https://www.minmaxmeals.com/) for creating great value bulk-cookable meals on a site with an excellent name. 
