@@ -34,8 +34,10 @@ The second figure is using an optimal reset strategy (detailed in the next secti
 The most valuable statistic is the average number of shots until winning, which we plotted for each strategy. The strategy with resets takes more trials on average than the strategy without, but the average shots until success is significantly lower. 
 
 ![Naive Strategy](../assets/mcf.png)
+<p style="text-align: center;"><em>Simulations for naive strategy</em></p>
 
 ![Optimal Reset Strategy](../assets/mcrl.png)
+<p style="text-align: center;"><em>Simulations for reset strategy</em></p>
 
 ## Reset Strategy
 From above we know that if Mike's true free throw make percent is much worse than 78%, his chance of success is not very good. We computed reset strategies for make %s of 78, 80, 82, 84, and 86 below. The y-axis is shots made and the x-axis is shots missed. The reset strategies are represented by the larger font and the approximate value (assuming that winning = 100) of each position is shown with the smaller font. Red areas are resets and purple are continue shooting.  
@@ -49,11 +51,16 @@ During today's (Aug 19, 2020) attempt, Mike had a fixed reset strategy of: 5-1, 
 Click on the images to enlarge! 
 
 [![78% make reset strategy](../assets/t78.png)](https://chisness.github.io/assets/t78.png)
+<p style="text-align: center;"><em>78% make state values and resets</em></p>
 
 [![80% make reset strategy](../assets/t80.png)](https://chisness.github.io/assets/t80.png)
+<p style="text-align: center;"><em>80% make state values and resets</em></p>
 
 [![82% make reset strategy](../assets/t82.png)](https://chisness.github.io/assets/t82.png)
+<p style="text-align: center;"><em>82% make state values and resets</em></p>
 
 [![84% make reset strategy](../assets/t84.png)](https://chisness.github.io/assets/t84.png)
+<p style="text-align: center;"><em>84% make state values and resets</em></p>
 
 [![86% make reset strategy](../assets/t86.png)](https://chisness.github.io/assets/t86.png)
+<p style="text-align: center;"><em>86% make state values and resets</em></p>
