@@ -44,7 +44,7 @@ From above we know that if Mike's true free throw make percent is much worse tha
 
 Full details are in the original post, but in short, this works by setting up a table of every made/missed situation and computing an approximate value of being in each of those situations. Then any spot with value better than the starting position of 0 made/0 missed keeps shooting and any one with value worse than the starting position resets since then it makes more sense to start over. 
 
-It's interesting that for worse make %s, resets come earlier. For example, with 70 made and 10 missed, this requires 20 in a row and an 86% shooter would of course have a better chance of success than a 78% shooter (about 4.9% vs. 0.7%), but the 86% shooter strategy is to reset and the 78% shooter strategy is to go for it! This implies that the 86% shooter is better off starting over, while the 78% shooter is actually slightly better off to make 20 in a row than to make 90/100. 
+It's interesting that for worse make %s, resets come later. For example, with 70 made and 10 missed, this requires 20 in a row and an 86% shooter would of course have a better chance of success than a 78% shooter (about 4.9% vs. 0.7%), but the 86% shooter strategy is to reset and the 78% shooter strategy is to go for it! This implies that the 86% shooter is better off starting over, while the 78% shooter is actually slightly better off to make 20 in a row than to make 90/100. 
 
 During today's (Aug 19, 2020) attempt, Mike had a fixed reset strategy of: 5-1, 11-2, 16-3, 21-4, 27-5, 33-6, 39-7, 46-8,54-9, 73-10, which lines up perfectly with the 82% shooter figure below. 
 
