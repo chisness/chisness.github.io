@@ -48,7 +48,7 @@ It's interesting that for worse make %s, resets come earlier. For example, with 
 
 During today's (Aug 19, 2020) attempt, Mike had a fixed reset strategy of: 5-1, 11-2, 16-3, 21-4, 27-5, 33-6, 39-7, 46-8,54-9, 73-10, which lines up perfectly with the 82% shooter figure below. 
 
-Reset strategies move pretty linearly with the make percentage, but from the section above, we saw that small differences in the make percentage can be huge, which suggests that working on technique is probably much more valuable than achieving an optimal reset strategy. 
+Reset strategies move pretty linearly with the make percentage, but from the section above, we saw that small differences in the make percentage can be huge, which suggests that working on technique is probably much more valuable than worrying too much about the exact optimal reset strategy. 
 
 Click on the images to enlarge! 
 
