@@ -49,3 +49,5 @@ During today's (Aug 19, 2020) attempt, Mike had a fixed reset strategy of: 5-1, 
 [![84% make reset strategy](../assets/t84.png)](https://chisness.github.io/assets/t84.png)
 
 [![86% make reset strategy](../assets/t86.png)](https://chisness.github.io/assets/t86.png)
+
+<p style="text-align: center;"><em>3D state values with 78% make</em></p>
