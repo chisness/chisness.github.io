@@ -70,15 +70,15 @@ def play_action(self, blackjack_state):
 
 We run this for 10,000 episodes and produce the following state-value functions: 
 
-![](../assets/blackjack10khit20.png)
-![](../assets/blackjack10khit20usable.png)
+![](../assets/blackjack_figures/blackjack10khit20.png)
+![](../assets/blackjack_figures/blackjack10khit20usable.png)
 
 The usable Ace figure after only 10,000 episodes is noticeably unstable because the states with usable Aces are relatively less common, so they haven't been able to stabilize after so few simulations. 
 
 We do a longer run for 500,000 episodes and produce the following state-value functions: 
 
-![](../assets/blackjack500khit20.png)
-![](../assets/blackjack500khit20usable.png)
+![](../assets/blackjack_figures/blackjack500khit20.png)
+![](../assets/blackjack_figures/blackjack500khit20usable.png)
 
 We see that the values are quite low until the player sum reaches 20 and 21, which is when the strategy is to always stick. Sticking with 20 or 21 is a very good situation so results in high expected value. The entire left side of the figure has a tilt downwards because that is when the dealer is showing an Ace, which is the strongest card since it's least likely to go bust with an Ace. It also means that if the dealer's other card is a 10-value card, the dealer would have 21. 
 
@@ -86,7 +86,7 @@ Finally, we notice that the entire value function tilts downwards as the player 
 
 We look at the value of the particular state of having 17 against various dealer upcards with a strategy of always hitting as above until getting to 20 vs. a new strategy of always sticking in this state. 
 
-![](../assets/value17vsupcard.png)
+![](../assets/blackjack_figures/value17vsupcard.png)
 
 We see that the results of hitting are quite similar regardless of the dealer upcard because the chance of busting is so high. The results for sticking are relatively poor when the dealer has a good upcard (8, 9, Ten, or Ace) and approaching 0 for other upcards. 17 isn't a great hand because neither option produces great results, but the always stick strategy tends to be much better, which is true for all hand totals 17 and higher. 
 
@@ -103,17 +103,17 @@ The exploration vs. exploitation concept arises here. We want to mostly play wha
 
 For the simulations, we sample "on-policy", which means we sample hands using the current strategy that keeps improving. After 2 million iterations, we can produce a strategy chart that shows every possible scenario and the optimal strategy, which is simply the estimated best action at each state after running all of the simulations. 
 
-![](../assets/optimalstrategynoace.png)
-![](../assets/optimalstrategyace.png)
+![](../assets/blackjack_figures/optimalstrategynoace.png)
+![](../assets/blackjack_figures/optimalstrategyace.png)
 
 We can also show the value plots as we did before: 
 
-![](../assets/optimalvaluenoace.png)
-![](../assets/optimalvalueace.png)
+![](../assets/blackjack_figures/optimalvaluenoace.png)
+![](../assets/blackjack_figures/optimalvalueace.png)
 
 We can compare these figures to those from the [Sutton Barton Reinforcement Learning book](http://www.incompleteideas.net/book/the-book-2nd.html) from chapter 5. 
 
-![](../assets/suttonbartoblackjack.png)
+![](../assets/blackjack_figures/suttonbartoblackjack.png)
 
 Our result on the strategy charts is exactly the same except for the case of the player having 16 and the dealer showing a Ten. The book is correct. This is a very marginal spot, which is why the Monte Carlo method was more likely to be wrong about it. The computation shown on the [Wizard of Odds site](https://wizardofodds.com/games/blackjack/expected-return-infinite-deck/) shows a difference between hitting and sticking of 0.000604 in favor of hitting! In practice with a real 8-card deck, there is [discussion](https://wizardofodds.com/ask-the-wizard/blackjack/probability/) that the most optimal strategy is to stick on multiple-card 16 against a dealer 10 card when the 16 includes a 4 or 5! 
 
@@ -183,19 +183,19 @@ Both of these are significant advantages for the player, so we expect to see a b
 
 We ran 10 million simulated hands. Here are plots for the optimal strategy: 
 
-![](../assets/optimalstrategynoace_dd.png)
-![](../assets/optimalstrategyace_dd.png)
+![](../assets/blackjack_figures/optimalstrategynoace_dd.png)
+![](../assets/blackjack_figures/optimalstrategyace_dd.png)
 
 We can compare these to optimal strategy charts from [The Wizard of Odds](https://wizardofodds.com/games/blackjack/strategy/4-decks/). On these figures, S is for stick and H is for hit. Dh and Ds mean double if allowed, otherwise hit or stand, respectively. Rh is for surrender, which means folding the hand and losing only half of the bet, and when surrender isn't allowed, then hit. To simplify, we don't allow surrender or split, which is when you can convert a pair (e.g. 3-3) to two separate hands and double the total bet to have a single bet unit on each of those hands (Wizard of Odds has a separate chart for the splits that we omit here). The upper part is for "hard" hands, which means no usable Ace and the lower part is for "soft" hands, which have a usable Ace. 
 
-![](../assets/wizodds.png)
+![](../assets/blackjack_figures/wizodds.png)
 
 There are a few discrepencies like standing with 16 when the dealer has an 8/9/Ten in the Monte Carlo no usable Ace charts and standing on 18 vs. a dealer 8 and Ten in the usable Ace charts. These are likely very slightly in favor of the strategy shown on the Wizard of Odds chart and with more simulations would come to the same result. 
 
 And for the value functions, we have: 
 
-![](../assets/optimalvaluenoace_dd.png)
-![](../assets/optimalvalueace_dd.png)
+![](../assets/blackjack_figures/optimalvaluenoace_dd.png)
+![](../assets/blackjack_figures/optimalvalueace_dd.png)
 
 Over 5 million evaluation hands, we find an estimated win per hand of -0.008034, or losing about 0.80 cents per $1 bet. Indeed, this is much better than the previous result of -0.0474336 per hand. 
 
@@ -206,13 +206,13 @@ You're only supposed to see 1 dealer card. What if somehow the other flipped ove
 
 Here are the value charts and strategy charts for seeing both dealer cards and also using the same Blackjack and doubling down rules from the prior section with 10 million simulated hands: 
 
-![](../assets/optimalstrategynoace_vd.png)
-![](../assets/optimalstrategyace_vd.png)
+![](../assets/blackjack_figures/optimalstrategynoace_vd.png)
+![](../assets/blackjack_figures/optimalstrategyace_vd.png)
 
 As expected, the player sum of 19 hits when the dealer is showing 20. 
 
-![](../assets/optimalvaluenoace_vd.png)
-![](../assets/optimalvalueace_vd.png)
+![](../assets/blackjack_figures/optimalvaluenoace_vd.png)
+![](../assets/blackjack_figures/optimalvalueace_vd.png)
 
 We again simulated 5 million hands after finding the optimal strategy. Now we find an estimated win per hand of 0.0856133. Not surprisingly, when you can see both of the dealer's cards, the game becomes profitable. The increase in profitability is about 9.36 cents per hand from the prior scenario (from losing 0.80 cents per hand to winning 8.56 cents per hand). 
 
@@ -237,7 +237,7 @@ We accumulate a $$\rho$$ importance sampling ratio and $$G$$ return for each epi
 
 Finally, to estimate the value of the state, we divide the weighted returns by the number of episodes for the ordinary case and divide by the $$\rho$$ values for the weighted case. The mean squared error of both are plotted below: 
 
-![](../assets/importancesampling.png)
+![](../assets/blackjack_figures/importancesampling.png)
 
 
 
