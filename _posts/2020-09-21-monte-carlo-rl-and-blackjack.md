@@ -221,11 +221,11 @@ We do see some inconsistencies in these charts, especially the one with the usab
 We again simulated 5 million hands after finding the optimal strategy. Now we find an estimated win per hand of 0.0856133. Not surprisingly, when you can see both of the dealer's cards, the game becomes profitable. The increase in profitability is about 9.36 cents per hand from the prior scenario (from losing 0.80 cents per hand to winning 8.56 cents per hand). 
 
 ## Importance Sampling Prediction
-Previously we showed that we could learn the optimal strategy by using a near-optimal policy that allowed for some exploring. That is, we played the predicted optimal strategy 95% of the time and other strategies 5% of the time. 
+Previously we showed that we could learn the optimal strategy by using a near-optimal policy that allowed for some exploring. That is, we played the predicted optimal strategy 95% of the time and other strategies 5% of the time and accumulated sample hand episodes. 
 
 There is another approach that uses two policies, one that is learned about and becomes the optimal policy (target policy) and one that is exploratory and is used to generate behavior (behavior policy). This is called off-policy learning. 
 
-The main idea is that we get returns from the behavior policy and take the ratio of the target policy divided by the behavior policy to represent the frequency of obtaining those returns under the target policy. 
+The main idea is that we get returns from the behavior policy and take the ratio of the target policy divided by the behavior policy to represent the frequency of obtaining those returns under the target policy. The result is an estimate of the value of the state. 
 
 The Sutton Barto book looks at a particular state in which the sum of the player cards is 13 and there is a usable Ace (i.e. Ace-2 or Ace-Ace-Ace). We take the target policy as sticking on 20 and 21 and hitting on everything else and the behavior policy of hitting or sticking 50% each. They determined that the value of this state under the target policy is -0.27726 (we are now again using the original rules with no natural blackjack and no doubling down). 
 
@@ -243,9 +243,13 @@ Over a single hand episode, we multiply the $$\rho$$ values together for each st
 
 We accumulate the $$\rho$$ importance sampling ratio and $$G$$ return for each of the 10,000 episodes and multiply them together to result in the weighted return. These are then accumulated over all episodes, i.e. the final episode weighted return is the sum of all previous returns and the final return. 
 
-Finally, to estimate the value of the state, we divide the weighted returns by the number of episodes for the ordinary case and divide by the $$\rho$$ values for the weighted case. The mean squared error of both are plotted below: 
+Finally, to estimate the value of the state, we divide the weighted returns by the number of episodes for the ordinary case and divide by the $$\rho$$ values for the weighted case. The estimated value over time is shown here: 
 
-![](../assets/blackjack_figures/importancesampling.png)
+![](../assets/blackjack_figures/importancesampling2val.png)
+
+The mean squared error of both are plotted below: 
+
+![](../assets/blackjack_figures/importancesampling2.png)
 
 
 
