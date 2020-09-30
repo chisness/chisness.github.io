@@ -45,6 +45,12 @@ After the human poker boom, computers also started getting in on the poker actio
 
 Online poker is legal and regulated in many countries in the world. In 2006, the Unlawful Internet Gambling Enforcement Act (UIGEA) was passed, which was widely interpreted to make operating a poker site in the USA illegal and led to publicly traded sites leaving the US, while a few private operators like PokerStars, Full Tilt Poker, and Ultimate Bet/Absolute Poker remained, although they had a harder time processing payments for US players. On April 15, 2011, aka Black Friday, the FBI shut down the remaining sites, and online poker was effectively over for the US. Some individual states now have regulated online poker and there are some offshore sites that offer unregulated games, but the quantity and quality of games has dropped dramatically since the early days. 
 
+In 2003, an amateur player — a Tennessee accountant with the fitting name Chris Moneymaker — won the tournament and $2.5 million, inspiring other novices to try their hands at the game, ushering in a poker boom that dramatically increased the number of people playing, both in card rooms and online.
+
+But that online boom was cut short in 2011, on a day deemed “Black Friday” throughout the poker community, when U.S. prosecutors shut down the three biggest online poker sites and seized their assets, including the bankrolls of thousands of players. The sites had wagered that poker, a game of skill and not just chance, was allowable despite federal laws against online gambling. Prosecutors disagreed.
+
+As a result of the shutdown, most international online poker sites stopped letting people from the United States use their sites.
+
 ### Basic Rules
 Poker is a card game that, in its standard forms, uses a deck of 52 cards composed of four suits (Clubs :clubs:, Diamonds :diamonds:, Hearts :heart:, and Spades ::spades::) and 13 ranks (Two through Ten, Jack, Queen, King, and Ace). A dealer button rotates around the table indicating who is the “dealer”. This is decided at random for the first hand and rotates clockwise after that. All actions begin to the left of the hand’s current dealer player.
 
@@ -330,6 +336,10 @@ To generalize for the Rock Paper Scissors case:
 
 ### Regret Matching
 What is the point of these regret values and what can we do with them? 
+
+Matching choose action most that has higher chance of being best, optimistic in face of uncertainty
+Learning self play, see situations interesting, 
+
 
 Regret matching means playing a strategy in proportion to the accumulated regrets. As we play, we keep track of the regrets for each action and then play in proportion to those values. For example, if the regret values for Rock are 5, Paper 10, Scissors 5, then we have total regrets of 20 and we would play Rock 5/20 = 1/4, Paper 10/20 = 1/2, and Scissors 5/20 = 1/4 as well. 
 
