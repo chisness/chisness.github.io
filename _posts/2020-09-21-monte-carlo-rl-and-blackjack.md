@@ -103,7 +103,7 @@ Specifically, we set the strategy for the best action $$P(a_{b}) = 1 - \epsilon 
 
 The exploration vs. exploitation concept arises here. We want to mostly play what we currently believe to be the best action, but we don't want to always play it. For example, if we sampled hitting on 19 on the first hand and got a 2 and won, we wouldn't want to conclude that it's always best to hit on 19. It's important to keep exploring alternative actions. This can be refined to decrease $$\epsilon$$ over time when we become more certain of the values, but we keep things simple and used a fixed $$\epsilon$$ here. 
 
-For the simulations, we sample "on-policy", which means we sample hands using the current strategy that keeps improving. After 2 million iterations, we can produce a strategy chart that shows every possible scenario and the optimal strategy, which is simply the estimated best action at each state after running all of the simulations. 
+For the simulations, we sample "on-policy", which means we sample hands using the current strategy that keeps improving. After 10 million iterations, we can produce a strategy chart that shows every possible scenario and the optimal strategy, which is simply the estimated best action at each state after running all of the simulations. (The strategy is reasonable after 1 million iterations, but we had some extra free time.)
 
 ![](../assets/blackjack_figures/optimalstrategynoace.png)
 ![](../assets/blackjack_figures/optimalstrategyace.png)
