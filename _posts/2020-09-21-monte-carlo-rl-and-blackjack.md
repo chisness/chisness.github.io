@@ -66,7 +66,7 @@ In this case, we would maintain counters for only the states, since the actions 
 
 ```python
 def play_action(self, blackjack_state):
-	player_sum, dealer_upcard, usable_ace = blackjack_state
+	#we don't actually need the state here for this policy! 
 	return STICK if player_sum >= 20 else HIT
 ```
 
