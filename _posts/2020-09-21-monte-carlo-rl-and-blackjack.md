@@ -10,7 +10,7 @@ title: "Monte Carlo RL and Blackjack"
 ## Blackjack Rules
 The Reinforcement Learning book by Sutton and Barto has a blackjack example in chapter 5 that led to many of the ideas in this post.
 
-![](../assets/blackjack_figures/Blackjack_game_1.jpg)
+![](../assets/blackjack_figures/Blackjack_game_1.JPG)
 
 The rules of the game directly from the book are below:
 "The object of the popular casino card game of blackjack is to obtain cards the sum of whose numerical values is as great as possible without exceeding 21. All face cards count as 10, and an ace can count either as 1 or as 11. We consider the version in which each player competes independently against the dealer. The game begins with two cards dealt to both dealer and player. One of the dealer’s cards is face up and the other is face down. If the player has 21 immediately (an ace and a 10-card), it is called a natural. He then wins unless the dealer also has a natural, in which case the game is a draw. If the player does not have a natural, then he can request additional cards, one by one (hits), until he either stops (sticks) or exceeds 21 (goes bust). If he goes bust, he loses; if he sticks, then it becomes the dealer’s turn. The dealer hits or sticks according to a fixed strategy without choice: he sticks on any sum of 17 or greater, and hits otherwise. If the dealer goes bust, then the player wins; otherwise, the outcome—win, lose, or draw—is determined by whose final sum is closer to 21."
@@ -117,13 +117,13 @@ We can compare these figures to those from the [Sutton Barton Reinforcement Lear
 
 ![](../assets/blackjack_figures/suttonbartoblackjack.png)
 
-Our result on the strategy charts is exactly the same except for the case of the player having 16 and the dealer showing a Ten. The book is correct. This is a very marginal spot, which is why the Monte Carlo method was more likely to be wrong about it. The computation shown on the [Wizard of Odds site](https://wizardofodds.com/games/blackjack/expected-return-infinite-deck/) shows a difference between hitting and sticking of 0.000604 in favor of hitting! In practice with a real 8-card deck, there is [discussion](https://wizardofodds.com/ask-the-wizard/blackjack/probability/) that the most optimal strategy is to stick on multiple-card 16 against a dealer 10 card when the 16 includes a 4 or 5! 
+Our result on the strategy charts is exactly the same except for the case of the player having 16 and the dealer showing a Ten. The book is correct. This is a very marginal spot, which is why the Monte Carlo method was more likely to be wrong about it. The computation shown on the [Wizard of Odds site](https://wizardofodds.com/games/blackjack/expected-return-infinite-deck/) shows a difference between hitting and sticking of 0.000604 in favor of hitting! In practice with a real 8-card deck, there is [discussion](https://wizardofodds.com/ask-the-wizard/blackjack/probability/) that the most optimal strategy is to stick on multiple-card 16 against a dealer 10 card when the 16 includes a 4 or 5.
 
 We start our strategy charts at 12 because given these rules, hitting is mandatory on 11 and under since it's not possible to bust. Also it isn't actually possible to have 11 if you have a usable Ace -- the minimum by definition is 12 (Ace-Ace). 
 
 We can then evaluate this by taking the final policy using the best action at each state (since exploration is no longer needed) and running simulations, then computing the total reward over all of the simulations divided by the number of simulations to find the average winnings per hand. 
 
-Over 1 million evaluation hands, we find an estimated win per hand of -0.0474336, or losing about 4.7 cents per $1 bet. 
+Over 5 million evaluation hands, we find an estimated win per hand of -0.0474336, or losing about 4.7 cents per $1 bet. 
 
 ## The OpenAI Gym Environment and Modifications
 There is a built-in [OpenAI Gym blackjack environment](https://github.com/openai/gym/blob/master/gym/envs/toy_text/blackjack.py) available to use in the gym's toy_text directory. This environment is quite basic and handles the most standard rules as described above, including the dealer hitting until their hand is >= 17. The environment draws cards from an "infinite" deck to simplify the probabilities. (Most casinos use 6-8 decks to reduce shuffling and make it more difficult for players to count cards.)
@@ -145,13 +145,13 @@ blackjack1.py is available here:
 
 Link to full code: 
 
-### Monte Carlo Implementation
+## Monte Carlo Implementation
 We simulate hands and append each state and action from the hand to an "episode" list, which is a single Monte Carlo sample. Episode is the generic term for a sequence of states and actions. 
 
 When the hand finishes, each state and action pair that was seen has a "total return" sum that is incremented by the final reward (i.e. winnings/losings from the result of the hand) and a "number of times seen" counter for that pair is incremented. These track the total rewards earned from each state and 
 
 ```python
-for i in range(1000000):
+for i in range(episodes):
 	while True:
 		action_probs = agent.play_action(new_state)
 		action = np.random.choice(BETS, p=action_probs)
@@ -188,11 +188,11 @@ We ran 10 million simulated hands. Here are plots for the optimal strategy:
 ![](../assets/blackjack_figures/optimalstrategynoace_dd.png)
 ![](../assets/blackjack_figures/optimalstrategyace_dd.png)
 
-We can compare these to optimal strategy charts from [The Wizard of Odds](https://wizardofodds.com/games/blackjack/strategy/4-decks/). On these figures, S is for stick and H is for hit. Dh and Ds mean double if allowed, otherwise hit or stand, respectively. Rh is for surrender, which means folding the hand and losing only half of the bet, and when surrender isn't allowed, then hit. To simplify, we don't allow surrender or split, which is when you can convert a pair (e.g. 3-3) to two separate hands and double the total bet to have a single bet unit on each of those hands (Wizard of Odds has a separate chart for the splits that we omit here). The upper part is for "hard" hands, which means no usable Ace and the lower part is for "soft" hands, which have a usable Ace. 
+We can compare these to optimal strategy charts from [The Wizard of Odds](https://wizardofodds.com/games/blackjack/strategy/4-decks/). On these figures, S is for stick and H is for hit. Dh and Ds mean double if allowed, otherwise hit or stand, respectively. Rh is for surrender, which means folding the hand and losing only half of the bet, and when surrender isn't allowed, then hit. To simplify, we don't allow surrender or split (Wizard of Odds has a separate chart for the splits that we omit here). The upper part is for "hard" hands, which means no usable Ace and the lower part is for "soft" hands, which have a usable Ace. 
 
 ![](../assets/blackjack_figures/wizodds.png)
 
-There are a few discrepencies like standing with 16 when the dealer has an 8/9/Ten in the Monte Carlo no usable Ace charts and standing on 18 vs. a dealer 8 and Ten in the usable Ace charts. These are likely very slightly in favor of the strategy shown on the Wizard of Odds chart and with more simulations would come to the same result. 
+There are a few discrepencies between our result and these charts (which are correct) like standing with 16 when the dealer has an 8/9/Ten in the Monte Carlo no usable Ace charts and standing on 18 vs. a dealer 8 and Ten in the usable Ace charts. These are likely very slightly in favor of the strategy shown on the Wizard of Odds chart and with more Monte Carlo simulations would come to the same result. 
 
 And for the value functions, we have: 
 
@@ -201,17 +201,19 @@ And for the value functions, we have:
 
 Over 5 million evaluation hands, we find an estimated win per hand of -0.008034, or losing about 0.80 cents per $1 bet. Indeed, this is much better than the previous result of -0.0474336 per hand. 
 
-In a casino, we might expect to do even better because most casinos use 4-8 52-card decks rather than a simulated "infinite" deck as we have used here. This allows for a built-in advantage for getting a natural 21. Consider a 4-card deck. There are 208 cards of which 64 are valued as 10. This means a 30.77% chance of getting a 10-valued card on the first card (this is true regardless of deck size, including infinite decks). However, now what are the chances of getting an Ace? In an infinite deck, this probability is 7.69% (16/208 = 4/52). In a 4-card deck, this is 7.73% (16/207 since a single 10-valued card has already been dealt). The non-infinite decks also allow for the ability to "count" cards, a technique that involves counting to know when the deck is more or less favorable, and modifying bets based on that. 
+In a casino, we might expect to do even better because most casinos use 4-8 52-card decks rather than a simulated "infinite" deck as we have used here. This allows for a built-in advantage for getting a natural 21. Consider a 4-card deck. There are 208 cards of which 64 are valued as 10. This means a 30.77% chance of getting a 10-valued card on the first card (this is true regardless of deck size, including infinite decks). However, now what are the chances of getting an Ace? In an infinite deck, this probability is 7.69% (4/52 = 16/208). In a 4-card deck, this is 7.73% (16/207 since a single 10-valued card has already been dealt). The non-infinite decks also allow for the ability to "count" cards, a technique that involves counting to know when the deck is more or less favorable, and modifying bets based on that. 
 
 ## Monte Carlo Control with Seeing Both Dealer cards 
-You're only supposed to see 1 dealer card. What if somehow the other flipped over and you saw both? Or maybe you somehow had [access to the hidden hole card](https://www.wired.com/story/stones-poker-cheating-scandal/)? How big of an advantage would this be? Normal strategy is to never hit on 19 because the risk of busting is so high. But if you saw that the dealer had 20, it would be mandatory to hit! 
+You're only supposed to see 1 dealer card. What if somehow the other flipped over and you saw both? Or maybe you somehow had [access to the hidden hole card](https://www.wired.com/story/stones-poker-cheating-scandal/)? How big of an advantage would this be? Normal strategy is to never hit on 19 because the risk of busting is so high. But if you saw that the dealer had 20, it would be mandatory to hit! We keep things simple and don't differentiate between whether the dealer has a usable Ace or not. 
 
 Here are the value charts and strategy charts for seeing both dealer cards and also using the same Blackjack and doubling down rules from the prior section with 10 million simulated hands: 
 
 ![](../assets/blackjack_figures/optimalstrategynoace_vd.png)
 ![](../assets/blackjack_figures/optimalstrategyace_vd.png)
 
-As expected, the player sum of 19 hits when the dealer is showing 20. 
+As expected, the player sum of 19 hits when the dealer is showing 20 and in general the player strategy makes good use of knowing both dealer cards. 
+
+We do see some inconsistencies in these charts, especially the one with the usable Ace. In part this is because there are many more states now that we are looking at the entire dealer sum, so more Monte Carlo simulations are needed. Also some of these states are very rare in the usable Ace chart like player sum of 12 vs. dealer sum of 5 will only occur when the player has Ace-Ace and the dealer has a relatively rare sum of 5. However, most inconsistencies after this many iterations are likely to be for situations that are quite borderline. 
 
 ![](../assets/blackjack_figures/optimalvaluenoace_vd.png)
 ![](../assets/blackjack_figures/optimalvalueace_vd.png)
@@ -219,11 +221,13 @@ As expected, the player sum of 19 hits when the dealer is showing 20.
 We again simulated 5 million hands after finding the optimal strategy. Now we find an estimated win per hand of 0.0856133. Not surprisingly, when you can see both of the dealer's cards, the game becomes profitable. The increase in profitability is about 9.36 cents per hand from the prior scenario (from losing 0.80 cents per hand to winning 8.56 cents per hand). 
 
 ## Importance Sampling Prediction
-Previously we showed that we could learn the optimal strategy by using a near-optimal policy that allowed for some exploring. There is another approach that uses two policies, one that is learned about and becomes the optimal policy (target policy) and one that is exploratory and is used to generate behavior (behavior policy). This is called off-policy learning. 
+Previously we showed that we could learn the optimal strategy by using a near-optimal policy that allowed for some exploring. That is, we played the predicted optimal strategy 95% of the time and other strategies 5% of the time. 
+
+There is another approach that uses two policies, one that is learned about and becomes the optimal policy (target policy) and one that is exploratory and is used to generate behavior (behavior policy). This is called off-policy learning. 
 
 The main idea is that we get returns from the behavior policy and take the ratio of the target policy divided by the behavior policy to represent the frequency of obtaining those returns under the target policy. 
 
-The Sutton Barto book looks at a particular state in which the sum of the player cards are 13 and there is a usable Ace (i.e. Ace-2 or Ace-Ace-Ace). We take the target policy as sticking on 20 and 21 and hitting on everything else and the behavior policy of hitting or sticking 50% each. They determined that the value of this state under the target policy is -0.27726 (we are now again using the original rules with no natural blackjack and no doubling down). 
+The Sutton Barto book looks at a particular state in which the sum of the player cards is 13 and there is a usable Ace (i.e. Ace-2 or Ace-Ace-Ace). We take the target policy as sticking on 20 and 21 and hitting on everything else and the behavior policy of hitting or sticking 50% each. They determined that the value of this state under the target policy is -0.27726 (we are now again using the original rules with no natural blackjack and no doubling down). 
 
 We perform 100 runs of 10,000 episodes (hands) all starting with the aforementioned starting state. 
 
@@ -235,7 +239,9 @@ $$\rho = \frac{0}{0.5} = 0$$
 
 The numerator is how frequent the action chosen by the behavioral policy is also chosen by the target policy. Since the target policy is fixed it is either always choosing that action or never choosing it, resulting in the above cases, respectively. 
 
-We accumulate a $$\rho$$ importance sampling ratio and $$G$$ return for each episode and multiply them together to result in the weighted return. These are accumulated over all episodes, i.e. the final episode weighted return is the sum of all previous returns and the final return. 
+Over a single hand episode, we multiply the $$\rho$$ values together for each state and append the result of this multiplication to a list of rhos. We also append the return for this hand episode to a list of returns. 
+
+We accumulate the $$\rho$$ importance sampling ratio and $$G$$ return for each of the 10,000 episodes and multiply them together to result in the weighted return. These are then accumulated over all episodes, i.e. the final episode weighted return is the sum of all previous returns and the final return. 
 
 Finally, to estimate the value of the state, we divide the weighted returns by the number of episodes for the ordinary case and divide by the $$\rho$$ values for the weighted case. The mean squared error of both are plotted below: 
 
