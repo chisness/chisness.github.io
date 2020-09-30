@@ -50,10 +50,10 @@ For each state-action, we maintain a counter for how many times we've seen that 
 If we won the above hand example, the counters would increment like this: 
 
 State-Action 1 counter: +1
-State-Action 1 return: +1
+<br>State-Action 1 return: +1
 
 State-Action 2 counter: +1
-State-Action 2 return: +1
+<br>State-Action 2 return: +1
 
 After many thousands or millions of simulations, we can take the means of each of these state-action returns (i.e. the return divided by the counter) and get an approximate value for taking that action in that state. 
 
@@ -64,11 +64,11 @@ We can use Monte Carlo Prediction to evaluate a fixed blackjack strategy. Let's 
 
 In this case, we would maintain counters for only the states, since the actions are pre-defined by the fixed policy. 
 
-'''python
+```python
 def play_action(self, blackjack_state):
 	player_sum, dealer_upcard, usable_ace = blackjack_state
 	return STICK if player_sum >= 20 else HIT
-'''
+```
 
 We run this for 10,000 episodes and produce the following state-value functions: 
 
@@ -136,10 +136,10 @@ I implemented doubling down into the environment to make it a little more like t
 
 I copied the original blackjack.py gym file, made the updates to add in the double down state, and then saved as blackjack1.py. I put this file into the same directory as the code file and added the following lines of code: 
 
-'''python
+```python
 register(id='BlackjackMax-v0', entry_point='blackjack1:BlackjackEnv1')
 ENV_NAME = "BlackjackMax-v0"
-'''
+```
 
 blackjack1.py is available here: 
 
@@ -150,7 +150,7 @@ We simulate hands and append each state and action from the hand to an "episode"
 
 When the hand finishes, each state and action pair that was seen has a "total return" sum that is incremented by the final reward (i.e. winnings/losings from the result of the hand) and a "number of times seen" counter for that pair is incremented. These track the total rewards earned from each state and 
 
-'''python
+```python
 for i in range(1000000):
 	while True:
 		action_probs = agent.play_action(new_state)
@@ -162,11 +162,11 @@ for i in range(1000000):
 				returns_sum[(state,action)] += reward
 				returns_count[(state,action)] += 1
 				agent.values[(state, action)] = returns_sum[(state,action)] / returns_count[(state,action)]
-'''
+```
 
 After updating the values, we also need to update the policy. We first determine the best action given our value table for each state. Then we use the soft greedy policy rule from above. 
 
-'''python
+```python
 for (state, _) in episode:
 	vals = [agent.values[(state, a)] for a in BETS]
 	best_action = np.argmax(vals)
@@ -175,7 +175,7 @@ for (state, _) in episode:
 			agent.policy[state][a] = 1 - EPSILON + EPSILON/len(BETS)
 		else:
 			agent.policy[state][a] = EPSILON/len(BETS)
-'''
+```
 This repeats for some number of iterations, at which point we can use the final policy to show the optimal strategy and use the final value function to show the value plot. 
 
 ## Monte Carlo Control with "Blackjack" and Doubling Down
