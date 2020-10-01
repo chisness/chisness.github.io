@@ -141,9 +141,9 @@ register(id='BlackjackMax-v0', entry_point='blackjack1:BlackjackEnv1')
 ENV_NAME = "BlackjackMax-v0"
 ```
 
-blackjack1.py is available here: 
+blackjack1.py is available here: [blackjack1.py](https://github.com/chisness/miri/blob/master/blackjack1.py)
 
-Link to full code: 
+Link to full code: [blackjacksolvedouble.py](https://github.com/chisness/miri/blob/master/blackjacksolvedouble.py)
 
 ## Monte Carlo Implementation
 We simulate hands and append each state and action from the hand to an "episode" list, which is a single Monte Carlo sample. Episode is the generic term for a sequence of states and actions. 
