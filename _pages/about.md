@@ -8,11 +8,11 @@ permalink: /about/
 ![Me](https://lh3.googleusercontent.com/SqEr92E5Ji7OLVKRbV8Ujx6JJfDrAaRQu9nIK6EKvgZ1CCo2YJF0v4culfsZDGJ12bPpzp3MVxn5KWpaZsccKFOGU2HaVC7mwmVEC55bb3BQqYUwgkZ3kCGVkwKWIXiDeDVGAS4MQ6M=w2400)
 *Non-Egyptian pyramids*
 
-I enjoy splitting things into technical and non-technical categories. 
-
 Want to chat? You can set up a 30 minute timeslot here: [Calendly](https://calendly.com/max-chiswick/30min)
 
-[LinkedIn](https://www.linkedin.com/in/maxchiswick/)
+Here is my [LinkedIn](https://www.linkedin.com/in/maxchiswick/)
+
+I enjoy splitting things into technical and non-technical categories. 
 
 ## Technical Interests
 - General: AI and machine learning, especially reinforcement learning
