@@ -23,4 +23,3 @@ I enjoy splitting things into technical and non-technical categories.
 ## Non-technical Interests
 - I enjoy hiking and cycling, which has recently involved lots of Citibiking and dodging tourists on the Brooklyn Bridge and some hiking in Israel
 - I like studying languages, but am currently only at a strong conversational level in Hebrew (even after spending 4 years studying Spanish and 2 months in France). I hope to spend time on French, Spanish, and Arabic in the future. 
-- DYEL? I used to a lot more, but try to keep it up. 
