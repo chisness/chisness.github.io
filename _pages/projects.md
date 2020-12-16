@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Blog"
+title: "Projects"
 author: "Max"
-permalink: /blog/
+permalink: /projects/
 ---
 
 Soon
