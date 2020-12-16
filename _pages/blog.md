@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Post Index"
+title: "Blog"
 author: "Max"
-permalink: /postindex/
+permalink: /blog/
 ---
 
 ## Technical Posts
