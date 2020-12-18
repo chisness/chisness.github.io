@@ -10,16 +10,21 @@ permalink: /about/
 
 Want to chat? You can set up a 30 minute timeslot here: [Calendly](https://calendly.com/max-chiswick/30min)
 
-Here is my [LinkedIn](https://www.linkedin.com/in/maxchiswick/)
+## Non-technical interests
+- Poker: I played professionally almost entirely online from 2008-2013 and 2020 quarantine has gotten me more excited about playing in the future
+- Photography: I will eventually post photos on this website
+- Hiking: I've done a few long hikes in Israel -- the Golan Trail, Sovev Machtesh Ramon, and the Israel Trail
+- Cycling: I participated in the 2016 Tour d'Afrique ride from Cairo to Cape Town
+- Languages: Working on Hebrew, French, and Arabic. Native English gradually degrading as I study the others. 
 
-I enjoy splitting things into technical and non-technical categories. 
+## Semi-addictions
+- Travel
+- Carrots
 
-## Technical Interests
-- General: AI and machine learning, especially reinforcement learning
-- AI Safety
-- Gambling applications
-- I wrote my MSc thesis on [Counterfactual Regret Minimization and Abstraction Analysis in Computer Poker](https://www.dropbox.com/s/jcgszjng6u5gj0b/MaxChiswickCFRThesis.pdf?dl=0) (finished at the Technion - Israel Institute of Technology in 2017). 
+## The only trivia category I'm good at
+- African geography
 
-## Non-technical Interests
-- I enjoy hiking and cycling, which has recently involved lots of Citibiking and dodging tourists on the Brooklyn Bridge and some hiking in Israel
-- I like studying languages, but am currently only at a strong conversational level in Hebrew (even after spending 4 years studying Spanish and 2 months in France). I hope to spend time on French, Spanish, and Arabic in the future. 
+## Technical interests
+- AI, machine learning, reinforcement learning, AI safety, game theory, gambling applications
+- Here is my [LinkedIn](https://www.linkedin.com/in/maxchiswick/)
+- I wrote my MSc thesis on [Counterfactual Regret Minimization and Abstraction Analysis in Computer Poker](https://www.dropbox.com/s/jcgszjng6u5gj0b/MaxChiswickCFRThesis.pdf?dl=0) (2017 at Technion in Haifa, Israel). 
