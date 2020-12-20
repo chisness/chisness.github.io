@@ -32,7 +32,7 @@ MSc thesis analyzing card abstraction in Kuhn (1-card) poker and betting abstrac
 I think some amazing people play and also help improve the world by "earning to give", which helps others through programs like the (Double Up Drive)[https://doubleupdrive.com/], where top poker players match donations to highly effective charities. 
 
 ### What are the most useful things poker can teach outside of the game?
-1. Thinking about decision in terms of positive expected value and generally putting consideration into most decisions (which can be a little negative when you start doing full analyses on things like buying a plane ticket)
+1. Thinking about decisions in terms of positive expected value and generally putting consideration into most decisions (which can be a little negative when you start doing full analyses on things like buying a plane ticket)
 2. Keeping emotions in check
 3. Staying focused and picking up on small details
 
