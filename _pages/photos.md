@@ -33,7 +33,7 @@ I've been to about **70/196** countries. My favorite trips have been:
 
 **2016 Gabon:** Awesome elephant viewing including elephants near the beach
 
-**2017: USA/Canada roadtrip:** 2.5 months in a loop from Chicago to the south to California, up to Canada, down to Utah/Colorado, then back to Chicago
+**2017 USA/Canada roadtrip:** 2.5 months in a loop from Chicago to the south to California, up to Canada, down to Utah/Colorado, then back to Chicago
 
 **2017 The Israel Trail:** 1.5 months hiking through the whole country from north to south 
 
