@@ -6,9 +6,15 @@ permalink: /poker/
 ---
 
 ## Background
-I played poker professionally online after graduating from college in 2008 until 2013. I played almost entirely mid-stakes No Limit Texas Hold'em cash games, mostly on PokerStars and totaled playing in the range of 10 million hands, usually on 20+ tables at a time. In December 2009, I played 990k hands, which I believe to be the most ever played in a month outside of micro-stakes (lowest stakes were $1-2 NLHE). 
+I played poker professionally online after graduating from college in 2008 until 2013. I played almost entirely mid-stakes No Limit Texas Hold'em cash games, mostly on PokerStars and totaled playing in the range of 10 million hands, usually on 20+ tables at a time. In December 2009, I played 990k hands, which I believe to be the most ever played in a month outside of micro-stakes (lowest stakes played were $1-2 NLHE). 
 
-I think this was a great first job because it gave a lot of freedom, but also a lot of responsibility! A friend launched a weekly Quarantine Poker Tour during the 2020 COVID lockdown, which helped revitalize my interest in playing. 
+This was fun and incentives were strong to play high volume because of site VIP programs, but a style of playing way fewer tables at a time and making better decisions and more money per hand would have had strong skill advantages. 
+
+Tournaments have very high variance, but cash games can be pretty consistent. There were definitely major swings over shorter timescales, but I think poker was relatively stable compared to doing something like starting/joining a startup. 
+
+I think this was a great first "job" because it gave a lot of freedom, but also a lot of responsibility and tough meta decisions (games are great on Friday nights but also Friday nights are when my friends are going out, etc.). 
+
+A friend launched a weekly Quarantine Poker Tour during the 2020 COVID lockdown, which helped revitalize my interest in playing. 
 
 ## Publications
 
