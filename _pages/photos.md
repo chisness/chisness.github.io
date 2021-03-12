@@ -21,7 +21,7 @@ This photo is on a few Wikipedia pages:
 Soon
 
 ## Travel
-![Travel map](../assets/my-travel-map.jpg)
+![Travel map](../assets/my-travel-map.png)
 
 I've been to about 70/196 countries. My favorite trips have been:
 
