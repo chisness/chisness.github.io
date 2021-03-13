@@ -8,11 +8,11 @@ permalink: /poker/
 ## Background
 I played poker professionally online after graduating from college in 2008 until 2013. I played almost entirely mid-stakes No Limit Texas Hold'em cash games, mostly on PokerStars and totaled playing in the range of 10 million hands, usually on 20+ tables at a time. In December 2009, I played 990k hands, which I believe to be the most ever played in a month outside of micro-stakes (lowest stakes played were $1-2 NLHE). 
 
-This was fun and incentives were strong to play high volume because of site VIP programs, but a style of playing way fewer tables at a time and making better decisions and more money per hand would have had strong skill advantages. 
+This was fun and incentives were strong to play high volume because of site VIP programs, but a style of playing way fewer tables at a time and making better decisions and more money per hand would have had important skill advantages. 
 
 Tournaments have very high variance, but cash games can be pretty consistent. There were definitely major swings over shorter timescales, but I think poker was relatively stable compared to doing something like starting/joining a startup. 
 
-I think this was a great first "job" because it gave a lot of freedom, but also a lot of responsibility and tough meta decisions (games are great on Friday nights but also Friday nights are when my friends are going out, etc.). 
+I think this was a great first "job" because it gave a lot of freedom, but also a lot of responsibility and tough meta decisions (games are great on Friday nights but also Friday nights are when my friends are meeting up, etc.). 
 
 A friend launched a weekly Quarantine Poker Tour during the 2020 COVID lockdown, which helped revitalize my interest in playing. 
 
@@ -24,7 +24,7 @@ Over the years, poker strategy has become more and more mathematical and many to
 
 ### [Most Important Fundamental Rule of Poker](https://arxiv.org/abs/1906.09895)
 Using techniques from machine learning we have uncovered a new simple, fundamental rule of poker strategy that leads to a significant improvement in performance over the best prior rule and can also easily be applied by human players.
-- 2020 with Sam Ganzfried 
+- 2020 with [Sam Ganzfried](http://www.ganzfriedresearch.com/)
 
 ### [Counterfactual Regret Minimization and Abstraction Analysis in Computer Poker](https://www.dropbox.com/s/jcgszjng6u5gj0b/MaxChiswickCFRThesis.pdf?dl=0)
 MSc thesis analyzing card abstraction in Kuhn (1-card) poker and betting abstraction in No Limit Royal Hold'em (same as No Limit Texas Hold'em, but with a 20-card deck with cards Ten and higher only).
@@ -43,7 +43,9 @@ I think some amazing people play and also help improve the world by "earning to 
 3. Staying focused and picking up on small details
 
 ### Why stop playing poker? 
-Poker boomed in the early 2000s and got gradually harder as bad players dropped out and good players improved. April 15, 2011 was online poker's "Black Friday", when the top poker sites accepting American players like PokerStars shut down. This led to a sharp increase in game difficulty as American pros moved abroad and recreational players stopped playing. After 2011, I felt like I had potentially better ways to spend my time, though miss the entrepreneurial and managing risk/time things a lot. 
+Poker boomed in the early 2000s and got gradually harder as bad players dropped out and good players improved. April 15, 2011 was online poker's "Black Friday", when the top poker sites accepting American players like PokerStars shut down. This led to a sharp increase in game difficulty as American pros moved abroad and recreational players stopped playing. 
+
+After 2011, I felt like I had potentially better ways to spend my time, though miss the entrepreneurialism and managing risk/time things and maybe the overall self-driven "no one is going to tell you what to do" situation. 
 
 ### What's the most exciting thing that happened during poker?
 In 2009, my first full year playing, I bet some friends that I could play 3 million hands of mid-stakes or higher on the year. In theory, that should only take about 2000 hours of playing, which is a pretty standard amount of working hours, though almost certainly fewer than 5-10 people in the world played that many hands in a year at mid-stakes. Poker hours are generally more intensive mentally and one also needs time to study and take some time off, etc. Also procrastination. I ended up with about 1 million hands by October 1 and another 1 million in October/November combined, which left nearly 1 million to play in December. Over 30k hands/day is absolutely not normal and I averaged 17 hours/day for that entire month to pull it off. I saw my life slowly disentegrate into only poker and sleep as the months went on and despite a pretty bad loss in the last week or so, ended up winning the bet on the last day. Prop bets like this are a great way to stay motivated and/or do crazy things. 
