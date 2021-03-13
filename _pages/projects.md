@@ -5,7 +5,6 @@ author: "Max"
 permalink: /projects/
 ---
 update home page
-analytics
 
 ## AI Poker
 (This section is repeated on the [Poker](https://chisness.github.io/poker/) page)
