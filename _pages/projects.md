@@ -4,7 +4,6 @@ title: "Projects"
 author: "Max"
 permalink: /projects/
 ---
-favicon
 update home page
 analytics
 
