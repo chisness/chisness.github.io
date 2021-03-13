@@ -31,7 +31,7 @@ MSc thesis analyzing card abstraction in Kuhn (1-card) poker and betting abstrac
 - [Freethrow Bet Evaluation on Medium](https://towardsdatascience.com/apply-reinforcement-learning-to-win-a-free-throw-bet-f555b8adc0de)
 - With [Mike Thompson](https://www.linkedin.com/in/mike-thompson-78655b13/)
 
-### Sep 2020: [Monte Carlo RL and Blackjack](https://chisness.github.io/2020-01-21/monte-carlo-rl-and-blackjack)
+### Sep 2020: [Monte Carlo RL and Blackjack](https://chisness.github.io/2020-09-21/monte-carlo-rl-and-blackjack)
 - Finding optimal blackjack strategies using Monte Carlo reinforcement learning
 
 ## AI Safety
