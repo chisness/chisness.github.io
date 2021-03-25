@@ -40,7 +40,7 @@ So the big trip doesn't necessarily require a lot of time -- with frequent and l
 ### Overland Cairo to Cape Town
 This is the classic overland route with many companies running trucks back and forth throughout the year, taking stops at important places along the way like Nairobi, the Serengeti, and Victoria Falls (although the best part is probably seeing all of the day to day stuff in between). [TDA Global Cycling](https://tdaglobalcycling.com/tour-dafrique) even runs a 4-month supported bike tour through 10 countries on this route. 
 
-![The start of the Tour d'Afrique](../assets/travelgoals/pyramids.jpeg)
+![The start of the Tour d'Afrique](../assets/travelgoals/pyramids.jpg)
 
 ### Seeing major world cities
 Iconic world cities are iconic for a reason -- here are some of the best:
@@ -60,7 +60,7 @@ Iconic world cities are iconic for a reason -- here are some of the best:
 ### The Really Long/Difficult Thing
 My absolute favorite travel experiences have been doing the "long/difficult" thing. The main ones for me have been hiking for 1.5 months in Israel and cycling the Tour d'Afrique (mentioned above). Long active trips make sense, but also a period of volunteering or learning a language could certainly qualify here. Getting that big sense of accomplishment at the end is a great feeling! 
 
-![The end of the Israel Trail](../assets/travelgoals/israeltrail.jpeg)
+![The end of the Israel Trail](../assets/travelgoals/israeltrail.jpg)
 
 ## Useful Goals
 
