@@ -140,7 +140,3 @@ Once these were ready, we finally got started on our walk. There are some trails
 ![Tree for a better view](../assets/sanghaforest/IMG_6392.jpg)
 ![Final morning](../assets/sanghaforest/IMG_6395.jpg)
 ![Departure](../assets/sanghaforest/IMG_6399.jpg)
-
-excited sense
-
-
