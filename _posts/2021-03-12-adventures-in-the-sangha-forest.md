@@ -19,7 +19,7 @@ There is absolutely no official route or plan and my usual travel planning go-to
 
 After some talks with Rod and Tamar, we decided that a 3 day/2 night "bai walk" trip would work well, though one extra day may be best in retrospect. We would drive from the lodge about 30km to the "Libwe" road and from there walk back over the next 3 days mostly through the forest and then through a road parallel to Libwe, while trying to visit a bunch of bais and see as much wildlife as we could. 
 
-![Map of the area](../assets/sanghaforest/map.jpg)
+![Map of the area](../assets/sanghaforest/map-2.jpg)
 
 The white road is the "main" road of the area, which is a dirt road in pretty good condition. The Libwe road runs east-west and the top green marker is where we were dropped to start the trip. The two red markers in the center were the overnight spots and the horizontal line is the Saint Francois road that runs parallel to the Libwe road. The final red marker is Sangha Lodge. 
 
@@ -30,7 +30,7 @@ We decided that I'd go with Armand, one of the senior staff at the lodge, and th
 ### Food
 Two days before leaving, we made a list of all the expenses and food.
 
-![List of food](../assets/sanghaforest/food.jpg)
+![List of food](../assets/sanghaforest/food-2.jpg)
 
 I love this kind of traveling/pricing because it's fun to be fully responsible for how things go, and also I'm very picky and don't like getting overcharged. 
 
@@ -42,41 +42,41 @@ As for camera lenses, I was deciding between a 24-70mm, 70-200mm, or both. I wen
 ### Day 1: Getting to the beginning
 On Monday morning February 9th it was time to go! The five of us going on the trip would travel in the pick-up truck. Two others would join for getting us to the dropoff point: Emy as the pick-up driver and Yaf as the "when a tree has fallen in the road I will fix it" specialist, who would take a motorbike and ride in front of us. 
 
-![Emy front of the bike, Armand to the right, and some unknowns](../assets/sanghaforest/IMG_6315.jpeg)
+![Emy front of the bike, Armand to the right, and some unknowns](../assets/sanghaforest/IMG_6315.jpg)
 
 Due to some slight delays (me procrasta-packing), we started leaving at around 7:30am. There was a small mechanical issue with the car that got fixed pretty quickly and then we drove the 3km on the Sangha Lodge road and another couple km to get to Bobongo village to stop off at Armand's house to pick up the food that he had bought the day before and to see his large family. 
 
-![Mechanical issues](../assets/sanghaforest/IMG_6317.jpeg)
+![Mechanical issues](../assets/sanghaforest/IMG_6317.jpg)
 
-![Lundi and Congondele](../assets/sanghaforest/IMG_6318.jpeg)
+![Lundi and Congondele](../assets/sanghaforest/IMG_6318.jpg)
 
-![Armand leading the way to his house](../assets/sanghaforest/IMG_6319.jpeg)
+![Armand leading the way to his house](../assets/sanghaforest/IMG_6319.jpg)
 
-![Armand at home](../assets/sanghaforest/DSC_6017.NEF.jpg)
+![Armand at home](../assets/sanghaforest/DSC_6017.NEF-2.jpg)
 
-![Inside of the house](../assets/sanghaforest/IMG_6322.jpeg)
+![Inside of the house](../assets/sanghaforest/IMG_6322.jpg)
 
 The avocados had some problems: 
 
-![Avocados](../assets/sanghaforest/IMG_6320.jpeg)
+![Avocados](../assets/sanghaforest/IMG_6320.jpg)
 
 Some family members were around the house: 
 
-![2 girls](../assets/sanghaforest/DSC_6020.NEF.jpg)
+![2 girls](../assets/sanghaforest/DSC_6020.NEF-2.jpg)
 
-![Group of people](../assets/sanghaforest/DSC_6024.NEF.jpg)
+![Group of people](../assets/sanghaforest/DSC_6024.NEF-2.jpg)
 
 From there we proceeded at about 8:30am a bit more on the main road and then turned off onto the Libwe road, which is not the best or best maintained road. At 8:45am we ran into a bit of a roadblock, which was dealt with 
 
-![Libwe Road](../assets/sanghaforest/IMG_6323.jpeg)
+![Libwe Road](../assets/sanghaforest/IMG_6323.jpg)
 
-![Trees down](../assets/sanghaforest/DSC_6028.NEF.jpg)
+![Trees down](../assets/sanghaforest/DSC_6028.NEF-2.jpg)
 
-![Inspecting the situation](../assets/sanghaforest/IMG_6324.jpeg)
+![Inspecting the situation](../assets/sanghaforest/IMG_6324.jpg)
 
-![Yaf at work at the beginning](../assets/sanghaforest/DSC_6034.NEF.jpg)
+![Yaf at work at the beginning](../assets/sanghaforest/DSC_6034.NEF-2.jpg)
 
-![Yaf at work near the end](../assets/sanghaforest/DSC_6053.NEF.jpg)
+![Yaf at work near the end](../assets/sanghaforest/DSC_6053.NEF-2.jpg)
 
 ### Day 1: Beginning the walk
 By about 10:15am we finally got to our drop-off point. It was there that I realized that only Armand and Congondele had brought backpacks and Congondele's looked like the kind of bag you'd bring to not get charged on a Spirit Airlines flight (very small), not a bag to carry lots of gear in the forest! 
@@ -84,62 +84,62 @@ By about 10:15am we finally got to our drop-off point. It was there that I reali
 It turns out that the Ba'aka people are insanely resourceful when it comes to the forest and so Bosco was already working on building his own backpack out of forest vines and such. Lundi was making more of a wrap thing to attach a few bags together. 
 
 Once these were ready, we finally got started on our walk. There are some trails in the forest here, but they're kind of for elephants and mostly pretty rough. The Ba'aka walked in front with machetes and would chop off some obstructions, but it's very tough to avoid tripping and getting scratched. It's basically walking on level hard. It is generally flat, so there aren't major issues with getting out of breath, it's just literally hard to walk. 
-![Break at the beginning](../assets/sanghaforest/IMG_6327.jpeg)
+![Break at the beginning](../assets/sanghaforest/IMG_6327.jpg)
 
-![Bosco building a backpack](../assets/sanghaforest/DSC_6058.NEF.jpg)
+![Bosco building a backpack](../assets/sanghaforest/DSC_6058.NEF-2.jpg)
 
-![Bosco building a backpack](../assets/sanghaforest/DSC_6062.NEF.jpg)
+![Bosco building a backpack](../assets/sanghaforest/DSC_6062.NEF-2.jpg)
 
-![Fisherman guy](../assets/sanghaforest/DSC_6063.NEF.jpg)
+![Fisherman guy](../assets/sanghaforest/DSC_6063.NEF-2.jpg)
 
-![Our first bai](../assets/sanghaforest/DSC_6067.NEF.jpg)
+![Our first bai](../assets/sanghaforest/DSC_6067.NEF-2.jpg)
 
-![In the forest](../assets/sanghaforest/DSC_6073.NEF.jpg)
-![A small snake](../assets/sanghaforest/DSC_6074.NEF.jpg)
-![Walking in the forest](../assets/sanghaforest/DSC_6075.NEF.jpg)
-![Another bai](../assets/sanghaforest/DSC_6078.NEF.jpg)
-![Shoes](../assets/sanghaforest/DSC_6082.NEF.jpg)
-![Wet trails](../assets/sanghaforest/DSC_6083.NEF.jpg)
-![First glimpse at elephants](../assets/sanghaforest/DSC_6088.NEF.jpg)
-![Next (blurry) view of elephants](../assets/sanghaforest/DSC_6097.NEF.jpg)
-![Elephants!](../assets/sanghaforest/DSC_6102.NEF.jpg)
-![Elephants retreating](../assets/sanghaforest/DSC_6105.NEF.jpg)
-![Elephant from a distance](../assets/sanghaforest/DSC_6118.NEF.jpg)
-![Bird](../assets/sanghaforest/DSC_6126.NEF.jpg)
-![Armand](../assets/sanghaforest/DSC_6128.NEF.jpg)
-![Congondele](../assets/sanghaforest/DSC_6129.NEF.jpg)
-![Another bai](../assets/sanghaforest/DSC_6130.NEF.jpg)
-![Birds on the ground](../assets/sanghaforest/DSC_6131.NEF.jpg)
-![Walking in the forest](../assets/sanghaforest/DSC_6133.NEF.jpg)
-![Walking in the forest](../assets/sanghaforest/DSC_6138.NEF.jpg)
-![Motorbike running over ants](../assets/sanghaforest/DSC_6139.NEF.jpg)
-![The Sangha Road](../assets/sanghaforest/DSC_6146.NEF.jpg)
+![In the forest](../assets/sanghaforest/DSC_6073.NEF-2.jpg)
+![A small snake](../assets/sanghaforest/DSC_6074.NEF-2.jpg)
+![Walking in the forest](../assets/sanghaforest/DSC_6075.NEF-2.jpg)
+![Another bai](../assets/sanghaforest/DSC_6078.NEF-2.jpg)
+![Shoes](../assets/sanghaforest/DSC_6082.NEF-2.jpg)
+![Wet trails](../assets/sanghaforest/DSC_6083.NEF-2.jpg)
+![First glimpse at elephants](../assets/sanghaforest/DSC_6088.NEF-2.jpg)
+![Next (blurry) view of elephants](../assets/sanghaforest/DSC_6097.NEF-2.jpg)
+![Elephants!](../assets/sanghaforest/DSC_6102.NEF-2.jpg)
+![Elephants retreating](../assets/sanghaforest/DSC_6105.NEF-2.jpg)
+![Elephant from a distance](../assets/sanghaforest/DSC_6118.NEF-2.jpg)
+![Bird](../assets/sanghaforest/DSC_6126.NEF-2.jpg)
+![Armand](../assets/sanghaforest/DSC_6128.NEF-2.jpg)
+![Congondele](../assets/sanghaforest/DSC_6129.NEF-2.jpg)
+![Another bai](../assets/sanghaforest/DSC_6130.NEF-2.jpg)
+![Birds on the ground](../assets/sanghaforest/DSC_6131.NEF-2.jpg)
+![Walking in the forest](../assets/sanghaforest/DSC_6133.NEF-2.jpg)
+![Walking in the forest](../assets/sanghaforest/DSC_6138.NEF-2.jpg)
+![Motorbike running over ants](../assets/sanghaforest/DSC_6139.NEF-2.jpg)
+![The Sangha Road](../assets/sanghaforest/DSC_6146.NEF-2.jpg)
 
 
 
-![Our first bai](../assets/sanghaforest/IMG_6334.jpeg)
-![Bais are muddy](../assets/sanghaforest/IMG_6336.jpeg)
-![More from the first bai](../assets/sanghaforest/IMG_6341.jpeg)
-![Lundi in a tree](../assets/sanghaforest/IMG_6348.jpeg)
-![Tree in a bai](../assets/sanghaforest/IMG_6355.jpeg)
-![Sunset in a bai](../assets/sanghaforest/IMG_6357.jpeg)
-![Sunset between our camp and the bai](../assets/sanghaforest/IMG_6358.jpeg)
-![Rough day](../assets/sanghaforest/IMG_6359.jpeg)
-![Landscape bai view](../assets/sanghaforest/IMG_6360.jpeg)
-![Dinner: Spaghetti and tuna](../assets/sanghaforest/IMG_6362.jpeg)
-![Morning bai](../assets/sanghaforest/IMG_6365.jpeg)
-![Walking ain't easy](../assets/sanghaforest/IMG_6366.jpeg)
-![Morning bai](../assets/sanghaforest/IMG_6367.jpeg)
-![Our campsite](../assets/sanghaforest/IMG_6368.jpeg)
-![Lots of bees](../assets/sanghaforest/IMG_6370.jpeg)
-![Me](../assets/sanghaforest/IMG_6377.jpeg)
-![Lundi and Congondele in the bai](../assets/sanghaforest/IMG_6378.jpeg)
-![The bai is empty!](../assets/sanghaforest/IMG_6379.jpeg)
-![Elephant prints](../assets/sanghaforest/IMG_6383.jpeg)
-![Tree for a view](../assets/sanghaforest/IMG_6389.jpeg)
-![Tree for a better view](../assets/sanghaforest/IMG_6392.jpeg)
-![Final morning](../assets/sanghaforest/IMG_6395.jpeg)
-![Departure](../assets/sanghaforest/IMG_6399.jpeg)
+![Our first bai](../assets/sanghaforest/IMG_6334.jpg)
+![Bais are muddy](../assets/sanghaforest/IMG_6336.jpg)
+![More from the first bai](../assets/sanghaforest/IMG_6341.jpg)
+![Lundi in a tree](../assets/sanghaforest/IMG_6348.jpg)
+![Tree in a bai](../assets/sanghaforest/IMG_6355.jpg)
+![Sunset in a bai](../assets/sanghaforest/IMG_6357.jpg)
+![Sunset between our camp and the bai](../assets/sanghaforest/IMG_6358.jpg)
+![Rough day](../assets/sanghaforest/IMG_6359.jpg)
+![Landscape bai view](../assets/sanghaforest/IMG_6360.jpg)
+![Dinner: Spaghetti and tuna](../assets/sanghaforest/IMG_6362.jpg)
+![Morning bai](../assets/sanghaforest/IMG_6365.jpg)
+![Walking ain't easy](../assets/sanghaforest/IMG_6366.jpg)
+![Morning bai](../assets/sanghaforest/IMG_6367.jpg)
+![Our campsite](../assets/sanghaforest/IMG_6368.jpg)
+![Lots of bees](../assets/sanghaforest/IMG_6370.jpg)
+![Me](../assets/sanghaforest/IMG_6377.jpg)
+![Lundi and Congondele in the bai](../assets/sanghaforest/IMG_6378.jpg)
+![The bai is empty!](../assets/sanghaforest/IMG_6379.jpg)
+![Elephant prints](../assets/sanghaforest/IMG_6383.jpg)
+![Tree for a view](../assets/sanghaforest/IMG_6389.jpg)
+![Tree for a better view](../assets/sanghaforest/IMG_6392.jpg)
+![Final morning](../assets/sanghaforest/IMG_6395.jpg)
+![Departure](../assets/sanghaforest/IMG_6399.jpg)
 
 excited sense
 
