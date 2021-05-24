@@ -56,9 +56,9 @@ Due to some slight delays (me procrasta-packing), we started leaving at around 7
 
 ![Inside of the house](../assets/sanghaforest/IMG_6322.jpeg)
 
-The avocadoes had some problems: 
+The avocados had some problems: 
 
-![Avocadoes](../assets/sanghaforest/IMG_6320.jpeg)
+![Avocados](../assets/sanghaforest/IMG_6320.jpeg)
 
 Some family members were around the house: 
 
@@ -66,7 +66,7 @@ Some family members were around the house:
 
 ![Group of people](../assets/sanghaforest/DSC_6024.NEF.jpg)
 
-From there we proceeded at about 8:30am a bit more on the main road and then turned off onto the Libwe road, which is not the best or best maintained road. At 8:45am we ran into a bit of a roadblock. 
+From there we proceeded at about 8:30am a bit more on the main road and then turned off onto the Libwe road, which is not the best or best maintained road. At 8:45am we ran into a bit of a roadblock, which was dealt with 
 
 ![Libwe Road](../assets/sanghaforest/IMG_6323.jpeg)
 
