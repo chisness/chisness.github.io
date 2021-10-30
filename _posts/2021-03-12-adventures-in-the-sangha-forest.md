@@ -84,6 +84,10 @@ By about 10:15am we finally got to our drop-off point. It was there that I reali
 It turns out that the Ba'aka people are insanely resourceful when it comes to the forest and so Bosco was already working on building his own backpack out of forest vines and such. Lundi was making more of a wrap thing to attach a few bags together. 
 
 Once these were ready, we finally got started on our walk. There are some trails in the forest here, but they're kind of for elephants and mostly pretty rough. The Ba'aka walked in front with machetes and would chop off some obstructions, but it's very tough to avoid tripping and getting scratched. It's basically walking on level hard. It is generally flat, so there aren't major issues with getting out of breath, it's just literally hard to walk. 
+
+
+
+
 ![Break at the beginning](../assets/sanghaforest/IMG_6327.jpg)
 
 ![Bosco building a backpack](../assets/sanghaforest/DSC_6058.NEF-2.jpg)
