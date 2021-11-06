@@ -5,7 +5,7 @@ author: "Max"
 permalink: /projects/
 ---
 ## AI Poker
-(This section is repeated on the [Poker](https://chisness.github.io/poker/) page)
+<!-- (This section is repeated on the [Poker](https://chisness.github.io/poker/) page) -->
 
 ### [AI Poker Tutorial](https://www.aipokertutorial.com)
 Over the years, poker strategy has become more and more mathematical and many top players play by studying game theory optimal (GTO) strategy with "solver" software. This tutorial touches on how the math and algorithms behind the solvers work as well as important poker research papers and ideas. 
