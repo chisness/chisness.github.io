@@ -6,7 +6,7 @@ author: "Max Chiswick"
 ---
 
 ### Background
-I arrived at Sangha Lodge in Central African Republic (CAR), adjacent to the Sangha-Dzangha National Park, in mid-December 2020. The COVID situation was making many the situation in many cities uncomfortable, so this seemed like a perfect escape. I ended up staying for about 2 months and as I would, procrastinated taking this trip until the last week. 
+I arrived at Sangha Lodge in Central African Republic (CAR), adjacent to the Sangha-Dzangha National Park, in mid-December 2020. COVID was making many the situation in many cities uncomfortable, so this seemed like a perfect escape. I ended up staying for about 2 months and as I would, procrastinated taking this trip until the last week. 
 
 The trails and nature right at the lodge are beautiful, with lots of opportunities to see birds and other small animals. The main attraction of the park is the Dzanga Bai (bai is the local language word for forest clearing, which is saline in French, I think), which is a forest clearing that up to 100 or so elephants congregate at every day. This one is particularly special for the elephants because there are many minerals in the ground for them to drink (some other animals also show up to partake). Visiting there is fantastic and I believe that it might actually be the best nature place in the world. This probably made me under-value the less dramatic, but also very cool non-elephant nature viewing opportunities around the lodge, which I appreciated more by the end of my stay. 
 
