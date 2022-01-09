@@ -6,7 +6,7 @@ author: "Max Chiswick"
 ---
 
 ### Background
-I arrived at Sangha Lodge, adjacent to the Sangha-Dzangha National Park, in mid-December 2020. The COVID situation was making many cities uncomfortlable, so this seemed like a perfect escape. I ended up staying for about 2 months and as I would, procrastinated taking this trip until the last week. 
+I arrived at Sangha Lodge in Central African Republic (CAR), adjacent to the Sangha-Dzangha National Park, in mid-December 2020. The COVID situation was making many the situation in many cities uncomfortable, so this seemed like a perfect escape. I ended up staying for about 2 months and as I would, procrastinated taking this trip until the last week. 
 
 The trails and nature right at the lodge are beautiful, with lots of opportunities to see birds and other small animals. The main attraction of the park is the Dzanga Bai (bai is the local language word for forest clearing, which is saline in French, I think), which is a forest clearing that up to 100 or so elephants congregate at every day. This one is particularly special for the elephants because there are many minerals in the ground for them to drink (some other animals also show up to partake). Visiting there is fantastic and I believe that it might actually be the best nature place in the world. This probably made me under-value the less dramatic, but also very cool non-elephant nature viewing opportunities around the lodge, which I appreciated more by the end of my stay. 
 
@@ -42,6 +42,8 @@ I was a little unsure of what to expect and therefore also of what to carry. Gea
 As for camera lenses, I was deciding between a 24-70mm, 70-200mm, or both. I went with a 70-200 to be sure I'd be capable of reaching birds and elephants from far away, and figured I'd use my iPhone for shorter range stuff. The majority of photos did end up being shorter range, but having the long lens was nice (I was expecting it to be too annoying to change lenses in the forest). 
 
 ![Nikon D4s with 70-200mm lens](../assets/sanghaforest/IMG_6337.jpg)
+
+So in the end I went with a Nikon D4s with 70-200mm f2.8 lens and iPhone 12 Pro Max. 
 
 ### Day 1: Getting to the beginning
 On Monday morning February 9th it was time to go! The five of us going on the trip would travel in the pick-up truck. Two others would join for getting us to the dropoff point: Emy as the pick-up driver and Yaf as the "when a tree has fallen in the road I will fix it" specialist, who would take a motorbike and ride in front of us. 
@@ -109,7 +111,66 @@ We came across a fisherman who got me very excited by telling me that there were
 
 ![Our first bai (2)](../assets/sanghaforest/IMG_6334.jpg)
 
-After that we continued walking in the forest with the intention of seeing another bai or two. 
+The bais were also muddy at a level of mud that I had never experienced before: 
+
+![Bais are muddy](../assets/sanghaforest/IMG_6336.jpg)
+
+![More from the first bai](../assets/sanghaforest/IMG_6341.jpg)
+
+After the first bai we proceeded to walk in the forest a bit more. 
+
+Lundi stood inside a tree: 
+
+![Lundi in a tree](../assets/sanghaforest/IMG_6348.jpg)
+
+Then we got to another bai that is meant to have very high density elephant: 
+
+![Tree in a bai](../assets/sanghaforest/IMG_6355.jpg)
+
+We stayed there to see if anything would come until sunset: 
+
+![Sunset in a bai](../assets/sanghaforest/IMG_6357.jpg)
+
+But nothing showed up: 
+
+![Sunset between our camp and the bai](../assets/sanghaforest/IMG_6358.jpg)
+
+![Landscape bai view](../assets/sanghaforest/IMG_6360.jpg)
+
+A rough day and evidence that I should not be photographed with light directly overhead: 
+
+![Rough day](../assets/sanghaforest/IMG_6359.jpg)
+
+Unfortunately we did not see any animals during the first day, but there was plentiful spaghetti: 
+
+![Dinner: Spaghetti and tuna](../assets/sanghaforest/IMG_6362.jpg)
+
+
+### Day 2: More walking
+
+The Ba'aka people that I was with know the forest ridiculously well. They use no GPS or tracking devices or electronics, just pure memory and skill from living in these forests their whole lives. They were suspecting that the elephants might have been avoiding the bais because they knew we were there and also said that the best chance of seeing them would be as the sun comes up or goes down, so we got up early to take a look at the bai nearby. 
+
+Unfortunately I woke up like this: 
+
+![Walking is hard](../assets/sanghaforest/IMG_6366.jpg)
+
+Our campsite looked like this: 
+
+![Our campsite](../assets/sanghaforest/IMG_6368.jpg)
+
+And featured many bees: 
+
+![Lots of bees](../assets/sanghaforest/IMG_6370.jpg)
+
+The bai was looking nice in the morning: 
+
+![Morning bai](../assets/sanghaforest/IMG_6365.jpg)
+
+And slightly later in the morning: 
+
+![Morning bai](../assets/sanghaforest/IMG_6367.jpg)
+
+But unfortunately we again did not see any animals. After that we briefly went back to the camp and then continued walking in the forest with the intention of seeing another bai or two. 
 
 ![In the forest](../assets/sanghaforest/DSC_6073.NEF-2.jpg)
 
@@ -121,57 +182,107 @@ Then continued:
 
 ![Walking in the forest](../assets/sanghaforest/DSC_6075.NEF-2.jpg)
 
+Me happy to be in this special place but not exactly showing it in the moment: 
+
+![Me](../assets/sanghaforest/IMG_6377.jpg)
+
 And got to another bai that was also empty: 
 
-![Another bai](../assets/sanghaforest/DSC_6078.NEF-2.jpg)
+![Lundi and Congondele in the bai](../assets/sanghaforest/IMG_6378.jpg)
 
-After this we set up our tents in a spot that would place us nearby to a normally-busy bai. 
+![The bai is empty!](../assets/sanghaforest/IMG_6379.jpg)
 
-My shoes were not in good shape: 
+![Leaving empty bai](../assets/sanghaforest/DSC_6078.NEF-2.jpg)
+
+Though we did see some elephant prints on the ground that were recent: 
+
+![Elephant prints](../assets/sanghaforest/IMG_6383.jpg)
+
+After this we headed back to the campsite where my shoes began to grow flowers:  
 
 ![Shoes](../assets/sanghaforest/DSC_6082.NEF-2.jpg)
 
-Due to the wetness: 
+At this point it wasn't seeming too likely that we'd see elephants at all on this trip, even though we still had two "peak periods" remaining -- the final sunset and the next day's final sunrise for the trip. 
+
+Mid-day was a good time to take it easy and relax, so while Armand and I stayed there, the other three went off. I didn't really know what they were doing, but through some very advanced-level forest methods, they managed to come across a small group of elephants. They came back and let us know and we immediately got up to go see them. 
+
+The mud situation continued to be very difficult: 
 
 ![Wet trails](../assets/sanghaforest/DSC_6083.NEF-2.jpg)
 
+After a 20-30 minute walk, they told me that we were approaching and I took a basically unidentifiable photo: 
 
 ![First glimpse at elephants](../assets/sanghaforest/DSC_6088.NEF-2.jpg)
+
+Then we got a bit closer and I got an identifiable but blurry shot: 
+
 ![Next (blurry) view of elephants](../assets/sanghaforest/DSC_6097.NEF-2.jpg)
-![Elephants!](../assets/sanghaforest/DSC_6102.NEF-2.jpg)
-![Elephants retreating](../assets/sanghaforest/DSC_6105.NEF-2.jpg)
-![Elephant from a distance](../assets/sanghaforest/DSC_6118.NEF-2.jpg)
-![Bird](../assets/sanghaforest/DSC_6126.NEF-2.jpg)
-![Armand](../assets/sanghaforest/DSC_6128.NEF-2.jpg)
-![Congondele](../assets/sanghaforest/DSC_6129.NEF-2.jpg)
-![Another bai](../assets/sanghaforest/DSC_6130.NEF-2.jpg)
-![Birds on the ground](../assets/sanghaforest/DSC_6131.NEF-2.jpg)
-![Walking in the forest](../assets/sanghaforest/DSC_6133.NEF-2.jpg)
-![Walking in the forest](../assets/sanghaforest/DSC_6138.NEF-2.jpg)
-![Motorbike running over ants](../assets/sanghaforest/DSC_6139.NEF-2.jpg)
-![The Sangha Road](../assets/sanghaforest/DSC_6146.NEF-2.jpg)
 
+Then we got a bit closer and got out of the denser forest and into a more open area. Then I had to climb into the middle of this tree to get a reasonable viewing angle: 
 
-
-![Bais are muddy](../assets/sanghaforest/IMG_6336.jpg)
-![More from the first bai](../assets/sanghaforest/IMG_6341.jpg)
-![Lundi in a tree](../assets/sanghaforest/IMG_6348.jpg)
-![Tree in a bai](../assets/sanghaforest/IMG_6355.jpg)
-![Sunset in a bai](../assets/sanghaforest/IMG_6357.jpg)
-![Sunset between our camp and the bai](../assets/sanghaforest/IMG_6358.jpg)
-![Rough day](../assets/sanghaforest/IMG_6359.jpg)
-![Landscape bai view](../assets/sanghaforest/IMG_6360.jpg)
-![Dinner: Spaghetti and tuna](../assets/sanghaforest/IMG_6362.jpg)
-![Morning bai](../assets/sanghaforest/IMG_6365.jpg)
-![Walking ain't easy](../assets/sanghaforest/IMG_6366.jpg)
-![Morning bai](../assets/sanghaforest/IMG_6367.jpg)
-![Our campsite](../assets/sanghaforest/IMG_6368.jpg)
-![Lots of bees](../assets/sanghaforest/IMG_6370.jpg)
-![Me](../assets/sanghaforest/IMG_6377.jpg)
-![Lundi and Congondele in the bai](../assets/sanghaforest/IMG_6378.jpg)
-![The bai is empty!](../assets/sanghaforest/IMG_6379.jpg)
-![Elephant prints](../assets/sanghaforest/IMG_6383.jpg)
 ![Tree for a view](../assets/sanghaforest/IMG_6389.jpg)
+
+And we got the first legit view! 
+
+![Elephants!](../assets/sanghaforest/DSC_6102.NEF-2.jpg)
+
+But then they started walking away: 
+
+![Elephants retreating](../assets/sanghaforest/DSC_6105.NEF-2.jpg)
+
+After this, we had to reposition to be able to see them again, but this involved walking in a sort of very large semi-circle. This was a pretty tense walk because (a) we wanted to do it fast in case they walked away completely and (b) there were insanely deep mud patches everywhere. My entire foot would get stuck deep in mud and I had to figure out a technique to keep my shoe from falling off by pushing up my toes, which I only put into practice after my shoe came off entirely once. 
+
+Once we got to Good Viewing Area B, another tree had to be climbed, this time a legit climb. The only time I broke my leg it was from jumping off of a 3' high deck, which was probably like 2% as dangerous as this situation. This photo is from the tree next to the one I got into, but unfortunately you can't really see the wide view: 
+
 ![Tree for a better view](../assets/sanghaforest/IMG_6392.jpg)
+
+After getting into that tree I was able to take one of my favorite photos:  
+
+![Elephant from a distance](../assets/sanghaforest/DSC_6118.NEF-2.jpg)
+
+It felt magical getting up into that tree and seeing those elephants. 
+
+After a few minutes, we had to get going out of fear that the elephants could potentially come in our direction. We went to one additional bai and did a little photo shoot. 
+
+![Another bai](../assets/sanghaforest/DSC_6130.NEF-2.jpg)
+
+Armand: 
+![Armand](../assets/sanghaforest/DSC_6128.NEF-2.jpg)
+
+Congondele: 
+![Congondele](../assets/sanghaforest/DSC_6129.NEF-2.jpg)
+
+We also saw some birds, flying: 
+
+![Bird](../assets/sanghaforest/DSC_6126.NEF-2.jpg)
+
+And on the ground: 
+
+![Birds on the ground](../assets/sanghaforest/DSC_6131.NEF-2.jpg)
+
+We then headed back to our new campsite and ate the exact same thing we ate the night before. 
+
+### Day 3: Heading home
+On the final morning, we packed up: 
+
 ![Final morning](../assets/sanghaforest/IMG_6395.jpg)
+
+And passed through one final bai: 
+
 ![Departure](../assets/sanghaforest/IMG_6399.jpg)
+
+Then through the forest a bit more: 
+
+![Walking in the forest](../assets/sanghaforest/DSC_6133.NEF-2.jpg)
+
+Then we spent most of the time walking on the Saint Francois Road: 
+
+![Walking on the Saint Francois Road](../assets/sanghaforest/DSC_6138.NEF-2.jpg)
+
+Fire ants were the scariest and nastiest thing about my trip to CAR and here are a bunch being run over by a motorbike on the main local road: 
+
+![Motorbike running over ants](../assets/sanghaforest/DSC_6139.NEF-2.jpg)
+
+The 3km road to Sangha Lodge: 
+
+![The Sangha Road](../assets/sanghaforest/DSC_6146.NEF-2.jpg)
