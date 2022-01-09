@@ -23,7 +23,7 @@ After some talks with Rod and Tamar -- the Sangha Lodge owners, we decided that 
 
 ![Map of the area](../assets/sanghaforest/map-2.jpg)
 
-The white road is the "main" road of the area, which is a dirt road in pretty good condition. The Libwe road runs east-west and the top green marker is where we were dropped to start the trip. The two red markers in the center were the overnight spots and the horizontal line is the Saint Francois road that runs parallel to the Libwe road. The final red marker is Sangha Lodge. 
+The white road is the "main" road of the area, which is a dirt road in pretty good condition. The Libwe road runs east-west from the white road to the green marker and the green marker is where we were dropped to start the trip. The two red markers in the center were the overnight spots and the horizontal line is the Saint Francois road that runs parallel to the Libwe road. The final red marker is Sangha Lodge. 
 
 At the start all I knew is that I'd start at the Libwe Road and get to the Saint Francois Road and walk through many bais en route. 
 
@@ -37,9 +37,11 @@ Two days before leaving, we made a list of all the expenses and food.
 I love this kind of traveling/pricing because it's fun to be fully responsible for how things go, and also I'm very picky and enjoy transparent pricing :). 
 
 ### Gear
-I was a little unsure of what to expect and therefore also of what to carry. Gear was pretty easy -- tent, sleeping bag, camping mattress, water (note: bring a filter so you don't have to use bottles), and food. I've gotten a bit into trying to pack super light aka ultralight, which would mean things like having a maximum of 2 underwear, 2 socks, 2 shirts even for a very long trip, and maybe less for this short of a trip, but the thing is this area is super humid and muddy and so those rules shouldn't exactly apply. I tend to go a little hard on these new travel concepts, like after I got into the "little planning, go with the flow", I went to Nepal and maybe overdid it by not using a guide and finding a random guy to be our porter, which ended up not going that well because there was a huge avalanche and the porter and I both got snowblinded, and he didn't really give very good advice, although it could've been much worse, and so now I try to be more flexible with my traveling rules. 
+I was a little unsure of what to expect and therefore also of what to carry. Gear was pretty easy -- tent, sleeping bag, camping mattress, water (note: bring a filter so you don't have to use bottles), and food. I've gotten a bit into trying to pack super light aka ultralight, which would mean things like having a maximum of 2 underwear, 2 socks, 2 shirts even for a very long trip, and maybe less for this short of a trip, but the thing is this area is super humid and muddy and so those rules shouldn't exactly apply. I tend to go a little hard on these new travel concepts, like after I got into the "little planning, go with the flow", I went to Nepal and maybe overdid it by not using a guide and finding a random guy to be our porter, which ended up not going that well because there was a huge avalanche and the porter and I both got snowblinded, and he didn't really give very good advice, although it could've been much worse, and so now I try to be more case-specific with my travel methods. 
 
-As for camera lenses, I was deciding between a 24-70mm, 70-200mm, or both. I went with a 70-200 to be sure I'd be capable of reaching birds and elephants from far away, and figured I'd use my iPhone for shorter range stuff. The majority of photos did end up being shorter range, but having the long lens was nice. 
+As for camera lenses, I was deciding between a 24-70mm, 70-200mm, or both. I went with a 70-200 to be sure I'd be capable of reaching birds and elephants from far away, and figured I'd use my iPhone for shorter range stuff. The majority of photos did end up being shorter range, but having the long lens was nice (I was expecting it to be too annoying to change lenses in the forest). 
+
+![Nikon D4s with 70-200mm lens](../assets/sanghaforest/IMG_6337.jpg)
 
 ### Day 1: Getting to the beginning
 On Monday morning February 9th it was time to go! The five of us going on the trip would travel in the pick-up truck. Two others would join for getting us to the dropoff point: Emy as the pick-up driver and Yaf as the "when a tree has fallen in the road I will fix it" specialist, who would take a motorbike and ride in front of us. 
@@ -72,11 +74,13 @@ From there we proceeded at about 8:30am a bit more on the main road and then tur
 
 ![Libwe Road](../assets/sanghaforest/IMG_6323.jpg)
 
-At 8:45am we ran into a bit of a roadblock, which was dealt with. I admit that prior to this incident I was a little skeptical of traveling with a dedicated man to fix roadblocks, but what would we have done without Yaf in this spot? 
+At 8:45am we ran into a bit of a roadblock, which was dealt with. I admit that prior to this incident I was a little skeptical of traveling with a dedicated man to fix roadblocks, but that changed pretty immediately here! 
 
 ![Trees down](../assets/sanghaforest/DSC_6028.NEF-2.jpg)
 
 ![Inspecting the situation](../assets/sanghaforest/IMG_6324.jpg)
+
+The whole crew immediately sprang into action and cleared the road super-fast with a combination of machetes and Yaf's electric saw. 
 
 ![Yaf at work at the beginning](../assets/sanghaforest/DSC_6034.NEF-2.jpg)
 
@@ -87,19 +91,19 @@ By about 10:15am we finally got to our drop-off point. It was there that I reali
 
 ![Break at the beginning](../assets/sanghaforest/IMG_6327.jpg)
 
+It turns out that the Ba'aka people are insanely resourceful when it comes to the forest and so Bosco was already working on building his own backpack out of forest vines and such. Lundi was making more of a wrap thing to attach a few bags together. 
+
 ![Bosco building a backpack](../assets/sanghaforest/DSC_6058.NEF-2.jpg)
 
 ![Bosco building a backpack (2)](../assets/sanghaforest/DSC_6062.NEF-2.jpg)
 
-It turns out that the Ba'aka people are insanely resourceful when it comes to the forest and so Bosco was already working on building his own backpack out of forest vines and such. Lundi was making more of a wrap thing to attach a few bags together. 
-
-Once these were ready, we finally got started on our walk. There are some trails in the forest here, but they're kind of for elephants and mostly pretty rough. The Ba'aka walked in front with machetes and would chop off some obstructions, but it's very tough to avoid tripping and getting scratched. It's basically walking on level extra hard. It is generally flat, so there aren't major issues with getting out of breath, it's just literally hard to walk. 
+Once these were ready, we got moving. There are some trails in the forest here, but they're kind of for elephants and mostly pretty rough. The Ba'aka walked in front with machetes and would chop off some obstructions, but it's very tough to avoid tripping and getting scratched. It's basically walking on level extra hard. It is generally flat, so there aren't major issues with getting out of breath, it's just literally hard to walk. 
 
 We came across a fisherman who got me very excited by telling me that there were a bunch of elephants at the nearby bai. 
 
 ![Fisherman guy](../assets/sanghaforest/DSC_6063.NEF-2.jpg)
 
-15 minutes or so later we arrived at the first bai that was unfortunately completely cempty. 
+15 minutes or so later we arrived at the first bai that was unfortunately completely empty. 
 
 ![Our first bai](../assets/sanghaforest/DSC_6067.NEF-2.jpg)
 
