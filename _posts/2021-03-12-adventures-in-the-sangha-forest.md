@@ -6,44 +6,46 @@ author: "Max Chiswick"
 ---
 
 ### Background
-I arrived at Sangha Lodge in Central African Republic (CAR), adjacent to the Sangha-Dzangha National Park, in mid-December 2020. COVID was making many the situation in many cities uncomfortable, so this seemed like a perfect escape. I ended up staying for about 2 months and as I would, procrastinated taking this trip until the last week. 
+I arrived at Sangha Lodge in Central African Republic (CAR), adjacent to the Sangha-Dzangha National Park, in mid-December 2020. COVID was making  the situation in many cities uncomfortable, so this seemed like a perfect escape. I ended up staying for about 2 months and as I would, procrastinated taking this trip until the last week. 
 
 The trails and nature right at the lodge are beautiful, with lots of opportunities to see birds and other small animals. The main attraction of the park is the Dzanga Bai (bai is the local language word for forest clearing, which is saline in French, I think), which is a forest clearing that up to 100 or so elephants congregate at every day. This one is particularly special for the elephants because there are many minerals in the ground for them to drink (some other animals also show up to partake). Visiting there is fantastic and I believe that it might actually be the best nature place in the world. This probably made me under-value the less dramatic, but also very cool non-elephant nature viewing opportunities around the lodge, which I appreciated more by the end of my stay. 
 
-I had visited Dzanga Bai for two day trips in 2014 during my last visit and was planning to do one overnight visit during this trip, where I'd bring a tent and sleep on the platform. The thing about Dzanga Bai is that it's too easy. You show up and walk up the stairs to the wooden viewing platform (there is a ~2 km walk to get there from the car dropoff at least) and instantly see this amazing scene. Other than a bit of an ant infestation, up there with the most annoying ant scenarios I've been in, and being a bit overwhelmed from a photographic sense, this is bliss. 
+I had visited Dzanga Bai for two day trips in 2014 during my last visit and was planning to do one overnight visit during this trip, where I'd bring a tent and sleep on the platform. The thing about Dzanga Bai is that it's too easy. You show up and walk up the stairs to the wooden viewing platform (there is a ~2 km walk to get there from the car dropoff at least) and instantly see this amazing scene. Other than a bit of an ant infestation (up there with the most annoying ant scenarios I've been in), and being a little overwhelmed from a photographic sense, this is bliss. 
+
+![Dzanga Bai](../assets/sanghaforest/IMG_6455.jpg)
 
 The thing I didn't realize during my first visit is that there are in fact quite a few bais in addition to Dzanga Bai. The national park offers a "bai walk" as an activity. It wasn't exactly clear to me what this means, but I was imagining getting to Bai 1, seeing elephants, walking to Bai 2, seeing elephants, and then leaving. The park was technically closed while I was there due to COVID, so I still don't know exactly what this activity entails. 
 
-Sangha Lodge has its own concession adjacent to the park and so it was decided that some kind of forest walking activity would happen, probably similar to the official park bai walk, but our own rogue version. Since I've somehow over the past years become an avid walker/hiker and have built up a strong interest in elephants, this was a pretty ideal activity. 
+Sangha Lodge has its own concession adjacent to the park and so it was decided that some kind of forest walking activity would happen, probably similar to the official park bai walk, but our own unofficial version. Since I've somehow over the past years become an avid walker/hiker and have built up a strong interest in elephants, this was a pretty ideal activity. 
 
 ### Planning 
 There is absolutely no official route or plan and my usual travel planning go-to of Google Maps was useless here. It sounded like regular guests never/rarely do this kind of thing, but some long-term visitors or lodge employees have done walks in this area. I had previously been to the area under discussion for this walk for a day trip to download camera trap data, but hadn't seen any bais or large animals. 
 
-After some talks with Rod and Tamar -- the Sangha Lodge owners, we decided that a 3 day/2 night "bai walk" trip would work well, though one extra day may be best in retrospect. We would drive from the lodge about 30km to the "Libwe" road and from there walk back over the next 3 days mostly through the forest and then through a road parallel to Libwe, while trying to visit a bunch of bais and see as much wildlife as we could. 
+After some talks with Rod and Tamar -- the Sangha Lodge owners, we decided that a 3 day/2 night "bai walk" trip would work well, though one extra day may be best in retrospect. We would drive from the lodge about 30km to the "Libwe" road dropoff point and from there walk over the next 3 days mostly through the forest and then through a road parallel to Libwe and eventually back to the lodge, while trying to visit a bunch of bais and see as much wildlife as we could. 
 
 ![Map of the area](../assets/sanghaforest/map-2.jpg)
 
-The white road is the "main" road of the area, which is a dirt road in pretty good condition. The Libwe road runs east-west from the white road to the green marker and the green marker is where we were dropped to start the trip. The two red markers in the center were the overnight spots and the horizontal line is the Saint Francois road that runs parallel to the Libwe road. The final red marker is Sangha Lodge. 
+The white north/south road is the "main" road of the area, which is a dirt road in pretty good condition. The Libwe road runs east-west from the white road to the green marker and the green marker is where we were dropped to start the trip. The two red markers in the center were the overnight spots and the horizontal line to the left is the Saint Francois Road that runs parallel to the Libwe road. The final red marker is Sangha Lodge. 
 
-At the start all I knew is that I'd start at the Libwe Road and get to the Saint Francois Road and walk through many bais en route. 
+At the start all I knew is that we'd start at the Libwe Road and get to the Saint Francois Road and walk through many bais en route. 
 
 We decided that I'd go with Armand, one of the senior staff at the lodge, and three Ba'aka people -- Bosco, Lundi, and Congondele. I think we technically could have done this with only 1-2 people, but having more meant once we got to a campsite we could look in different directions for signs of elephants and other animals. And the general principle of "the more the merrier" applied here since I got to hang out with them and they had more company amongst themselves as well. 
 
 ### Food
-Two days before leaving, we made a list of all the expenses and food.
+Two days before leaving, we made a list of all the expenses and food (most things on the list not for me, for the others). I did get addicted to biscuits during this period and am not really sure why I chose spaghetti instead of rice since rice could've been cooked in a much smaller pot. Also it's nice to be in a place where avocados are way cheaper than spaghetti. 
 
 ![List of food](../assets/sanghaforest/food-2.jpg)
 
 I love this kind of traveling/pricing because it's fun to be fully responsible for how things go, and also I'm very picky and enjoy transparent pricing :). 
 
 ### Gear
-I was a little unsure of what to expect and therefore also of what to carry. Gear was pretty easy -- tent, sleeping bag, camping mattress, water (note: bring a filter so you don't have to use bottles), and food. I've gotten a bit into trying to pack super light aka ultralight, which would mean things like having a maximum of 2 underwear, 2 socks, 2 shirts even for a very long trip, and maybe less for this short of a trip, but the thing is this area is super humid and muddy and so those rules shouldn't exactly apply. I tend to go a little hard on these new travel concepts, like after I got into the "little planning, go with the flow", I went to Nepal and maybe overdid it by not using a guide and finding a random guy to be our porter, which ended up not going that well because there was a huge avalanche and the porter and I both got snowblinded, and he didn't really give very good advice, although it could've been much worse, and so now I try to be more case-specific with my travel methods. 
+I was a little unsure of what to expect and therefore also of what to carry. Gear was pretty easy -- tent, sleeping bag, camping mattress, water (note: bring a filter so you don't have to use bottles), and food. I've gotten a bit into trying to pack super light, aka ultralight, which would mean things like having a maximum of 2 underwear, 2 socks, 2 shirts even for a very long trip, and maybe less for this short of a trip, but the thing is this area is super humid and muddy and so those rules shouldn't exactly apply. I tend to go a little hard on these new travel concepts, like after I got into the "little planning, go with the flow", I went to Nepal and maybe overdid it by not using a guide and finding a random guy to be our porter, which ended up not going that well because there was a huge avalanche and the porter and I both got snowblinded, and he didn't really give very good advice, although it could've been much worse, and so now I try to be more case-specific with my travel methods. The point being that I should have probably packed more things to stay warm/comfortable.
 
 As for camera lenses, I was deciding between a 24-70mm, 70-200mm, or both. I went with a 70-200 to be sure I'd be capable of reaching birds and elephants from far away, and figured I'd use my iPhone for shorter range stuff. The majority of photos did end up being shorter range, but having the long lens was nice (I was expecting it to be too annoying to change lenses in the forest). 
 
 ![Nikon D4s with 70-200mm lens](../assets/sanghaforest/IMG_6337.jpg)
 
-So in the end I went with a Nikon D4s with 70-200mm f2.8 lens and iPhone 12 Pro Max. 
+So in the end I went with a Nikon D4s with 70-200mm f2.8 lens and my iPhone 12 Pro Max. 
 
 ### Day 1: Getting to the beginning
 On Monday morning February 9th it was time to go! The five of us going on the trip would travel in the pick-up truck. Two others would join for getting us to the dropoff point: Emy as the pick-up driver and Yaf as the "when a tree has fallen in the road I will fix it" specialist, who would take a motorbike and ride in front of us. 
