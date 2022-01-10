@@ -12,7 +12,7 @@ The trails and nature right at the lodge are beautiful, with lots of opportuniti
 
 I had visited Dzanga Bai for two day trips in 2014 during my last visit and was planning to do one overnight visit during this trip, where I'd bring a tent and sleep on the platform. The thing about Dzanga Bai is that it's too easy. You show up and walk up the stairs to the wooden viewing platform (there is a ~2 km walk to get there from the car dropoff at least) and instantly see this amazing scene. Other than a bit of an ant infestation (up there with the most annoying ant scenarios I've been in), and being a little overwhelmed from a photographic sense, this is bliss. 
 
-![Dzanga Bai](../assets/sanghaforest/IMG_6455.jpg)
+![Dzanga Bai](../assets/sanghaforest/IMG_6455.jpeg)
 
 The thing I didn't realize during my first visit is that there are in fact quite a few bais in addition to Dzanga Bai. The national park offers a "bai walk" as an activity. It wasn't exactly clear to me what this means, but I was imagining getting to Bai 1, seeing elephants, walking to Bai 2, seeing elephants, and then leaving. The park was technically closed while I was there due to COVID, so I still don't know exactly what this activity entails. 
 
@@ -58,6 +58,8 @@ Due to some slight delays (me procrasta-packing), we started leaving at around 7
 
 ![Lundi and Congondele](../assets/sanghaforest/IMG_6318.jpg)
 
+It was fun to see his house and get a quick peek at his village and family. 
+
 ![Armand leading the way to his house](../assets/sanghaforest/IMG_6319.jpg)
 
 ![Armand at home](../assets/sanghaforest/DSC_6017.NEF-2.jpg)
@@ -91,7 +93,7 @@ The whole crew immediately sprang into action and cleared the road super-fast wi
 ![Yaf at work near the end](../assets/sanghaforest/DSC_6053.NEF-2.jpg)
 
 ### Day 1: Beginning the walk
-By about 10:15am we finally got to our drop-off point. It was there that I realized that only Armand and Congondele had brought backpacks and Congondele's looked like the kind of bag you'd bring to not get charged on a Spirit Airlines flight (very small), not a bag to carry lots of gear in the forest! 
+By about 10:15am we finally got to our drop-off point. It was there that I realized that only Armand and Congondele had brought backpacks and Congondele's looked like the kind of bag you'd bring to not get charged on a Spirit Airlines flight (i.e. very small), not a bag to carry lots of gear in the forest! 
 
 ![Break at the beginning](../assets/sanghaforest/IMG_6327.jpg)
 
@@ -220,7 +222,7 @@ Then we got a bit closer and I got an identifiable but blurry shot:
 
 ![Next (blurry) view of elephants](../assets/sanghaforest/DSC_6097.NEF-2.jpg)
 
-Then we got a bit closer and got out of the denser forest and into a more open area. Then I had to climb into the middle of this tree to get a reasonable viewing angle: 
+Then we got a bit closer and got out of the denser forest and into a more open area. I had to climb into the middle of this tree to get a reasonable viewing angle: 
 
 ![Tree for a view](../assets/sanghaforest/IMG_6389.jpg)
 
@@ -232,9 +234,9 @@ But then they started walking away:
 
 ![Elephants retreating](../assets/sanghaforest/DSC_6105.NEF-2.jpg)
 
-After this, we had to reposition to be able to see them again, but this involved walking in a sort of very large semi-circle. This was a pretty tense walk because (a) we wanted to do it fast in case they walked away completely and (b) there were insanely deep mud patches everywhere. My entire foot would get stuck deep in mud and I had to figure out a technique to keep my shoe from falling off by pushing up my toes, which I only put into practice after my shoe came off entirely once. 
+After this, we had to reposition to be able to see them again, but this involved walking in a sort of very large semi-circle. This was a pretty tense walk because (a) we wanted to do it fast in case they went away completely and (b) there were insanely deep mud patches everywhere. My entire foot would get stuck deep in mud and I had to figure out a technique to keep my shoe from falling off by pushing up my toes, which I only put into practice after my shoe came off entirely once. 
 
-Once we got to Good Viewing Area B, another tree had to be climbed, this time a legit climb. The only time I broke my leg it was from jumping off of a 3' high deck, which was probably like 2% as dangerous as this situation. This photo is from the tree next to the one I got into, but unfortunately you can't really see the wide view: 
+Once we got to Good Viewing Area B, another tree had to be climbed, this time a legit climb. The only time I broke my leg in my life was from jumping off of a 3' high backyard deck, which was probably like 2% as dangerous as this situation. This photo is from the tree next to the one I got into, but unfortunately you can't really see the wide view: 
 
 ![Tree for a better view](../assets/sanghaforest/IMG_6392.jpg)
 
@@ -244,7 +246,9 @@ After getting into that tree I was able to take one of my favorite photos:
 
 It felt magical getting up into that tree and seeing those elephants. 
 
-After a few minutes, we had to get going out of fear that the elephants could potentially come in our direction. We went to one additional bai and did a little photo shoot. 
+After a few minutes, we had to get going out of fear that the elephants could potentially come in our direction. 
+
+We went to one additional bai and did a little photo shoot. 
 
 ![Another bai](../assets/sanghaforest/DSC_6130.NEF-2.jpg)
 
@@ -285,6 +289,6 @@ Fire ants were the scariest and nastiest thing about my trip to CAR and here are
 
 ![Motorbike running over ants](../assets/sanghaforest/DSC_6139.NEF-2.jpg)
 
-The 3km road to Sangha Lodge: 
+We ended on the 3km road to Sangha Lodge: 
 
 ![The Sangha Road](../assets/sanghaforest/DSC_6146.NEF-2.jpg)
