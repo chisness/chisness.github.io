@@ -16,7 +16,7 @@ I had visited Dzanga Bai for two day trips in 2014 during my last visit and was 
 
 The thing I didn't realize during my first visit is that there are in fact quite a few bais in addition to Dzanga Bai. The national park offers a "bai walk" as an activity. It wasn't exactly clear to me what this means, but I was imagining getting to Bai 1, seeing elephants, walking to Bai 2, seeing elephants, and then leaving. The park was technically closed while I was there due to COVID, so I still don't know exactly what this activity entails. 
 
-Sangha Lodge has its own concession adjacent to the park and so it was decided that some kind of forest walking activity would happen, probably similar to the official park bai walk, but our own unofficial version. Since I've somehow over the past years become an avid walker/hiker and have built up a strong interest in elephants, this was a pretty ideal activity. 
+Sangha Lodge has its own concession adjacent to the park and so it was decided that some kind of forest walking activity would happen, probably similar to the park bai walk, but our own unofficial version. Since I've somehow over the past years become an avid walker/hiker and have built up a strong interest in elephants, this was a pretty ideal activity. 
 
 ### Planning 
 There is absolutely no official route or plan and my usual travel planning go-to of Google Maps was useless here. It sounded like regular guests never/rarely do this kind of thing, but some long-term visitors or lodge employees have done walks in this area. I had previously been to the area under discussion for this walk for a day trip to download camera trap data, but hadn't seen any bais or large animals. 
@@ -39,11 +39,13 @@ Two days before leaving, we made a list of all the expenses and food (most thing
 I love this kind of traveling/pricing because it's fun to be fully responsible for how things go, and also I'm very picky and enjoy transparent pricing :). 
 
 ### Gear
-I was a little unsure of what to expect and therefore also of what to carry. Gear was pretty easy -- tent, sleeping bag, camping mattress, water (note: bring a filter so you don't have to use bottles), and food. I've gotten a bit into trying to pack super light, aka ultralight, which would mean things like having a maximum of 2 underwear, 2 socks, 2 shirts even for a very long trip, and maybe less for this short of a trip, but the thing is this area is super humid and muddy and so those rules shouldn't exactly apply. I tend to go a little hard on these new travel concepts, like after I got into the "little planning, go with the flow", I went to Nepal and maybe overdid it by not using a guide and finding a random guy to be our porter, which ended up not going that well because there was a huge avalanche and the porter and I both got snowblinded, and he didn't really give very good advice, although it could've been much worse, and so now I try to be more case-specific with my travel methods. The point being that I should have probably packed more things to stay warm/comfortable.
+I was a little unsure of what to expect and therefore also of what to carry. Some bigger gear was pretty straightforward -- tent, sleeping bag, camping mattress, water (note: bring a filter so you don't have to use bottles), and food. I also took my Patagonia duffel bag, which is very robust and versatile, but definitely not as good as a backpack for extended carrying. 
+
+Clothing was a little bit tougher. I've gotten a bit into trying to pack super light, aka ultralight, which would mean things like having a maximum of 2 underwear, 2 socks, 2 shirts even for a very long trip, and maybe less for this short of a trip, but the thing is this area is super humid and muddy and so those rules shouldn't exactly apply. I tend to go a little hard on these new travel concepts, like after I got into the "little planning, go with the flow", I went to Nepal and maybe overdid it by not using a guide and finding a random guy to be our porter, which ended up not going that well because there was a huge avalanche and the porter and I both got snowblinded, and he didn't really give very good advice, although it could've been much worse, and so now I try to be more case-specific with my travel methods. The point being that I should have probably packed more things to stay warm/comfortable.
 
 As for camera lenses, I was deciding between a 24-70mm, 70-200mm, or both. I went with a 70-200 to be sure I'd be capable of reaching birds and elephants from far away, and figured I'd use my iPhone for shorter range stuff. The majority of photos did end up being shorter range, but having the long lens was nice (I was expecting it to be too annoying to change lenses in the forest). 
 
-![Nikon D4s with 70-200mm lens](../assets/sanghaforest/IMG_6337.jpg)
+![Nikon D4s with 70-200mm lens](../assets/sanghaforest/IMG_6337.jpeg)
 
 So in the end I went with a Nikon D4s with 70-200mm f2.8 lens and my iPhone 12 Pro Max. 
 
@@ -52,9 +54,9 @@ On Monday morning February 9th it was time to go! The five of us going on the tr
 
 ![Emy front of the bike, Armand to the right, and some unknowns](../assets/sanghaforest/IMG_6315.jpg)
 
-Due to some slight delays (me procrasta-packing), we started leaving at around 7:30am. There was a small mechanical issue with the car that got fixed pretty quickly and then we drove the 3km on the Sangha Lodge road and another couple km to get to Bobongo village to stop off at Armand's house to pick up the food that he had bought the day before and to see his large family. 
-
 ![Mechanical issues](../assets/sanghaforest/IMG_6317.jpg)
+
+Due to some slight delays (me procrasta-packing), we started leaving at around 7:30am. There was a small mechanical issue with the car that got fixed pretty quickly and then we drove the 3km on the Sangha Lodge road and another couple km to get to Bobongo village to stop off at Armand's house to pick up the food that he had bought the day before and to see his large family. 
 
 ![Lundi and Congondele](../assets/sanghaforest/IMG_6318.jpg)
 
@@ -66,7 +68,7 @@ It was fun to see his house and get a quick peek at his village and family.
 
 ![Inside of the house](../assets/sanghaforest/IMG_6322.jpg)
 
-The avocados had some problems: 
+The avocados had some issues: 
 
 ![Avocados](../assets/sanghaforest/IMG_6320.jpg)
 
@@ -174,7 +176,7 @@ And slightly later in the morning:
 
 ![Morning bai](../assets/sanghaforest/IMG_6367.jpg)
 
-But unfortunately we again did not see any animals. After that we briefly went back to the camp and then continued walking in the forest with the intention of seeing another bai or two. 
+But unfortunately we again did not see any animals. After that we briefly went back to the camp and packed up and then continued walking in the forest with the intention of seeing another bai or two and picking a new campsite.  
 
 ![In the forest](../assets/sanghaforest/DSC_6073.NEF-2.jpg)
 
@@ -202,7 +204,7 @@ Though we did see some elephant prints on the ground that were recent:
 
 ![Elephant prints](../assets/sanghaforest/IMG_6383.jpg)
 
-After this we headed back to the campsite where my shoes began to grow flowers:  
+After this we headed to the new campsite where my shoes began to grow flowers:  
 
 ![Shoes](../assets/sanghaforest/DSC_6082.NEF-2.jpg)
 
@@ -236,7 +238,7 @@ But then they started walking away:
 
 After this, we had to reposition to be able to see them again, but this involved walking in a sort of very large semi-circle. This was a pretty tense walk because (a) we wanted to do it fast in case they went away completely and (b) there were insanely deep mud patches everywhere. My entire foot would get stuck deep in mud and I had to figure out a technique to keep my shoe from falling off by pushing up my toes, which I only put into practice after my shoe came off entirely once. 
 
-Once we got to Good Viewing Area B, another tree had to be climbed, this time a legit climb. The only time I broke my leg in my life was from jumping off of a 3' high backyard deck, which was probably like 2% as dangerous as this situation. This photo is from the tree next to the one I got into, but unfortunately you can't really see the wide view: 
+Once we got to Good Viewing Area B about 10 minutes later, another tree had to be climbed, this time a legit climb. The only time I broke my leg in my life was from jumping off of a 3' high backyard deck, which was probably like 2% as dangerous as this situation. This photo is from the tree next to the one I got into, but unfortunately is not very wide-angle: 
 
 ![Tree for a better view](../assets/sanghaforest/IMG_6392.jpg)
 
@@ -244,18 +246,18 @@ After getting into that tree I was able to take one of my favorite photos:
 
 ![Elephant from a distance](../assets/sanghaforest/DSC_6118.NEF-2.jpg)
 
-It felt magical getting up into that tree and seeing those elephants. 
+It felt magical getting up into that tree and seeing those elephants and I like how the photo shows some of the density of the forest.
 
 After a few minutes, we had to get going out of fear that the elephants could potentially come in our direction. 
 
-We went to one additional bai and did a little photo shoot. 
+We went to one additional bai: 
 
 ![Another bai](../assets/sanghaforest/DSC_6130.NEF-2.jpg)
 
-Armand: 
+And did a little photoshoot featuring Armand: 
 ![Armand](../assets/sanghaforest/DSC_6128.NEF-2.jpg)
 
-Congondele: 
+And Congondele: 
 ![Congondele](../assets/sanghaforest/DSC_6129.NEF-2.jpg)
 
 We also saw some birds, flying: 
@@ -266,7 +268,7 @@ And on the ground:
 
 ![Birds on the ground](../assets/sanghaforest/DSC_6131.NEF-2.jpg)
 
-We then headed back to our new campsite and ate the exact same thing we ate the night before. 
+We then headed back to our new campsite in very good spirits and ate the exact same thing we ate the night before. 
 
 ### Day 3: Heading home
 On the final morning, we packed up: 
@@ -285,10 +287,14 @@ Then we spent most of the time walking on the Saint Francois Road:
 
 ![Walking on the Saint Francois Road](../assets/sanghaforest/DSC_6138.NEF-2.jpg)
 
-Fire ants were the scariest and nastiest thing about my trip to CAR and here are a bunch being run over by a motorbike on the main local road: 
+I consider myself to walk at a little bit above average speed (and run at a very below average speed), but in the forest, especially in the non-open areas but also in the open areas, I was by far the slowest. Which I will attribute at 5% to carrying a heavy camera/lens and 95% to them simply being way way way faster than me. 
+
+Fire ants were the scariest and nastiest thing about my trip to CAR and here are a bunch being run over by a motorbike on the main local road as we were getting close to the lodge: 
 
 ![Motorbike running over ants](../assets/sanghaforest/DSC_6139.NEF-2.jpg)
 
-We ended on the 3km road to Sangha Lodge: 
+And we ended on the 3km road to Sangha Lodge: 
 
 ![The Sangha Road](../assets/sanghaforest/DSC_6146.NEF-2.jpg)
+
+At the end we had a quick group celebration to end the trip and then I was able to take a very well-needed shower, and since the others hadn't done enough walking for the day, they had to walk all the way back on the 3km road and a bit more to their village! 
