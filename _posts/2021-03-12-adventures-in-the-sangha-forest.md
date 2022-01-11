@@ -21,7 +21,7 @@ Sangha Lodge has its own concession adjacent to the park and so it was decided t
 ### Planning 
 There is absolutely no official route or plan and my usual travel planning go-to of Google Maps was useless here. It sounded like regular guests never/rarely do this kind of thing, but some long-term visitors or lodge employees have done walks in this area. I had previously been to the area under discussion for this walk for a day trip to download camera trap data, but hadn't seen any bais or large animals. 
 
-After some talks with Rod and Tamar -- the Sangha Lodge owners, we decided that a 3 day/2 night "bai walk" trip would work well, though one extra day may be best in retrospect. We would drive from the lodge about 30km to the "Libwe" road dropoff point and from there walk over the next 3 days mostly through the forest and then through a road parallel to Libwe and eventually back to the lodge, while trying to visit a bunch of bais and see as much wildlife as we could. 
+After some talks with Rod and Tamar -- the Sangha Lodge owners, we decided that a 3 day/2 night "bai walk" trip would work well, though one extra day may be best in retrospect. We would drive from the lodge about 30km to the "Libwe" road dropoff point and from there walk over the next 3 days mostly through the forest and then through a road parallel to Libwe and eventually back to the lodge, while trying to visit a bunch of bais and see as much wildlife as we could. (The map below is actual GPS from our walk.)
 
 ![Map of the area](../assets/sanghaforest/map-2.jpg)
 
@@ -29,7 +29,9 @@ The white north/south road is the "main" road of the area, which is a dirt road 
 
 At the start all I knew is that we'd start at the Libwe Road and get to the Saint Francois Road and walk through many bais en route. 
 
-We decided that I'd go with Armand, one of the senior staff at the lodge, and three Ba'aka people -- Bosco, Lundi, and Congondele. I think we technically could have done this with only 1-2 people, but having more meant once we got to a campsite we could look in different directions for signs of elephants and other animals. And the general principle of "the more the merrier" applied here since I got to hang out with them and they had more company amongst themselves as well. 
+We decided that I'd go with Armand, one of the senior staff at the lodge, and three Ba'aka people -- Bosco, Lundi, and Congondele. I had gotten to know Armand and Lundi and Congondele from various trips/chats at the lodge, but had not seen Bosco before. In addition to their native languages, Armand speaks French very well and English pretty well and Lundi and Congondele speak French pretty well. We mostly communicated in French and my caveman French was way better than having no French, but was/is extremely limited. 
+
+I think we technically could have done this with only 1-2 people, but having more meant once we got to a campsite we could look in different directions for signs of elephants and other animals. And the general principle of "the more the merrier" applied here since I got to hang out with them and they had more company amongst themselves as well. 
 
 ### Food
 Two days before leaving, we made a list of all the expenses and food (most things on the list not for me, for the others). I did get addicted to biscuits during this period and am not really sure why I chose spaghetti instead of rice since rice could've been cooked in a much smaller pot. Also it's nice to be in a place where avocados are way cheaper than spaghetti. 
@@ -99,7 +101,7 @@ By about 10:15am we finally got to our drop-off point. It was there that I reali
 
 ![Break at the beginning](../assets/sanghaforest/IMG_6327.jpg)
 
-It turns out that the Ba'aka people are insanely resourceful when it comes to the forest and so Bosco was already working on building his own backpack out of forest vines and such. Lundi was making more of a wrap thing to attach a few bags together. 
+It turns out that the Ba'aka people are ridiculously resourceful when it comes to the forest and so Bosco was already working on building his own backpack out of forest vines and such. Lundi was making more of a wrap thing to attach a few bags together. 
 
 ![Bosco building a backpack](../assets/sanghaforest/DSC_6058.NEF-2.jpg)
 
@@ -151,6 +153,7 @@ Unfortunately we did not see any animals during the first day, but there was ple
 
 ![Dinner: Spaghetti and tuna](../assets/sanghaforest/IMG_6362.jpg)
 
+And learned that eating with hands something that we all could appreciate. 
 
 ### Day 2: More walking
 
@@ -209,6 +212,8 @@ After this we headed to the new campsite where my shoes began to grow flowers:
 ![Shoes](../assets/sanghaforest/DSC_6082.NEF-2.jpg)
 
 At this point it wasn't seeming too likely that we'd see elephants at all on this trip, even though we still had two "peak periods" remaining -- the final sunset and the next day's final sunrise for the trip. 
+
+The first time I was on safari I remember desperately wanting to see a crazy action situation out of Planet Earth. On subsequent trips I've come to appreciate more subtle situations, but would've been a little sad to not see anything at all. 
 
 Mid-day was a good time to take it easy and relax, so while Armand and I stayed there, the other three went off. I didn't really know what they were doing, but through some very advanced-level forest methods, they managed to come across a small group of elephants. They came back and let us know and we immediately got up to go see them. 
 
@@ -289,6 +294,8 @@ Then we spent most of the time walking on the Saint Francois Road:
 
 I consider myself to walk at a little bit above average speed (and run at a very below average speed), but in the forest, especially in the non-open areas but also in the open areas, I was by far the slowest. Which I will attribute at 5% to carrying a heavy camera/lens and 95% to them simply being way way way faster than me. 
 
+While most of our talks on previous days were logistics/survival-centric, we were finally on a more open road where the only goal was really to walk back to the lodge, so we were able to chat much more easily. I mostly talked to Armand and unfortunately now this was 11 months ago, but I 
+
 Fire ants were the scariest and nastiest thing about my trip to CAR and here are a bunch being run over by a motorbike on the main local road as we were getting close to the lodge: 
 
 ![Motorbike running over ants](../assets/sanghaforest/DSC_6139.NEF-2.jpg)
@@ -297,4 +304,6 @@ And we ended on the 3km road to Sangha Lodge:
 
 ![The Sangha Road](../assets/sanghaforest/DSC_6146.NEF-2.jpg)
 
-At the end we had a quick group celebration to end the trip and then I was able to take a very well-needed shower, and since the others hadn't done enough walking for the day, they had to walk all the way back on the 3km road and a bit more to their village! 
+And concluded with a quick group celebration at the lodge. 
+
+Especially with no other guests in the park and in an already pretty isolated corner of the country that gets very few visitors, being out there for these three days seeing almost no other people felt very real/natural (aside from the excessive biscuits and spaghetti) and is definitely one of my most memorable trips. 
