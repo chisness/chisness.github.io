@@ -109,7 +109,7 @@ It turns out that the Ba'aka people are ridiculously resourceful when it comes t
 
 Once these were ready, we got moving. There are some trails in the forest here, but they're kind of for elephants and mostly pretty rough. The Ba'aka walked in front with machetes and would chop off some obstructions, but it's very tough to avoid tripping and getting scratched. It's basically walking on level extra hard. It is generally flat, so there aren't major issues with getting out of breath, it's just literally hard to walk. 
 
-We came across a fisherman who got me very excited by telling me that there were a bunch of elephants at the nearby bai. 
+We came across a fisherman who got me very excited by telling us that there were a bunch of elephants at the nearby bai. 
 
 ![Fisherman guy](../assets/sanghaforest/DSC_6063.NEF-2.jpg)
 
@@ -153,7 +153,7 @@ Unfortunately we did not see any animals during the first day, but there was ple
 
 ![Dinner: Spaghetti and tuna](../assets/sanghaforest/IMG_6362.jpg)
 
-And I learned that eating with hands something that we all could appreciate. 
+And I learned that eating with hands is something that we all could appreciate. 
 
 ### Day 2: More walking
 
@@ -243,7 +243,7 @@ But then they started walking away:
 
 After this, we had to reposition to be able to see them again, but this involved walking in a sort of very large semi-circle. This was a pretty tense walk because (a) we wanted to do it fast in case they went away completely and (b) there were insanely deep mud patches everywhere. My entire foot would get stuck deep in mud and I had to figure out a technique to keep my shoe from falling off by pushing up my toes, which I only put into practice after my shoe came off entirely once. 
 
-Once we got to Good Viewing Area B about 10 minutes later, another tree had to be climbed, this time a legit climb. The only time I broke my leg in my life was from jumping off of a 3' high backyard deck, which was probably like 2% as dangerous as this situation. This photo is from the tree next to the one I got into, but unfortunately is not very wide-angle: 
+Once we got to Good Viewing Area B about 10 minutes later, another tree had to be climbed, this time a legit climb. The only time I broke a bone in my life was my leg from jumping off of a 3' high backyard deck, which was probably like 2% as dangerous as this situation. This photo is from the tree next to the one I got into, but unfortunately is not very wide-angle: 
 
 ![Tree for a better view](../assets/sanghaforest/IMG_6392.jpg)
 
@@ -251,7 +251,7 @@ After getting into that tree I was able to take one of my favorite photos:
 
 ![Elephant from a distance](../assets/sanghaforest/DSC_6118.NEF-2.jpg)
 
-It felt magical getting up into that tree and seeing those elephants and I like how the photo shows some of the density of the forest.
+It felt magical getting up into that tree and seeing those elephants and I like how the photo shows some of the density of the forest. 
 
 After a few minutes, we had to get going out of fear that the elephants could potentially come in our direction. 
 
