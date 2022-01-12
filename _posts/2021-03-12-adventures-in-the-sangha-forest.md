@@ -14,22 +14,22 @@ I had visited Dzanga Bai for two day trips in 2014 during my last visit and was 
 
 ![Dzanga Bai](../assets/sanghaforest/IMG_6455.jpeg)
 
-The thing I didn't realize during my first visit is that there are in fact quite a few bais in addition to Dzanga Bai. The national park offers a "bai walk" as an activity. It wasn't exactly clear to me what this means, but I was imagining getting to Bai 1, seeing elephants, walking to Bai 2, seeing elephants, and then leaving. The park was technically closed while I was there due to COVID, so I still don't know exactly what this activity entails. 
+The thing I didn't realize during my first visit is that there are in fact quite a few bais in addition to Dzanga Bai. The national park offers a "bai walk" as an activity. It wasn't exactly clear to me what this means, but I was imagining getting to Bai 1, seeing a bunch of elephants, walking to Bai 2, seeing elephants, and then leaving. The park was technically closed while I was there due to COVID, so I still don't know exactly what this activity entails. 
 
 Sangha Lodge has its own concession adjacent to the park and so it was decided that some kind of forest walking activity would happen, probably similar to the park bai walk, but our own unofficial version. Since I've somehow over the past years become an avid walker/hiker and have built up a strong interest in elephants, this was a pretty ideal activity. 
 
 ### Planning 
 There is absolutely no official route or plan and my usual travel planning go-to of Google Maps was useless here. It sounded like regular guests never/rarely do this kind of thing, but some long-term visitors or lodge employees have done walks in this area. I had previously been to the area under discussion for this walk for a day trip to download camera trap data, but hadn't seen any bais or large animals. 
 
-After some talks with Rod and Tamar -- the Sangha Lodge owners, we decided that a 3 day/2 night "bai walk" trip would work well, though one extra day may be best in retrospect. We would drive from the lodge about 30km to the "Libwe" road dropoff point and from there walk over the next 3 days mostly through the forest and then through a road parallel to Libwe and eventually back to the lodge, while trying to visit a bunch of bais and see as much wildlife as we could. (The map below is actual GPS from our walk.)
+After some talks with Rod and Tamar -- the Sangha Lodge owners, we decided that a 3 day/2 night "bai walk" trip would work well, though one extra day may be best in retrospect. We would drive from the lodge about 30km to the Libwe Road dropoff point and from there walk over the next 3 days mostly through the forest and then through a road parallel to Libwe and eventually back to the lodge, while trying to visit a bunch of bais and see as much wildlife as we could. (The map below is actual GPS from our walk.)
 
 ![Map of the area](../assets/sanghaforest/map-2.jpg)
 
-The white north/south road is the "main" road of the area, which is a dirt road in pretty good condition. The Libwe road runs east-west from the white road to the green marker and the green marker is where we were dropped to start the trip. The two red markers in the center were the overnight spots and the horizontal line to the left is the Saint Francois Road that runs parallel to the Libwe road. The final red marker is Sangha Lodge. 
+The white north/south road is the "main" road of the area, which is a dirt road in pretty good condition. The Libwe road runs east-west from the white road to the top green marker and the green marker is where we were dropped to start the trip. The two red markers in the center were the overnight spots and the horizontal line to the left is the Saint Francois Road that runs parallel to the Libwe road. The final red marker is Sangha Lodge. 
 
-At the start all I knew is that we'd start at the Libwe Road and get to the Saint Francois Road and walk through many bais en route. 
+At the start all I knew is that we'd be dropped off at the Libwe Road and get to the Saint Francois Road and walk through many bais en route. 
 
-We decided that I'd go with Armand, one of the senior staff at the lodge, and three Ba'aka people -- Bosco, Lundi, and Congondele. I had gotten to know Armand and Lundi and Congondele from various trips/chats at the lodge, but had not seen Bosco before. In addition to their native languages, Armand speaks French very well and English pretty well and Lundi and Congondele speak French pretty well. We mostly communicated in French and my caveman French was way better than having no French, but was/is extremely limited. 
+We decided that I'd go with Armand, one of the senior staff at the lodge, and 3 Ba'aka people -- Bosco, Lundi, and Congondele. I had gotten to know Armand and Lundi and Congondele from various trips/chats at the lodge, but had not seen Bosco before. In addition to their native languages, Armand speaks French very well and English pretty well and Lundi and Congondele speak French pretty well. We mostly communicated in French and while my caveman French made for a way better experience than having no French, it was/is extremely limited. 
 
 I think we technically could have done this with only 1-2 people, but having more meant once we got to a campsite we could look in different directions for signs of elephants and other animals. And the general principle of "the more the merrier" applied here since I got to hang out with them and they had more company amongst themselves as well. 
 
@@ -41,9 +41,9 @@ Two days before leaving, we made a list of all the expenses and food (most thing
 I love this kind of traveling/pricing because it's fun to be fully responsible for how things go, and also I'm very picky and enjoy transparent pricing :). 
 
 ### Gear
-I was a little unsure of what to expect and therefore also of what to carry. Some bigger gear was pretty straightforward -- tent, sleeping bag, camping mattress, water (note: bring a filter so you don't have to use bottles), and food. I also took my Patagonia duffel bag, which is very robust and versatile, but definitely not as good as a backpack for extended carrying. 
+I was a little unsure of what to expect and therefore also of what to carry. Some bigger gear was pretty straightforward -- tent, sleeping bag, camping mattress, water (note: bring a filter so you don't have to use bottles), and food. I also took my Patagonia "Black Hole" duffel bag, which is very robust and versatile, but definitely not as good as a backpack for extended carrying. 
 
-Clothing was a little bit tougher. I've gotten a bit into trying to pack super light, aka ultralight, which would mean things like having a maximum of 2 underwear, 2 socks, 2 shirts even for a very long trip, and maybe less for this short of a trip, but the thing is this area is super humid and muddy and so those rules shouldn't exactly apply. I tend to go a little hard on these new travel concepts, like after I got into the "little planning, go with the flow", I went to Nepal and maybe overdid it by not using a guide and finding a random guy to be our porter, which ended up not going that well because there was a huge avalanche and the porter and I both got snowblinded, and he didn't really give very good advice, although it could've been much worse, and so now I try to be more case-specific with my travel methods. The point being that I should have probably packed more things to stay warm/comfortable.
+Clothing was a little bit tougher. I've gotten a bit into trying to pack super light, aka ultralight, which would mean things like having a maximum of 2 underwear, 2 socks, 2 shirts even for a very long trip, and maybe less for this short of a trip, but the thing is this area is super humid and muddy and so those rules shouldn't exactly apply. I tend to go a little hard on these new travel concepts, like after I got into the "little planning, go with the flow", I went to Nepal and maybe overdid it by not using a guide and finding a random guy to be our porter, which ended up not going that well because there was a huge avalanche and the porter and I both got snowblinded, and he didn't really give very good advice, although it could've been much worse, and so now I try to be more case-specific with my travel methods. The point being that I should have probably packed more things to stay warm/comfortable/not wet.
 
 As for camera lenses, I was deciding between a 24-70mm, 70-200mm, or both. I went with a 70-200 to be sure I'd be capable of reaching birds and elephants from far away, and figured I'd use my iPhone for shorter range stuff. The majority of photos did end up being shorter range, but having the long lens was nice (I was expecting it to be too annoying to change lenses in the forest). 
 
@@ -52,7 +52,7 @@ As for camera lenses, I was deciding between a 24-70mm, 70-200mm, or both. I wen
 So in the end I went with a Nikon D4s with 70-200mm f2.8 lens and my iPhone 12 Pro Max. 
 
 ### Day 1: Getting to the beginning
-On Monday morning February 9th it was time to go! The five of us going on the trip would travel in the pick-up truck. Two others would join for getting us to the dropoff point: Emy as the pick-up driver and Yaf as the "when a tree has fallen in the road I will fix it" specialist, who would take a motorbike and ride in front of us. 
+On Monday morning February 9th it was time to go! The 5 of us going on the trip would travel in the pick-up truck. Two others would join for getting us to the dropoff point: Emy as the pick-up driver and Yaf as the "when a tree has fallen in the road I will fix it" specialist, who would take a motorbike and ride in front of us. 
 
 ![Emy front of the bike, Armand to the right, and some unknowns](../assets/sanghaforest/IMG_6315.jpg)
 
@@ -153,7 +153,7 @@ Unfortunately we did not see any animals during the first day, but there was ple
 
 ![Dinner: Spaghetti and tuna](../assets/sanghaforest/IMG_6362.jpg)
 
-And learned that eating with hands something that we all could appreciate. 
+And I learned that eating with hands something that we all could appreciate. 
 
 ### Day 2: More walking
 
@@ -215,7 +215,7 @@ At this point it wasn't seeming too likely that we'd see elephants at all on thi
 
 The first time I was on safari I remember desperately wanting to see a crazy action situation out of Planet Earth. On subsequent trips I've come to appreciate more subtle situations, but would've been a little sad to not see anything at all. 
 
-Mid-day was a good time to take it easy and relax, so while Armand and I stayed there, the other three went off. I didn't really know what they were doing, but through some very advanced-level forest methods, they managed to come across a small group of elephants. They came back and let us know and we immediately got up to go see them. 
+Mid-day was a good time to take it easy and relax, so while Armand and I stayed there, the other 3 went off. I didn't really know what they were doing, but through some very advanced-level forest methods, they managed to come across a small group of elephants. They came back and let us know and we immediately got up to go see them. 
 
 The mud situation continued to be very difficult: 
 
@@ -294,9 +294,9 @@ Then we spent most of the time walking on the Saint Francois Road:
 
 I consider myself to walk at a little bit above average speed (and run at a very below average speed), but in the forest, especially in the non-open areas but also in the open areas, I was by far the slowest. Which I will attribute at 5% to carrying a heavy camera/lens and 95% to them simply being way way way faster than me. 
 
-While most of our talks on previous days were logistics/survival-centric, we were finally on a more open road where the only goal was really to walk back to the lodge, so we were able to chat much more easily. I mostly talked to Armand and unfortunately now this was 11 months ago, but I 
+While most of our talks on previous days were logistics/survival-centric, we were finally on a more open road where the only goal was really to walk back to the lodge, so we were able to chat much more easily. I mostly talked to Armand and unfortunately now this was 11 months ago and I don't remember all the details but I primarily remember hearing a bit about his family and how the education system there works and contrasting the dramatic differences between me still being single and him getting married very young and having a large family and then me thinking that might not be a bad idea. 
 
-Fire ants were the scariest and nastiest thing about my trip to CAR and here are a bunch being run over by a motorbike on the main local road as we were getting close to the lodge: 
+Fire ants were the scariest and nastiest thing about my trip to CAR (if you step near them they will immediately crawl up your pants) and here are a bunch being run over by a motorbike on the main local road as we were getting close to the lodge: 
 
 ![Motorbike running over ants](../assets/sanghaforest/DSC_6139.NEF-2.jpg)
 
@@ -306,4 +306,4 @@ And we ended on the 3km road to Sangha Lodge:
 
 And concluded with a quick group celebration at the lodge. 
 
-Especially with no other guests in the park and in an already pretty isolated corner of the country that gets very few visitors, being out there for these three days seeing almost no other people felt very real/natural (aside from the excessive biscuits and spaghetti) and is definitely one of my most memorable trips. 
+Especially with no other guests in the park and in an already pretty isolated corner of the country that gets very few visitors, being out there for these 3 days seeing almost no other people felt very special and very real (aside from the excessive biscuits and spaghetti that were a little out of place) and is definitely one of my most memorable trips. 
